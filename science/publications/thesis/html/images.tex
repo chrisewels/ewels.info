@@ -1,0 +1,2733 @@
+\batchmode
+\documentclass[12pt]{report}
+\makeatletter \usepackage{amsfonts} \usepackage{amsthm}
+\usepackage{amssymb} \usepackage{amsmath} \usepackage{a4}
+\usepackage{psfig}
+
+\pagestyle{headings}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\topmargin=-.5in \headheight=24pt \headsep=24pt \oddsidemargin=14.6mm
+\evensidemargin=14.6mm \textheight=9.5in \textwidth=149mm
+
+\catcode`\@=11
+
+\catcode`\@=12 
+\catcode`\@=11 
+ 
+\catcode`\@=12
+\hfuzz=20pt 
+\vfuzz=20pt
+
+\def\la{$\langle$}
+
+\def\ra{$\rangle$~}
+
+\newcommand{\cm}{cm$^{-1}$}
+
+\newcommand{\cmt}{~cm$^{-3}$~}
+
+\newcommand{\C}{~$^\circ$C}
+
+\newcommand{\half}{\frac{1}{2}}
+
+\newcommand{\delsq}{\nabla^2}
+
+\newcommand{\Dell} {\nabla}
+
+\newcommand{\eps} {\varepsilon}
+
+\def\fnum@figure{\footnotesize Figure \thefigure}
+
+\def\fnum@table{\footnotesize Table \thetable}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+\makeatother
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newenvironment{tex2html_wrap}{}{}
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\topskip=0pt
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize\parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}\normalsize}
+\def\lthtmltypeout#1{{\let\protect\string\immediate\write\lthtmlwrite{#1}}}%
+\newcommand\lthtmlhboxmathA{\adjustnormalsize\setbox\sizebox=\hbox\bgroup}%
+\newcommand\lthtmlvboxmathA{\adjustnormalsize\setbox\sizebox=\vbox\bgroup%
+ \let\ifinner=\iffalse }%
+\newcommand\lthtmlboxmathZ{\@next\next\@currlist{}{\def\next{\voidb@x}}%
+ \expandafter\box\next\egroup}%
+\newcommand\lthtmlmathtype[1]{\def\lthtmlmathenv{#1}}%
+\newcommand\lthtmllogmath{\lthtmltypeout{l2hSize %
+:\lthtmlmathenv:\the\ht\sizebox::\the\dp\sizebox::\the\wd\sizebox.\preveqno}}%
+\newcommand\lthtmlfigureA[1]{\let\@savefreelist\@freelist
+       \lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmlfigureZ{\lthtmlboxmathZ\lthtmllogmath\copy\sizebox
+       \global\let\@freelist\@savefreelist}%
+\newcommand\lthtmldisplayA[1]{\lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmldisplayB[1]{\edef\preveqno{(\theequation)}%
+  \lthtmldisplayA{#1}\let\@eqnnum\relax}%
+\newcommand\lthtmldisplayZ{\lthtmlboxmathZ\lthtmllogmath\lthtmlsetmath}%
+\newcommand\lthtmlinlinemathA[1]{\lthtmlmathtype{#1}\lthtmlhboxmathA  \vrule height1.5ex width0pt }%
+\newcommand\lthtmlinlinemathZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetmath}
+\def\lthtmlsetmath{\hbox{\vrule width.5pt\vtop{\vbox{%
+  \kern.5pt\kern0.8 pt\hbox{\hglue.5pt\copy\sizebox\hglue0.8 pt}\kern.5pt%
+  \ifdim\dp\sizebox>0pt\kern0.8 pt\fi}%
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\centerinlinemath{\dimen1=\ht\sizebox
+  \ifdim\dimen1<\dp\sizebox \ht\sizebox=\dp\sizebox
+  \else \dp\sizebox=\ht\sizebox \fi}
+
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize\expandafter\vfill
+  \else\expandafter\vss\fi}%
+\makeatletter
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\makeatother
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\setcounter{page}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline186}%
+$\sigma$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline209}%
+$\hbar$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline215}%
+$4\pi\varepsilon_0$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\setcounter{page}{1}
+\stepcounter{chapter}
+{\newpage\clearpage
+\lthtmlfigureA{figure229}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=misc/czochralski.eps,width=8cm,angle=270}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline307}%
+$\sim$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline315}%
+$^\circ$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline343}%
+$5  \times
+10^{15}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline355}%
+$\langle$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline357}%
+$\rangle$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath429}%
+\begin{displaymath}
+(H_{total} - E_{total}) \Psi_{total}(r,R) = 0.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1147}%
+${\bf R}_a$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1151}%
+${\bf
+r}_\mu$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath467}%
+\begin{displaymath}\Psi_{total}(r,R) = \chi(R)\Psi(r,R).
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1153}%
+$\Psi$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1155}%
+$\chi(R,r)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1157}%
+$\psi_\lambda$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1159}%
+$\lambda$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath481}%
+\begin{displaymath}\left(- \frac{1}{2}\nabla^2 + V(r) - E_\lambda \right) \Psi_\lambda(r) = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1167}%
+$\Psi(r,R)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1169}%
+\begin{displaymath}\Psi({\bf r}_1 s_1, {\bf r}_2 s_2, \ldots ,{\bf r}_N s_N)
+=\frac{1}{\sqrt{N!}}  \left| 
+\begin{array}{ccc} \psi_1
+({\bf r}_1 s_1)\ \ \psi_1({\bf r}_2 s_2) & .\ \ .\ \ .\ \ &
+\psi_1({\bf r}_N s_N) \\ \psi_2(
+{\bf r}_1 s_1)\ \ \psi_2({\bf r}_2 s_2) & .\ \ .\ \ .\ \ & \psi_2({\bf
+r}_N s_N) \\ 
+ . &  & . \\ . &  & . \\ 
+ . &  & . \\ 
+ \psi_N({\bf r}_1 s_1)\ \ \psi_N({\bf r}_2 s_2) & .\ \ .\ \
+ .\ \ & \psi_N({\bf r}_N s_N) 
+\end{array} \right|.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1171}%
+$\chi_\alpha(s)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1173}%
+\begin{displaymath}\Psi(r) = \frac{1}{\sqrt{N!}} {\rm det} |\psi_\lambda(r_\mu)|\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1175}%
+\begin{displaymath}\psi_\lambda(r) = \psi_i({\bf r}) \chi_\alpha(s)\\\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1177}%
+\begin{displaymath}\sum_s{\chi^*_\alpha(s)\chi_\beta(s)} = \delta_{\alpha\beta}. \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1179}%
+\begin{displaymath}n({\bf r}) = \sum_{\lambda s}|\psi_\lambda({\bf r},s)|^2.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1183}%
+$E_{\lambda\mu}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1185}%
+\begin{displaymath}\left(- \frac{1}{2}\nabla^2 + V_{eff}(r) - E_\lambda \right)
+\psi_\lambda(r) -
+\sum_{\mu\neq\lambda}E_{\lambda\mu}\psi_\mu(r) = 0.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath535}%
+\begin{displaymath}
+\left\{ -\frac{1}{2}\nabla^2 + V_{e-i}({\bf r}) + V_H({\bf r}) +
+V_\lambda^x({\bf r}) - E_\lambda \right\} \psi_\lambda(r) =
+\sum_{\mu\neq\lambda} E_{\lambda\mu} \psi_\mu(r),
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1189}%
+\begin{displaymath}V_H({\bf r})\psi_\lambda(r) = \frac{\delta E_H}{\delta \psi^*_\lambda} =
+\int \frac{n({\bf r}_1)\psi_\lambda(r)}{|{\bf r} - {\bf r}_1|}d{\bf
+r}_1, \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1191}%
+\begin{displaymath}V_\lambda^x({\bf r}) \psi_\lambda(r) =
+\frac{\delta E_x}{\delta \psi^*_\lambda} = -
+\sum_{\mu s_1} \int \psi^*_\mu(r_1) \psi_\lambda(r_1)
+\frac{1}{|{\bf r}_1 - {\bf r}|} \psi_\mu(r)d{\bf r}_1, \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1193}%
+\begin{displaymath}\sum_s{\int{\psi_\mu^*\psi_\lambda d{\bf r}}} = \delta_{\lambda\mu}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1199}%
+$\psi^*_\lambda(r)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1205}%
+\begin{displaymath}E_{TOT} = \sum_\lambda E_\lambda - E_H - E_x + E_{i-i}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1207}%
+$E_\lambda$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1211}%
+\begin{displaymath}\psi_\lambda({\bf r},s) = \frac{1}{\sqrt{\Omega}}e^{i{\bf k}.{\bf
+r}}\chi_\alpha(s). \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1217}%
+\begin{displaymath}E = \Omega \sum_s \left\{ \frac{3n_s}{10}(6\pi^2n_s)^\frac{2}{3}
+- \frac{3}{2}{\left(\frac{3}{4\pi}\right)}^\frac{1}{3} n_s^\frac{4}{3}
+\right\}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure590}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=theory/diags/tfermi.eps,width=10cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath599}%
+\begin{displaymath}E_{TF}[n(r)] = \int v(r)n(r) dr + \int \frac{3}{10} (3
+\pi^2)^{\frac{2}{3}}n^{\frac{5}{3}}(r)dr + \frac{1}{2} \int
+\frac{n(r)n(r')}{|r - r'|}dr dr'.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1235}%
+\begin{displaymath}\int n(r) dr = N.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1237}%
+$\mu$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1241}%
+$\frac{\partial E}{\partial N}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1251}%
+$\Psi_n$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1269}%
+\begin{displaymath}\begin{array}{rcl}
+E_1 = \langle \Psi_1 | H_1 | \Psi_1 \rangle & < & \langle \Psi_2 | H_1 | \Psi_2 \rangle, \\&=& \langle \Psi_2 | H_2 + V_1 - V_2 | \Psi_2 \rangle, \\&=& E_2 + \langle \Psi_2 | V_1 - V_2 | \Psi_2 \rangle, \\&=& E_2 + \int (V_1 - V_2)n({\bf r})d{\bf r}. \\\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1271}%
+\begin{displaymath}E_2 < E_1  + \int (V_2 - V_1) n({\bf r}) d{\bf r}. \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath645}%
+\begin{displaymath}
+F[n(r)] = \frac{1}{2} \int \frac{n({\bf r}_1) n({\bf
+r}_2)}{|{\bf r}_1 - {\bf r}_2 |} d{\bf r}_1 d{\bf r}_2 + {\rm Kinetic}
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1285}%
+\begin{displaymath}{\rm Kinetic} = \gamma \int n({\bf r})^\frac{5}{3} d{\bf r}\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1287}%
+\begin{displaymath}{\rm Kinetic} = T[n(r)] + E_{xc}[n(r)]\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1305}%
+\begin{displaymath}E_{xc} = \int n({\bf r}) \varepsilon_{xc}(n) d{\bf r}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1307}%
+$\varepsilon_{xc}(n)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1311}%
+$\varepsilon_c$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1313}%
+$\xi$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1317}%
+\begin{displaymath}E_c = \Omega n\varepsilon_c(n,\xi), ~~~ 
+\xi = \frac{(n_\uparrow - n_\downarrow)}{n},~~~
+r_s={\left(\frac{4\pi n}{3}\right)}^\frac{1}{3},\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1321}%
+$\xi=0$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1323}%
+$\xi=1$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath697}%
+\begin{displaymath}
+\varepsilon_c = 
+\begin{cases}
+\gamma \left\{ 1 + \beta_1 \sqrt{r_s} + \beta_2 r_s \right\}^{-1} &r_s \geq 1\\B + (A + Cr_s)\ln(r_s) + Dr_s&r_s < 1
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1327}%
+$\gamma$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1329}%
+$\beta_1$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1331}%
+$\beta_2$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1347}%
+$0 < \xi < 1$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1349}%
+$\alpha n^{s_1}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1351}%
+$\beta n^{s_2}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath755}%
+\begin{displaymath}
+n({\bf r}) = \sum_{\lambda=1,s}^N \delta
+(s_\lambda,s)|\psi_\lambda({\bf r},s)|^2.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath761}%
+\begin{displaymath}T = -\frac{1}{2} \sum_{\lambda,s} \int \psi^*_\lambda \nabla^2
+\psi_\lambda d{\bf r}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath767}%
+\begin{displaymath}E[n] - \sum_\lambda E_\lambda \left\{ \sum_s \int
+\left|\psi_\lambda(r)\right|^2d{\bf r} - 1 \right\}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1393}%
+$\psi_\lambda^*(r)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath770}%
+\begin{displaymath}
+-\frac{1}{2}\nabla^2\psi_\lambda({\bf r}) + \left(v({\bf r}) +
+\int\frac{n({\bf r}')}{|{\bf r} - {\bf r}'|} d{\bf r}' + v_{xc}({\bf
+r}) \right) \psi_\lambda({\bf r}) = E_\lambda\psi_\lambda({\bf r}) 
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1395}%
+\begin{displaymath}v({\bf r}) = - \sum_a \frac{Z_a}{|{\bf r} - {\bf R}_a|}\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1397}%
+\begin{displaymath}v_{xc}({\bf r}) = \frac{\delta E_{xc}[n]}{\delta n({\bf r})}\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1399}%
+$v_{eff}({\bf r})$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure829}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=theory/diags/ni_pseudo.eps,width=8cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1421}%
+$j
+= l \pm 1/2$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1429}%
+$V^\mu(r)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath847}%
+\begin{displaymath}V_l(r) = V^\mu(r)\left(1 - f(\frac{r}{r_{c,l}})\right) + c^\mu_l
+f\left(\frac{r}{r_{c,l}}\right).
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1439}%
+$V_l(r) =
+c^\mu_l$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1443}%
+$c^\mu_l$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1451}%
+$w_{1l}^\nu$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath858}%
+\begin{displaymath}w_{2l}^\nu = \gamma^\nu_l \left\{w_{1l}^\nu(r) + \delta_l^\nu
+r^{l+1}f\left(\frac{r}{r_{cl}}\right)\right\}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1453}%
+$\gamma^\nu_l$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1455}%
+$\delta^\mu_l$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1457}%
+$w_{2l}^\nu$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1463}%
+$j = l \pm \frac{1}{2}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1473}%
+$\times$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1475}%
+$\rm\hat{O}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1483}%
+\begin{displaymath}\psi_i = \sum_\mu c_{\mu i} \phi_\mu.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1485}%
+$c_{\mu i}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1487}%
+$\psi_i$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1489}%
+\begin{displaymath}\sum_{\mu \nu} c^*_{\mu i} c_{\nu j} S_{\mu \nu} = \delta_{ij}\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1491}%
+$\delta_{ij}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1493}%
+$S_{\mu
+\nu}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1495}%
+\begin{displaymath}S_{\mu \nu} = \int \phi_\mu(r) \phi_\nu(r) dr.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath923}%
+\begin{displaymath}\sum_\nu (F_{\mu \nu} - \varepsilon_i S_{\mu \nu}) c_{\nu i} = 0.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1497}%
+$\varepsilon_i$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1499}%
+$F_{\mu \nu}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1501}%
+$H_{\mu \nu}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1503}%
+$P_{\lambda \sigma}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1505}%
+$c_{\mu i}c_{\nu j}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1507}%
+$\langle \mu \nu |
+\lambda \sigma \rangle$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath933}%
+\begin{displaymath}F_{\mu \nu} = H_{\mu \nu} + \sum_{\lambda \sigma} P_{\lambda \sigma}
+\left( \langle \mu\nu|\lambda\sigma\rangle - \frac{1}{2}\langle
+\mu\lambda|\nu\sigma\rangle \right),
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1509}%
+\begin{displaymath}H_{\mu \nu} = \int \phi_\mu(r)H^{\rm core}\phi_\nu(r)dr,\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1511}%
+\begin{displaymath}P_{\lambda\sigma} =2 \sum_i^{\rm occ} c_{\lambda i}^* c_{\sigma i},\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1513}%
+\begin{displaymath}\langle\mu\nu|\lambda\sigma\rangle = \int \int \phi_\mu(r_1)
+\phi_\nu(r_1) \frac{1}{|r_1 - r_2|}\phi_\lambda(r_2) \phi_\sigma(r_2)
+dr_1 dr_2.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1515}%
+\begin{displaymath}\langle\mu\nu|\lambda\sigma\rangle =
+\langle\mu\mu|\lambda\lambda\rangle
+\delta_{\mu\nu}\delta_{\lambda\sigma}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1517}%
+$S_{\mu \nu}, \mu \neq \nu$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1521}%
+\begin{displaymath}H_{\mu \nu} = \int \phi_\mu(1)\left(-\frac{1}{2}\nabla^2 -
+\sum_BV_B\right) \phi_\nu(1) dr_1, ~~~\mu\neq\nu,\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1527}%
+\begin{displaymath}\sum_\nu F_{\mu \nu}c_{\nu i} = \varepsilon_i c_{\mu i},\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1529}%
+\begin{displaymath}F_{\mu \mu} = H_{\mu \mu} - \frac{1}{2} P_{\mu
+\mu}\langle\mu\mu|\mu\mu\rangle +
+\sum_\lambda P_{\lambda\lambda}\langle\mu\mu|\lambda\lambda\rangle,\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1531}%
+$\mu\neq\nu$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1533}%
+\begin{displaymath}F_{\mu\nu} = H_{\mu\nu} - \frac{1}{2}
+P_{\mu\nu}\langle\mu\mu|\nu\nu\rangle.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1535}%
+\begin{displaymath}\phi_\mu\phi_\nu(\mu\neq\nu) \rightarrow \sum_{\mu\nu}^{\rm all~
+\mu\nu} \phi'_\mu \phi'_\nu A_{\mu\nu}, ~~~A_{\mu \nu} {\rm~
+constant}\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1539}%
+$\nu$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1541}%
+$U_{\mu\nu} = 0, \mu \neq \nu$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1543}%
+$U_{\mu\mu}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1545}%
+$\gamma_{AB}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1547}%
+\begin{displaymath}\langle \mu\mu|\lambda\lambda\rangle = \gamma_{AB}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1553}%
+\begin{displaymath}\gamma_{AB} = \int \int s_A^2(r_1)\frac{1}{|r_1 -
+r_2|}s_B^2(r_2)dr_1dr_2.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1557}%
+${\bf V}_B$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1573}%
+\begin{displaymath}V_{AB} = Z_B \int \frac{s^2_A(r)}{|r - R_B|}dr.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1575}%
+$V_{AB} = Z_B\gamma_{AB}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1577}%
+\begin{displaymath}\langle\mu|{\bf V}_B|\nu\rangle = 0, ~~~\mu \neq \nu.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1583}%
+$\beta_{\mu\nu}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1587}%
+\begin{displaymath}H_{\mu\nu} = \beta_{\mu\nu} = \beta_{AB}^0S_{\mu\nu},\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1589}%
+$\beta_{AB}^0$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1595}%
+$\beta_{AB}^0 = \frac{1}{2}(\beta_A^0 + \beta_B^0)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1597}%
+$\beta_A^0$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1601}%
+$U_{\mu\nu}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1611}%
+$\Delta r_{ij}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1613}%
+$\Delta \theta_{jik}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1631}%
+$k_\theta$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1633}%
+$k_{r\theta}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1637}%
+$k_{\theta \theta}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure1063}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=theory/diags/musgrave.eps,width=5cm,angle=270}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1651}%
+$\rm In_{22}P_{22}H_{42}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2286}%
+$\phi_i({\bf r} - {\bf R}_i)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1670}%
+\begin{displaymath}\psi_\lambda({\bf r},s) =
+\chi_\alpha(s)\sum_i{c_i^\lambda\phi_i({\bf r} - {\bf R}_i)},
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2288}%
+$c_i^\lambda$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1675}%
+\begin{displaymath}
+\phi_i({\bf r} - {\bf R}_i) = (x - R_{ix})^{n_1}(y - R_{iy})^{n_2}(z -
+R_{iz})^{n_3}e^{-a_i({\bf r} - {\bf R}_i)^2}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2314}%
+$\sum_i{n_i} = 2$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2332}%
+$\tilde{n}_s$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1728}%
+\begin{displaymath}
+\tilde{n}({\bf r}) = \sum_k{c_kg_k({\bf r})}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2338}%
+$\tilde{n}({\bf r})$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2340}%
+$n({\bf r})$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1738}%
+\begin{displaymath}
+\tilde{E}_H = \int \frac{n({\bf r}_1)\tilde{n}({\bf r}_2)}{|{\bf r}_1
+- {\bf r}_2|} d{\bf r}_1d{\bf r}_2 - \frac{1}{2}\int \frac{\tilde{n}({\bf
+r}_1)\tilde{n}({\bf r}_2)}{|{\bf r}_1 - {\bf r}_2|}d{\bf r}_1d{\bf r}_2.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1760}%
+\begin{displaymath}
+E_H - \tilde{E}_H = \frac{1}{2}\int{\frac{\{n({\bf r}_1) - \tilde{n}({\bf
+r}_1)\}\{n({\bf r}_2) - \tilde{n}({\bf r}_2)\}}{|{\bf r}_1 - {\bf
+r}_2|}d{\bf r}_1d{\bf r}_2}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2352}%
+$\phi_i$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1815}%
+\begin{displaymath}\int{\frac{g_k({\bf r}_1)}{|{\bf r} - {\bf r}_1|}d{\bf r}_1} =
+\frac{3b_k}{2\pi}e^{-b_k({\bf r}-{\bf R}_k)^2},
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1828}%
+\begin{displaymath}\tilde{E}_{xc} = \int \varepsilon_{xc}(\tilde{n}_\uparrow,
+\tilde{n}_\downarrow)\tilde{n} d{\bf r}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2368}%
+$\tilde{n}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2372}%
+${\bf r}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2376}%
+$\tilde{n}_s({\bf r})$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1843}%
+\begin{displaymath}\tilde{n}_s({\bf r}) = \sum_k d_{k,s}h_k({\bf r}),
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1850}%
+\begin{displaymath}\int \left\{ n_s({\bf r}) - \tilde{n}_s({\bf r})\right\}^2 d{\bf r}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2390}%
+$\tilde{E}_{xc}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1881}%
+\begin{displaymath}\tilde{E}_{xc} = \sum_k d_k \int h_k({\bf r}) \varepsilon_{xc}(\tilde{n}) d{\bf r}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2394}%
+$\langle
+\varepsilon_{xc}(\tilde{n})\rangle_k$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2400}%
+$\varepsilon_{xc}(\langle\tilde{n}\rangle_k)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2404}%
+$\varepsilon_{xc}(n) = An^s$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1904}%
+\begin{displaymath}f(s) = \ln\left(\frac{\langle\tilde{n}^s\rangle_k}{\langle\tilde{n}\rangle^s_k}\right),
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1908}%
+\begin{displaymath}f(s) = \frac{1}{2}s(s-1)f(2).
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1913}%
+\begin{displaymath}
+\langle \tilde{n}^2 \rangle_k = \frac{ \sum_{lm}d_ld_m \int h_k h_l h_m d {\bf r}}{I_k}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1934}%
+\begin{displaymath}\tilde{E}_{xc} = \sum_{ks} d_{k,s}\varepsilon_{k,s},
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1968}%
+\begin{displaymath}E = \sum_{ij}\{T_{ij} + V_{ij}^{ps}\}b_{ij} + \tilde{E}_H + \tilde{E}_{xc} + E_{i-i}
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2010}%
+\begin{displaymath}\frac{\partial E}{\partial c_i^\lambda} =
+\frac{\partial \{ \sum_{ij\lambda} c_i^\lambda\{ T_{ij} + V_{ij}^{ps}
+- E_\lambda S_{ij}\} 
+c_j^\lambda + \tilde{E}_H + \tilde{E}_{xc} + E_{i-i} \}}{\partial
+c_i^\lambda} = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2024}%
+\begin{displaymath}
+\sum_j \{T_{ij} + V_{ij}^{ps} + V_{ij}^H + V_{ij,s\lambda}^{xc} - E_\lambda S_{ij}\}c_j^\lambda = 0 
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2034}%
+\begin{displaymath}
+\sum_j (H_{ij} - ES_{ij})c_j = 0 
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2048}%
+\begin{displaymath}\left\{ (U^{-1})^tHU^{-1} - E\right\} d = 0.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2063}%
+\begin{displaymath}e_k = \frac{(1 - w)(c_k - c_k^0)}{w} - \frac{(c^0_{1k} - c_k)}{w_1}.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2464}%
+$\sum_k e_k
+g_k({\bf r})$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2070}%
+\begin{displaymath}\frac{1}{2} \sum_{kl} e_k G_{kl} e_l.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2470}%
+$f_\lambda$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2077}%
+\begin{displaymath}F = E + k_bT \sum_\lambda \{ f_\lambda \ln f_\lambda + (1-f_\lambda) \ln (1 - f_\lambda) 
+\} - \mu \{ \sum_\lambda f_\lambda - M \}, 
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2083}%
+\begin{displaymath}b_{ij,s} = \sum_\lambda \delta(s,s_\lambda)f_\lambda c_i^\lambda c_j^\lambda.
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2087}%
+\begin{displaymath}f_{la} = -\frac{\partial F}{\partial R_{la}}
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2482}%
+$\Delta
+R_{la}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2484}%
+\begin{displaymath}\Delta E = \sum_{ij} b_{i,j} \Delta \left\{ T_{ij} + V_{ij}^{ps}
+\right\} + \sum_{ij} \left\{ T_{ij} + V_{ij}^{ps} \right\} \Delta b_{ij}
++ \Delta \tilde{E}_H + \Delta \tilde{E}_{xc} + \Delta E_{i-i},\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2486}%
+\begin{displaymath}\Delta \tilde{E}_H = \sum_{kl}c_kG_{kl}\Delta c_l + \frac{1}{2}
+\sum_{kl} c_k c_l \Delta G_{kl},\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2488}%
+\begin{displaymath}\Delta \tilde{E}_{xc} = \sum_{k,s} \varepsilon_{k,s}\Delta d_{k,s} +
+\sum_{k,s} d_{k,s}\Delta \varepsilon_{k,s}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2490}%
+$\Delta c_l$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2492}%
+$\Delta d_{l,s}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2494}%
+$\Delta S_{ij}, \Delta
+G_{kl}, \Delta H_{kl}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2496}%
+$\Delta \varepsilon_{k,s}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2500}%
+$\Delta \langle \tilde{n}_s \rangle_k$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2502}%
+$\Delta
+\langle \tilde{n}^2_s \rangle_k$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2510}%
+$\phi_i({\bf r} -
+{\bf R}_a)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2514}%
+$V_a^{ps}({\bf r} - {\bf R}_a)$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2516}%
+$\Delta \phi$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2540}%
+\begin{displaymath}x = \frac{\sum_{la}f'_{la}(f'_{la} - f_{la})}{\sum_{la}f_{la}^2}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2546}%
+$\varepsilon$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2554}%
+$-\varepsilon$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2560}%
+\begin{displaymath}D_{la,mb} = \frac{f_{mb}^+(l,a) - f_{mb}^-(l,a)}{2 \varepsilon}.\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2566}%
+$\eta$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath2570}%
+\begin{displaymath}I = \frac{2 \pi^2 \rho}{ncM}\eta^2\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2576}%
+$\rho$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2592}%
+$\rm
+In_{31}P_{40}H_{60}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{chapter}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3016}%
+$\rm V_{In}H_4$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3020}%
+$\rm V_{In}H_n,
+n=1,3$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3022}%
+$\rm Fe_{In}^{3+}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3024}%
+$\rm Fe_{In}^{2+}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3038}%
+$\rm VH_4$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3046}%
+$\rm V_{In}H$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3052}%
+$\rm
+V_{In}H_n, n = 0,4$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3054}%
+$\approx$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3070}%
+$\rm
+In_{30}P_{40}H_{64}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3072}%
+$\rm V_{In}H_4^+$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3074}%
+$\rm BeIn_{21}P_{22}H_{43}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2681}%
+\begin{figure}\begin{center}
+\begin{minipage}{7.7cm}
+\begin{center}
+\vspace{-1cm}\ 
+\psfig {figure=inp/vhn.clus.ps,width=7.7cm}
+ \\\vspace{-1cm} a.
+\end{center}
+\end{minipage} \hspace{-1.2cm} 
+\begin{minipage}{7.7cm}
+\begin{center}
+\vspace{-1cm}\ 
+\psfig {figure=inp/be.clus.ps,width=7.7cm}
+ \\\vspace{-1cm} b.
+\end{center}
+\end{minipage} \hspace{-0.5cm}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3084}%
+$\rm
+V_{In}H_3$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3086}%
+$\rm V_{In}H_2^-$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3088}%
+$\rm V_{In}H^{2-}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3090}%
+$\rm
+V_{In}^{3-}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3126}%
+$\Gamma$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3128}%
+$\pm$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3142}%
+$\frac{1}{2}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3160}%
+$\circ$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3162}%
+$\triangle$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2771}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=inp/phonon.eps,width=15cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3182}%
+$\rm V_{In}H_n, n=4,0$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2797}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=inp/all.eps,width=14cm,angle=270}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2805}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=inp/levels.eps,width=12cm}
+
+\vspace{-1cm}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3202}%
+$\rm V_{In}H_2$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3206}%
+$\rm
+V_{In}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3260}%
+$\rm V_{In}D_4^+$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3276}%
+$\rm V_{In}H_nD_m^+, n+m=4$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3290}%
+$\rm V_{In}D_3$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3296}%
+$\rm V_{In}D_2^-$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3302}%
+$\rm V_{In}D^{2-}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3324}%
+$\rm Fe^{2+}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3338}%
+$\rm Fe^{3+}_{In}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure2917}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=inp/be.eps,width=6cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3779}%
+$\alpha$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3813}%
+$ \rightarrow $%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3925}%
+$\rm_n$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure3501}%
+\begin{figure}\begin{center}\vspace{-3cm}
+\ 
+\psfig {figure=oxygen/vacancy/diags/ov.eps,width=10cm}
+
+\vspace{-2.5cm}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure3532}%
+\begin{figure}\begin{center} \vspace{-3cm}
+\ 
+\psfig {figure=oxygen/vacancy/diags/o2v.eps,width=12cm}
+
+\vspace{-2.5cm}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure3589}%
+\begin{figure}\begin{center}\vspace{-4.0cm}
+\ 
+\psfig {figure=oxygen/vacancy/diags/ov2.eps,width=13cm}
+
+\vspace{-3.5cm}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure3642}%
+\begin{figure}\begin{center}\vspace{-4cm}
+\ 
+\psfig {figure=oxygen/vacancy/diags/o3v.eps,width=13cm}
+
+\vspace{-4.5cm}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure3658}%
+\begin{figure}\begin{center} \vspace{-4.5cm}
+\ 
+\psfig {figure=oxygen/vacancy/diags/o2v.pre.eps,width=14cm}
+
+\vspace{-5cm}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4477}%
+\begin{displaymath}\rm VO +O_{2i} \rightleftharpoons V + O_i + O_{2i} \rightarrow VO_2
++ O_i \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5206}%
+$\rm
+\alpha_{MAX}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath5210}%
+\begin{displaymath}D = 0.13 e^{-2.53{\rm eV} / k_BT} ~ \rm cm^2 s^{-1} \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5268}%
+$1.5\times10^{15}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5280}%
+$\leq$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5286}%
+$\rm E_b = 0.3 \pm
+0.05$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5292}%
+$1.5\times10^{14}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5348}%
+$\rm VO_2 + Si_i
+\rightarrow O_{2i}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5366}%
+$\rm Si_{79}H_{68}O_2$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5368}%
+$\rm Si_{57}H_{56}O_n, n=1,2$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4712}%
+\begin{displaymath}{\bf R_i} = {\bf B_i - A_i},  i = 1,3N
+\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5400}%
+${\bf R_i}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure4719}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/dimer/diags/oi.eps,width=6cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure4746}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/dimer/diags/inter.eps,width=9cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure4780}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/oi.modes.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure4793}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/dimer.eps,width=11cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5542}%
+$\delta+$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5544}%
+$^{\delta+}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5546}%
+$^{\delta-}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5576}%
+$\rightarrow ^{18}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure4863}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/modes.eps,width=11cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure4871}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/hexring.eps,width=6cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure4893}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/symm.eps,width=11cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure4907}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/split.eps,width=11cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure4920}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/saddle.eps,width=11cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath5678}%
+\begin{displaymath}\rm [O_{2i}] = \rm 8 \pi r_c D_{O_i} [O_i]^2 t \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath5680}%
+\begin{displaymath}\rm D_{O_i}  = \rm 0.13 e^{-2.53 /kT} \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5682}%
+$\rm [O_i] = 10^{18} cm^{-3}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5684}%
+$\rm
+r_c$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath5688}%
+\begin{displaymath}\rm [O_{2i}]_{equilibrium} = \frac{[O_i]^2}{N}e^{B/kT}\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5790}%
+$\rm [O_i]=10^{18}
+cm^{-3}, r_c=4~$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5792}%
+$\rm, D_{O_i} = 0.13 e^{-2.53/kT}, [O_{2i}] = 8 \pi r_c
+D_{O_i} [O_i]^2 t$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5718}%
+$\times10^{10}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5720}%
+$\times10^{16}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5722}%
+$\times10^{13}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5724}%
+$\times10^{11}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5728}%
+$\times10^{14}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5730}%
+$\times10^{12}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5762}%
+$\times10^{15}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5802}%
+$x=\sqrt{\rm Dt}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5812}%
+$\rm D= 0.13 e^{-2.53 / kT}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure5020}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=/u3/ewels/documents/thesis/oxygen/overview/hoprate.eps,width=12cm,angle=270}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure5047}%
+\begin{figure}\ \hspace{2cm} 
+\psfig {file=oxygen/dimer/hallberg.eps,width=14cm}
+\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5884}%
+$\rm VO \rightarrow VO_2$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath5920}%
+\begin{displaymath}\rm VO + O_i
+\rightarrow VO_2\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5926}%
+$\rm O_{2i} + O_i \rightarrow
+O_{3i}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure5079}%
+\begin{figure}\ \hspace{0.5cm}
+\psfig {file=oxygen/dimer/Pretreatment.eps,width=16cm}
+\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5954}%
+$\rm Si_{71}H_{60}O_3$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure5096}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/o3/manx.eps,width=7cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure5103}%
+\begin{figure}\begin{center} 
+\ 
+\psfig {figure=oxygen/dimer/diags/o3/linear.eps,width=11cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure6067}%
+\begin{figure}\begin{center}
+\vspace{-2cm}
+\ 
+\psfig {figure=oxygen/nitrogen/diags/fig.n2.ps,width=8cm}
+
+\vspace{-3cm}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6515}%
+$\approx 700^\circ$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6583}%
+$\times 10^{19}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure6118}%
+\begin{figure}\begin{center}
+\hspace{-3cm}\ 
+\psfig {figure=oxygen/nitrogen/frank_fig.eps,width=13cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure6151}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/nitrogen/diags/humble.eps,width=8cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure6165}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/nitrogen/diags/NNO.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure6275}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/nitrogen/diags/NO.0.big.eps,width=12cm}
+ 
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure6282}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/nitrogen/diags/NO.comb.eps,width=10cm,angle=270}
+ 
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure6289}%
+\begin{figure}\begin{center}
+~\hspace{4cm}~
+\psfig {figure=oxygen/nitrogen/diags/NO.wfn.eps,width=12cm}
+ 
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure6378}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/nitrogen/diags/NNOO.eps,width=10cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7033}%
+\begin{displaymath}\frac{[N_2] [O_i]} { N_s} e^{(1.2eV/kT)}, \end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7606}%
+$1s \rightarrow 2p_\pm$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7620}%
+$S=\frac{1}{2}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure7183}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/no2.+1.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure7191}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/levs.NO2.eps,width=10cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7684}%
+$\approx 170^\circ$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7686}%
+$\approx 120^\circ$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure7214}%
+\begin{figure}\begin{flushright}
+\ 
+\psfig {figure=oxygen/stds/no2.wfn.eps,width=12cm}
+
+\end{flushright}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure7269}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/von.eps,width=8cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure7286}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/non.eps,width=8cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7870}%
+$1.4 \times 10^{15}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7874}%
+$9 \times 10^{15}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure7365}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/CHO2.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure7386}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/CHO2.alt.eps,width=12cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8118}%
+$\rm C_s + Si_i
+\rightarrow C_s$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure7483}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/CHO4.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure7491}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/cho4.switch.eps,width=10cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure7498}%
+\begin{figure}\begin{center}
+\ 
+\psfig {figure=oxygen/stds/diags/levs.CHO4.eps,width=10cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9097}%
+$n, n \geq 3$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9207}%
+$\leq 8 \times 10^{17}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure8486}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/bgrnd/disquare.eps,width=10cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8500}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/bgrnd/OSB.eps,width=12cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8512}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/bgrnd/deak.eps,width=10cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9311}%
+$\pi^*$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure8540}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/core.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8554}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/levels.4O.eps,width=8cm}
+
+\end{center}
+\vspace{-1.8cm}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8564}%
+\begin{figure}\begin{center}
+\begin{minipage}{7cm}
+\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/wfn110.eps,width=7cm}
+\\ (a)
+\end{center}
+\end{minipage}
+\begin{minipage}{7cm}
+\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/wfn1-10.eps,width=7cm}
+\\ (b)
+\end{center}
+\end{minipage}
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8621}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/front.eps,width=12cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8628}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/top.eps,width=12cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8635}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/modes.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9491}%
+$T \sim 200^\circ$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9531}%
+$n \geq 3$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8672}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/levels.all.eps,width=12cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9579}%
+$_n, n \geq
+3$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8691}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/O5/td.small.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9643}%
+$\rm
+Si_{98}H_{78}O_4$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8776}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/O4alt/coresymm.eps,width=12cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure8854}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/O3/O3.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{figure8891}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/O3/O3.2.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{figure8928}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/levels.Al.eps,width=8cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure8935}%
+\begin{figure}\begin{center}
+\ 
+\psfig {file=oxygen/thermal/diags/Al/Al.eps,width=14cm}
+
+\end{center}\end{figure}%
+\lthtmlfigureZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath9833}%
+\begin{displaymath}\rm C_s + Si_i \rightarrow C_i\end{displaymath}%
+\lthtmldisplayZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{chapter}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline10324}%
+$\sim
+10^{13}$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline10350}%
+$n \geq 4$%
+\lthtmlinlinemathZ
+\hfill\lthtmlcheckvsize\clearpage}
+
+
+\end{document}

@@ -1,0 +1,137 @@
+<html>
+
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>Square de la Science 2009, Institut des Materiaux Jean Rouxel, CNRS UMR6502, Nantes</title>
+<!-- #EndEditable -->
+<META NAME="Author" CONTENT="Chris Ewels">
+<META NAME="Classification" CONTENT="Academic: Index">
+<link rel="stylesheet" href="../site.css" type="text/css">
+
+<script language="JavaScript">
+<!--
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+
+  if (restore) selObj.selectedIndex=0;
+
+}
+
+
+function MM_goToURL() { //v3.0
+
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+
+}
+
+function MM_checkBrowser(NSvers,NSpass,NSnoPass,IEvers,IEpass,IEnoPass,OBpass,URL,altURL) { //v4.0
+  var newURL='', verStr=navigator.appVersion, app=navigator.appName, version = parseFloat(verStr);
+  if (app.indexOf('Netscape') != -1) {
+    if (version >= NSvers) {if (NSpass>0) newURL=(NSpass==1)?URL:altURL;}
+    else {if (NSnoPass>0) newURL=(NSnoPass==1)?URL:altURL;}
+  } else if (app.indexOf('Microsoft') != -1) {
+    if (version >= IEvers || verStr.indexOf(IEvers) != -1)
+     {if (IEpass>0) newURL=(IEpass==1)?URL:altURL;}
+    else {if (IEnoPass>0) newURL=(IEnoPass==1)?URL:altURL;}
+  } else if (OBpass>0) newURL=(OBpass==1)?URL:altURL;
+  if (newURL) { window.location=unescape(newURL); document.MM_returnValue=false; }
+}
+    function CheckMore() {
+      if (document.ucc.To.options.selectedIndex == -1) {
+        document.ucc.To.options.selectedIndex = 0; }
+      if (document.ucc.From.options.selectedIndex == -1) {
+        document.ucc.From.options.selectedIndex = 0; }
+
+      var txt = document.ucc.From.options[document.ucc.From.options.selectedIndex].text;
+      if (txt.indexOf("Click for every world currency") != -1) {
+        document.location.href = 'http://www.xe.com/ucc/full.shtml'; }
+      var txt = document.ucc.To.options[document.ucc.To.options.selectedIndex].text;
+      if (txt.indexOf("Click for every world currency") != -1) {
+        document.location.href = 'http://www.xe.com/ucc/full.shtml'; }
+    }
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+//-->
+
+</script>
+
+</head>
+
+<body bgcolor="#000000">
+<table width=100% border="1" bordercolor="#FF6600" cellpadding="4" cellspacing="1">
+<tr valign="top">
+<td valign="top" bgcolor="#9999FF" colspan="2">
+ <table width=100%>
+ <tr>
+  <td align="left">
+<img src="../logos.png" height=100>
+	</td>
+  <td align="center">
+  <h1>
+	<!-- #BeginEditable "titletext" -->
+	Title text here 
+	<!-- #EndEditable "titletext" -->
+	</h1>
+ </td><td align="right">
+ <select name="mymenu" onChange="MM_jumpMenu('parent',this,1)">
+			  <option>Choisis une thème...</option>
+				<option></option>
+			  <option value="../Diamant/index.html">Le couleur dans le diamant</option>
+              <option value="../Carotenoid/index.html">Carotenoids : Quand un "plastique" colore la vie</option>			  
+              <option value="../1%20-%20Saphir/index.html">Un saphir qui nous en fait voir de toutes les couleurs</option>			  
+              <option value="../2%20-%20luminophores/index.html">La télévision couleur, c'est lumineux ! </option>			  			  
+              <option value="../3%20-%20Piezo-chrome%20et%20thermo-chrome/index.html">Des pigments caméléons</option>			  			  				<option></option>	  			  
+				<option></option>
+				<option></option>
+			  <option value="../C60/index.html">Le fullerène : C60 </option>
+              <option value="../CNT/index.html">Les nanotubes de Carbone</option>
+<!--              <option value="../4/index.html">Comment plier un nanotube de carbone</option>-->
+			  <option value="../DNA/index.html">La molécule d'ADN</option>
+              <option value="../Cellulose/index.html">La cellulose, une plastique naturelle</option>			  
+              <option value="../Batterie/index.html">Les batteries au lithium</option>
+              <option value="../MicroOnde/index.html">La danse des atomes au rythme des microondes</option>
+            </select>
+	</td>
+ </tr>
+ </table>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" bgcolor="#FFFFCC">
+<font color="#000066">
+	<!-- #BeginEditable "text" -->
+Cette molecule prendre le forme d'une ballon de foot.
+<p>
+Echelle nanometrique, ils sont tres forte, et utile pour le nouveau nanotechnologie.<br>
+Ils sont une million fois plus petite d'un chevaux, et consiste de 60 atomes de carbone.<p>
+L'image AFM ici montre les molecules C60 (points blanche) sur une surface de mica.</p>
+	<!-- #EndEditable -->
+</font>	
+</td>
+<td rowspan="2" width=60%>
+	<!-- #BeginEditable "jmol" -->
+Put jmol in here.
+	<!-- #EndEditable -->
+</td>
+</tr>
+<tr valign="middle"  align="center">
+<td>
+<center>
+<font color="#FFFF00">
+	<!-- #BeginEditable "afm" -->
+<img src="../C60/c60.afm.mica.jpg" alt="c60 on mica" width="338" height="338">
+	<!-- #EndEditable -->
+	</font></center>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Hartree-Fock Theory</TITLE>
+<META NAME="description" CONTENT="Hartree-Fock Theory">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html545"
+ HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html542"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html536"
+ HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html544"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html546"
+ HREF="node12.html">Discussion</A>
+<B> Up:</B> <A NAME="tex2html543"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html537"
+ HREF="node10.html">The Hartree Equations</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION00920000000000000000">
+Hartree-Fock Theory</A>
+</H1>
+<P>
+The lack of exchange in Hartree theory is overcome using Hartree-Fock
+theory, where the many body electronic wavefunction is rewritten
+[<A
+ HREF="node149.html#slater_30">14</A>].  Instead of using a simple product wavefunction,
+(Equation&nbsp;<A HREF="#eq:hart">2.1.5</A> above), a Slater determinant is used,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="621" HEIGHT="143"
+ SRC="img20.gif"
+ ALT="\begin{displaymath}
+\Psi({\bf r}_1 s_1, {\bf r}_2 s_2, \ldots ,{\bf r}_N s_N)
+=\...
+ ...\ \ .\ \
+ .\ \ & \psi_N({\bf r}_N s_N) \end{array} \right\vert.\end{displaymath}"></P>
+<P>
+Incorporating electron spin through a spin function, <IMG WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$\chi_\alpha(s)$">,this can be rewritten as
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="192" HEIGHT="48"
+ SRC="img22.gif"
+ ALT="\begin{displaymath}
+\Psi(r) = \frac{1}{\sqrt{N!}} {\rm det} \vert\psi_\lambda(r_\mu)\vert\end{displaymath}"></P>
+
+<P ALIGN="CENTER"><IMG WIDTH="154" HEIGHT="31"
+ SRC="img23.gif"
+ ALT="\begin{displaymath}
+\psi_\lambda(r) = \psi_i({\bf r}) \chi_\alpha(s)\\ \end{displaymath}"></P>
+
+<P ALIGN="CENTER"><IMG WIDTH="173" HEIGHT="50"
+ SRC="img24.gif"
+ ALT="\begin{displaymath}
+\sum_s{\chi^*_\alpha(s)\chi_\beta(s)} = \delta_{\alpha\beta}. \end{displaymath}"></P>
+<P>
+We can define the electron density in terms of these orbitals,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="174" HEIGHT="51"
+ SRC="img25.gif"
+ ALT="\begin{displaymath}
+n({\bf r}) = \sum_{\lambda s}\vert\psi_\lambda({\bf r},s)\vert^2.\end{displaymath}"></P>
+<P>
+In order to find the ground state it is necessary to minimise the
+energy while keeping the orbitals, <IMG WIDTH="23" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\psi_\lambda$">, orthonormal.  This
+is done by applying the variational principle, adding Lagrange
+multipliers, <IMG WIDTH="33" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.gif"
+ ALT="$E_{\lambda\mu}$"> to Equation&nbsp;<A HREF="#eq:hartree">2.1.7</A>,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="418" HEIGHT="60"
+ SRC="img27.gif"
+ ALT="\begin{displaymath}
+\left(- \frac{1}{2}\nabla^2 + V_{eff}(r) - E_\lambda \right)...
+ ...lambda(r) -
+\sum_{\mu\neq\lambda}E_{\lambda\mu}\psi_\mu(r) = 0.\end{displaymath}"></P>
+<P>
+These set of equations are known as the <I>Hartree-Fock equations</I>.
+Writing them more completely, for a given orbital, <IMG WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\lambda$">,<P><A NAME="eq:hartree_fock">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="eq:hartree_fock">&#160;</A><IMG WIDTH="526" HEIGHT="60"
+ SRC="img28.gif"
+ ALT="\begin{displaymath}
+\left\{ -\frac{1}{2}\nabla^2 + V_{e-i}({\bf r}) + V_H({\bf r...
+ ..._\lambda(r) =
+\sum_{\mu\neq\lambda} E_{\lambda\mu} \psi_\mu(r),\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(4)</TD></TR>
+</TABLE>
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="323" HEIGHT="50"
+ SRC="img29.gif"
+ ALT="\begin{displaymath}
+V_H({\bf r})\psi_\lambda(r) = \frac{\delta E_H}{\delta \psi^...
+ ...}_1)\psi_\lambda(r)}{\vert{\bf r} - {\bf r}_1\vert}d{\bf
+r}_1, \end{displaymath}"></P>
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="487" HEIGHT="57"
+ SRC="img30.gif"
+ ALT="\begin{displaymath}
+V_\lambda^x({\bf r}) \psi_\lambda(r) =
+\frac{\delta E_x}{\de...
+ ...\frac{1}{\vert{\bf r}_1 - {\bf r}\vert} \psi_\mu(r)d{\bf r}_1, \end{displaymath}"></P>
+<P>
+with the orthonormality constraint
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="167" HEIGHT="55"
+ SRC="img31.gif"
+ ALT="\begin{displaymath}
+\sum_s{\int{\psi_\mu^*\psi_\lambda d{\bf r}}} = \delta_{\lambda\mu}.\end{displaymath}"></P>
+<P>
+Diagonalising <IMG WIDTH="33" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.gif"
+ ALT="$E_{\lambda\mu}$"> removes the Lagrange multiplier term on
+the right hand side, and the equation can then be solved
+self-consistently.  To find the total energy, <I>E</I><SUB><I>TOT</I></SUB>,
+Equation&nbsp;<A HREF="node11.html#eq:hartree_fock">2.2.10</A> is multiplied by <IMG WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.gif"
+ ALT="$\psi^*_\lambda(r)$">,integrated over <B>r</B> and summed over <I>s</I> and <IMG WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\lambda$"> to give
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="279" HEIGHT="51"
+ SRC="img33.gif"
+ ALT="\begin{displaymath}
+E_{TOT} = \sum_\lambda E_\lambda - E_H - E_x + E_{i-i}.\end{displaymath}"></P>
+<P><IMG WIDTH="25" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$E_\lambda$"> is the ionisation energy for the <IMG WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\lambda$"> electron
+excluding any redistribution in the remaining orbitals once an
+electron is removed.
+<P>
+The orbitals are normally expanded in terms of plane waves, and for a
+homogeneous electron gas the exact plane wave solution is given by
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="200" HEIGHT="48"
+ SRC="img35.gif"
+ ALT="\begin{displaymath}
+\psi_\lambda({\bf r},s) = \frac{1}{\sqrt{\Omega}}e^{i{\bf k}.{\bf
+r}}\chi_\alpha(s). \end{displaymath}"></P>
+<P>
+In the spin polarised case these are split into the spin `up' and spin
+`down' populations, each with its own Fermi wavevector; the total
+energy is a sum of these two populations (<I>n</I><SUB><I>s</I></SUB> is the electron
+density of spin state <I>s</I>).  For the homogeneous electron gas this
+is given by
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="349" HEIGHT="63"
+ SRC="img36.gif"
+ ALT="\begin{displaymath}
+E = \Omega \sum_s \left\{ \frac{3n_s}{10}(6\pi^2n_s)^\frac{2...
+ ...ft(\frac{3}{4\pi}\right)}^\frac{1}{3} n_s^\frac{4}{3}
+\right\}.\end{displaymath}"></P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html547"
+ HREF="node12.html#SECTION00921000000000000000">
+Discussion</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html545"
+ HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html542"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html536"
+ HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html544"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html546"
+ HREF="node12.html">Discussion</A>
+<B> Up:</B> <A NAME="tex2html543"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html537"
+ HREF="node10.html">The Hartree Equations</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

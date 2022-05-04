@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Structural Optimisation</TITLE>
+<META NAME="description" CONTENT="Structural Optimisation">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node37.html">
+<LINK REL="previous" HREF="node35.html">
+<LINK REL="up" HREF="node26.html">
+<LINK REL="next" HREF="node37.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html836"
+ HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html833"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html827"
+ HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html835"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html837"
+ HREF="node37.html">Calculation of Vibrational Modes</A>
+<B> Up:</B> <A NAME="tex2html834"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html828"
+ HREF="node35.html">Evaluation of Forces</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION001050000000000000000">
+Structural Optimisation</A>
+</H1>
+<P>
+Once the forces are known it is possible to move the atoms until the
+structure lies in a system energy minimum.  AIMPRO uses a <I>
+conjugate gradient</I> method [<A
+ HREF="node149.html#press_87">40</A>], usually considerably more
+efficient than alternatives such as `steepest descent'.
+<P>
+If an atom <I>a</I> has forces <I>f</I><SUB><I>la</I></SUB>' acting on it in direction <I>l</I>, the
+atoms are then moved along a conjugate direction <I>d</I><SUB><I>la</I></SUB>' so that
+they are now located at
+<P>
+<P ALIGN="CENTER">
+<I>R</I>'<SUB><I>la</I></SUB> = <I>R</I><SUB><I>la</I></SUB> + <I>wd</I>'<SUB><I>la</I></SUB>,
+</P>
+<P>
+where <I>w</I> is chosen using quadratic or cubic interpolation
+in order to minimise the free energy.  The directions <I>d</I>'<SUB><I>la</I></SUB> are
+chosen using
+<P>
+<P ALIGN="CENTER">
+<I>d</I>'<SUB><I>la</I></SUB> = <I>f</I>'<SUB><I>la</I></SUB> - <I>xd</I><SUB><I>la</I></SUB>,
+</P>
+<P>
+where <I>d</I><SUB><I>la</I></SUB> was the previous search direction with a
+force of <I>f</I><SUB><I>la</I></SUB>, and <I>x</I>, initially zero, is set to
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="181" HEIGHT="51"
+ SRC="img186.gif"
+ ALT="\begin{displaymath}
+x = \frac{\sum_{la}f'_{la}(f'_{la} - f_{la})}{\sum_{la}f_{la}^2}.\end{displaymath}"></P>
+<P>
+This method is an efficient way of finding a system minimum, however
+it cannot guarantee finding the global system minimum.  Schemes such
+as genetic algorithms are better for this, but are computationally too
+expensive for general use.  The best way to ensure the result is
+really a global minimum appears to be attempting several relaxations
+from different starting structures.
+<P>
+It is also possible to perform constrained relaxations, for example to
+find saddle points for defect migration.  This is discussed further in
+Section&nbsp;<A HREF="node75.html#sec:diffusion">6.2.1</A>.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html836"
+ HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html833"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html827"
+ HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html835"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html837"
+ HREF="node37.html">Calculation of Vibrational Modes</A>
+<B> Up:</B> <A NAME="tex2html834"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html828"
+ HREF="node35.html">Evaluation of Forces</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Constraining Bond Lengths</TITLE>
+<META NAME="description" CONTENT="Constraining Bond Lengths">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node75.html">
+<LINK REL="up" HREF="node74.html">
+<LINK REL="next" HREF="node77.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1315"
+ HREF="node77.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html1312"
+ HREF="node74.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html1308"
+ HREF="node75.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html1314"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1316"
+ HREF="node77.html">Interstitial oxygen</A>
+<B> Up:</B> <A NAME="tex2html1313"
+ HREF="node74.html">Method</A>
+<B> Previous:</B> <A NAME="tex2html1309"
+ HREF="node75.html">Orthogonality Constraints</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001322000000000000000">
+Constraining Bond Lengths</A>
+</H2>
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="fig:o_i">&#160;</A><A NAME="4723">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Figure 6.1:</STRONG>
+Schematic of interstitial oxygen in silicon. For explanation
+of the labelling, see text.</CAPTION>
+<TR><TD><IMG WIDTH="270" HEIGHT="156"
+ SRC="img249.gif"
+ ALT="\begin{figure}
+\begin{center}
+\ 
+\psfig {figure=oxygen/dimer/diags/oi.eps,width=6cm}
+\end{center}\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<P>
+Suppose that an atom <I>A</I> is hopping from one site to another, during
+which one bond <I>A</I>-<I>B</I> is broken and the bond <I>A</I>-<I>C</I> is created (see
+Figure&nbsp;<A HREF="node76.html#fig:o_i">6.1</A>).  Then a constraint is introduced on the
+relative bond lengths, <I>r</I><SUB><I>A</I>-<I>B</I></SUB> and <I>r</I><SUB><I>A</I>-<I>C</I></SUB>, and the cluster
+relaxed maintaining this constraint.  The actual constraint used is
+<P><P ALIGN="CENTER">
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP>
+<I>c<SUB>1</SUB></I> = <I>r</I><SUB><I>A</I>-<I>B</I></SUB><SUP>2</SUP>-<I>r</I><SUB><I>A</I>-<I>C</I></SUB><SUP>2</SUP>
+<P></TD>
+<TD ALIGN="CENTER">(44)</TD></TR>
+</TABLE></P>
+<P>
+Now <I>c<SUB>1</SUB></I> is clearly negative in the configuration where the bond
+<I>A</I>-<I>B</I> is short and positive in the configuration where the bond <I>A</I>-<I>C</I>
+has been formed.
+<P>
+The saddle point usually, but not always, corresponds to a value of
+<I>c<SUB>1</SUB></I> around zero where the <I>A</I>-<I>B</I> and <I>A</I>-<I>C</I> bond lengths are equal.
+For interstitial O motion, a constraint is selected so that <I>A</I>,&nbsp;<I>B</I>
+and <I>C</I> correspond to the O atom and the two Si atoms which swap bonds
+with O.  However, the imposition of one constraint is insufficient
+[<A
+ HREF="node149.html#jones_92c">128</A>].  During the hop, the O atom initially bonded to the Si
+atoms <I>D</I> and <I>B</I>, becomes bonded to <I>D</I> and <I>C</I>.  However at the same
+time the Si atom <I>D</I> also breaks a bond with <I>C</I> and makes a bond with
+<I>B</I>.  To deal with this a second constraint is required. Here,
+<P><P ALIGN="CENTER">
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP>
+<I>c<SUB>2</SUB></I> = <I>r</I><SUB><I>D</I>-<I>B</I></SUB><SUP>2</SUP>-<I>r</I><SUB><I>D</I>-<I>C</I></SUB><SUP>2</SUP>.
+<P></TD>
+<TD ALIGN="CENTER">(45)</TD></TR>
+</TABLE></P>
+<P>
+In the initial configuration <I>c<SUB>1</SUB></I>, <I>c<SUB>2</SUB></I> are both negative but become
+positive after the hop.  The cluster is relaxed using a conjugate
+gradient algorithm subject to these constraints for a range of values
+of <I>c</I><SUB><I>i</I></SUB>.  The saddle point can then be directly found by
+interpolation on the resultant 2D energy surface.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1315"
+ HREF="node77.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html1312"
+ HREF="node74.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html1308"
+ HREF="node75.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html1314"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1316"
+ HREF="node77.html">Interstitial oxygen</A>
+<B> Up:</B> <A NAME="tex2html1313"
+ HREF="node74.html">Method</A>
+<B> Previous:</B> <A NAME="tex2html1309"
+ HREF="node75.html">Orthogonality Constraints</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

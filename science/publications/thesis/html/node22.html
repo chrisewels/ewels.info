@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Semi-Empirical Hartree Fock</TITLE>
+<META NAME="description" CONTENT="Semi-Empirical Hartree Fock">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node24.html">
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="up" HREF="node21.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html664"
+ HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html661"
+ HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html655"
+ HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html663"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html665"
+ HREF="node23.html">CNDO</A>
+<B> Up:</B> <A NAME="tex2html662"
+ HREF="node21.html">Other theoretical approaches</A>
+<B> Previous:</B> <A NAME="tex2html656"
+ HREF="node21.html">Other theoretical approaches</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION00981000000000000000">
+Semi-Empirical Hartree Fock</A>
+</H2>
+<P>
+Hartree-Fock theory as it stands is too time consuming for use in
+large systems such as point defect complexes in Si.
+<P>
+However it can be used in a parameterised form, and this is the basis
+of many of the semi-empirical codes such as <I>CNDO</I> and <I>
+MINDO/3</I>.  CNDO and related schemes have been used to great effect by
+Snyder, Corbett and De&#225;k [<A
+ HREF="node149.html#snyder_84">28</A>] in their work on the
+behaviour of interstitial oxygen and thermal donors in silicon.  By
+parameterising the overlap matrix to varying degrees, the calculation
+speed is vastly increased, allowing 130 atom clusters to be routinely
+optimised on desktop PCs.  I will describe in the following section
+the basis for early parameterisations of CNDO [<A
+ HREF="node149.html#pople_86">32</A>].  A lot of
+information is removed from the calculation when the overlap between
+orbitals of different atoms is neglected, which in theory could
+destroy any chance of realistic simulations.  However much of the
+information removed in the simplifications is brought back into the
+calculations through the parameterisation of experimental data.
+<P>
+The first step in such methods is to expand the one-electron
+wavefunctions as a set of atomic orbitals; this is known as the <I>
+tight binding</I> method, or sometimes <I>LCAO</I> (Linear Combination of
+Atomic Orbitals),
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="119" HEIGHT="53"
+ SRC="img84.gif"
+ ALT="\begin{displaymath}
+\psi_i = \sum_\mu c_{\mu i} \phi_\mu.\end{displaymath}"></P>
+<P>
+This reduces the problem to the determination of the linear expansion
+coefficients, <IMG WIDTH="24" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img85.gif"
+ ALT="$c_{\mu i}$">.  Different ranges of atomic orbitals can be
+used depending on the accuracy required; commonly these are either
+Minimal (all atomic orbitals up to and including the valence shell),
+Extended (Minimal with a few more), or Valence (only the orbitals in
+the valence shell of the atom).  Despite being the least accurate, the
+valence basis set is commonly employed for very large systems due to
+its speed and is used in CNDO.
+<P>
+Since <IMG WIDTH="20" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img86.gif"
+ ALT="$\psi_i$"> are orthogonal, it follows that
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="145" HEIGHT="53"
+ SRC="img87.gif"
+ ALT="\begin{displaymath}
+\sum_{\mu \nu} c^*_{\mu i} c_{\nu j} S_{\mu \nu} = \delta_{ij}\end{displaymath}"></P>
+<P>
+where <IMG WIDTH="22" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$\delta_{ij}$"> is the Kronecker delta and <IMG WIDTH="31" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.gif"
+ ALT="$S_{\mu
+\nu}$"> is the overlap between atomic orbitals,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="182" HEIGHT="47"
+ SRC="img90.gif"
+ ALT="\begin{displaymath}
+S_{\mu \nu} = \int \phi_\mu(r) \phi_\nu(r) dr.\end{displaymath}"></P>
+<P>
+This means that the Hartree Fock equations can be rewritten as the
+<I>Roothaan equations</I>, a set of algebraic expressions
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="195" HEIGHT="50"
+ SRC="img91.gif"
+ ALT="\begin{displaymath}
+\sum_\nu (F_{\mu \nu} - \varepsilon_i S_{\mu \nu}) c_{\nu i} = 0.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(15)</TD></TR>
+</TABLE>
+<P><IMG WIDTH="17" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.gif"
+ ALT="$\varepsilon_i$"> is the one-electron energy.  <IMG WIDTH="31" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.gif"
+ ALT="$F_{\mu \nu}$"> is the `Fock
+matrix' and consists of two sets of matrix elements, the core
+Hamiltonian elements, <IMG WIDTH="34" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.gif"
+ ALT="$H_{\mu \nu}$"> and those due to interactions
+between the different orbitals.  These are expressed in terms of a
+`density matrix', <IMG WIDTH="31" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.gif"
+ ALT="$P_{\lambda \sigma}$"> which is a matrix of the
+orbital coefficients <IMG WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.gif"
+ ALT="$c_{\mu i}c_{\nu j}$">, coupled with various
+two-electron integrals over atomic orbitals, <IMG WIDTH="67" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img97.gif"
+ ALT="$\langle \mu \nu \vert
+\lambda \sigma \rangle$">,<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="370" HEIGHT="57"
+ SRC="img98.gif"
+ ALT="\begin{displaymath}
+F_{\mu \nu} = H_{\mu \nu} + \sum_{\lambda \sigma} P_{\lambda...
+ ...e - \frac{1}{2}\langle
+\mu\lambda\vert\nu\sigma\rangle \right),\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(16)</TD></TR>
+</TABLE>
+
+<P ALIGN="CENTER"><IMG WIDTH="228" HEIGHT="47"
+ SRC="img99.gif"
+ ALT="\begin{displaymath}
+H_{\mu \nu} = \int \phi_\mu(r)H^{\rm core}\phi_\nu(r)dr,\end{displaymath}"></P>
+
+<P ALIGN="CENTER"><IMG WIDTH="143" HEIGHT="60"
+ SRC="img100.gif"
+ ALT="\begin{displaymath}
+P_{\lambda\sigma} =2 \sum_i^{\rm occ} c_{\lambda i}^* c_{\sigma i},\end{displaymath}"></P>
+
+<P ALIGN="CENTER"><IMG WIDTH="459" HEIGHT="49"
+ SRC="img101.gif"
+ ALT="\begin{displaymath}
+\langle\mu\nu\vert\lambda\sigma\rangle = \int \int \phi_\mu(...
+ ...rt r_1 - r_2\vert}\phi_\lambda(r_2) \phi_\sigma(r_2)
+dr_1 dr_2.\end{displaymath}"></P>
+<P>
+Now it is possible to make several selective approximations.  The
+first of these is the <I>zero differential overlap</I> approximation
+(ZDOA).  This says that since the atomic orbitals on a given atom are
+roughly orthogonal, the overlap between these can be considered zero;
+in terms of the two-electron integrals, most of these are therefore
+set to zero,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="207" HEIGHT="32"
+ SRC="img102.gif"
+ ALT="\begin{displaymath}
+\langle\mu\nu\vert\lambda\sigma\rangle =
+\langle\mu\mu\vert\lambda\lambda\rangle
+\delta_{\mu\nu}\delta_{\lambda\sigma}.\end{displaymath}"></P>
+<P>
+The corresponding overlap integrals, <IMG WIDTH="86" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.gif"
+ ALT="$S_{\mu \nu}, \mu \neq \nu$"> are
+also ignored for the same reason.  This approximation removes all the
+three and four centre integrals, vastly simplifying the calculation.
+The chemical bonding is however reliant on the overlap character, and
+this is maintained through <IMG WIDTH="34" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.gif"
+ ALT="$H_{\mu \nu}$">, the core integrals.  These
+are parameterised to experimental results, compensating for the ZDOA
+to some extent.  For CNDO,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="432" HEIGHT="63"
+ SRC="img104.gif"
+ ALT="\begin{displaymath}
+H_{\mu \nu} = \int \phi_\mu(1)\left(-\frac{1}{2}\nabla^2 -
+\sum_BV_B\right) \phi_\nu(1) dr_1, ~~~\mu\neq\nu,\end{displaymath}"></P>
+<P>
+where -<I>V</I><SUB><I>B</I></SUB> is the potential due to the nucleus and core
+electrons of atom <I>B</I>.
+<P>
+Applying the ZDOA simplifies the Roothaan equations to
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="144" HEIGHT="50"
+ SRC="img105.gif"
+ ALT="\begin{displaymath}
+\sum_\nu F_{\mu \nu}c_{\nu i} = \varepsilon_i c_{\mu i},\end{displaymath}"></P>
+<P>
+with
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="366" HEIGHT="55"
+ SRC="img106.gif"
+ ALT="\begin{displaymath}
+F_{\mu \mu} = H_{\mu \mu} - \frac{1}{2} P_{\mu
+\mu}\langle\m...
+ ...mbda P_{\lambda\lambda}\langle\mu\mu\vert\lambda\lambda\rangle,\end{displaymath}"></P>
+<P>
+and for <IMG WIDTH="49" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.gif"
+ ALT="$\mu\neq\nu$">,<P>
+<P ALIGN="CENTER"><IMG WIDTH="216" HEIGHT="43"
+ SRC="img108.gif"
+ ALT="\begin{displaymath}
+F_{\mu\nu} = H_{\mu\nu} - \frac{1}{2}
+P_{\mu\nu}\langle\mu\mu\vert\nu\nu\rangle.\end{displaymath}"></P>
+<P>
+However in the form described here, the ZDOA leads to inconsistencies.
+The orbitals on a given atom can be transformed into a different
+orbital set which would breach the zero differential overlap
+approximation, <I>i.e.</I>
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="371" HEIGHT="67"
+ SRC="img109.gif"
+ ALT="\begin{displaymath}
+\phi_\mu\phi_\nu(\mu\neq\nu) \rightarrow \sum_{\mu\nu}^{\rm ...
+ ... \phi'_\mu \phi'_\nu A_{\mu\nu}, ~~~A_{\mu \nu} {\rm~
+constant}\end{displaymath}"></P>
+<P>
+This means that the results would be basis dependent, and to avoid
+this, further constraints need to be applied.  The simplest scheme to
+achieve this is CNDO.
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html666"
+ HREF="node23.html#SECTION00981100000000000000">
+CNDO</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html664"
+ HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html661"
+ HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html655"
+ HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html663"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html665"
+ HREF="node23.html">CNDO</A>
+<B> Up:</B> <A NAME="tex2html662"
+ HREF="node21.html">Other theoretical approaches</A>
+<B> Previous:</B> <A NAME="tex2html656"
+ HREF="node21.html">Other theoretical approaches</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

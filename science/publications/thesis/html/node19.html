@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pseudopotentials</TITLE>
+<META NAME="description" CONTENT="Pseudopotentials">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node21.html">
+<LINK REL="previous" HREF="node17.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node20.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html630"
+ HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html627"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html621"
+ HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html629"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html631"
+ HREF="node20.html">Generating pseudopotentials</A>
+<B> Up:</B> <A NAME="tex2html628"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html622"
+ HREF="node18.html">Discussion</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION00970000000000000000">
+Pseudopotentials</A>
+</H1>
+ <A NAME="pseudo">&#160;</A>
+DFT as described above would still prove computationally too difficult
+for system sizes useful for point defect modelling.  It is therefore
+necessary to simplify the system further, and one important way of
+achieving this is through the use of pseudopotentials.  These rely on
+the fact that the core electrons sit tightly bound to their host
+nuclei, and only the valence electrons are involved in chemical
+bonding.  Therefore it is possible to incorporate the core states into
+a bulk nuclear potential, or pseudo-potential, and only deal with the
+valence electrons separately.
+<P>
+Core wavefunctions are rapidly varying with many nodes, and require a
+large number of fitting functions to model accurately;
+pseudopotentials overcome this as the pseudo-wavefunction is smoothly
+varying and nodeless within a certain core radius.  In addition the
+Coulombic interaction of core states would tend to swamp any total
+energy calculations trying to compare small differences in valence
+bond energies.  In order to remain orthogonal to the core states, the
+valence states are also forced to become rapidly oscillating near the
+atomic core, requiring large numbers of fitting functions to model
+accurately.  Pseudopotentials overcome all of these problems.  They
+become particularly important for the heavier elements when the number
+of core electrons vastly outweighs the valence electrons.  Finally for
+heavier atoms in which relativistic effects are important, and so the
+Dirac equation is required, the valence electrons can be treated
+non-relativistically. Therefore removal of the core electrons allows a
+non-relativistic approach to be maintained (some corrections are
+required in the core electron pseudopotentials to account for
+relativistic effects, see below).
+<P>
+Pseudopotentials assume that the localised core states do not take
+part in bonding, and so can be incorporated as a change in the charge
+state of the nucleus.  Between the nucleus and some cut-off radius
+<I>r</I><SUB><I>c</I></SUB>, the all-electron valence wavefunctions can be replaced with a
+smoothed form; beyond this radius the pseudo-wavefunction must be
+identical to the full all-electron wavefunction.  In addition there
+will still be exchange interactions between core and valence electrons
+which must be included in the potentials.  Finally, if
+self-consistency is to be easily achieved in the calculations then the
+potentials must have the correct atomic charge density outside the
+core (<I>`norm-conserving'</I> pseudo-potentials).
+<P>
+Figure&nbsp;<A HREF="node19.html#fig:ni_pot">2.2</A> shows the radial 4<I>s</I> full- and pseudo-
+wavefunction for Ni.  It can be seen that the rapidly varying core
+region has been smoothed in the pseudo-wavefunction but beyond the
+cut-off radius, <I>r</I><SUB><I>c</I></SUB>, the pseudo- and all-electron- wavefunctions are
+identical.
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="fig:ni_pot">&#160;</A><A NAME="833">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Figure 2.2:</STRONG>
+The 4<I>s</I> (full) and pseudo- (dashed) radial wavefunction
+(in atomic units) for the Ni atom.</CAPTION>
+<TR><TD><IMG WIDTH="362" HEIGHT="307"
+ SRC="img70.gif"
+ ALT="\begin{figure}
+\begin{center}
+\ 
+\psfig {figure=theory/diags/ni_pseudo.eps,width=8cm}
+\end{center}\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<P>
+The pseudopotentials used in AIMPRO come from work done by Bachelet,
+Hamann and Schl&#252;ter [<A
+ HREF="node149.html#bhs">23</A>,<A
+ HREF="node149.html#bhs_prl">26</A>] who produced pseudopotentials
+for all elements up to Pu.  There are four fundamental properties
+which these pseudo-potentials display:
+<P><DL COMPACT>
+<DT>1.
+<DD>Real and pseudo- valence eigenvalues agree for a chosen
+``prototype'' atomic configuration.
+<DT>2.
+<DD>Real and pseudo- atomic wave functions agree beyond <I>r</I><SUB><I>c</I></SUB>, a
+      chosen ``core radius''.
+<DT>3.
+<DD>The integrals from 0 to <I>r</I> of the real and pseudo charge
+      densities agree for <I>r</I> &gt; <I>r</I><SUB><I>c</I></SUB> for each valence state (norm
+      conservation).
+<DT>4.
+<DD>The logarithmic derivatives of the real and pseudo wave function
+      and their first energy derivatives agree for <I>r</I> &gt; <I>r</I><SUB><I>c</I></SUB>.
+</DL>
+<P>
+The last two points are essential if the pseudopotential is to have
+optimum transferability.
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html632"
+ HREF="node20.html#SECTION00971000000000000000">
+Generating pseudopotentials</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html630"
+ HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html627"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html621"
+ HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html629"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html631"
+ HREF="node20.html">Generating pseudopotentials</A>
+<B> Up:</B> <A NAME="tex2html628"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html622"
+ HREF="node18.html">Discussion</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

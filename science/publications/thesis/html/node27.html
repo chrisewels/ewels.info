@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Expanding the Wavefunction</TITLE>
+<META NAME="description" CONTENT="Expanding the Wavefunction">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node28.html">
+<LINK REL="previous" HREF="node26.html">
+<LINK REL="up" HREF="node26.html">
+<LINK REL="next" HREF="node28.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html736"
+ HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html733"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html727"
+ HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html735"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html737"
+ HREF="node28.html">Approximation to the charge</A>
+<B> Up:</B> <A NAME="tex2html734"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html728"
+ HREF="node26.html">AIMPRO methodology</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION001010000000000000000">
+Expanding the Wavefunction</A>
+</H1>
+<P>
+The wavefunctions are expanded using a basis of localised orbitals,
+<IMG WIDTH="87" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img133.gif"
+ ALT="$\phi_i({\bf r} - {\bf R}_i)$">, where
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="270" HEIGHT="50"
+ SRC="img134.gif"
+ ALT="\begin{displaymath}
+\psi_\lambda({\bf r},s) =
+\chi_\alpha(s)\sum_i{c_i^\lambda\phi_i({\bf r} - {\bf R}_i)},\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(17)</TD></TR>
+</TABLE>
+<P>
+which converts the Kohn-Sham equations into matrix equations for
+<IMG WIDTH="19" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img135.gif"
+ ALT="$c_i^\lambda$">.  A set of Gaussian functions are used, multiplied by
+spherical functions to set the orbital quantum number:
+<P><A NAME="wave_ex">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="wave_ex">&#160;</A><IMG WIDTH="468" HEIGHT="32"
+ SRC="img136.gif"
+ ALT="\begin{displaymath}
+\phi_i({\bf r} - {\bf R}_i) = (x - R_{ix})^{n_1}(y - R_{iy})^{n_2}(z -
+R_{iz})^{n_3}e^{-a_i({\bf r} - {\bf R}_i)^2}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(18)</TD></TR>
+</TABLE>
+<P>
+The choice of <I>n<SUB>1</SUB></I>, <I>n<SUB>2</SUB></I> and <I>n<SUB>3</SUB></I> in Eq.&nbsp;<A HREF="node27.html#wave_ex">3.1.2</A> sets the
+orbital type; <I>n<SUB>1</SUB></I>=<I>n<SUB>2</SUB></I>=<I>n<SUB>3</SUB></I>=0 gives spherically symmetric
+<I>s</I>-orbitals, setting one of <I>n<SUB>1</SUB></I>, <I>n<SUB>2</SUB></I> or <I>n<SUB>3</SUB></I> = 1 gives
+<I>p</I>-orbitals in the <I>x</I>, <I>y</I> or <I>z</I> direction respectively, whereas
+setting <IMG WIDTH="82" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img137.gif"
+ ALT="$\sum_i{n_i} = 2$"> produces a combination of five <I>d</I>- and one
+<I>s</I>- type orbital.
+<P>
+The charge density for a given spin state can then be described in
+terms of the <I>density matrix</I>, <I>b</I><SUB><I>ij</I>,<I>s</I></SUB> (the total charge
+density is simply the sum of the spin dependent charge densities):
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+Here, <I>s</I> gives the spin state and <IMG WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\lambda$"> is an occupied orbital.
+Substituting this expression for <I>n</I>(<I>r</I>) back into
+Equation&nbsp;<A HREF="node14.html#eq:ks_charge">2.4.14</A> is only simple for the kinetic and
+pseudopotential energy terms:
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+However the Hartree energy requires <I>O</I>(<I>N<SUP>4</SUP></I>) integral terms, and when
+<I>N</I>, the number of basis functions is large, this rapidly becomes
+unfeasible.  Equally the exchange-correlation energy needs some sort
+of simplification. We therefore introduce an <I>approximate</I> charge
+density for each spin, <IMG WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img138.gif"
+ ALT="$\tilde{n}_s$">, which allows analytic solution of
+these energies and the forces acting on each atom.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html736"
+ HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html733"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html727"
+ HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html735"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html737"
+ HREF="node28.html">Approximation to the charge</A>
+<B> Up:</B> <A NAME="tex2html734"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html728"
+ HREF="node26.html">AIMPRO methodology</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Orthogonality Constraints</TITLE>
+<META NAME="description" CONTENT="Orthogonality Constraints">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node76.html">
+<LINK REL="previous" HREF="node74.html">
+<LINK REL="up" HREF="node74.html">
+<LINK REL="next" HREF="node76.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1306"
+ HREF="node76.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html1303"
+ HREF="node74.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html1297"
+ HREF="node74.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html1305"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1307"
+ HREF="node76.html">Constraining Bond Lengths</A>
+<B> Up:</B> <A NAME="tex2html1304"
+ HREF="node74.html">Method</A>
+<B> Previous:</B> <A NAME="tex2html1298"
+ HREF="node74.html">Method</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001321000000000000000">
+Orthogonality Constraints</A>
+</H2>
+ <A NAME="sec:diffusion">&#160;</A>
+In order to constrain the system in this way it is necessary to
+firstly obtain the ground state structures of the two end points of
+the diffusion path, <I>A</I> and <I>B</I>.  A vector is then constructed in
+order to translate <I>A</I> into <I>B</I>, where <I>N</I> is the number of atoms in
+the system.
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="195" HEIGHT="30"
+ SRC="img247.gif"
+ ALT="\begin{displaymath}
+{\bf R_i} = {\bf B_i - A_i}, i = 1,3N\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(43)</TD></TR>
+</TABLE>
+<P>
+The atoms are then moved a fraction <IMG WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img229.gif"
+ ALT="$\alpha$"> along this vector, where
+<IMG WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img229.gif"
+ ALT="$\alpha$">=0 corresponds to structure <I>A</I>, <IMG WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img229.gif"
+ ALT="$\alpha$">=1 corresponds to
+structure <I>B</I>.  The atoms are allowed to relax using a conjugate
+gradient algorithm at each point, subject to the constraint that on
+each iteration the total system relaxation vector must be orthogonal
+to <IMG WIDTH="24" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.gif"
+ ALT="${\bf R_i}$">.  If only one atom is moving then this is equivalent to
+allowing the atom to relax in a plane perpendicular to its direction
+of movement.
+<P>
+This method is simple to implement but can sometimes result in a
+system that is overconstrained; it tends to be best for systems where
+the diffusion motion primarily involves a single atom [<A
+ HREF="node149.html#breuer_96">152</A>].
+In particular when examining compound motion such as the oxygen dimer
+this method will only sample diffusion paths where both atoms are
+moving simultaneously, which need not be the lowest energy diffusion
+mechanism.
+<P>
+Therefore although initial investigations were performed with this
+method, we later switched to a second, bond-length constraint method
+detailed in the following section.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1306"
+ HREF="node76.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html1303"
+ HREF="node74.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html1297"
+ HREF="node74.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html1305"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1307"
+ HREF="node76.html">Constraining Bond Lengths</A>
+<B> Up:</B> <A NAME="tex2html1304"
+ HREF="node74.html">Method</A>
+<B> Previous:</B> <A NAME="tex2html1298"
+ HREF="node74.html">Method</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

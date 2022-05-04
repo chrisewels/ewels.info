@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Theoretical Background</TITLE>
+<META NAME="description" CONTENT="Theoretical Background">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node26.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="thesis.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html507"
+ HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html504"
+ HREF="thesis.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html498"
+ HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html506"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html508"
+ HREF="node10.html">The Hartree Equations</A>
+<B> Up:</B> <A NAME="tex2html505"
+ HREF="thesis.html">Chris Ewels' PhD Thesis</A>
+<B> Previous:</B> <A NAME="tex2html499"
+ HREF="node8.html">Introduction</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION00900000000000000000">
+Theoretical Background</A>
+</H1>
+ <A NAME="theory">&#160;</A>
+<BLOCKQUOTE>
+<SMALL>`The man who makes no mistakes does not usually make
+anything.'</SMALL>
+<DIV ALIGN="RIGHT">Edward John Phelps (1822-1900)
+</DIV></BLOCKQUOTE>
+<P>
+Electronic structure calculations attempt to determine the
+relationship between a system of ions and their electrons.  In order
+to tackle problems of a useful size, given our current computational
+limits, it is necessary to make a number of assumptions.  In the
+following chapter I will attempt to describe the various methods and
+assumptions people have used, ending with DFT/LDA that lies at the
+core of AIMPRO.
+<P>
+We assume that the ground state of a given system is determined by the
+time independent, non-relativistic many-body Schr&#246;dinger equation,
+<P><A NAME="eq:schrodinger">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="eq:schrodinger">&#160;</A><IMG WIDTH="250" HEIGHT="31"
+ SRC="img10.gif"
+ ALT="\begin{displaymath}
+(H_{total} - E_{total}) \Psi_{total}(r,R) = 0.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(1)</TD></TR>
+</TABLE>
+<P><I>H</I><SUB><I>total</I></SUB>, the many body Hamiltonian, is defined in terms of kinetic
+(<I>T</I>) and potential (<I>V</I>) terms for ions (<I>i</I>) of mass <I>M</I><SUB><I>a</I></SUB> and
+charge <I>Z</I><SUB><I>a</I></SUB> at sites <IMG WIDTH="27" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="${\bf R}_a$">, and electrons (<I>e</I>) at sites <IMG WIDTH="20" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="${\bf
+r}_\mu$">,<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+However this equation is insoluble for all except the most simple
+systems.  We therefore invoke the <I>Born-Oppenheimer</I>
+approximation.  This assumes that on the time scale at which the ions
+move, the electrons are able to respond instantaneously.  Therefore
+the ionic wavefunction is independent of the electrons, and we can
+split the wavefunction of the system into the product of ionic and
+electronic terms
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="217" HEIGHT="31"
+ SRC="img13.gif"
+ ALT="\begin{displaymath}
+\Psi_{total}(r,R) = \chi(R)\Psi(r,R).\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(2)</TD></TR>
+</TABLE>
+<P>
+We can then eliminate the co-dynamic terms from the equation for
+<IMG WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\Psi$"> and thus solve the Schr&#246;dinger equation for the electronic
+wavefunction only, given a set of fixed atomic coordinates.
+<P>
+In practise the ions and electrons are not decoupled and there is
+also a similar equation for <IMG WIDTH="60" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$\chi(R,r)$"> that should include
+ionic/electronic coupling.  However this term is only relevant for
+near degenerate ground states where additional effects such as
+Jahn-Teller distortions become important.  These effects are not
+important in this study.
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html509"
+ HREF="node10.html#SECTION00910000000000000000">
+The Hartree Equations</A>
+<LI><A NAME="tex2html510"
+ HREF="node11.html#SECTION00920000000000000000">
+Hartree-Fock Theory</A>
+<UL>
+<LI><A NAME="tex2html511"
+ HREF="node12.html#SECTION00921000000000000000">
+Discussion</A>
+</UL>
+<LI><A NAME="tex2html512"
+ HREF="node13.html#SECTION00930000000000000000">
+Thomas-Fermi Theory</A>
+<LI><A NAME="tex2html513"
+ HREF="node14.html#SECTION00940000000000000000">
+Density Functional Theory</A>
+<LI><A NAME="tex2html514"
+ HREF="node15.html#SECTION00950000000000000000">
+The local density approximation</A>
+<UL>
+<LI><A NAME="tex2html515"
+ HREF="node16.html#SECTION00951000000000000000">
+Parameterising the correlation energy</A>
+</UL>
+<LI><A NAME="tex2html516"
+ HREF="node17.html#SECTION00960000000000000000">
+Kohn-Sham Theory</A>
+<UL>
+<LI><A NAME="tex2html517"
+ HREF="node18.html#SECTION00961000000000000000">
+Discussion</A>
+</UL>
+<LI><A NAME="tex2html518"
+ HREF="node19.html#SECTION00970000000000000000">
+Pseudopotentials</A>
+<UL>
+<LI><A NAME="tex2html519"
+ HREF="node20.html#SECTION00971000000000000000">
+Generating pseudopotentials</A>
+</UL>
+<LI><A NAME="tex2html520"
+ HREF="node21.html#SECTION00980000000000000000">
+Other theoretical approaches</A>
+<UL>
+<LI><A NAME="tex2html521"
+ HREF="node22.html#SECTION00981000000000000000">
+Semi-Empirical Hartree Fock</A>
+<UL>
+<LI><A NAME="tex2html522"
+ HREF="node23.html#SECTION00981100000000000000">
+CNDO</A>
+</UL>
+<LI><A NAME="tex2html523"
+ HREF="node24.html#SECTION00982000000000000000">
+Interatomic Potentials</A>
+<LI><A NAME="tex2html524"
+ HREF="node25.html#SECTION00983000000000000000">
+Use of the Musgrave-Pople potential in this work</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html507"
+ HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html504"
+ HREF="thesis.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html498"
+ HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html506"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html508"
+ HREF="node10.html">The Hartree Equations</A>
+<B> Up:</B> <A NAME="tex2html505"
+ HREF="thesis.html">Chris Ewels' PhD Thesis</A>
+<B> Previous:</B> <A NAME="tex2html499"
+ HREF="node8.html">Introduction</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

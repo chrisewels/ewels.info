@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Discussion</TITLE>
+<META NAME="description" CONTENT="Discussion">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node11.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html555"
+ HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html552"
+ HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html548"
+ HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html554"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html556"
+ HREF="node13.html">Thomas-Fermi Theory</A>
+<B> Up:</B> <A NAME="tex2html553"
+ HREF="node11.html">Hartree-Fock Theory</A>
+<B> Previous:</B> <A NAME="tex2html549"
+ HREF="node11.html">Hartree-Fock Theory</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION00921000000000000000">
+Discussion</A>
+</H2>
+<P>
+Hartree-Fock theory is a useful tool for many problems.  Results can
+be systematically improved through an increasingly rigorous choice of
+basis set (AIMPRO is limited in this respect by overcompleteness
+problems; if the basis set becomes too large then it becomes difficult
+for the system to achieve self-consistency).  It gives good structures
+and vibrational modes for small molecules, although tends to
+underpredict bond lengths with a corresponding overprediction of
+frequencies.
+<P>
+A major flaw with the method is the lack of electron correlation
+(leading to zero density of states at the Fermi level for Jellium).
+This precludes the use of Hartree-Fock theory in problems such as, for
+example, metallic systems.  The difference in correlation between
+ground and excited states in real systems means that Hartree-Fock
+greatly overpredicts the width of the band gap.
+<P>
+Hartree-Fock provides the basis for methods covering a wide spectrum
+of accuracies.  At the lower level there are semi-empirical methods
+such as MINDO/3, MNDO, etc., which are described in more detail below.
+These attempt to compensate for the lack of correlation through their
+parameterisation methods, additionally fitting to experimental
+ionisation energies and/or heats of formation of molecules.  At the
+other end of the scale, many computationally expensive improvements
+can be utilised to overcome the correlation problem, such as the
+configuration interaction (CI) method [<A
+ HREF="node149.html#sahni_95">15</A>], where the
+wavefunction is constructed from a combination of determinants.  These
+are only really viable for small molecular systems at present.
+<P>
+In addition, the calculation size scales as O(N<SUP>4</SUP>), <I>i.e.</I>
+doubling the system size leads to a 16-fold increase in calculation
+time.  This poor scaling with system size, coupled with the heavy
+computational cost of Hartree-Fock theory, currently limits it to
+smaller systems.  Nonetheless, Hartree-Fock based calculations (when
+incorporating the high level corrections such as CI) often provide the
+benchmarks that other theoretical methods aspire to.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html555"
+ HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html552"
+ HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html548"
+ HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html554"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html556"
+ HREF="node13.html">Thomas-Fermi Theory</A>
+<B> Up:</B> <A NAME="tex2html553"
+ HREF="node11.html">Hartree-Fock Theory</A>
+<B> Previous:</B> <A NAME="tex2html549"
+ HREF="node11.html">Hartree-Fock Theory</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

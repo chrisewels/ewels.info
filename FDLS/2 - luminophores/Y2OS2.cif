@@ -1,0 +1,80 @@
+data_67503-ICSD
+#©2009 by Fachinformationszentrum Karlsruhe, and the U.S. Secretary of 
+#Commerce on behalf of the United States.  All rights reserved.
+_database_code_ICSD                67503
+_audit_creation_date               1993/08/22
+_chemical_name_systematic          'Yttrium Oxide Disulfide'
+_chemical_formula_structural       'Y2 O S2'
+_chemical_formula_sum              'O1 S2 Y2'
+_publ_section_title
+;
+Crystal structure of D-Y2S3 and Y2OS2
+;
+loop_
+_citation_id
+_citation_journal_abbrev
+_citation_year
+_citation_journal_volume
+_citation_page_first
+_citation_page_last
+_citation_journal_id_ASTM
+primary 'European Journal of Solid State Inorganic Chemistry'
+ 1992 29 1015 1028 EJSCE5
+_publ_author_name                  'Schleid, T.'
+_cell_length_a                     8.2554(6)
+_cell_length_b                     6.8852(5)
+_cell_length_c                     6.8533(5)
+_cell_angle_alpha                  90.
+_cell_angle_beta                   99.629(7)
+_cell_angle_gamma                  90.
+_cell_volume                       384.05
+_cell_formula_units_Z              4
+_symmetry_space_group_name_H-M     'P 1 21/c 1'
+_symmetry_Int_Tables_number        14
+_refine_ls_R_factor_all            0.036
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+  1	'x, -y+1/2, z+1/2'
+  2	'-x, -y, -z'
+  3	'-x, y+1/2, -z+1/2'
+  4	'x, y, z'
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+O2-	-2
+S2-	-2
+Y3+	3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+Y1 Y3+ 4 e 0.57596(5) 0.64451(6) 0.82093(6) 1. 0 
+Y2 Y3+ 4 e 0.13798(3) 0.55464(6) 0.74957(6) 1. 0 
+O1 O2- 4 e 0.3837(4) 0.0855(4) 0.3513(4) 1. 0 
+S1 S2- 4 e 0.6807(1) 0.1327(2) 0.0750(2) 1. 0 
+S2 S2- 4 e 0.0760(1) 0.2766(2) 0.0303(2) 1. 0 
+
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_type_symbol
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Y1 Y3+ 0.0114(2) 0.0100(2) 0.0113(2) -.0005(1) 0.0019(1) 0.0007(1)
+Y2 Y3+ 0.0100(2) 0.0086(2) 0.0115(2) 0.0007(1) 0.0010(1) 0.0007(1)
+O1 O2- 0.0165(14) 0.0137(14) 0.0146(14) -.0011(12) 0.0054(11) 0.0011(12)
+S1 S2- 0.0156(5) 0.0137(5) 0.0171(5) -.0011(4) 0.0052(4) -.0008(4)
+S2 S2- 0.0142(4) 0.0136(4) 0.0150(5) 0.0012(4) 0.0024(4) 0.0005(4)
+#End of data_67503-ICSD
+
+

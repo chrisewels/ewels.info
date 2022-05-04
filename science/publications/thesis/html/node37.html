@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Calculation of Vibrational Modes</TITLE>
+<META NAME="description" CONTENT="Calculation of Vibrational Modes">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node39.html">
+<LINK REL="previous" HREF="node36.html">
+<LINK REL="up" HREF="node26.html">
+<LINK REL="next" HREF="node38.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html847"
+ HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html844"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html838"
+ HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html846"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html848"
+ HREF="node38.html">Induced Dipole Moments</A>
+<B> Up:</B> <A NAME="tex2html845"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html839"
+ HREF="node36.html">Structural Optimisation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION001060000000000000000">
+Calculation of Vibrational Modes</A>
+</H1>
+<P>
+An important piece of information that can be extracted from these
+calculations and compared directly to experiment is the local
+vibrational modes of the defect.  These are vibrations characteristic
+of the defect core that do not resonate with bulk modes and so remain
+localised at the defect site.  Since these are directly dependent on
+the masses of the atoms involved, the influence of different isotope
+substitutions on these modes is an invaluable probe of the defect
+structure and content.  These are primarily detected using Fourier
+Transform Infrared Spectroscopy (FTIR) through observation of IR
+absorption at different wavelengths, however they can also be measured
+as phonon sidebands to PL absorption and Raman Spectroscopy for the
+Raman active modes.
+<P>
+The vibrational modes of a cluster can be determined from the
+energetic double derivatives with respect to displacement of the
+atoms.  Initially the cluster is fully relaxed until all atomic forces
+are zero.  A given atom <I>a</I> is displaced along axis <I>l</I> by a distance
+<IMG WIDTH="11" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img187.gif"
+ ALT="$\varepsilon$"> (usually chosen to be 0.025 a.u.), and the self-consistent
+charge density recalculated.  The forces on the atoms are then no
+longer zero, so for example, atom <I>b</I> along axis direction <I>m</I> will
+feel a force of <I>f</I><SUB><I>mb</I></SUB><SUP>+</SUP>(<I>l</I>,<I>a</I>).  If this is repeated with a
+displacement of <IMG WIDTH="26" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.gif"
+ ALT="$-\varepsilon$"> then a new force <I>f</I><SUB><I>mb</I></SUB><SUP>-</SUP>(<I>l</I>,<I>a</I>) is
+determined.  Given these three points it is possible to now calculate
+the energy second derivatives up to second order in <IMG WIDTH="11" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img187.gif"
+ ALT="$\varepsilon$">:<P>
+<P ALIGN="CENTER"><IMG WIDTH="238" HEIGHT="47"
+ SRC="img189.gif"
+ ALT="\begin{displaymath}
+D_{la,mb} = \frac{f_{mb}^+(l,a) - f_{mb}^-(l,a)}{2 \varepsilon}.\end{displaymath}"></P>
+<P>
+Once the full dynamical matrix is determined it can be diagonalised,
+scaled by the root of the relevant atomic masses, to give as
+eigenvalues the vibrational modes of the system.  Note that this
+method includes some contribution from all even powers of <IMG WIDTH="11" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img187.gif"
+ ALT="$\varepsilon$"> and
+not just the quadratic term since the step size is not infinitesimal,
+and thus there will also be some anharmonic contribution included.
+These frequencies are thus sometimes referred to as quasi-harmonic,
+and this is discussed in more detail in Reference&nbsp;[<A
+ HREF="node149.html#jones_94">37</A>].
+Surface H atoms are given a large enough mass (<SUP>1000</SUP>H) that they
+are effectively fixed.
+<P>
+To calculate the double derivatives for every atom in the cluster
+would be too time consuming.  Since most of the cluster atoms
+approximate to bulk and only act to perturb the localised vibrational
+modes, the derivatives are only calculated for the core defect atoms.
+The rest of the bulk material is included using a Musgrave-Pople
+valence force potential, discussed further in
+Section&nbsp;<A HREF="node24.html#sec:potentials">2.8.2</A>.
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html849"
+ HREF="node38.html#SECTION001061000000000000000">
+Induced Dipole Moments</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html847"
+ HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html844"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html838"
+ HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html846"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html848"
+ HREF="node38.html">Induced Dipole Moments</A>
+<B> Up:</B> <A NAME="tex2html845"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html839"
+ HREF="node36.html">Structural Optimisation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

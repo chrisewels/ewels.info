@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Density functional theory / Local Density Approximation</TITLE>
+<META NAME="description" CONTENT="Density functional theory / Local Density Approximation">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node41.html">
+<LINK REL="previous" HREF="node39.html">
+<LINK REL="up" HREF="node39.html">
+<LINK REL="next" HREF="node41.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html885"
+ HREF="node41.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html882"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html876"
+ HREF="node39.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html884"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html886"
+ HREF="node41.html">Real space</A>
+<B> Up:</B> <A NAME="tex2html883"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html877"
+ HREF="node39.html">Discussion of the methods</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001071000000000000000">
+Density functional theory / Local Density Approximation</A>
+</H2>
+<P>
+One of the greatest advantage of density functional schemes under the
+local density approximation is their reliance on the charge density as
+the fundamental variable, which greatly simplifies the amount of
+calculation required.  However they consistently underpredict bandgaps
+(this is to some extent compensated by the use of clusters, see
+Section&nbsp;<A HREF="node42.html#sec:clus">3.7.3</A> below), and as a ground state theory they are
+restricted in their application to excited state problems.  Various
+methods have been used to try and overcome this, notably constrained
+relaxation techniques to determine saddle points (see
+Section&nbsp;<A HREF="node69.html#dimers">6</A>).  In addition since the wavefunction eigenvalues
+are a computational tool and do not directly link to experimental
+eigenvalues, physical interpretation of these states is somewhat
+dangerous (although there is normally qualitative agreement between
+the two).  Current work suggests Slater transition methods may provide
+a way of quantitatively relating the two [<A
+ HREF="node149.html#resende_97">42</A>].
+<P>
+Density functional theory under the local density approximation is
+well known for overbinding of molecules such as O<SUB>2</SUB>, but can be
+greatly improved through the use of gradient corrections.  AIMPRO
+actually does better than the standard DFT result, shown in
+Table&nbsp;<A HREF="node40.html#tab:o2">3.1</A>.  These results support the conclusion that we are
+obtaining good structural and vibrational data, but need to improve
+the accuracy of our total energies.  However the magnitude of such
+errors normally decreases with system size.  The local density
+approximation is good for smoothly varying systems, so given that
+other DFT/LDA calculations on oxygen/silicon structures have also had
+trouble with total energies (see, for example, Chapter&nbsp;<A HREF="node57.html#vacancy">5</A>),
+it suggests that part of the problem of innacurate total energies
+could be due to the local density approximation.
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<A NAME="2282">&#160;</A>
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<CAPTION><STRONG>Table:</STRONG>
+Properties of the O<SUB>2</SUB> molecule.  AIMPRO values are obtained
+using the standard basis set described elsewhere in the thesis, <I>
+i.e.</I> six Gaussian fitting functions on each O atom for charge
+density, 24 for wavefunction, with three more Gaussian functions on the
+bond centre for charge density and two for the wavefunction.  All
+non-AIMPRO values from [<A
+ HREF="node149.html#kohn_talk">43</A>].</CAPTION>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>Source</TD>
+<TD ALIGN="CENTER" NOWRAP>Binding</TD>
+<TD ALIGN="CENTER" NOWRAP>O stretch</TD>
+<TD ALIGN="CENTER" NOWRAP>Bond Length</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>Energy (eV)</TD>
+<TD ALIGN="CENTER" NOWRAP>mode (cm<SUP>-1</SUP>)</TD>
+<TD ALIGN="CENTER" NOWRAP>(a.u.)</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>AIMPRO, spin</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>averaged</TD>
+<TD ALIGN="CENTER" NOWRAP>8.79</TD>
+<TD ALIGN="CENTER" NOWRAP>1565</TD>
+<TD ALIGN="CENTER" NOWRAP>2.28</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>polarised</TD>
+<TD ALIGN="CENTER" NOWRAP>6.41</TD>
+<TD ALIGN="CENTER" NOWRAP>1581</TD>
+<TD ALIGN="CENTER" NOWRAP>2.28</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>Experiment</TD>
+<TD ALIGN="CENTER" NOWRAP>5.23</TD>
+<TD ALIGN="CENTER" NOWRAP>1580</TD>
+<TD ALIGN="CENTER" NOWRAP>2.28</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>Quoted DFT</TD>
+<TD ALIGN="CENTER" NOWRAP>7.54</TD>
+<TD ALIGN="CENTER" NOWRAP>1610</TD>
+<TD ALIGN="CENTER" NOWRAP>2.31</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>Hartree Fock</TD>
+<TD ALIGN="CENTER" NOWRAP>1.43</TD>
+<TD ALIGN="CENTER" NOWRAP>2000</TD>
+<TD ALIGN="CENTER" NOWRAP>2.18</TD>
+</TR>
+</TABLE></DIV>
+<BR><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html885"
+ HREF="node41.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html882"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html876"
+ HREF="node39.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html884"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html886"
+ HREF="node41.html">Real space</A>
+<B> Up:</B> <A NAME="tex2html883"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html877"
+ HREF="node39.html">Discussion of the methods</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

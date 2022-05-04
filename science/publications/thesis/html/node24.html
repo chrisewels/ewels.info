@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Interatomic Potentials</TITLE>
+<META NAME="description" CONTENT="Interatomic Potentials">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node25.html">
+<LINK REL="previous" HREF="node22.html">
+<LINK REL="up" HREF="node21.html">
+<LINK REL="next" HREF="node25.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html685"
+ HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html682"
+ HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html676"
+ HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html684"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html686"
+ HREF="node25.html">Use of the Musgrave-Pople</A>
+<B> Up:</B> <A NAME="tex2html683"
+ HREF="node21.html">Other theoretical approaches</A>
+<B> Previous:</B> <A NAME="tex2html677"
+ HREF="node23.html">CNDO</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION00982000000000000000">
+Interatomic Potentials</A>
+</H2>
+ <A NAME="sec:potentials">&#160;</A>
+Interatomic potentials consist of sets of two- and three-body
+interaction terms of varying complexity, which are parameterised using
+a variety of experimental and <EM>ab initio</EM>  data to fit to.  Due to
+their high speed compared to <EM>ab initio</EM>  calculations they can be
+routinely used with large supercells, and many molecular dynamics
+timesteps can be calculated.  For example, recent studies of VO
+diffusion in Si used a 512 atom supercell under the Jiang-Brown (JB)
+potential, with multiple time steps and diffusion constraints
+[<A
+ HREF="node149.html#gronberg_NATO">31</A>].
+<P>
+We use a Musgrave-Pople (MP) potential fitted to results from AIMPRO
+calculations when determining LVMs.  The potential can be used to
+calculate bulk phonon dispersion curves (see
+Section&nbsp;<A HREF="node52.html#inp:m_pople">4.3</A>).  However it is primarily used by our group
+to determine the energy double derivative terms in the dynamical
+matrix for bulk Si atoms, since to calculate all of these from first
+principles would be too time consuming.  For this reason I describe
+here the MP potential, although `stand-alone' O in Si calculations are
+normally performed using either the Jiang-Brown[<A
+ HREF="node149.html#jiang_94">30</A>] or
+Stillinger-Weber[<A
+ HREF="node149.html#stillinger_85">33</A>] potentials.
+<P>
+The Musgrave-Pople potential&nbsp;[<A
+ HREF="node149.html#musgrave_62">34</A>] is a three- and four-
+body potential made up of bond stretch and bond bending terms.  It is
+given for atom <I>i</I> by the formula
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+Here <IMG WIDTH="38" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img126.gif"
+ ALT="$\Delta r_{ij}$"> and <IMG WIDTH="46" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img127.gif"
+ ALT="$\Delta \theta_{jik}$"> are the changes in the
+length of the <I>i</I>-<I>j</I> bond and angle between the <I>i</I>-<I>j</I> and <I>i</I>-<I>k</I> bond
+respectively (see Figure&nbsp;<A HREF="node24.html#fig:mus_schem">2.3</A>), and the summation is
+over the nearest neighbours <I>j</I>, <I>k</I>, and <I>l</I>.  <I>r<SUB>0</SUB></I> is the
+equilibrium bond length and is often set to be the experimental value.
+The coefficients <I>k</I><SUB><I>r</I></SUB>, <IMG WIDTH="20" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img128.gif"
+ ALT="$k_\theta$">, <IMG WIDTH="26" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.gif"
+ ALT="$k_{r\theta}$">, <I>k</I><SUB><I>rr</I></SUB>, and
+<IMG WIDTH="26" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img130.gif"
+ ALT="$k_{\theta \theta}$"> are defined in Table&nbsp;<A HREF="node24.html#table:stiffness">2.8.2</A>.
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="fig:mus_schem">&#160;</A><A NAME="1067">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Figure 2.3:</STRONG>
+Schematic diagram showing terms included in the Musgrave
+Pople potential</CAPTION>
+<TR><TD><IMG WIDTH="228" HEIGHT="207"
+ SRC="img131.gif"
+ ALT="\begin{figure}
+\begin{center}
+\ 
+\psfig {file=theory/diags/musgrave.eps,width=5cm,angle=270}
+\end{center}\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<A NAME="1133">&#160;</A>
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<CAPTION><STRONG>Table 2.3:</STRONG>
+Physical interpretation of the coefficients in
+         Equation&nbsp;<A HREF="#eq:MPeqn">2.8.34</A>, see schematic diagram,
+         Figure&nbsp;<A HREF="node24.html#fig:mus_schem">2.3</A>.</CAPTION>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>Coefficient</TD>
+<TD ALIGN="LEFT" NOWRAP>Description</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP><I>k</I><SUB><I>r</I></SUB></TD>
+<TD ALIGN="LEFT" NOWRAP>bond stretch</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="20" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img128.gif"
+ ALT="$k_\theta$"></TD>
+<TD ALIGN="LEFT" NOWRAP>bond bending</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="26" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.gif"
+ ALT="$k_{r\theta}$"></TD>
+<TD ALIGN="LEFT" NOWRAP>stretch-bend interaction</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP><I>k</I><SUB><I>rr</I></SUB></TD>
+<TD ALIGN="LEFT" NOWRAP>stretch-stretch interaction</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="26" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img130.gif"
+ ALT="$k_{\theta \theta}$"></TD>
+<TD ALIGN="LEFT" NOWRAP>bend-bend interaction</TD>
+</TR>
+</TABLE></DIV>
+<BR><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html685"
+ HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html682"
+ HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html676"
+ HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html684"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html686"
+ HREF="node25.html">Use of the Musgrave-Pople</A>
+<B> Up:</B> <A NAME="tex2html683"
+ HREF="node21.html">Other theoretical approaches</A>
+<B> Previous:</B> <A NAME="tex2html677"
+ HREF="node23.html">CNDO</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

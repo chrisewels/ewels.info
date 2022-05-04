@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Spin averaged and improvements to the
+approximations</TITLE>
+<META NAME="description" CONTENT="Spin averaged and improvements to the
+approximations">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node30.html">
+<LINK REL="previous" HREF="node28.html">
+<LINK REL="up" HREF="node28.html">
+<LINK REL="next" HREF="node30.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html762"
+ HREF="node30.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html759"
+ HREF="node28.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html753"
+ HREF="node28.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html761"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html763"
+ HREF="node30.html">Spin polarised exchange correlation</A>
+<B> Up:</B> <A NAME="tex2html760"
+ HREF="node28.html">Approximation to the charge</A>
+<B> Previous:</B> <A NAME="tex2html754"
+ HREF="node28.html">Approximation to the charge</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001021000000000000000">
+Spin averaged <IMG WIDTH="31" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.gif"
+ ALT="$\tilde{E}_{xc}$"> and improvements to the
+approximations</A>
+</H2>
+<P>
+In the spin averaged case, 
+
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="240" HEIGHT="55"
+ SRC="img153.gif"
+ ALT="\begin{displaymath}
+\tilde{E}_{xc} = \sum_k d_k \int h_k({\bf r}) \varepsilon_{xc}(\tilde{n}) d{\bf r}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(26)</TD></TR>
+</TABLE>
+<P>
+If <I>h</I><SUB><I>k</I></SUB> is a Gaussian then the integrals are proportional to <IMG WIDTH="74" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img154.gif"
+ ALT="$\langle
+\varepsilon_{xc}(\tilde{n})\rangle_k$">.  To a first approximation, since
+<IMG WIDTH="51" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.gif"
+ ALT="$\varepsilon_{xc}(n)$"> only varies slowly with <I>n</I> we can approximate this to
+<IMG WIDTH="74" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img155.gif"
+ ALT="$\varepsilon_{xc}(\langle\tilde{n}\rangle_k)$">, where
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+This approximation can be improved through some mathematical tricks,
+since we know that a highly accurate form for <IMG WIDTH="51" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.gif"
+ ALT="$\varepsilon_{xc}(n)$"> is given
+by <IMG WIDTH="109" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img156.gif"
+ ALT="$\varepsilon_{xc}(n) = An^s$"> where <I>s</I>=0.30917 (see Eq.&nbsp;<A HREF="#eq:e_xc">2.5.19</A>).
+<P>
+If we define
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="159" HEIGHT="51"
+ SRC="img157.gif"
+ ALT="\begin{displaymath}
+f(s) = \ln\left(\frac{\langle\tilde{n}^s\rangle_k}{\langle\tilde{n}\rangle^s_k}\right),\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(27)</TD></TR>
+</TABLE>
+<P>
+we can now do a limited expansion of this to give an
+approximation for <I>f</I>(<I>s</I>),
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="177" HEIGHT="43"
+ SRC="img158.gif"
+ ALT="\begin{displaymath}
+f(s) = \frac{1}{2}s(s-1)f(2).\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(28)</TD></TR>
+</TABLE>
+<P>
+This step is one of the largest approximations within our method,
+leading to errors of up to 10%; however in practise its contribution
+to the total energy is minute and so the approximation is not
+unreasonable.
+<P>
+To find <I>f</I>(2) we need to know the second moment of <IMG WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img147.gif"
+ ALT="$\tilde{n}$">, which
+can be determined analytically as
+<P><A NAME="eq:nsq">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="eq:nsq">&#160;</A><IMG WIDTH="247" HEIGHT="50"
+ SRC="img159.gif"
+ ALT="\begin{displaymath}
+\langle \tilde{n}^2 \rangle_k = \frac{ \sum_{lm}d_ld_m \int h_k h_l h_m d {\bf r}}{I_k}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(29)</TD></TR>
+</TABLE>
+<P>
+Finally substituting all of these new terms back in, we get an
+expression for <IMG WIDTH="31" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.gif"
+ ALT="$\tilde{E}_{xc}$">:<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html762"
+ HREF="node30.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html759"
+ HREF="node28.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html753"
+ HREF="node28.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html761"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html763"
+ HREF="node30.html">Spin polarised exchange correlation</A>
+<B> Up:</B> <A NAME="tex2html760"
+ HREF="node28.html">Approximation to the charge</A>
+<B> Previous:</B> <A NAME="tex2html754"
+ HREF="node28.html">Approximation to the charge</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

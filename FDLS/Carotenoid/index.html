@@ -1,0 +1,186 @@
+<html><!-- #BeginTemplate "/Templates/template.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>Institut des Materiaux Jean Rouxel, CNRS UMR6502, Nantes</title>
+<script>
+	  function play(script) {
+	    document.jmol.script(script);
+	  }
+	</script>
+<!-- #EndEditable -->
+<META NAME="Author" CONTENT="Chris Ewels">
+<META NAME="Classification" CONTENT="Academic: Index">
+<link rel="stylesheet" href="../site.css" type="text/css">
+
+<script language="JavaScript">
+<!--
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+
+  if (restore) selObj.selectedIndex=0;
+
+}
+
+
+function MM_goToURL() { //v3.0
+
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+
+}
+
+function MM_checkBrowser(NSvers,NSpass,NSnoPass,IEvers,IEpass,IEnoPass,OBpass,URL,altURL) { //v4.0
+  var newURL='', verStr=navigator.appVersion, app=navigator.appName, version = parseFloat(verStr);
+  if (app.indexOf('Netscape') != -1) {
+    if (version >= NSvers) {if (NSpass>0) newURL=(NSpass==1)?URL:altURL;}
+    else {if (NSnoPass>0) newURL=(NSnoPass==1)?URL:altURL;}
+  } else if (app.indexOf('Microsoft') != -1) {
+    if (version >= IEvers || verStr.indexOf(IEvers) != -1)
+     {if (IEpass>0) newURL=(IEpass==1)?URL:altURL;}
+    else {if (IEnoPass>0) newURL=(IEnoPass==1)?URL:altURL;}
+  } else if (OBpass>0) newURL=(OBpass==1)?URL:altURL;
+  if (newURL) { window.location=unescape(newURL); document.MM_returnValue=false; }
+}
+    function CheckMore() {
+      if (document.ucc.To.options.selectedIndex == -1) {
+        document.ucc.To.options.selectedIndex = 0; }
+      if (document.ucc.From.options.selectedIndex == -1) {
+        document.ucc.From.options.selectedIndex = 0; }
+
+      var txt = document.ucc.From.options[document.ucc.From.options.selectedIndex].text;
+      if (txt.indexOf("Click for every world currency") != -1) {
+        document.location.href = 'http://www.xe.com/ucc/full.shtml'; }
+      var txt = document.ucc.To.options[document.ucc.To.options.selectedIndex].text;
+      if (txt.indexOf("Click for every world currency") != -1) {
+        document.location.href = 'http://www.xe.com/ucc/full.shtml'; }
+    }
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+//-->
+
+</script>
+
+</head>
+
+<body bgcolor="#000000">
+<table width=100% border="1" bordercolor="#FF6600" cellpadding="4" cellspacing="1">
+<tr valign="top">
+<td valign="top" bgcolor="#9999FF" colspan="2">
+ <table width=100%>
+ <tr>
+  <td align="left">
+<img src="../logos.png" height=100>
+	</td>
+  <td align="center">
+  <h1>
+	<!-- #BeginEditable "titletext" -->
+	Quand un "plastique" colore la vie 
+	<!-- #EndEditable -->
+	</h1>
+ </td><td align="right">
+ <select name="mymenu" onChange="MM_jumpMenu('parent',this,1)">
+			  <option>Choisis une thème...</option>
+				<option></option>
+			  <option value="../Diamant/index.html">Le couleur dans le diamant</option>
+              <option value="index.html">Carotenoids : Quand un "plastique" colore la vie</option>			  
+              <option value="../1%20-%20Saphir/index.html">Un saphir qui nous en fait voir de toutes les couleurs</option>			  
+              <option value="../2%20-%20luminophores/index.html">La télévision couleur, c'est lumineux ! </option>			  			  
+              <option value="../3%20-%20Piezo-chrome%20et%20thermo-chrome/index.html">Des pigments caméléons</option>			  			  				<option></option>	  			  
+				<option></option>
+				<option></option>
+			  <option value="../C60/index.html">Le fullerène : C60 </option>
+              <option value="../CNT/index.html">Les nanotubes de Carbone</option>
+<!--              <option value="../4/index.html">Comment plier un nanotube de carbone</option>-->
+			  <option value="../DNA/index.html">La molécule d'ADN</option>
+              <option value="../Cellulose/index.html">La cellulose, une plastique naturelle</option>			  
+              <option value="../Batterie/index.html">Les batteries au lithium</option>
+              <option value="../MicroOnde/index.html">La danse des atomes au rythme des microondes</option>
+            </select>
+	</td>
+ </tr>
+ </table>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" bgcolor="#FFFFCC">
+<font color="#000066">
+	<!-- #BeginEditable "text" -->
+<strong>Deux categories de pigments naturels très proches chimiquement colorent bien des êtres vivants, animaux ou plantes.
+</strong><hr noshade>
+<table width=100%>
+<tr><td align="left" valign="top" width=40%>
+<img src="Plate-IX-Psittacus-Festivus-Festive-Parrot.jpg" alt="Psittacus Festivus Perroquet" width="60%" height="*" ><br>
+<font size="-2"><i>Psittacus Festivus Perroquet,<br>image Prideaux John Selby</i></font><br>
+</td>
+<td align="left" valign="top">
+   <form name="myform">
+	<input type="button" value="Voir structure Polyacetylene"
+	  onClick="play('load polyacetylene.xyz')">
+      </form>
+Les pigments naturels polyacétylènes sont la même molécule que le plastique bien connu du même nom, mais en plus court. 
+Dés la fin du XIXème, un chimiste avait remarqué ce pigment qui ne se comportait pas comme les autres dans les plumes d'un petit 
+perroquet du genre Psittacus, et il nomma les pigments les psittacofulvines, et d'une facon générale, les plumes de perroquets 
+(comme Ara Macao) sont colorées par des polyacétylènes. Récemment, il a été prouvé que ce sont eux, et non les caroténoïdes qui 
+colorent le corail rouge (corallium rubrum) et de nombreux coquillages aux couleurs bigarrées.
+</td></tr>
+<tr><td colspan="2"><hr noshade></td></tr>
+<tr><td align="left" valign="top">
+<img src="flamingo.jpg" alt="Pink Flamingo" width="60%" height="*"><br>
+<img src="carrot-300x300.jpg" alt="carrot" width="60%" height="*">
+</td>
+<td align="left" valign="top">
+   <form name="myform">
+	<input type="button" value="Voir structure Carotenoid"
+	  onClick="play('load carotenoid.xyz')">
+      </form>
+Les carotenoides colorent les carottes (bien sur!) mais aussi d'autres légumes (poivrons rouge,etc.)
+et aussi des oiseaux (à l'exclusion des perroquets), comme le flamant rose (qui lui même le récupère de sa nourriture). 
+Ils ne différent des polyacétylènes courts que par l'ajout de quatre groupement methyl CH<sub>3</sub>. 
+C'est peu, mais cela change tout, notamment du point de vue de la solubilité du pigment et de son arrivée dans l'organisme. 
+</td></tr>
+	  </table>
+
+<!-- #EndEditable -->
+</font>	
+</td>
+<td rowspan="2" width=60%>
+	<!-- #BeginEditable "jmol" -->
+<!--
+    <applet code="JmolApplet" archive="../JmolApplet.jar"
+	width="600" height="600">
+	<param name="load" value="batterie-au-lithium.xyz">
+	<param name="script"  value="select nickel; connect delete; connect (lithium) (*) delete; move 90 0 0 0 0 0 0 0 5; animation mode PALINDROME 2.0 2.0">
+	<param name="progressbar" value="true">
+	</applet>
+-->
+<!--<img src="fleche.png" width="600" height="*" alt="Energy Scale" border="0">-->
+     <applet name="jmol" code="JmolApplet" archive="../JmolApplet.jar" width="830" height="600" mayscript="true">
+	<param name="load" value="carotenoid.xyz">
+	<param name="label" value="symbol">
+	<param name="progressbar" value="true">
+	</applet>
+	<!-- #EndEditable -->
+</td>
+</tr>
+<tr valign="middle"  align="center">
+<td>
+<center>
+<font color="#FFFF00">
+	<!-- #BeginEditable "afm" -->
+	<em>Institut des Matériaux Jean Rouxel (IMN), Nantes</em><br>
+	Images copyright IMN 2009 and <a href="http://www.gemnantes.fr/">GemNantes</a>
+<!-- #EndEditable -->
+	</font></center>
+</td>
+</tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

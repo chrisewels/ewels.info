@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>AIMPRO methodology</TITLE>
+<META NAME="description" CONTENT="AIMPRO methodology">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node47.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="thesis.html">
+<LINK REL="next" HREF="node27.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html705"
+ HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html702"
+ HREF="thesis.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html696"
+ HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html704"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html706"
+ HREF="node27.html">Expanding the Wavefunction</A>
+<B> Up:</B> <A NAME="tex2html703"
+ HREF="thesis.html">Chris Ewels' PhD Thesis</A>
+<B> Previous:</B> <A NAME="tex2html697"
+ HREF="node25.html">Use of the Musgrave-Pople</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION001000000000000000000">
+AIMPRO methodology</A>
+</H1>
+ <A NAME="aimpro">&#160;</A>
+<BLOCKQUOTE>
+<SMALL>``Frequently the approximations that enter solid state
+calculations are so intricate that they are never specified in the
+publication in which the calculations are described and would not be
+of interest if they were.  Nevertheless, without knowledge of the
+approximations, it is sometimes difficult to assess a result that is
+characterised only as being the best the author could do.''</SMALL>
+<DIV ALIGN="RIGHT">W. A. Harrison, 1980
+<BR>
+`Electronic Structure and the properties of solids'
+</DIV></BLOCKQUOTE>
+<P>
+In this chapter I will describe how LSDF theory has been implemented
+in AIMPRO.  I will also discuss some of the practical problems
+encountered when using AIMPRO and how these can be minimised.  A full
+review of the methodology behind AIMPRO is given in
+Reference&nbsp;[<A
+ HREF="node149.html#jones_97">36</A>] and vibrational mode calculations in
+Reference&nbsp;[<A
+ HREF="node149.html#jones_94">37</A>].
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html707"
+ HREF="node27.html#SECTION001010000000000000000">
+Expanding the Wavefunction</A>
+<LI><A NAME="tex2html708"
+ HREF="node28.html#SECTION001020000000000000000">
+Approximation to the charge density</A>
+<UL>
+<LI><A NAME="tex2html709"
+ HREF="node29.html#SECTION001021000000000000000">
+Spin averaged <IMG WIDTH="31" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.gif"
+ ALT="$\tilde{E}_{xc}$"> and improvements to the
+approximations</A>
+<LI><A NAME="tex2html710"
+ HREF="node30.html#SECTION001022000000000000000">
+Spin polarised exchange correlation</A>
+<LI><A NAME="tex2html711"
+ HREF="node31.html#SECTION001023000000000000000">
+Summary so far</A>
+<LI><A NAME="tex2html712"
+ HREF="node32.html#SECTION001024000000000000000">
+Matrix Formalism</A>
+</UL>
+<LI><A NAME="tex2html713"
+ HREF="node33.html#SECTION001030000000000000000">
+Self-consistency</A>
+<UL>
+<LI><A NAME="tex2html714"
+ HREF="node34.html#SECTION001031000000000000000">
+Fermi statistics and `level smearing'</A>
+</UL>
+<LI><A NAME="tex2html715"
+ HREF="node35.html#SECTION001040000000000000000">
+Evaluation of Forces</A>
+<LI><A NAME="tex2html716"
+ HREF="node36.html#SECTION001050000000000000000">
+Structural Optimisation</A>
+<LI><A NAME="tex2html717"
+ HREF="node37.html#SECTION001060000000000000000">
+Calculation of Vibrational Modes</A>
+<UL>
+<LI><A NAME="tex2html718"
+ HREF="node38.html#SECTION001061000000000000000">
+Induced Dipole Moments</A>
+</UL>
+<LI><A NAME="tex2html719"
+ HREF="node39.html#SECTION001070000000000000000">
+Discussion of the methods used in AIMPRO</A>
+<UL>
+<LI><A NAME="tex2html720"
+ HREF="node40.html#SECTION001071000000000000000">
+Density functional theory / Local Density Approximation</A>
+<LI><A NAME="tex2html721"
+ HREF="node41.html#SECTION001072000000000000000">
+Real space</A>
+<LI><A NAME="tex2html722"
+ HREF="node42.html#SECTION001073000000000000000">
+Clusters</A>
+<LI><A NAME="tex2html723"
+ HREF="node43.html#SECTION001074000000000000000">
+H termination</A>
+<LI><A NAME="tex2html724"
+ HREF="node44.html#SECTION001075000000000000000">
+Gaussian orbitals</A>
+<LI><A NAME="tex2html725"
+ HREF="node45.html#SECTION001076000000000000000">
+Bond centred Gaussian fitting functions</A>
+</UL>
+<LI><A NAME="tex2html726"
+ HREF="node46.html#SECTION001080000000000000000">
+Application of AIMPRO to the oxygen in silicon problem</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

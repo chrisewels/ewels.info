@@ -1,0 +1,324 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Parameterising the correlation energy</TITLE>
+<META NAME="description" CONTENT="Parameterising the correlation energy">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html598"
+ HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html595"
+ HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html591"
+ HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html597"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html599"
+ HREF="node17.html">Kohn-Sham Theory</A>
+<B> Up:</B> <A NAME="tex2html596"
+ HREF="node15.html">The local density approximation</A>
+<B> Previous:</B> <A NAME="tex2html592"
+ HREF="node15.html">The local density approximation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION00951000000000000000">
+Parameterising the correlation energy</A>
+</H2>
+<P>
+The correlation energy, <I>E</I><SUB><I>c</I></SUB>, for a homogeneous electron gas comes
+from a set of quantum Monte Carlo calculations performed by Ceperley
+and Alder [<A
+ HREF="node149.html#ceperley_80">20</A>].  These were later parameterised by Perdew
+and Zunger [<A
+ HREF="node149.html#perdew_81">21</A>].  Slight improvements to these
+parameterisations have been made since, for example Perdew and Wang
+[<A
+ HREF="node149.html#perdew_92">22</A>], but AIMPRO uses the Perdew and Zunger
+parameterisations in order to remain consistent with the
+pseudopotential parameters of Bachelet, Hamman and Schl&#252;ter
+[<A
+ HREF="node149.html#bhs">23</A>] (see Section&nbsp;<A HREF="node19.html#pseudo">2.7</A> below).
+<P>
+The results of Ceperley and Alder apply to low density electron gases,
+and can be combined with results from perturbation theory for high
+density gases to cover a wide density range.  Defining the correlation
+energy per electron, <IMG WIDTH="18" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.gif"
+ ALT="$\varepsilon_c$">, polarisation <IMG WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.gif"
+ ALT="$\xi$"> and Wigner-Seitz
+radius of each electron, <I>r</I><SUB><I>s</I></SUB> as:
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="415" HEIGHT="57"
+ SRC="img52.gif"
+ ALT="\begin{displaymath}
+E_c = \Omega n\varepsilon_c(n,\xi), ~~~ 
+\xi = \frac{(n_\upa...
+ ...arrow)}{n},~~~
+r_s={\left(\frac{4\pi n}{3}\right)}^\frac{1}{3},\end{displaymath}"></P>
+<P>
+where <I>n</I> is the electron density, for the non-polarised
+(<IMG WIDTH="46" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.gif"
+ ALT="$\xi=0$">) and fully-polarised (<IMG WIDTH="46" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.gif"
+ ALT="$\xi=1$">) cases, <IMG WIDTH="18" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.gif"
+ ALT="$\varepsilon_c$"> is given
+by[<A
+ HREF="node149.html#perdew_81">21</A>]:
+<P><A NAME="eq:per_zung">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="eq:per_zung">&#160;</A><IMG WIDTH="347" HEIGHT="62"
+ SRC="img55.gif"
+ ALT="\begin{displaymath}
+\varepsilon_c = 
+\begin{cases}
+\gamma \left\{ 1 + \beta_1 \s...
+ ... &r_s \geq 1\\ B + (A + Cr_s)\ln(r_s) + Dr_s&r_s < 1\end{cases}\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(8)</TD></TR>
+</TABLE>
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<A NAME="1110">&#160;</A>
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<CAPTION><STRONG>Table:</STRONG>
+Parameters for the correlation energy per electron given in
+Equation&nbsp;<A HREF="node16.html#eq:per_zung">2.5.16</A>.  Taken from
+Reference&nbsp;[<A
+ HREF="node149.html#perdew_81">21</A>].</CAPTION>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG WIDTH="13" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.gif"
+ ALT="$\gamma$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG WIDTH="21" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.gif"
+ ALT="$\beta_1$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG WIDTH="21" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.gif"
+ ALT="$\beta_2$"></TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>Non-polarised</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.1423</TD>
+<TD ALIGN="CENTER" NOWRAP>1.0529</TD>
+<TD ALIGN="CENTER" NOWRAP>0.3334</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>Polarised</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.0843</TD>
+<TD ALIGN="CENTER" NOWRAP>1.3981</TD>
+<TD ALIGN="CENTER" NOWRAP>0.2611</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><I>A</I></TD>
+<TD ALIGN="CENTER" NOWRAP><I>B</I></TD>
+<TD ALIGN="CENTER" NOWRAP><I>C</I></TD>
+<TD ALIGN="CENTER" NOWRAP><I>D</I></TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>Non-polarised</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0311</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.0480</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0020</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.0116</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="LEFT" NOWRAP>Polarised</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0155</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.0269</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0007</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.0048</TD>
+</TR>
+</TABLE></DIV>
+<BR>
+<P>
+The value of the coefficients <IMG WIDTH="13" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.gif"
+ ALT="$\gamma$">, <IMG WIDTH="21" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.gif"
+ ALT="$\beta_1$"> and <IMG WIDTH="21" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.gif"
+ ALT="$\beta_2$"> are
+given in Table&nbsp;<A HREF="node16.html#tab:per_zung">2.1</A>.  When the gas is only partially
+polarised (<IMG WIDTH="81" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.gif"
+ ALT="$0 < \xi < 1$">), an average of the polarised and
+non-polarised cases is taken[<A
+ HREF="node149.html#vonbarth_72">24</A>],
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+It is possible to simplify these expressions however; to a good
+approximation the non-polarised and fully polarised energies vary as
+<IMG WIDTH="39" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.gif"
+ ALT="$\alpha n^{s_1}$"> and <IMG WIDTH="39" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.gif"
+ ALT="$\beta n^{s_2}$"> respectively.  Therefore for the
+exchange-correlation energy used in AIMPRO, we use a simplified
+expression:
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<A NAME="1113">&#160;</A>
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<CAPTION><STRONG>Table 2.2:</STRONG>
+Parameters for the exchange-correlation energy used in
+AIMPRO, see Equation&nbsp;<A HREF="#eq:e_xc">2.5.19</A>.</CAPTION>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP><I>i</I></TD>
+<TD ALIGN="CENTER" NOWRAP><I>A</I><SUB><I>i</I></SUB></TD>
+<TD ALIGN="CENTER" NOWRAP><I>p</I><SUB><I>i</I></SUB></TD>
+<TD ALIGN="CENTER" NOWRAP><I>q</I><SUB><I>i</I></SUB></TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>1</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.9305</TD>
+<TD ALIGN="CENTER" NOWRAP>0.3333</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0000</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>2</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.0361</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0000</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0000</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>3</TD>
+<TD ALIGN="CENTER" NOWRAP>0.2327</TD>
+<TD ALIGN="CENTER" NOWRAP>0.4830</TD>
+<TD ALIGN="CENTER" NOWRAP>1.0000</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>4</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.2324</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0000</TD>
+<TD ALIGN="CENTER" NOWRAP>1.0000</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP><I>i</I></TD>
+<TD ALIGN="CENTER" NOWRAP><I>A</I>'<SUB><I>i</I></SUB></TD>
+<TD ALIGN="CENTER" NOWRAP><I>p</I>'<SUB><I>i</I></SUB></TD>
+<TD ALIGN="CENTER" NOWRAP><I>q</I>'<SUB><I>i</I></SUB></TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP>&nbsp;</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>1</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.9305</TD>
+<TD ALIGN="CENTER" NOWRAP>0.3333</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0000</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>2</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.0375</TD>
+<TD ALIGN="CENTER" NOWRAP>0.1286</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0000</TD>
+</TR>
+<TR VALIGN="TOP"><TD ALIGN="CENTER" NOWRAP>3</TD>
+<TD ALIGN="CENTER" NOWRAP>-0.0796</TD>
+<TD ALIGN="CENTER" NOWRAP>0.0000</TD>
+<TD ALIGN="CENTER" NOWRAP>0.1286</TD>
+</TR>
+</TABLE></DIV>
+<BR>
+<P>
+The coefficients, <I>A</I><SUB><I>i</I></SUB>, <I>p</I><SUB><I>i</I></SUB> and <I>q</I><SUB><I>i</I></SUB> are given in
+Table&nbsp;<A HREF="node16.html#tab:e_xc">2.2</A>.  For larger density values (<I>n</I> &gt; 1), an
+alternative set of parameters are used, <I>A</I>'<SUB><I>i</I></SUB>, <I>p</I>'<SUB><I>i</I></SUB> and <I>q</I>'<SUB><I>i</I></SUB>
+(also listed in Table&nbsp;<A HREF="node16.html#tab:e_xc">2.2</A>), which are more accurate in the
+high density regime.  The error when using these approximations is
+normally less than 3% for densities up to <I>n</I> = 15.  For calculations
+such as these with no heavier metal impurities, the density is
+normally in the range 0 &lt; <I>n</I> &lt; 1.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html598"
+ HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html595"
+ HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html591"
+ HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html597"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html599"
+ HREF="node17.html">Kohn-Sham Theory</A>
+<B> Up:</B> <A NAME="tex2html596"
+ HREF="node15.html">The local density approximation</A>
+<B> Previous:</B> <A NAME="tex2html592"
+ HREF="node15.html">The local density approximation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

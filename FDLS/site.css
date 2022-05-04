@@ -1,0 +1,11 @@
+body {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt}
+
+h3 {font-size: 20pt}
+
+a:link {  color: #336699; text-decoration: none}
+a:hover {  color: #FF0033; text-decoration: underline}
+a:active {  color: #FFFF33; text-decoration: none}
+a:visited {  color: #336699; text-decoration: none}
+li {  margin-top: 0.3cm; border-bottom-width: 4px}
+.squash {  margin-top: auto}
+.smallfont {  font-size: small}

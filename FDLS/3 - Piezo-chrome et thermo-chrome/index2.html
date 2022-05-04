@@ -1,0 +1,195 @@
+<html><!-- #BeginTemplate "/Templates/template.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>Square de la Science 2009, Institut des Materiaux Jean Rouxel, CNRS UMR6502, Nantes</title>
+<script>
+	  function play(script) {
+	    document.jmol.script(script);
+	  }
+	</script>
+<!-- #EndEditable -->
+<META NAME="Author" CONTENT="Chris Ewels">
+<META NAME="Classification" CONTENT="Academic: Index">
+<link rel="stylesheet" href="../site.css" type="text/css">
+
+<script language="JavaScript">
+<!--
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+
+  if (restore) selObj.selectedIndex=0;
+
+}
+
+
+function MM_goToURL() { //v3.0
+
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+
+}
+
+function MM_checkBrowser(NSvers,NSpass,NSnoPass,IEvers,IEpass,IEnoPass,OBpass,URL,altURL) { //v4.0
+  var newURL='', verStr=navigator.appVersion, app=navigator.appName, version = parseFloat(verStr);
+  if (app.indexOf('Netscape') != -1) {
+    if (version >= NSvers) {if (NSpass>0) newURL=(NSpass==1)?URL:altURL;}
+    else {if (NSnoPass>0) newURL=(NSnoPass==1)?URL:altURL;}
+  } else if (app.indexOf('Microsoft') != -1) {
+    if (version >= IEvers || verStr.indexOf(IEvers) != -1)
+     {if (IEpass>0) newURL=(IEpass==1)?URL:altURL;}
+    else {if (IEnoPass>0) newURL=(IEnoPass==1)?URL:altURL;}
+  } else if (OBpass>0) newURL=(OBpass==1)?URL:altURL;
+  if (newURL) { window.location=unescape(newURL); document.MM_returnValue=false; }
+}
+    function CheckMore() {
+      if (document.ucc.To.options.selectedIndex == -1) {
+        document.ucc.To.options.selectedIndex = 0; }
+      if (document.ucc.From.options.selectedIndex == -1) {
+        document.ucc.From.options.selectedIndex = 0; }
+
+      var txt = document.ucc.From.options[document.ucc.From.options.selectedIndex].text;
+      if (txt.indexOf("Click for every world currency") != -1) {
+        document.location.href = 'http://www.xe.com/ucc/full.shtml'; }
+      var txt = document.ucc.To.options[document.ucc.To.options.selectedIndex].text;
+      if (txt.indexOf("Click for every world currency") != -1) {
+        document.location.href = 'http://www.xe.com/ucc/full.shtml'; }
+    }
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+//-->
+
+</script>
+
+</head>
+
+<body bgcolor="#000000">
+<table width=100% border="1" bordercolor="#FF6600" cellpadding="4" cellspacing="1">
+<tr valign="top">
+<td valign="top" bgcolor="#9999FF" colspan="2">
+ <table width=100%>
+ <tr>
+  <td align="left">
+<img src="../logos.png" height=100>
+	</td>
+  <td align="center">
+  <h1>
+	<!-- #BeginEditable "titletext" -->
+	Des pigments caméléons 
+	<!-- #EndEditable -->
+	</h1>
+ </td><td align="right">
+ <select name="mymenu" onChange="MM_jumpMenu('parent',this,1)">
+			  <option>Choisis une thème...</option>
+				<option></option>
+			  <option value="../Diamant/index.html">Le couleur dans le diamant</option>
+              <option value="../Carotenoid/index.html">Carotenoids : Quand un "plastique" colore la vie</option>			  
+              <option value="../1%20-%20Saphir/index.html">Un saphir qui nous en fait voir de toutes les couleurs</option>			  
+              <option value="../2%20-%20luminophores/index.html">La télévision couleur, c'est lumineux ! </option>			  			  
+              <option value="../3%20-%20Piezo-chrome%20et%20thermo-chrome/index.html">Des pigments caméléons</option>			  			  				<option></option>	  			  
+				<option></option>
+				<option></option>
+			  <option value="../C60/index.html">Le fullerène : C60 </option>
+              <option value="../CNT/index.html">Les nanotubes de Carbone</option>
+<!--              <option value="../4/index.html">Comment plier un nanotube de carbone</option>-->
+			  <option value="../DNA/index.html">La molécule d'ADN</option>
+              <option value="../Cellulose/index.html">La cellulose, une plastique naturelle</option>			  
+              <option value="../Batterie/index.html">Les batteries au lithium</option>
+              <option value="../MicroOnde/index.html">La danse des atomes au rythme des microondes</option>
+            </select>
+	</td>
+ </tr>
+ </table>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" bgcolor="#FFFFCC">
+<font color="#000066">
+	<!-- #BeginEditable "text" -->
+	<center>
+<strong>	Certains matériaux ont la particularité de changer de couleur selon les conditions
+	 dans lesquelles ils se trouvent.<p></p>
+Il existe de pigments changeant de couleur sous l'effet d'une température (thermo-chromes), 
+d'une pression (piezo-chromes) ou encore d'une lumière (photo-chromes).<p></p>
+C'est ainsi que fonctionne le thermo-spot des poëles Tefal offrant ainsi un indicateur visuel 
+de la temperature idéale pour réaliser vos crêpes. </strong>
+<p></p>
+	<img src="explanation.png" width=100%>
+</center>
+	<!-- #EndEditable -->
+</font>	
+</td>
+<td rowspan="2" width=60%>
+	<!-- #BeginEditable "jmol" -->
+<center>
+<font color="#FFFF00">
+Choisi une movie : <select name="mymenu" onChange="MM_jumpMenu('parent',this,1)">
+			  <option value="index2.html">Movie d'un thermo-chrome</option>
+ 			  <option value="index.html">Movie d'un piezo-chrome</option>
+</select>
+<object
+    id="MediaPlayer" width="600" height="600"
+    classid="CLSID:6BF52A52-394A-11D3-B153-00C04F79FAA6"
+    standby="Loading Microsoft Windows Media Player components..."
+    type="application/x-oleobject">
+    <param name="AutoSize" value="true">
+    <param name="AutoStart" value="true">
+    <param name="Balance" value="0">
+    <param name="DisplaySize" value="0">
+    <param name="Mute" value="false">
+    <param name="PlayCount" value="0">
+    <param name="Rate" value="1.0">
+    <param name="ShowAudioControls" value="false">
+    <param name="ShowControls" value="false">
+    <param name="ShowDisplay" value="false">
+    <param name="ShowStatusBar" value="false">
+    <param name="ShowTracker" value="false">
+    <param name="StretchToFit" value="false">
+    <param name="TransparentAtStart" value="false">
+    <param name="Volume" value="100">
+    <embed type="application/x-mplayer2"
+        name="mediaplayer"
+        pluginspage="http://www.microsoft.com/Windows/MediaPlayer"
+        src="c0905b_s.avi"
+        height="600"
+        width="600"
+        autosize="1"
+        autostart="1"
+        balance="0"
+        displaysize="0"
+        mute="0"
+        playcount="0"
+        rate="1.0"
+        showaudiocontrols="0"
+        showcontrols="0"
+        showdisplay="0"
+        showstatusbar="0"
+        showtracker="0"
+        stretchtofit="1"
+        transparentatstart="0">
+    </embed>
+</object>
+</font></center>
+	<!-- #EndEditable -->
+</td>
+</tr>
+<tr valign="middle"  align="center">
+<td>
+<center>
+<font color="#FFFF00">
+	<!-- #BeginEditable "afm" -->
+<em>(c) 2009 Institut des Matériaux Jean Rouxel (IMN), Nantes</em><br>
+	<!-- #EndEditable -->
+	</font></center>
+</td>
+</tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

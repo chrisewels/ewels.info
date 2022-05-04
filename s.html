@@ -1,0 +1,1746 @@
+<html>
+
+<head><TITLE>Useful Links - Chris Ewels</TITLE>
+<link rel="stylesheet" href="file:///C|/Documents%20and%20Settings/All%20Users/Documents/Websites/LPS/styles.css" type="text/css">
+
+<meta name="keywords" value="gateway,links,STEM,Orsay,reference,science,ewels">
+
+<meta name="description" value="Useful links page for STEM Group, LPS Orsay">
+
+<script language="JavaScript">
+
+<!--
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+
+  if (restore) selObj.selectedIndex=0;
+
+}
+
+
+function carte(Oo,a,v,cp,p,o)
+{
+newURL="http://www.cartes-plans.com/map-iti.php?rue="+a+"&ville="+v+"&cp="+cp+"&pays="+p+"&choix_map="+o,"Carte",	"status=0,location=0,menubar=0,titlebar=1,personalbar=1,toolbar=1,resizable=1,scrollbars=0, width=795,height=560";
+document.location = newURL;
+}
+
+
+function MM_goToURL() { //v3.0
+
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+
+}
+
+function jumpto() { //v1.0 (c) Chris Ewels 2001
+  var i;
+  var searchchoice = new Array();
+  var choiceend = new Array();
+
+  searchchoice[0] = "http://www.google.com/search?q=";
+  choiceend[0] = "";
+
+  searchchoice[1] = "http://scholar.google.com/scholar?q=";
+  choiceend[1] = "";
+
+  searchchoice[2] = "http://www.scirus.com/srsapp/search?q=";
+  choiceend[2] = "&ds=jnl&ds=web&g=s&t=all";
+  
+  searchchoice[3] = "http://images.google.com/images?num=20&hl=en&imgsafe=off&q=";
+  choiceend[3] = "";
+
+  searchURL = searchchoice[document.searchform.whichsearch.value]+document.searchform.searchfor.value+choiceend[document.searchform.whichsearch.value];
+
+  document.location = searchURL;
+}
+
+function getarticle()  { //v1.0 (c) Chris Ewels 2004
+
+var i,j,vol,iss,pag,yea;
+var h1 = new Array(); // Initial URL
+var h2 = new Array(); // Volume
+var h3 = new Array(); // Issue
+var h4 = new Array(); // Page
+var h5 = new Array(); // Year 
+var h6 = new Array(); // End of URL
+var journal = new Array();
+
+// APS Journals
+h1[1]="http://link.aps.org/volpage?journal=";
+h2[1]="&volume=";
+h3[1]="";
+h4[1]="&id=";
+h5[1]="";
+h6[1]="";
+
+journal[101] = "PRA";	// Phys Rev A
+journal[102] = "PRB";	// Phys Rev B
+journal[103] = "PRC";	// Phys Rev C
+journal[104] = "PRD";	// Phys Rev D
+journal[105] = "PRE";	// Phys Rev E
+journal[106] = "PRL";	// Phys Rev Lett
+journal[107] = "RMP";	// Rev Mod Phys
+
+// ACS Journals
+h1[3]="http://pubs3.acs.org/acs/journals/toc.page?incoden=";
+h2[3]="&involume=";
+h3[3]="&inissue=";
+h4[3]="";
+h5[3]="";
+h6[3]="";
+
+journal[301] = "nalefd";	// Nanoletters
+journal[302] = "chreay";	// Chemical Reviews
+journal[303] = "cmatex";	// Chemistry of Materials
+journal[304] = "jacsat";	// Journal of the American Chemical Society
+journal[305] = "jcisd8";	// Journal of Chemical Information and Modelling
+journal[306] = "jctcce";	// Journal of Chemical Theory and Computation
+journal[307] = "jpcafh";	// Journal of Physical Chemistry A
+journal[308] = "jpcbfk";	// Journal of Physical Chemistry B
+journal[309] = "langd5";	// Langmuir
+journal[310] = "achre4";	// Accounts of Chemical Research
+
+// AIP Journals
+h1[4]="http://link.aip.org/link/?";
+h2[4]="/";
+h3[4]="";
+h4[4]="/";
+h5[4]="";
+h6[4]="";
+
+journal[401] = "AJP";	// American Journal of Physics
+journal[402] = "APC";	// AIP Conference Proceedings
+journal[403] = "APL";	// Applied Physics Letters
+journal[404] = "GET";	// Geochemical Transactions
+journal[405] = "FCT";	// Journal of Fuel Cell SciTech
+journal[406] = "GPY";	// Geophysics
+journal[407] = "JAP";	// Journal of Applied Physics
+journal[408] = "JCP";	// Journal of Chemical Physics
+journal[409] = "JES";	// Journal Electroehcmical Society
+journal[410] = "JTP";	// JETP Letters
+journal[411] = "SEM";	// Semiconductors
+
+// IoP Journals
+h1[5]="http://www.iop.org/EJ/select?cf_issn=";
+h2[5]="&cf_author=&cf_volume=";
+h3[5]="&cf_issue=";
+h4[5]="&cf_spage=";
+h5[5]="";
+h6[5]="&submit=1";
+
+journal[501] = "1009-1963";	// Chinese Physics
+journal[502] = "0256-307X";	// Chinese Physics Letters
+journal[503] = "0143-0807";	// European Journal of Physics
+journal[504] = "1742-2140";	// Journal of Geophysics and Engineering
+journal[505] = "0305-4470";	// Journal of Physics A: Mathematical and General
+journal[506] = "0953-4075";	// Journal of Physics B: Atomic, Molecular and Optical Physics
+journal[507] = "0953-8984";	// Journal of Physics: Condensed Matter
+journal[508] = "1742-6596";	// Journal of Physics: Conference Series
+journal[509] = "0022-3727";	// Journal of Physics D: Applied Physics
+journal[510] = "0957-0233";	// Measurement Science and Technology
+journal[511] = "0965-0393";	// Modelling and Simulation in Materials Science and Engineering
+journal[512] = "0957-4484";	// Nanotechnology
+journal[513] = "1367-2630";	// New Journal of Physics
+journal[514] = "0963-9659";	// Pure and Applied Optics (1992-1998)
+journal[515] = "0954-8998";	// Quantum Optics (1989-1994)
+journal[516] = "1355-5111";	// Quantum and Semiclassical Optics (1995-1998)
+journal[517] = "0034-4885";	// Reports on Progress in Physics
+journal[518] = "0268-1242";	// Semiconductor Science and Technology
+
+// Acta Crystallographica...
+h1[6]="http://scripts.iucr.org/cgi-bin/quickfind?journal=";
+h2[6]="&volume=";
+h3[6]="";
+h4[6]="&page=";
+h5[6]="";
+h6[6]="";
+
+journal[601] = "q";	// Acta Cryst 
+journal[602] = "a";	// Acta Cryst. A
+journal[603] = "b";	// Acta Cryst. B
+journal[604] = "c";	// Acta Cryst. C
+journal[605] = "d";	// Acta Cryst. D
+journal[606] = "e";	// Acta Cryst. E
+journal[607] = "f";	// Acta Cryst. F
+journal[608] = "j";	// J. Appl. Cryst.
+journal[609] = "s";	// J. Synchrotron Rad.
+
+// RSC Journals
+h1[7]="http://xlink.rsc.org/articleresolver.cfm?journal_code=";
+h2[7]="&year_volume=";
+h3[7]="&issue=";
+h4[7]="&FPage=";
+h5[7]="";
+h6[7]="";
+
+journal[701] = "AC";	// Analytical Communications
+journal[702] = "CC";	// Chemical Communications
+journal[703] = "CS";	// Chemical Society Reviews
+journal[704] = "CE";	// CrystEngComm
+journal[705] = "DT";	// Dalton Transactions
+journal[706] = "FD";	// Faraday Discussions
+journal[707] = "GC";	// Green Chemistry
+journal[708] = "GT";	// Geochemical Transactions
+journal[709] = "JA";	// JAAS
+journal[710] = "JC";	// J Chem Research
+journal[711] = "JM";	// J Mat Chem
+journal[712] = "NJ";	// New J Chem
+journal[713] = "OB";	// Org and Biomol Chem
+journal[714] = "P1";	// Perkin 1
+journal[715] = "P2";	// Perkin 2
+journal[716] = "PP";	// Photochem and Photobio Sci
+journal[717] = "QU";	// PhysChemComm
+journal[718] = "CP";	// Phys Chem Chem Phys
+
+// European Physical Journal
+h1[8]="http://www.edpsciences.org/cgi-bin/toabstract?journal=";
+h2[8]="&volume=";
+h3[8]="&issue=";
+h4[8]="&page=";
+h5[8]="";
+h6[8]="";
+
+journal[801] = "chimique";	// Actualité Chimique
+journal[802] = "anphys";	// Ann. Phys. Fr.
+journal[803] = "epjdirect";	// EPJdirect
+journal[804] = "epjap";	// Eur. Phys. J. Appl. Phys.
+journal[805] = "epja";	// Eur. Phys. J. A
+journal[806] = "epjb";	// Eur. Phys. J. B
+journal[807] = "epjc";	// Eur. Phys. J. C
+journal[808] = "epjd";	// Eur. Phys. J. D
+journal[809] = "epje";	// Eur. Phys. J. E
+journal[810] = "epl";	// Europhys. Lett.
+
+// Main script
+j = parseInt([document.getj.whichj.value]/100);
+i = [document.getj.whichj.value]-(j*100);
+vol = [document.getj.volume.value];
+iss = [document.getj.issue.value];
+pag = [document.getj.page.value];
+//yea = [document.getj.year.value];
+yea = "";
+
+// Now discard what user information we can't deal with
+if (h2[j] == "") {vol="";}
+if (h3[j] == "") {iss="";}
+if (h4[j] == "") {pag="";}
+if (h5[j] == "") {yea="";}
+
+searchURL = h1[j]+journal[document.getj.whichj.value]+h2[j]+vol+h3[j]+iss+h4[j]+pag+h6[j];
+
+//document.write([document.getj.whichj.value]+" "+i+" "+j+"  "+searchURL);
+document.location = searchURL;
+}
+
+
+function MM_checkBrowser(NSvers,NSpass,NSnoPass,IEvers,IEpass,IEnoPass,OBpass,URL,altURL) { //v4.0
+  var newURL='', verStr=navigator.appVersion, app=navigator.appName, version = parseFloat(verStr);
+  if (app.indexOf('Netscape') != -1) {
+    if (version >= NSvers) {if (NSpass>0) newURL=(NSpass==1)?URL:altURL;}
+    else {if (NSnoPass>0) newURL=(NSnoPass==1)?URL:altURL;}
+  } else if (app.indexOf('Microsoft') != -1) {
+    if (version >= IEvers || verStr.indexOf(IEvers) != -1)
+     {if (IEpass>0) newURL=(IEpass==1)?URL:altURL;}
+    else {if (IEnoPass>0) newURL=(IEnoPass==1)?URL:altURL;}
+  } else if (OBpass>0) newURL=(OBpass==1)?URL:altURL;
+  if (newURL) { window.location=unescape(newURL); document.MM_returnValue=false; }
+}
+    function CheckMore() {
+      if (document.ucc.To.options.selectedIndex == -1) {
+        document.ucc.To.options.selectedIndex = 0; }
+      if (document.ucc.From.options.selectedIndex == -1) {
+        document.ucc.From.options.selectedIndex = 0; }
+
+      var txt = document.ucc.From.options[document.ucc.From.options.selectedIndex].text;
+      if (txt.indexOf("Click for every world currency") != -1) {
+        document.location.href = 'http://www.xe.com/ucc/full.shtml'; }
+      var txt = document.ucc.To.options[document.ucc.To.options.selectedIndex].text;
+      if (txt.indexOf("Click for every world currency") != -1) {
+        document.location.href = 'http://www.xe.com/ucc/full.shtml'; }
+    }
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+//-->
+
+</script>
+
+
+
+<link rel="stylesheet" href="file:///C|/Documents%20and%20Settings/All%20Users/Documents/Websites/LPS/site.css" type="text/css">
+
+</head>
+
+<body onLoad="MM_goToURL('parent.frames[\'leftFrame\']','file:///C|/Documents%20and%20Settings/All%20Users/Documents/Websites/LPS/menus/main.html');return document.MM_returnValue">
+
+<table width=100%>
+<tr valign="middle" align="center">
+<td valign="middle" align="center">
+
+<table border="2" bgcolor="#eeeeff">
+
+  <tr><td>
+
+      <table width="100%" cellspacing="6" cellpadding="6">
+        <tr>
+          <td valign="middle" align="left"> 
+            <select name="navto" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+			  <option>Group</option>
+<option></option>
+			  <option value="http://www.lps.u-psud.fr/Collectif/gr_27/">STEM</option>
+              <option value="http://www.lps.u-psud.fr/">LPS</option>
+              <option value="http://www.u-psud.fr/">Paris-Sud</option>
+              <option value="http://www.dr5.cnrs.fr/deleg/html/accueildeleg.html">CNRS 92</option>
+              <option value="http://www.cnrs.fr/">CNRS</option>
+              <option value="http://www.cordis.lu/en/home.html">EU: CORDIS</option>
+            </select>
+          </td>
+
+<td valign="middle" align="left">
+<select name="eJournals" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>eJournals</option>
+<option></option>
+<option value="http://www.lps.u-psud.fr/Bibliotheque/adresse1.html">eJournals at LPS</option>
+<option value="http://www.u-psud.fr/Bibliors.nsf/Revelec.htm!OpenPage">eJournals at Paris</option>
+<option value="http://www.sciencedirect.com/science?_ob=JournalListURL&_type=all&_auth=y&_btn=Y&_acct=C000044719&_version=1&_urlVersion=0&_userid=829662&_frameSeg=M&md5=778a1a93722001afd9f70bb76b17407f">Science Direct Journals</option>
+<option value="http://www.springerlink.com/app/home/browse-publications-results.asp?wasp=e05d2179fj3wtmaf0tb6&referrer=browse">SpringerLink Journals</option>
+<option value="http://gateway2.ovid.com:80/ovidweb.cgi?S=IDNJHKLGEAFLPO00D&Browse+Tocs=S.sh.2.13|0">OVID Journals</option>
+<option value="http://isi4.newisiknowledge.com/portal.cgi">ISI Web of Knowledge</option>
+</select>
+</td>
+
+<td valign="middle" align="left">
+<select name="Journals" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Journals Online</option> 
+<option></option>
+<option value="http://journals.iucr.org/b/contents/backissues.html">Acta Crystal</option>
+<option value="http://ojps.aip.org/aplo/">Applied Physics Letters</option>
+<option value="http://www.sciencedirect.com/science/journal/00086223">Carbon</option>
+<option value="http://www.rsc.org/is/journals/current/chemcomm/cccon.htm">Chem Comm</option>
+<option value="http://www.sciencedirect.com/science/journal/03010104">Chemical Physics</option>
+<option value="http://www.sciencedirect.com/science/journal/00092614">Chemical Physics Letters</option>
+<option value="http://www.imm.ac.cn/en/html/periodicals.html">Chinese Chem Lett</option>
+<option value="http://www.sioc.ac.cn/chub/Cmulu.htm">Chinese J Chem</option>
+<option value="http://www.rsc.org/is/journals/current/dalton/dtcon.htm">Dalton Trans</option>
+<option value="http://www.edpsciences.org/journal/index.cfm?edpsname=epjap&niv1=contents&niv2=archives">Eur Phys Journ - Appl Phys</option>
+<option value="http://www.jstage.jst.go.jp/browse/jjap/_vols">Jpn J Appl Phys</option>
+<option value="http://pubs3.acs.org/acs/journals/toc.page?incoden=jacsat">J Am Chem Soc</option>
+<option value="http://ojps.aip.org/japo/">J Applied Physics</option>
+<option value="http://ojps.aip.org/jcpo/">J Chem Phys</option>
+<option value="http://www.sciencedirect.com/science/journal/01661280">J Mol Struc THEOCHEM</option>
+<option value="http://www.iop.org/EJ/journal/0953-4075">J Phys B</option>
+<option value="http://www.sciencedirect.com/science/journal/00223697">J Phys Chem Solids</option>
+<option value="http://www.iop.org/EJ/journal/0953-8984">J Phys Cond Matt</option>
+<option value="http://jpsj.ipap.jp/">J Phys Soc Japan</option>
+<option value="http://www.sciencedirect.com/science/journal/00224596">J Sol State Chem</option>
+<option value="http://www.sciencedirect.com/science/journal/09215107">Mat Sci Eng B</option>
+<option value="http://www.sciencedirect.com/science/journal/00255408">Materials Research Bulletin</option>
+<option value="http://www.inist.fr/jao/">Nature</option>
+<option value="http://www.sciencedirect.com/science/journal/09214526">Physica B</option>
+<option value="http://prb.aps.org/">Physical Review</option>
+<option value="http://rmp.aps.org/">Reviews of Modern Physics</option>
+<option value="http://gateway2.ovid.com:80/ovidweb.cgi">Science</option>
+<option value="http://www.sciencedirect.com/science/journal/00381098">Solid State Comm</option>
+<option value="http://www.sciencedirect.com/science/journal/00396028">Surface Science</option>
+<option value="http://www.sciencedirect.com/science/journal/03043991">Ultramicroscopy</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td valign="middle" align="left">
+<select name="Singapore" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Singapore</option>
+<option></option>
+              <option value="http://tinyurl.com/5574a">street
+map</option>
+              <option value="http://www.britishdragonboat.com/">British
+dragonboat team</option>
+              <option value="http://www.sundayhash.org.sg">Sunday
+hash</option>
+              <option
+value="http://www.timeanddate.com/worldclock/city.html?n=236/">Local
+time</option>
+              <option
+value="http://www.talkingcock.com/html/lexec.php?op=LexView&lexicon=lexicon">Singlish
+dictionary</option>
+              <option value="http://www.visitsingapore.com/uk/">Singapore
+tourism</option>
+            </select>
+          </td>
+
+<td valign="middle" align="left">
+<select name="Cinema" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Cinema</option>
+<option></option>
+<option value="http://fr.search.movies.yahoo.com/search/movies_fr?p=Boulogne+Billancourt&s=rank,headline">Boulogne Billancourt</option>
+<option value="http://fr.movies.yahoo.com/agenda/cinparissall1100159.html">Chatelet les Halles</option>
+<option value="http://fr.movies.yahoo.com/agenda/cinbanlieuesall1200065.html">Orsay</option>
+<option value="http://fr.movies.yahoo.com/agenda/cinbanlieuesall1200094.html">Saint Cloud</option>
+</select>
+
+<td valign="middle" align="left">
+<select name="Cinema" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Tickets and Events</option>
+<option></option>
+<option value="http://www.billetreduc.com/">Billets Reduc</option>
+<option value="http://h0.web.u-psud.fr/cesfo/">CESFO</option>
+<option value="http://www.caes.cnrs.fr">CAES</option>
+</select>
+</td></tr>
+
+<tr>
+<td valign="middle" align="left">
+<select name="" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Transport</option>
+<option value=""></option>
+<option value="http://idf.sncf.fr/FR/TrfLis.htm">Info traffique trains</option>
+<option value="http://www.ratp.fr/">RATP</option>
+<option value="http://www.voyages-sncf.com/dynamic/_SvHomePage?_TMS=1067882763478&_DLG=SvHomePage&_LANG=FR&_AGENCY=VSC&WebGLSession=P6aZC7EOlhVhY8Y5QwI5YgTOKJ96YrQSprYL5mJhf2yGCjnxV3tX|4332767339645546608/170395434/6/7251/7251/50443/50443/7251/-1">SNCF</option>
+<option value="http://www.viamichelin.com/viamichelin/fra/dyn/controller/HomePage">Michelin Route</option>
+<option value="http://www.voyages-sncf.com/dynamic/_SvTermConshor5?_TMS=1006120380162&_DLG=SvTermConshor5&_LANG=FR&_AGENCY=VSC">Train Timetables</option>
+<option value="http://www.viamichelin.com/viamichelin/fra/dyn/controller/CityToCitySearch">Driving Directions</option>
+<option value="http://www.sytadin.tm.fr/">Traffic in Paris</option>
+<option value="http://www.viamichelin.com/viamichelin/fra/dyn/controller/trafficHomePage">Traffic in Paris</option>
+</select>
+</td>
+
+<td valign="middle" align="left">
+<select name="world" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Collaborations</option>
+<option></option>
+<option value="http://www.ihp-fullerenes.net/">IHP Fullerenes</option>
+<option value="http://tc.cpes.sussex.ac.uk">Sussex</option>
+</select>
+</td>
+
+<td valign="middle" align="left">
+<select name="reference" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Reference</option>
+<option></option>
+<option value="http://www.xe.net/pca">Currency Converter</option>
+<option value="http://www.eb.com/">Encyclopedia Brittanica</option>
+<option value="http://dictionary.oed.com/">Dictionary</option>
+<option value="http://www.encyclopedia.com/">Encyclopedia (another)</option>
+<option value="http://humanities.uchicago.edu/forms_unrest/ROGET.html">Thesaurus</option>
+</select>
+</td></tr>
+
+<tr>
+<td valign="middle" align="left">
+<select name="science" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Science</option>
+<option></option>
+<option value="http://isi4.newisiknowledge.com/portal.cgi">Web of Science Database</option>
+<option value="http://www.shef.ac.uk:80/~chem/web-elements/">Interactive Periodic Table</option>
+<option value="http://newton.ex.ac.uk/collabs/constants.html">Physical Constants</option>
+<option value="http://newton.ex.ac.uk/research/semiconductors/theory/people/goss/symmetry/index.html">Symmetry Tables</option>
+<option value="http://www.iee.org/publish/books/crys_4.html">List of abbreviations</option>
+<option value="http://www.tp.umu.se/TIPTOP/PAW/">Physics Gateway</option>
+<option value="http://www.shef.ac.uk/~chem/chemdex/">Chemistry Gateway</option>
+<option value="http://www.scitechdaily.com/">SciTech Daily News</option>
+<option value="http://newton.ex.ac.uk/aip/latest.html">AIP Physics News</option>
+</select>
+</td>
+
+<td valign="middle" align="left">
+<select name="computing" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Computing</option>
+<option></option>
+<option value="http://www.gatan.com/scripting/index.html">Gatan Scripting</option>
+<option value="http://laser.phys.ualberta.ca/~egerton/programs/programs.htm">More Gatan scripts</option>
+<option value="http://www.cis.tugraz.at/felmi/dm_scripts/">DM Scripts</option>
+<option value="http://www.accelrys.com/doc/life/cerius49/index.html">Cerius2 4.9</option>
+<option value="http://newton.ex.ac.uk/Restricted/aimpro/">AIMPRO Internal</option>
+<option value="http://aimpro.ncl.ac.uk/docs/">AIMPRO Tutorial</option>
+<option>-----------------------------</option>
+<option>Introduction to... </option>
+<option value="http://snowwhite.it.brighton.ac.uk/~mas/mas/courses/html/html_fr1.html">HTML</option>
+<option value="http://java.sun.com:80/docs/books/tutorial/java/objects/index.html">Object Oriented coding</option>
+<option value="http://archive.ncsa.uiuc.edu/General/Training/PerlIntro/">perl</option>
+<option value="http://www.ee.surrey.ac.uk/Teaching/Unix/index.html">Unix</option>
+<option>-----------------------------</option>
+<option>Reference on...</option>
+<option value="http://newton.ex.ac.uk/general/hints/c_stuff.html">C and C++</option>
+<option value="http://www.nsc.liu.se/f77to90.html">f77->f90 conversion</option>
+<option value="http://www.kcl.ac.uk/kis/support/cc/fortran/f90home.html">Fortran 90</option>
+<option value="http://www.netads.com/~meo/gimp/Tutorial/">Gimp</option>
+<option value="http://hpux.ced.tudelft.nl/man/Gnu/grep-2.0/grep-2.0.man.html">gnu grep</option>
+<option value="http://www.liv.ac.uk/HPC/HPCpage.html">HPF</option>
+<option value="http://werbach.com/barebones/barebone.html">HTML</option>
+<option value="http://www.yahoo.com/Computers_and_Internet/Programming_Languages/Java/">Java</option>
+<option value="http://newton.ex.ac.uk/people/resende/tex_main.html">LaTeX</option>
+<option value="http://newton.ex.ac.uk/general/hints/maple.html">Maple</option>
+<option value="http://www.epcc.ed.ac.uk/epcc-tec/documents.html">MPI and HPF</option>
+<option value="http://www.povray.org">povray</option>
+<option value="http://www.epcc.ed.ac.uk/epcc/publications/cray/pvm.hence.30/index.html">PVM</option>
+<option value="http://newton.ex.ac.uk/general/docs/rasmol.html">Rasmol</option>
+<option value="http://www.netlib.org/scalapack/index.html">scaLAPACK</option>
+<option value="http://www.ptf.hro.nl/~bodensta/linux/node137.htm">vi</option>
+<option value="http://www.vrml.org/">VRML</option>
+<option value="http://www.mols.susx.ac.uk/xmgr/doc/ACEgr.html">xmgr</option>
+</select>
+</td>
+
+<td valign="middle" align="left">
+<select name="element" onChange="MM_jumpMenu('parent',this,1)" noscroll>
+<option>Element</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ac/key.html">Ac</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ag/key.html">Ag</option>
+<option value="http://www.webelements.com/webelements/elements/text/Al/key.html">Al</option>
+<option value="http://www.webelements.com/webelements/elements/text/Am/key.html">Am</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ar/key.html">Ar</option>
+<option value="http://www.webelements.com/webelements/elements/text/As/key.html">As</option>
+<option value="http://www.webelements.com/webelements/elements/text/At/key.html">At</option>
+<option value="http://www.webelements.com/webelements/elements/text/Au/key.html">Au</option>
+<option value="http://www.webelements.com/webelements/elements/text/B/key.html">B</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ba/key.html">Ba</option>
+<option value="http://www.webelements.com/webelements/elements/text/Be/key.html">Be</option>
+<option value="http://www.webelements.com/webelements/elements/text/Bi/key.html">Bi</option>
+<option value="http://www.webelements.com/webelements/elements/text/Bk/key.html">Bk</option>
+<option value="http://www.webelements.com/webelements/elements/text/Br/key.html">Br</option>
+<option value="http://www.webelements.com/webelements/elements/text/C/key.html">C</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ca/key.html">Ca</option>
+<option value="http://www.webelements.com/webelements/elements/text/Cd/key.html">Cd</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ce/key.html">Ce</option>
+<option value="http://www.webelements.com/webelements/elements/text/Cf/key.html">Cf</option>
+<option value="http://www.webelements.com/webelements/elements/text/Cl/key.html">Cl</option>
+<option value="http://www.webelements.com/webelements/elements/text/Cm/key.html">Cm</option>
+<option value="http://www.webelements.com/webelements/elements/text/Co/key.html">Co</option>
+<option value="http://www.webelements.com/webelements/elements/text/Cr/key.html">Cr</option>
+<option value="http://www.webelements.com/webelements/elements/text/Cs/key.html">Cs</option>
+<option value="http://www.webelements.com/webelements/elements/text/Cu/key.html">Cu</option>
+<option value="http://www.webelements.com/webelements/elements/text/Dy/key.html">Dy</option>
+<option value="http://www.webelements.com/webelements/elements/text/Er/key.html">Er</option>
+<option value="http://www.webelements.com/webelements/elements/text/Es/key.html">Es</option>
+<option value="http://www.webelements.com/webelements/elements/text/Eu/key.html">Eu</option>
+<option value="http://www.webelements.com/webelements/elements/text/F/key.html">F</option>
+<option value="http://www.webelements.com/webelements/elements/text/Fe/key.html">Fe</option>
+<option value="http://www.webelements.com/webelements/elements/text/Fm/key.html">Fm</option>
+<option value="http://www.webelements.com/webelements/elements/text/Fr/key.html">Fr</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ga/key.html">Ga</option>
+<option value="http://www.webelements.com/webelements/elements/text/Gd/key.html">Gd</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ge/key.html">Ge</option>
+<option value="http://www.webelements.com/webelements/elements/text/H/key.html">H</option>
+<option value="http://www.webelements.com/webelements/elements/text/He/key.html">He</option>
+<option value="http://www.webelements.com/webelements/elements/text/Hf/key.html">Hf</option>
+<option value="http://www.webelements.com/webelements/elements/text/Hg/key.html">Hg</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ho/key.html">Ho</option>
+<option value="http://www.webelements.com/webelements/elements/text/I/key.html">I</option>
+<option value="http://www.webelements.com/webelements/elements/text/In/key.html">In</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ir/key.html">Ir</option>
+<option value="http://www.webelements.com/webelements/elements/text/K/key.html">K</option>
+<option value="http://www.webelements.com/webelements/elements/text/Kr/key.html">Kr</option>
+<option value="http://www.webelements.com/webelements/elements/text/La/key.html">La</option>
+<option value="http://www.webelements.com/webelements/elements/text/Li/key.html">Li</option>
+<option value="http://www.webelements.com/webelements/elements/text/Lu/key.html">Lu</option>
+<option value="http://www.webelements.com/webelements/elements/text/Md/key.html">Md</option>
+<option value="http://www.webelements.com/webelements/elements/text/Mg/key.html">Mg</option>
+<option value="http://www.webelements.com/webelements/elements/text/Mn/key.html">Mn</option>
+<option value="http://www.webelements.com/webelements/elements/text/Mo/key.html">Mo</option>
+<option value="http://www.webelements.com/webelements/elements/text/N/key.html">N</option>
+<option value="http://www.webelements.com/webelements/elements/text/Na/key.html">Na</option>
+<option value="http://www.webelements.com/webelements/elements/text/Nb/key.html">Nb</option>
+<option value="http://www.webelements.com/webelements/elements/text/Nd/key.html">Nd</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ne/key.html">Ne</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ni/key.html">Ni</option>
+<option value="http://www.webelements.com/webelements/elements/text/No/key.html">No</option>
+<option value="http://www.webelements.com/webelements/elements/text/Np/key.html">Np</option>
+<option value="http://www.webelements.com/webelements/elements/text/O/key.html">O</option>
+<option value="http://www.webelements.com/webelements/elements/text/Os/key.html">Os</option>
+<option value="http://www.webelements.com/webelements/elements/text/P/key.html">P</option>
+<option value="http://www.webelements.com/webelements/elements/text/Pa/key.html">Pa</option>
+<option value="http://www.webelements.com/webelements/elements/text/Pb/key.html">Pb</option>
+<option value="http://www.webelements.com/webelements/elements/text/Pd/key.html">Pd</option>
+<option value="http://www.webelements.com/webelements/elements/text/Pm/key.html">Pm</option>
+<option value="http://www.webelements.com/webelements/elements/text/Po/key.html">Po</option>
+<option value="http://www.webelements.com/webelements/elements/text/Pr/key.html">Pr</option>
+<option value="http://www.webelements.com/webelements/elements/text/Pt/key.html">Pt</option>
+<option value="http://www.webelements.com/webelements/elements/text/Pu/key.html">Pu</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ra/key.html">Ra</option>
+<option value="http://www.webelements.com/webelements/elements/text/Rb/key.html">Rb</option>
+<option value="http://www.webelements.com/webelements/elements/text/Re/key.html">Re</option>
+<option value="http://www.webelements.com/webelements/elements/text/Rh/key.html">Rh</option>
+<option value="http://www.webelements.com/webelements/elements/text/Rn/key.html">Rn</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ru/key.html">Ru</option>
+<option value="http://www.webelements.com/webelements/elements/text/S/key.html">S</option>
+<option value="http://www.webelements.com/webelements/elements/text/Sb/key.html">Sb</option>
+<option value="http://www.webelements.com/webelements/elements/text/Sc/key.html">Sc</option>
+<option value="http://www.webelements.com/webelements/elements/text/Si/key.html">Si</option>
+<option value="http://www.webelements.com/webelements/elements/text/Se/key.html">Se</option>
+<option value="http://www.webelements.com/webelements/elements/text/Sm/key.html">Sm</option>
+<option value="http://www.webelements.com/webelements/elements/text/Sn/key.html">Sn</option>
+<option value="http://www.webelements.com/webelements/elements/text/Sr/key.html">Sr</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ta/key.html">Ta</option>
+<option value="http://www.webelements.com/webelements/elements/text/Tb/key.html">Tb</option>
+<option value="http://www.webelements.com/webelements/elements/text/Tc/key.html">Tc</option>
+<option value="http://www.webelements.com/webelements/elements/text/Te/key.html">Te</option>
+<option value="http://www.webelements.com/webelements/elements/text/Th/key.html">Th</option>
+<option value="http://www.webelements.com/webelements/elements/text/Ti/key.html">Ti</option>
+<option value="http://www.webelements.com/webelements/elements/text/Tl/key.html">Tl</option>
+<option value="http://www.webelements.com/webelements/elements/text/Tm/key.html">Tm</option>
+<option value="http://www.webelements.com/webelements/elements/text/U/key.html">U</option>
+<option value="http://www.webelements.com/webelements/elements/text/W/key.html">W</option>
+<option value="http://www.webelements.com/webelements/elements/text/Xe/key.html">Xe</option>
+<option value="http://www.webelements.com/webelements/elements/text/Y/key.html">Y</option>
+<option value="http://www.webelements.com/webelements/elements/text/Yb/key.html">Yb</option>
+<option value="http://www.webelements.com/webelements/elements/text/Zn/key.html">Zn</option>
+<option value="http://www.webelements.com/webelements/elements/text/Zr/key.html">Zr</option>
+</td></tr>
+</table>
+<hr noshade>
+
+<table width="100%" cellspacing=5 cellpadding=5>
+<tr>
+<td valign="top" align="right">
+<FORM action="javascript:jumpto()" name="searchform">
+<INPUT VALUE= "Search" type=submit></td>
+<td valign="top" align="left">
+<INPUT type="text" value="" name="searchfor" size="50">
+<select name="whichsearch">
+<option selected value="0">Google</option>
+<option value="1">Google Scholar</option>
+<option value="2">Scirus</option>
+<option value="3">Images</option>
+</select>
+</form> 
+</td></tr>
+
+<tr>
+<td valign="top" align="right">
+<FORM action="javascript:getarticle()" name="getj">
+<INPUT VALUE= "Get Article" type=submit></td>
+<td valign="top" align="left">
+Vol <INPUT type="text" value="" name="volume" size="4">
+Issue <INPUT type="text" value="" name="issue" size="4">
+Page <INPUT type="text" value="" name="page" size="4">
+<!-- Year <INPUT type="text" value="" name="year" size="4"> -->
+<select name="whichj">
+<option selected></option>
+<option value="310">Accounts of Chemical Research</option>
+<option value="801">Actualité Chimique</option>
+<option value="601">Acta Cryst </option>
+<option value="602">Acta Cryst. A</option>
+<option value="603">Acta Cryst. B</option>
+<option value="604">Acta Cryst. C</option>
+<option value="605">Acta Cryst. D</option>
+<option value="606">Acta Cryst. E</option>
+<option value="607">Acta Cryst. F</option>
+<option value="402">AIP Conference Proceedings</option>
+<option value="401">American Journal of Physics</option>
+<option value="701">Analytical Communications
+<option value="802">Ann. Phys. Fr.</option>
+<option value="403">Applied Physics Letters</option>
+<option value="702">Chemical Communications
+<option value="302">Chemical Reviews</option>
+<option value="703">Chemical Society Reviews
+<option value="303">Chemistry of Materials</option>
+<option value="502">Chinese Physics Letters</option>
+<option value="501">Chinese Physics</option>
+<option value="704">CrystEngComm
+<option value="705">Dalton Transactions
+<option value="803">EPJdirect</option>
+<option value="804">Eur. Phys. J. Appl. Phys.</option>
+<option value="805">Eur. Phys. J. A</option>
+<option value="806">Eur. Phys. J. B</option>
+<option value="807">Eur. Phys. J. C</option>
+<option value="808">Eur. Phys. J. D</option>
+<option value="809">Eur. Phys. J. E</option>
+<option value="810">Europhys. Lett.</option>
+<option value="503">European Journal of Physics</option>
+<option value="706">Faraday Discussions
+<option value="404">Geochemical Transactions</option>
+<option value="708">Geochemical Transactions
+<option value="406">Geophysics</option>
+<option value="707">Green Chemistry
+<option value="709">JAAS
+<option value="304">J American Chemical Society</option>
+<option value="608">J. Appl. Cryst.</option>
+<option value="407">J Applied Physics</option>
+<option value="408">J Chemical Physics</option>
+<option value="710">J Chem Research
+<option value="305">J Chem Inf and Modelling</option>
+<option value="306">J Chem Theory and Comp</option>
+<option value="409">J Electroehcmical Society</option>
+<option value="410">JETP Letters</option>
+<option value="405">J Fuel Cell SciTech</option>
+<option value="504">J Geophysics and Engineering</option>
+<option value="711">J Mat Chem
+<option value="505">J Phys A: Mathematical and General</option>
+<option value="506">J Phys B: At, Mol and Optical Phys</option>
+<option value="307">J Phys Chem A</option>
+<option value="308">J Phys Chem B</option>
+<option value="507">J Phys: Cond Matter</option>
+<option value="508">J Phys: Conference Series</option>
+<option value="509">J Phys D: Applied Physics</option>
+<option value="609">J. Synchrotron Rad.</option>
+<option value="309">Langmuir</option>
+<option value="510">Measure Sci Tech</option>
+<option value="511">Modelling Sim in Mat Sci and Eng</option>
+<option value="301">Nanoletters</option>
+<option value="512">Nanotechnology</option>
+<option value="712">New J Chem
+<option value="513">New Journal of Physics</option>
+<option value="713">Org and Biomol Chem
+<option value="714">Perkin 1
+<option value="715">Perkin 2
+<option value="716">Photochem and Photobio Sci
+<option value="717">PhysChemComm
+<option value="718">Phys Chem Chem Phys
+<option value="101">Phys Rev A</option>
+<option value="102">Phys Rev B</option>
+<option value="103">Phys Rev C</option>
+<option value="104">Phys Rev D</option>
+<option value="105">Phys Rev E</option>
+<option value="106">Phys Rev Lett</option>
+<option value="514">Pure and Applied Optics</option>
+<option value="516">Quantum and S-c Optics (1995-1998) </option>
+<option value="515">Quantum Optics (1989-1994) </option>
+<option value="517">Rep Prog Physics</option>
+<option value="107">Rev Mod Phys</option>
+<option value="518">Semicond Sci Tech</option>
+<option value="411">Semiconductors</option>
+</select>
+</form> 
+</td></tr>
+
+<tr>
+<td valign="top" align="right">
+<form action="http://translate.google.com/translate_t" method=post>
+<INPUT VALUE= "Translate" type=submit></td>
+<td valign="top" align="left">
+<INPUT type="text" name=text size="50">
+<select name=langpair>
+<option value="en|fr" selected>Ang->Fra</option>
+<option value="fr|en">Fra->Ang</option>
+<option value="it|en">Ita->Ang</option>
+<option value="en|it">Ang->Ita</option>
+<option value="es|en">Esp->Ang</option>
+<option value="en|es">Ang->Esp</option>
+<option value="de|fr">All->Fra</option>
+<option value="fr|de">Fra->All</option>
+</select>
+<input type=hidden name=hl value="fr">
+<input type=hidden name=ie value="UTF-8">
+<input type=hidden name=oe value="UTF-8">
+</form>
+</td></tr>
+
+<tr>
+<td valign="top" align="right">
+<FORM name="ucc" METHOD=POST ACTION="http://www.xe.com/ucc/convert.cgi">
+<INPUT VALUE= "Convert" type=submit></td>
+<td valign="top" align="left">
+<INPUT TYPE="text" NAME="Amount" VALUE="" SIZE=10>
+    <SELECT NAME="From" onChange="CheckMore()">
+      <OPTION VALUE="EUR" SELECTED>Euro</OPTION>
+      <OPTION VALUE="USD">US Dollars</OPTION>
+      <OPTION VALUE="GBP">UK Pounds</OPTION>
+      <OPTION VALUE="FRF">Francs</OPTION>
+      <OPTION VALUE="JPY">Yen</OPTION>
+      <OPTION VALUE="ITL">Lire</OPTION>
+      <OPTION VALUE="AUD">Australian</OPTION>
+      <OPTION VALUE="BRL">Brazil Reais</OPTION>
+      <OPTION VALUE="BGN">Bulgarian</OPTION>
+      <OPTION VALUE="CAD">Canadian</OPTION>
+      <OPTION VALUE="CNY">China Yuan</OPTION>
+      <OPTION VALUE="CZK">Czech Koruny</OPTION>
+      <OPTION VALUE="EGP">Egypt Pounds</OPTION>
+      <OPTION VALUE="FIM">Finland Markkaa</OPTION>
+      <OPTION VALUE="HKD">HK Dollars</OPTION>
+      <OPTION VALUE="ISK">Iceland Kronur</OPTION>
+      <OPTION VALUE="INR">India Rupees</OPTION>
+      <OPTION VALUE="ILS">Israel Shekels</OPTION>
+      <OPTION VALUE="JOD">Jordan Dinars</OPTION>
+      <OPTION VALUE="KRW">Korea Won</OPTION>
+      <OPTION VALUE="MYR">Malaysia</OPTION>
+      <OPTION VALUE="MXN">Mexico Pesos</OPTION>
+      <OPTION VALUE="NZD">New Zealand</OPTION>
+      <OPTION VALUE="NOK">Norway Kroner</OPTION>
+      <OPTION VALUE="PKR">Pakistan Rupees</OPTION>
+      <OPTION VALUE="PHP">Philippines</OPTION>
+      <OPTION VALUE="PLN">Poland Zlotych</OPTION>
+      <OPTION VALUE="ROL">Romania Lei</OPTION>
+      <OPTION VALUE="RUR">Russia Rubles</OPTION>
+      <OPTION VALUE="SAR">Saudi Arabia</OPTION>
+      <OPTION VALUE="SGD">Singapore</OPTION>
+      <OPTION VALUE="SKK">Slovakia</OPTION>
+      <OPTION VALUE="ZAR">South Africa</OPTION>
+      <OPTION VALUE="KRW">South Korea</OPTION>
+      <OPTION VALUE="SDD">Sudan Dinars</OPTION>
+      <OPTION VALUE="TWD">Taiwan Dollars</OPTION>
+      <OPTION VALUE="THB">Thailand Baht</OPTION>
+      <OPTION VALUE="TRL">Turkey Liras</OPTION>
+    </SELECT> to
+    <SELECT NAME="To" onChange="CheckMore()">
+      <OPTION VALUE="EUR">Euro</OPTION>
+      <OPTION VALUE="USD" SELECTED>US Dollars</OPTION>
+      <OPTION VALUE="GBP">UK Pounds</OPTION>
+      <OPTION VALUE="FRF">Francs</OPTION>
+      <OPTION VALUE="JPY">Yen</OPTION>
+      <OPTION VALUE="ITL">Lire</OPTION>
+      <OPTION VALUE="AUD">Australian</OPTION>
+      <OPTION VALUE="BRL">Brazil Reais</OPTION>
+      <OPTION VALUE="BGN">Bulgarian</OPTION>
+      <OPTION VALUE="CAD">Canadian</OPTION>
+      <OPTION VALUE="CNY">China Yuan</OPTION>
+      <OPTION VALUE="CZK">Czech Koruny</OPTION>
+      <OPTION VALUE="EGP">Egypt Pounds</OPTION>
+      <OPTION VALUE="FIM">Finland Markkaa</OPTION>
+      <OPTION VALUE="HKD">HK Dollars</OPTION>
+      <OPTION VALUE="ISK">Iceland Kronur</OPTION>
+      <OPTION VALUE="INR">India Rupees</OPTION>
+      <OPTION VALUE="ILS">Israel Shekels</OPTION>
+      <OPTION VALUE="JOD">Jordan Dinars</OPTION>
+      <OPTION VALUE="KRW">Korea Won</OPTION>
+      <OPTION VALUE="MYR">Malaysia</OPTION>
+      <OPTION VALUE="MXN">Mexico Pesos</OPTION>
+      <OPTION VALUE="NZD">New Zealand</OPTION>
+      <OPTION VALUE="NOK">Norway Kroner</OPTION>
+      <OPTION VALUE="PKR">Pakistan Rupees</OPTION>
+      <OPTION VALUE="PHP">Philippines</OPTION>
+      <OPTION VALUE="PLN">Poland Zlotych</OPTION>
+      <OPTION VALUE="ROL">Romania Lei</OPTION>
+      <OPTION VALUE="RUR">Russia Rubles</OPTION>
+      <OPTION VALUE="SAR">Saudi Arabia</OPTION>
+      <OPTION VALUE="SGD">Singapore</OPTION>
+      <OPTION VALUE="SKK">Slovakia</OPTION>
+      <OPTION VALUE="ZAR">South Africa</OPTION>
+      <OPTION VALUE="KRW">South Korea</OPTION>
+      <OPTION VALUE="SDD">Sudan Dinars</OPTION>
+      <OPTION VALUE="TWD">Taiwan Dollars</OPTION>
+      <OPTION VALUE="THB">Thailand Baht</OPTION>
+      <OPTION VALUE="TRL">Turkey Liras</OPTION>
+    </SELECT>
+	</form>
+<FORM METHOD="GET" ACTION="http://www.chemie.fu-berlin.de/cgi-bin/units">
+
+<inPUT NAME="from" SIZE=15>
+
+<SELECT NAME="have">
+<OPTION SELECTED>eV
+<OPTION>%
+<OPTION>A
+<OPTION>a
+<OPTION>a0
+<OPTION>alpha
+<OPTION>amp
+<OPTION>ampere
+<OPTION>amu
+<OPTION>angstrom
+<OPTION>ar
+<OPTION>arcdeg
+<OPTION>arcmin
+<OPTION>arcsec
+<OPTION>are
+<OPTION>arpentcan
+<OPTION>arpentlin
+<OPTION>astronomicalunit
+<OPTION>at
+<OPTION>atm
+<OPTION>atmosphere
+<OPTION>atomicmassunit
+<OPTION>au
+<OPTION>avogadronumber
+<OPTION>bag
+<OPTION>bar
+<OPTION>barie
+<OPTION>barrel
+<OPTION>barye
+<OPTION>baud
+<OPTION>bbl
+<OPTION>becquerel
+<OPTION>bev
+<OPTION>biot
+<OPTION>bit
+<OPTION>block
+<OPTION>blondel
+<OPTION>bohrmagneton
+<OPTION>bohrradius
+<OPTION>bolt
+<OPTION>boltzmannconstant
+<OPTION>bottommeasure
+<OPTION>Bq
+<OPTION>brfldr
+<OPTION>brfloz
+<OPTION>brgallon
+<OPTION>brgill
+<OPTION>british
+<OPTION>britishthermalunit
+<OPTION>brpeck
+<OPTION>brpint
+<OPTION>brquart
+<OPTION>brton
+<OPTION>btu
+<OPTION>bu
+<OPTION>byte
+<OPTION>C
+<OPTION>c
+<OPTION>cable
+<OPTION>cal
+<OPTION>caliber
+<OPTION>calorie
+<OPTION>calthermochem
+<OPTION>candela
+<OPTION>carat
+<OPTION>cc
+<OPTION>cd
+<OPTION>cental
+<OPTION>centesimalminute
+<OPTION>centesimalsecond
+<OPTION>century
+<OPTION>cfs
+<OPTION>chain
+<OPTION>Ci
+<OPTION>circle
+<OPTION>circularinch
+<OPTION>circularmil
+<OPTION>cl
+<OPTION>clusec
+<OPTION>cm
+<OPTION>comptonwavelength
+<OPTION>coomb
+<OPTION>cord
+<OPTION>cordfoot
+<OPTION>coul
+<OPTION>coulomb
+<OPTION>crith
+<OPTION>cubit
+<OPTION>cup
+<OPTION>curie
+<OPTION>cwt
+<OPTION>d
+<OPTION>da
+<OPTION>dalton
+<OPTION>day
+<OPTION>decade
+<OPTION>deg
+<OPTION>degC
+<OPTION>degree
+<OPTION>dioptre
+<OPTION>displacementton
+<OPTION>DM
+<OPTION>dm
+<OPTION>doppelzentner
+<OPTION>dozen
+<OPTION>dr
+<OPTION>drop
+<OPTION>dry
+<OPTION>dyn
+<OPTION>dyne
+<OPTION>dz
+<OPTION>e
+<OPTION>electrongyromagnetic
+<OPTION>electronlande
+<OPTION>electronmass
+<OPTION>electronvolt
+<OPTION>ell
+<OPTION>emucapacitance
+<OPTION>emucharge
+<OPTION>emucurrent
+<OPTION>emuelpot
+<OPTION>emuinductance
+<OPTION>emuresistance
+<OPTION>energy
+<OPTION>engineerschain
+<OPTION>engineerslink
+<OPTION>epsilon
+<OPTION>equivalentfootcandle
+<OPTION>equivalentlux
+<OPTION>equivalentphot
+<OPTION>erg
+<OPTION>esucapacitance
+<OPTION>esucharge
+<OPTION>esucurrent
+<OPTION>esuelpot
+<OPTION>esuinductance
+<OPTION>esuresistance
+<OPTION>eV
+<OPTION>exa
+<OPTION>F
+<OPTION>farad
+<OPTION>faraday
+<OPTION>fathom
+<OPTION>feet
+<OPTION>Feinunze
+<OPTION>fermi
+<OPTION>fifth
+<OPTION>finestructureconstant
+<OPTION>firkin
+<OPTION>fldr
+<OPTION>floz
+<OPTION>fm
+<OPTION>foot
+<OPTION>footcandle
+<OPTION>footlambert
+<OPTION>force
+<OPTION>fortnight
+<OPTION>franc
+<OPTION>ft
+<OPTION>fuzz
+<OPTION>G
+<OPTION>g
+<OPTION>gal
+<OPTION>galileo
+<OPTION>gallon
+<OPTION>gamma
+<OPTION>gammae
+<OPTION>gammap
+<OPTION>gasconstant
+<OPTION>gauss
+<OPTION>ge
+<OPTION>geodeticfoot
+<OPTION>geographicalmile
+<OPTION>GeV
+<OPTION>gfactor
+<OPTION>gH
+<OPTION>GHz
+<OPTION>gilbert
+<OPTION>gill
+<OPTION>gm
+<OPTION>gr
+<OPTION>Grad
+<OPTION>grade
+<OPTION>grain
+<OPTION>gram
+<OPTION>Grav
+<OPTION>grav
+<OPTION>gravity
+<OPTION>gray
+<OPTION>gross
+<OPTION>guilder
+<OPTION>gunterschain
+<OPTION>GW
+<OPTION>GWh
+<OPTION>Gy
+<OPTION>H
+<OPTION>h
+<OPTION>ha
+<OPTION>hand
+<OPTION>hartree
+<OPTION>hbar
+<OPTION>hd
+<OPTION>hectare
+<OPTION>hefnercandle
+<OPTION>henry
+<OPTION>hertz
+<OPTION>hg
+<OPTION>hl
+<OPTION>homestead
+<OPTION>horsepower
+<OPTION>hour
+<OPTION>hp
+<OPTION>hPa
+<OPTION>hquer
+<OPTION>hr
+<OPTION>hundredweight
+<OPTION>hyl
+<OPTION>Hz
+<OPTION>hz
+<OPTION>imaginarycubicfoot
+<OPTION>imperial
+<OPTION>in
+<OPTION>inch
+<OPTION>J
+<OPTION>jeroboam
+<OPTION>joule
+<OPTION>K
+<OPTION>k
+<OPTION>Karat
+<OPTION>karat
+<OPTION>kayser
+<OPTION>kcal
+<OPTION>kcalorie
+<OPTION>kcalthermochem
+<OPTION>kelvin
+<OPTION>keV
+<OPTION>key
+<OPTION>kg
+<OPTION>kHz
+<OPTION>kJ
+<OPTION>km
+<OPTION>kn
+<OPTION>knot
+<OPTION>kp
+<OPTION>kpm
+<OPTION>kW
+<OPTION>kWh
+<OPTION>l
+<OPTION>lambdac
+<OPTION>lambert
+<OPTION>last
+<OPTION>lb
+<OPTION>lbf
+<OPTION>lbt
+<OPTION>lightyear
+<OPTION>line
+<OPTION>link
+<OPTION>liter
+<OPTION>lm
+<OPTION>lumen
+<OPTION>lusec
+<OPTION>lux
+<OPTION>lx
+<OPTION>m
+<OPTION>mA
+<OPTION>mach
+<OPTION>magnum
+<OPTION>markka
+<OPTION>maxwell
+<OPTION>me
+<OPTION>mercury
+<OPTION>meter
+<OPTION>metriccarat
+<OPTION>metricton
+<OPTION>MeV
+<OPTION>mg
+<OPTION>mgd
+<OPTION>mh
+<OPTION>mho
+<OPTION>MHz
+<OPTION>mi
+<OPTION>micron
+<OPTION>mil
+<OPTION>mile
+<OPTION>millennium
+<OPTION>min
+<OPTION>minim
+<OPTION>minute
+<OPTION>ml
+<OPTION>mm
+<OPTION>mn
+<OPTION>mo
+<OPTION>Mol
+<OPTION>mol
+<OPTION>mole
+<OPTION>month
+<OPTION>Morgen
+<OPTION>mp
+<OPTION>mpg
+<OPTION>mph
+<OPTION>ms
+<OPTION>mT
+<OPTION>mu
+<OPTION>muB
+<OPTION>mub
+<OPTION>muN
+<OPTION>mun
+<OPTION>mV
+<OPTION>MW
+<OPTION>MWh
+<OPTION>Mx
+<OPTION>N
+<OPTION>NA
+<OPTION>Neugrad
+<OPTION>neutronmass
+<OPTION>newton
+<OPTION>nit
+<OPTION>nm
+<OPTION>nmile
+<OPTION>ns
+<OPTION>nt
+<OPTION>nuclearmagneton
+<OPTION>nue
+<OPTION>nup
+<OPTION>Oe
+<OPTION>oe
+<OPTION>oersted
+<OPTION>Ohm
+<OPTION>ohm
+<OPTION>Omega
+<OPTION>ounce
+<OPTION>oz
+<OPTION>oztr
+<OPTION>P
+<OPTION>p
+<OPTION>Pa
+<OPTION>pace
+<OPTION>palm
+<OPTION>parasang
+<OPTION>parsec
+<OPTION>pascal
+<OPTION>pc
+<OPTION>pdl
+<OPTION>percent
+<OPTION>permeability
+<OPTION>permill
+<OPTION>permittivity
+<OPTION>peta
+<OPTION>ph
+<OPTION>phot
+<OPTION>pi
+<OPTION>pieze
+<OPTION>pint
+<OPTION>pk
+<OPTION>planckconstant
+<OPTION>pm
+<OPTION>point
+<OPTION>poise
+<OPTION>pole
+<OPTION>pound
+<OPTION>poundal
+<OPTION>ppb
+<OPTION>ppm
+<OPTION>proof
+<OPTION>protongyromagnetic
+<OPTION>protonlande
+<OPTION>protonmass
+<OPTION>PS
+<OPTION>psi
+<OPTION>pt
+<OPTION>qt
+<OPTION>quart
+<OPTION>quarter
+<OPTION>quartersection
+<OPTION>R
+<OPTION>rad
+<OPTION>radian
+<OPTION>rand
+<OPTION>rankine
+<OPTION>rd
+<OPTION>ream
+<OPTION>refrigeration
+<OPTION>registerton
+<OPTION>rehoboam
+<OPTION>rem
+<OPTION>rf
+<OPTION>rfdisk
+<OPTION>rfshoe
+<OPTION>rftrack
+<OPTION>rhe
+<OPTION>rk
+<OPTION>rkcylinder
+<OPTION>rktrack
+<OPTION>rod
+<OPTION>rontgen
+<OPTION>rood
+<OPTION>rope
+<OPTION>rp
+<OPTION>rpcylinder
+<OPTION>rptrack
+<OPTION>rutherford
+<OPTION>rydberg
+<OPTION>S
+<OPTION>s
+<OPTION>sabin
+<OPTION>sb
+<OPTION>sec
+<OPTION>second
+<OPTION>section
+<OPTION>siemens
+<OPTION>sievert
+<OPTION>sigma
+<OPTION>SKE
+<OPTION>skot
+<OPTION>span
+<OPTION>spat
+<OPTION>sphere
+<OPTION>spindle
+<OPTION>square
+<OPTION>sr
+<OPTION>St
+<OPTION>statcoulomb
+<OPTION>steradian
+<OPTION>stere
+<OPTION>sthene
+<OPTION>stilb
+<OPTION>stoke
+<OPTION>stone
+<OPTION>strike
+<OPTION>sucre
+<OPTION>Sv
+<OPTION>T
+<OPTION>t
+<OPTION>tablespoon
+<OPTION>tc
+<OPTION>teaspoon
+<OPTION>tesla
+<OPTION>therm
+<OPTION>thermie
+<OPTION>tnt
+<OPTION>ton
+<OPTION>tonne
+<OPTION>Torr
+<OPTION>torr
+<OPTION>township
+<OPTION>troyounce
+<OPTION>troypound
+<OPTION>tun
+<OPTION>turn
+<OPTION>u
+<OPTION>us
+<OPTION>V
+<OPTION>Vmol
+<OPTION>volt
+<OPTION>W
+<OPTION>water
+<OPTION>watt
+<OPTION>Wb
+<OPTION>weber
+<OPTION>week
+<OPTION>wey
+<OPTION>weymass
+<OPTION>Wh
+<OPTION>WS
+<OPTION>Xunit
+<OPTION>yard
+<OPTION>yd
+<OPTION>year
+<OPTION>yen
+<OPTION>yr
+<OPTION>zentner
+<OPTION>Ztr
+</SELECT>
+
+to
+
+<SELECT NAME="want">
+<OPTION>%
+<OPTION>A
+<OPTION>a
+<OPTION>a0
+<OPTION>alpha
+<OPTION>amp
+<OPTION>ampere
+<OPTION>amu
+<OPTION>angstrom
+<OPTION>apdram
+<OPTION>apostilb
+<OPTION>apounce
+<OPTION>appound
+<OPTION>ar
+<OPTION>arcdeg
+<OPTION>arcmin
+<OPTION>arcsec
+<OPTION>are
+<OPTION>arpentcan
+<OPTION>arpentlin
+<OPTION>at
+<OPTION>atm
+<OPTION>atmosphere
+<OPTION>atomicmassunit
+<OPTION>au
+<OPTION>avogadronumber
+<OPTION>bag
+<OPTION>bar
+<OPTION>barie
+<OPTION>barye
+<OPTION>baud
+<OPTION>bbl
+<OPTION>becquerel
+<OPTION>bev
+<OPTION>biot
+<OPTION>bit
+<OPTION>boardfoot
+<OPTION>bohrmagneton
+<OPTION>bohrradius
+<OPTION>bolt
+<OPTION>boltzmannconstant
+<OPTION>bottommeasure
+<OPTION>Bq
+<OPTION>brfldr
+<OPTION>brfloz
+<OPTION>brgallon
+<OPTION>british
+<OPTION>britishthermalunit
+<OPTION>brpint 
+<OPTION>brton
+<OPTION>btu
+<OPTION>bu
+<OPTION>bushel
+<OPTION>byte
+<OPTION>C
+<OPTION>c
+<OPTION>cable
+<OPTION>cal
+<OPTION>caliber
+<OPTION>calorie
+<OPTION>calthermochem
+<OPTION>candela
+<OPTION>carat
+<OPTION>cc
+<OPTION>cd
+<OPTION>cental
+<OPTION>centesimalminute
+<OPTION>centesimalsecond
+<OPTION>century
+<OPTION>cfs
+<OPTION>Ci
+<OPTION>circle
+<OPTION>cl
+<OPTION>clusec
+<OPTION>cm
+<OPTION>comptonwavelength
+<OPTION>coomb
+<OPTION>coul
+<OPTION>coulomb
+<OPTION>crith
+<OPTION>cubit
+<OPTION>cup
+<OPTION>curie
+<OPTION>cwt
+<OPTION>d
+<OPTION>da
+<OPTION>dalton
+<OPTION>day
+<OPTION>decade
+<OPTION>deg
+<OPTION>degC
+<OPTION>degree
+<OPTION>dioptre
+<OPTION>displacementton
+<OPTION>DM
+<OPTION>dm
+<OPTION>dozen
+<OPTION>dr
+<OPTION>dram
+<OPTION>drop
+<OPTION>dry
+<OPTION>dyn
+<OPTION>dyne
+<OPTION>dz
+<OPTION>e
+<OPTION>electrongyromagnetic
+<OPTION>electronlande
+<OPTION>electronmass
+<OPTION>electronvolt
+<OPTION>emucapacitance
+<OPTION>emucharge
+<OPTION>emucurrent
+<OPTION>emuelpot
+<OPTION>emuinductance
+<OPTION>emuresistance
+<OPTION>energy
+<OPTION>epsilon
+<OPTION>erg
+<OPTION>escudo
+<OPTION>esucapacitance
+<OPTION>esucharge
+<OPTION>esucurrent
+<OPTION>esuelpot
+<OPTION>esuinductance
+<OPTION>esuresistance
+<OPTION>eV
+<OPTION>exa
+<OPTION>F
+<OPTION>farad
+<OPTION>faraday
+<OPTION>feet
+<OPTION>Feinunze
+<OPTION>fermi
+<OPTION>fifth
+<OPTION>finestructureconstant
+<OPTION>fldr
+<OPTION>fm
+<OPTION>foot
+<OPTION>force
+<OPTION>fortnight
+<OPTION>ft
+<OPTION>G
+<OPTION>g
+<OPTION>gal
+<OPTION>galileo
+<OPTION>gallon
+<OPTION>gamma
+<OPTION>gammae
+<OPTION>gammap
+<OPTION>gasconstant
+<OPTION>gauss
+<OPTION>ge
+<OPTION>GeV
+<OPTION>gfactor
+<OPTION>gH
+<OPTION>GHz
+<OPTION>gm
+<OPTION>gr
+<OPTION>Grad
+<OPTION>grade
+<OPTION>grain
+<OPTION>gram
+<OPTION>Grav
+<OPTION>gravity
+<OPTION>gray
+<OPTION>GW
+<OPTION>GWh
+<OPTION>Gy
+<OPTION>H
+<OPTION>h
+<OPTION>ha
+<OPTION>hand
+<OPTION>hartree
+<OPTION>hbar
+<OPTION>hd
+<OPTION>henry
+<OPTION>hertz
+<OPTION>hg
+<OPTION>hl
+<OPTION>hour
+<OPTION>hp
+<OPTION>hPa
+<OPTION>hquer
+<OPTION>hr
+<OPTION>hyl
+<OPTION>Hz
+<OPTION>hz
+<OPTION>in
+<OPTION>inch
+<OPTION>J
+<OPTION>joule
+<OPTION>K
+<OPTION>Karat
+<OPTION selected>kcal
+<OPTION>kcalorie
+<OPTION>kcalthermochem
+<OPTION>kelvin
+<OPTION>keV
+<OPTION>key
+<OPTION>kg
+<OPTION>kHz
+<OPTION>kJ
+<OPTION>km
+<OPTION>kn
+<OPTION>kp
+<OPTION>kpm
+<OPTION>kW
+<OPTION>kWh
+<OPTION>l
+<OPTION>lb
+<OPTION>lbf
+<OPTION>lbt
+<OPTION>lightyear
+<OPTION>liter
+<OPTION>lm
+<OPTION>lumen
+<OPTION>lusec
+<OPTION>lux
+<OPTION>lx
+<OPTION>m
+<OPTION>mA
+<OPTION>mach
+<OPTION>mark
+<OPTION>markka
+<OPTION>maxwell
+<OPTION>me
+<OPTION>mercury
+<OPTION>meter
+<OPTION>metriccarat
+<OPTION>metricton
+<OPTION>MeV
+<OPTION>mg
+<OPTION>mgd
+<OPTION>mh
+<OPTION>mho
+<OPTION>MHz
+<OPTION>mi
+<OPTION>micron
+<OPTION>mil
+<OPTION>mile
+<OPTION>millennium
+<OPTION>min
+<OPTION>minim
+<OPTION>minute
+<OPTION>ml
+<OPTION>mm
+<OPTION>mn
+<OPTION>mo
+<OPTION>Mol
+<OPTION>mol
+<OPTION>mole
+<OPTION>month
+<OPTION>mp
+<OPTION>mpg
+<OPTION>mph
+<OPTION>ms
+<OPTION>mT
+<OPTION>mu
+<OPTION>muB
+<OPTION>mub
+<OPTION>muN
+<OPTION>mun
+<OPTION>mV
+<OPTION>MW
+<OPTION>MWh
+<OPTION>Mx
+<OPTION>N
+<OPTION>NA
+<OPTION>neutronmass
+<OPTION>newton
+<OPTION>nit
+<OPTION>nm
+<OPTION>nmile
+<OPTION>ns
+<OPTION>nt
+<OPTION>nuclearmagneton
+<OPTION>nue
+<OPTION>nup
+<OPTION>Oe
+<OPTION>oe
+<OPTION>oersted
+<OPTION>Ohm
+<OPTION>ohm
+<OPTION>Omega
+<OPTION>ounce
+<OPTION>oz
+<OPTION>oztr
+<OPTION>P
+<OPTION>p
+<OPTION>Pa
+<OPTION>pace
+<OPTION>parsec
+<OPTION>pascal
+<OPTION>pc
+<OPTION>pdl
+<OPTION>percent
+<OPTION>permeability
+<OPTION>permill
+<OPTION>permittivity
+<OPTION>ph
+<OPTION>phot
+<OPTION>pi
+<OPTION>pica
+<OPTION>pieze
+<OPTION>pint
+<OPTION>pipe
+<OPTION>pk
+<OPTION>planckconstant
+<OPTION>pm
+<OPTION>point
+<OPTION>poise
+<OPTION>pole
+<OPTION>pond
+<OPTION>ppb
+<OPTION>ppm
+<OPTION>protongyromagnetic
+<OPTION>protonlande
+<OPTION>protonmass
+<OPTION>PS
+<OPTION>psi
+<OPTION>pt
+<OPTION>qt
+<OPTION>R
+<OPTION>rad
+<OPTION>radian
+<OPTION>rand
+<OPTION>rd
+<OPTION>refrigeration
+<OPTION>registerton
+<OPTION>rehoboam
+<OPTION>rem
+<OPTION>rf
+<OPTION>rfdisk
+<OPTION>rfshoe
+<OPTION>rftrack
+<OPTION>rhe
+<OPTION>rk
+<OPTION>rkcylinder
+<OPTION>rktrack
+<OPTION>rontgen
+<OPTION>rp
+<OPTION>rpcylinder
+<OPTION>rptrack
+<OPTION>rutherford
+<OPTION>rydberg
+<OPTION>s
+<OPTION>sb
+<OPTION>sec
+<OPTION>second
+<OPTION>section
+<OPTION>siemens
+<OPTION>sievert
+<OPTION>sigma
+<OPTION>SKE
+<OPTION>sphere
+<OPTION>spindle
+<OPTION>square
+<OPTION>sr
+<OPTION>St
+<OPTION>statcoulomb
+<OPTION>steradian
+<OPTION>stere
+<OPTION>sthene
+<OPTION>stilb
+<OPTION>stone
+<OPTION>strike
+<OPTION>sucre
+<OPTION>Sv
+<OPTION>T
+<OPTION>t
+<OPTION>tablespoon
+<OPTION>tc
+<OPTION>teaspoon
+<OPTION>tesla
+<OPTION>therm
+<OPTION>thermie
+<OPTION>tnt
+<OPTION>ton
+<OPTION>tonne
+<OPTION>Torr
+<OPTION>torr
+<OPTION>troyounce
+<OPTION>tun
+<OPTION>u
+<OPTION>us
+<OPTION>V
+<OPTION>Vmol
+<OPTION>volt
+<OPTION>W
+<OPTION>water
+<OPTION>watt
+<OPTION>Wb
+<OPTION>weber
+<OPTION>week
+<OPTION>wey
+<OPTION>weymass
+<OPTION>Wh
+<OPTION>WS
+<OPTION>Xunit
+<OPTION>yard
+<OPTION>yd
+<OPTION>year
+<OPTION>yen
+<OPTION>yr
+<OPTION>zentner
+<OPTION>Ztr
+</SELECT>
+</FORM>
+
+</td></tr>
+
+<tr>
+<td valign="top" align="right">
+<form name=affiche_map id=affiche_map action="http://www.cartes-plans.com/map-iti.php" method=get target="_blank">
+<INPUT VALUE="Map" type=submit onclick="carte(this,document.affiche_map.rue.value,document.affiche_map.ville.value,document.affiche_map.cp.value,document.affiche_map.pays.value,'1');"></td>
+</td>
+<td valign="top" align="left">
+<input type=text name=rue value="" size=30>
+Ville <input type=text name=ville  value=""><br>
+Code Postal <input type=text name=cp value="">
+Pays <select name=pays>
+<option value="0">Allemagne</option><option value="1">Andorre</option><option value="2">Autriche</option><option value="3">Belgique</option><option value="4">Danemark</option><option value="5">Espagne</option><option value="6">Europe</option><option value="7">Finlande</option><option value="8" selected>France</option><option value="9">Grande-Bretagne</option><option value="10">Irlande</option><option value="11">Italie</option><option value="12">Luxembourg</option><option value="13">Monaco</option><option value="14">Norvège</option><option value="15">Pays-Bas</option><option value="16">Portugal</option><option value="17">Suisse</option><option value="18">Suède</option></select>
+</form>
+	</td>	
+</tr>
+</td></tr>
+
+</table>
+
+<font size="2"> By <i><a href="http://www.hpc.susx.ac.uk/%7Eewels/">Chris Ewels</a></i>, 
+
+also <a href="http://www.webweaving.org/">known as</a>.. 
+<SPAN STYLE="cursor:hand; color:blue; text-decoration:underline" 
+onClick="this.style.behavior='url(#default#homepage)';
+this.setHomePage('http://www.lps.u-psud.fr/collectif/gr_27/r.html');">
+Make this my homepage</SPAN>
+</font> 
+</td>
+</tr>
+</table>
+
+</body> </html>
+

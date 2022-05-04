@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Evaluation of Forces</TITLE>
+<META NAME="description" CONTENT="Evaluation of Forces">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node36.html">
+<LINK REL="previous" HREF="node33.html">
+<LINK REL="up" HREF="node26.html">
+<LINK REL="next" HREF="node36.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html825"
+ HREF="node36.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html822"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html816"
+ HREF="node34.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html824"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html826"
+ HREF="node36.html">Structural Optimisation</A>
+<B> Up:</B> <A NAME="tex2html823"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html817"
+ HREF="node34.html">Fermi statistics and `level</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION001040000000000000000">
+Evaluation of Forces</A>
+</H1>
+<P>
+Now the electronic system is self-consistent it is possible to
+evaluate the forces on the atoms in order to optimise the structure.
+<P>
+The forces are determined from the gradient of the free energy, <I>F</I>
+determined above, with respect to displacement,
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="102" HEIGHT="47"
+ SRC="img172.gif"
+ ALT="\begin{displaymath}
+f_{la} = -\frac{\partial F}{\partial R_{la}}\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(42)</TD></TR>
+</TABLE>
+<P>
+These forces can be determined analytically by considering the change
+in each term in the total energy for a displacement of <IMG WIDTH="44" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.gif"
+ ALT="$\Delta
+R_{la}$">.  Thus
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="623" HEIGHT="53"
+ SRC="img174.gif"
+ ALT="\begin{displaymath}
+\Delta E = \sum_{ij} b_{i,j} \Delta \left\{ T_{ij} + V_{ij}^...
+ ...
++ \Delta \tilde{E}_H + \Delta \tilde{E}_{xc} + \Delta E_{i-i},\end{displaymath}"></P>
+<P>
+where
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="316" HEIGHT="55"
+ SRC="img175.gif"
+ ALT="\begin{displaymath}
+\Delta \tilde{E}_H = \sum_{kl}c_kG_{kl}\Delta c_l + \frac{1}{2}
+\sum_{kl} c_k c_l \Delta G_{kl},\end{displaymath}"></P>
+
+<P ALIGN="CENTER"><IMG WIDTH="299" HEIGHT="53"
+ SRC="img176.gif"
+ ALT="\begin{displaymath}
+\Delta \tilde{E}_{xc} = \sum_{k,s} \varepsilon_{k,s}\Delta d_{k,s} +
+\sum_{k,s} d_{k,s}\Delta \varepsilon_{k,s}.\end{displaymath}"></P>
+<P>
+These are rearranged and substitutions made to eliminate <IMG WIDTH="31" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img177.gif"
+ ALT="$\Delta c_l$">and <IMG WIDTH="43" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.gif"
+ ALT="$\Delta d_{l,s}$">, leaving terms in only <IMG WIDTH="144" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img179.gif"
+ ALT="$\Delta S_{ij}, \Delta
+G_{kl}, \Delta H_{kl}$"> and <IMG WIDTH="45" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img180.gif"
+ ALT="$\Delta \varepsilon_{k,s}$">.  <IMG WIDTH="45" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img180.gif"
+ ALT="$\Delta \varepsilon_{k,s}$">contains terms in <IMG WIDTH="59" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.gif"
+ ALT="$\Delta \langle \tilde{n}_s \rangle_k$"> and <IMG WIDTH="60" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img182.gif"
+ ALT="$\Delta
+\langle \tilde{n}^2_s \rangle_k$"> which can be determined from
+Equations&nbsp;<A HREF="#eq:n">3.2.23</A> and <A HREF="node29.html#eq:nsq">3.2.27</A>.  Although <I>T</I><SUB><I>ij</I></SUB> and <I>S</I><SUB><I>ij</I></SUB>
+only depend on <I>R</I><SUB><I>la</I></SUB> through the basis functions, <IMG WIDTH="90" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.gif"
+ ALT="$\phi_i({\bf r} -
+{\bf R}_a)$">, the pseudopotential term is also dependent on <I>R</I><SUB><I>la</I></SUB>
+due to <IMG WIDTH="102" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.gif"
+ ALT="$V_a^{ps}({\bf r} - {\bf R}_a)$">; this is determined by
+integrating by parts to replace with terms in <IMG WIDTH="29" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.gif"
+ ALT="$\Delta \phi$">:<P>
+The forces are relatively quick to evaluate compared to determination
+of the self-consistent energy.
+<P>
+<BR><HR>
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

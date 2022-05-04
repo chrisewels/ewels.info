@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Clusters</TITLE>
+<META NAME="description" CONTENT="Clusters">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node43.html">
+<LINK REL="previous" HREF="node41.html">
+<LINK REL="up" HREF="node39.html">
+<LINK REL="next" HREF="node43.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html907"
+ HREF="node43.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html904"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html898"
+ HREF="node41.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html906"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html908"
+ HREF="node43.html">H termination</A>
+<B> Up:</B> <A NAME="tex2html905"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html899"
+ HREF="node41.html">Real space</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001073000000000000000">
+Clusters</A>
+</H2>
+ <A NAME="sec:clus">&#160;</A>
+Clusters have many advantages over periodic systems, one of the
+strongest of these being the variety of symmetries that can be
+accurately reproduced by producing a cluster of the correct
+proportions.  This makes symmetry constraining point defects much
+easier, and allows easy examination of extended structure defects such
+as line defects (the non-zero Burgers vector means that it is
+impossible to handle a single line defect in a supercell and they must
+be constructed in groups with cancelling Burgers vectors).  Since a
+cluster is not periodically repeated it is easy to calculate induced
+dipole moments.
+<P>
+Charged species are easier to handle with clusters, since the number
+of electrons can be arbitrarily fixed.  In a supercell an overall
+non-neutral charge would be infinitely repeated leading to an infinite
+system charge.  This problem is avoided by adding an equivilent
+opposite uniform background charge to the supercell to maintain its
+charge neutrality.  Such problems become worse when, for example,
+applying an external electric field; whereas with clusters a uniform
+field can be used, for a supercell it has to be a sawtooth field in
+order to keep the field continuous from one cell to its
+neighbour[<A
+ HREF="node149.html#lamoen_96">46</A>].
+<P>
+However, clusters also have several disadvantages.  The main one of
+these is the potential for interaction between the cluster surface and
+the defect contained within.  This problem is avoided when supercells
+are used, but instead is replaced with potential defect-defect
+interaction between neighbouring supercells.  Finite cluster size can
+also constrain electron delocalisation.  Hopefully defect-surface
+interaction should be minimised with the use of increasingly large
+clusters as we have access to more powerful computing facilities.
+Such surface effects can be seen in small polyaromatic carbon sheets
+used to simulate graphite, where the edge termination can impose a
+Kekul&#233; structure across the sheet if it is too small.  It is
+sometimes useful to repeat calculations in different cluster sizes to
+check the dependancy of the result on surface proximity.
+Alternatively repeating a calculation with surface hydrogen atoms held
+fixed and then allowed full relaxation gives an indication of surface
+effect depending on the degree of relaxation.
+<P>
+Using finite clusters increases the calculated bandgap of
+semiconductor material due to the surface confinement; this works
+against density functional theory which tends to decrease band
+gaps<A NAME="tex2html20"
+ HREF="footnode.html#2283"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>.
+<P>
+Zinc-Blende type clusters present an additional problem over their
+diamond lattice equivilents, due to the different valency of the two
+atomic species present.  If such a cluster is atom centred and
+radially symmetric, it will terminate with an outer shell of only one
+atomic species, so the cluster will be non-stoichiometric.  In order
+to have each covalent bond fully populated it is then necessary to
+charge the cluster (e.g.  a `neutral' 131 atom <IMG WIDTH="89" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$\rm
+In_{31}P_{40}H_{60}$"> cluster has a charge of +9 to remove the excess P
+electrons).  The alternative is a bond centred stoichiometric cluster.
+Although this does not have to be artificially charged, there will be
+a net cluster dipole due to the non-symmetric arrangement of atoms,
+and this leads to anisotropy in the bonds.  The effect of these two
+types of cluster on the core defect structure and vibrational modes
+can be seen in Chapter&nbsp;<A HREF="node47.html#inp">4</A>.
+<P>
+The use of clusters with a fixed electronic charge means that it is
+sometimes possible to obtain unphysical solutions.  For example with
+highly delocalised states such as effective-mass type states, these
+are normally very delocalised in physical systems.  However in a
+cluster approach they are forced to remain within the confines of the
+cluster and hence can artifically occupy anti-bonding states, etc.
+For problems such as the thermal donors this can be surmounted by
+running the defects in their ionised charge state, and the effect of
+localisation can be tested by then checking the structural change when
+the donor electrons are added once more.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html907"
+ HREF="node43.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html904"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html898"
+ HREF="node41.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html906"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html908"
+ HREF="node43.html">H termination</A>
+<B> Up:</B> <A NAME="tex2html905"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html899"
+ HREF="node41.html">Real space</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

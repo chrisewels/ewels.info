@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Matrix Formalism</TITLE>
+<META NAME="description" CONTENT="Matrix Formalism">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node31.html">
+<LINK REL="up" HREF="node28.html">
+<LINK REL="next" HREF="node33.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html793"
+ HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html790"
+ HREF="node28.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html786"
+ HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html792"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html794"
+ HREF="node33.html">Self-consistency</A>
+<B> Up:</B> <A NAME="tex2html791"
+ HREF="node28.html">Approximation to the charge</A>
+<B> Previous:</B> <A NAME="tex2html787"
+ HREF="node31.html">Summary so far</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001024000000000000000">
+Matrix Formalism</A>
+</H2>
+<P>
+Re-writing Equation&nbsp;<A HREF="node31.html#eq:geig">3.2.40</A> in matrix notation gives
+<P><P ALIGN="CENTER"><A NAME="eq:matrix1">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP>
+(<I>H</I> - <I>ES</I>)<I>c</I> = 0.
+<P></TD>
+<TD ALIGN="CENTER">(35)</TD></TR>
+</TABLE></P>
+<P><I>S</I> is now written in terms of an upper triangular matrix using
+Choleski decomposition,
+<P><P ALIGN="CENTER">
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP>
+<I>S</I> = <I>U</I><SUP><I>t</I></SUP> <I>U</I>.
+<P></TD>
+<TD ALIGN="CENTER">(36)</TD></TR>
+</TABLE></P>
+<P>
+If we then define a vector <I>d</I> through <I>Uc</I> = <I>d</I>, we can rewrite
+Equation&nbsp;<A HREF="node32.html#eq:matrix1">3.2.41</A> as a standard eigenvalue problem
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="213" HEIGHT="33"
+ SRC="img165.gif"
+ ALT="\begin{displaymath}
+\left\{ (U^{-1})^tHU^{-1} - E\right\} d = 0.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(37)</TD></TR>
+</TABLE>
+<P>
+Evaluation of <I>U</I> and <I>U<SUP>-1</SUP></I> is an <I>O</I>(<I>N<SUP>3</SUP></I>) problem, and the
+eigenvalues are then found using a Householder scheme.  Since the
+occupied states only represent a small fraction of the Hamiltonian
+eigenstates, the required eigenvectors are most efficiently found by
+inverse iteration since only the required states are calculated.
+Nonetheless this is normally the time dominant step, scaling as
+<I>O</I>(<I>N<SUP>3</SUP></I>).
+<P>
+<BR><HR>
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

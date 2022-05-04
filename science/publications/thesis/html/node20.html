@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Generating pseudopotentials</TITLE>
+<META NAME="description" CONTENT="Generating pseudopotentials">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node19.html">
+<LINK REL="up" HREF="node19.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html640"
+ HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html637"
+ HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html633"
+ HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html639"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html641"
+ HREF="node21.html">Other theoretical approaches</A>
+<B> Up:</B> <A NAME="tex2html638"
+ HREF="node19.html">Pseudopotentials</A>
+<B> Previous:</B> <A NAME="tex2html634"
+ HREF="node19.html">Pseudopotentials</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION00971000000000000000">
+Generating pseudopotentials</A>
+</H2>
+<P>
+Firstly the Kohn-Sham (K-S) equations are solved in an all-electron
+calculation for a single atom.  The configuration of the K-S levels is
+important, since this is used as a reference atom for the
+pseudopotential.  Therefore two special criteria are applied.  Firstly
+configurations are chosen so the charge density is spherically
+symmetric, and so can be labelled with angular momentum numbers (or <IMG WIDTH="94" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img71.gif"
+ ALT="$j
+= l \pm 1/2$"> for heavy elements requiring Dirac formalism).  Secondly
+for the higher angular momentum states a small fraction of the valence
+electrons are shifted into apparently unoccupied states (e.g. In Si,
+the <I>d</I>-pseudopotential comes from the configuration
+1<I>s<SUP>2</SUP></I>2<I>s<SUP>1</SUP>p<SUP>0.75</SUP>d<SUP>0.25</SUP></I>). This is so that the <I>d</I>-type states are
+included correctly when constructing the wavefunctions in solids.  The
+electronic fraction chosen for this excitation is picked to eliminate
+`bumps' in the potential and is different for different atomic
+species<A NAME="tex2html14"
+ HREF="footnode.html#846"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>.
+<P>
+The solution of the K-S equations gives the all-electron potential,
+<IMG WIDTH="50" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$V^\mu(r)$"> which has a Coulomb singularity at <I>r</I> = 0.  An initial
+guess pseudopotential is generated for each configuration and angular
+momentum which eliminates this singularity,
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="344" HEIGHT="51"
+ SRC="img73.gif"
+ ALT="\begin{displaymath}
+V_l(r) = V^\mu(r)\left(1 - f(\frac{r}{r_{c,l}})\right) + c^\mu_l
+f\left(\frac{r}{r_{c,l}}\right).\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(13)</TD></TR>
+</TABLE>
+<P><I>f</I>(<I>x</I>) = 1 at the origin and vanishes rapidly as <I>x</I> increases (in
+their work, <I>f</I>(<I>x</I>) = <I>e</I><SUP>-<I>x</I><SUP><</SUP><853>>3.5</SUP>).  Thus at the origin, <IMG WIDTH="84" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.gif"
+ ALT="$V_l(r) =
+c^\mu_l$">, and this is set so that the lowest energy level for each <I>l</I>
+matches the equivalent all-electron solution.  By shifting the value
+of <IMG WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.gif"
+ ALT="$c^\mu_l$"> downwards it is possible to decrease the curvature of the
+pseudopotential, making it easier to fit; such pseudopotentials are
+known as <I>ultra-soft</I> pseudopotentials, and are essential for
+plane wave calculations of elements such as oxygen.  However these are
+not always as accurate or transferable as the `bhs' pseudopotentials
+described here.  <I>r</I><SUB><I>c</I>,<I>l</I></SUB> is the core radius and defines a minimum
+radius beyond which the pseudo wavefunction matches the all-electron
+wavefunction.  As such it is an indication of the quality of the
+pseudopotential (the closer this lies to the core, the more realistic
+the potential).  However this is a trade off between the minimum
+preferred radius before the potential becomes too rapidly varying and
+the benefit of using pseudopotentials is lost; <I>r</I><SUB><I>c</I>,<I>l</I></SUB> normally lies
+halfway to the outermost node of the all-electron wavefunction.
+<P>
+The next step is to normalise the wavefunction (since the
+pseudowavefunction is currently only proportional to the all-electron
+one).  If <I>V</I><SUB><I>l</I></SUB>(<I>r</I>) has a corresponding wavefunction <IMG WIDTH="27" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.gif"
+ ALT="$w_{1l}^\nu$">, then
+a new wavefunction is created,
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="294" HEIGHT="51"
+ SRC="img77.gif"
+ ALT="\begin{displaymath}
+w_{2l}^\nu = \gamma^\nu_l \left\{w_{1l}^\nu(r) + \delta_l^\nu
+r^{l+1}f\left(\frac{r}{r_{cl}}\right)\right\}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(14)</TD></TR>
+</TABLE>
+<P><IMG WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img78.gif"
+ ALT="$\gamma^\nu_l$"> and <IMG WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\delta^\mu_l$"> are varied until <IMG WIDTH="27" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.gif"
+ ALT="$w_{2l}^\nu$">exactly equals the all-electron wavefunction outside the core.  The
+Schr&#246;dinger equation is then inverted, using the eigenvalues
+corresponding to the all-electron eigenvalues, which produces the
+potential that gives rise to <IMG WIDTH="27" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.gif"
+ ALT="$w_{2l}^\nu$">.  This potential nearly
+conforms to all of the requirements listed above.  Finally it is
+necessary to subtract the Hartree and exchange-correlation
+contributions to this potential due to the pseudo-wavefunctions
+themselves (since these are later included explicitly in the
+calculation). This leaves a bare ion potential.  This is exact for the
+Hartree potential but is only approximate for the exchange-correlation
+potential as it is non-linear.  However the approximation can be
+improved by subtracting the exchange-correlation potential derived
+from an all-electron calculation, with the added benefit of improving
+the transferability of the potential [<A
+ HREF="node149.html#louie_82">27</A>].
+<P>
+For relativistic solutions, the pseudopotential (<I>V</I><SUB><I>ps</I></SUB>(<I>r</I>)) is
+constructed from an average of the states <IMG WIDTH="77" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.gif"
+ ALT="$j = l \pm \frac{1}{2}$">(<I>V</I><SUB><I>l</I></SUB>(<I>r</I>), the scalar relativistic potential) and a spin-orbit
+potential, <I>V</I><SUB><I>l</I></SUB><SUP><I>so</I></SUP>(<I>r</I>),
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+In practise each pseudopotential is split into two groups, the <I>
+local</I> and <I>non-local</I> pseudopotential, depending on whether the
+terms are independent of <I>l</I> or not, respectively.  These two sets of
+terms are then parameterised to a set of error functions, Gaussian,
+and <I>r<SUP>2</SUP></I> <IMG WIDTH="17" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.gif"
+ ALT="$\times$"> Gaussian based functions.  It is the coefficients of
+these which are given in Bachelet, Hamann and Schl&#252;ter's paper
+[<A
+ HREF="node149.html#bhs">23</A>].
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html640"
+ HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html637"
+ HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html633"
+ HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html639"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html641"
+ HREF="node21.html">Other theoretical approaches</A>
+<B> Up:</B> <A NAME="tex2html638"
+ HREF="node19.html">Pseudopotentials</A>
+<B> Previous:</B> <A NAME="tex2html634"
+ HREF="node19.html">Pseudopotentials</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

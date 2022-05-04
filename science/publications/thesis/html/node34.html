@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fermi statistics and `level smearing'</TITLE>
+<META NAME="description" CONTENT="Fermi statistics and `level smearing'">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node33.html">
+<LINK REL="up" HREF="node33.html">
+<LINK REL="next" HREF="node35.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html814"
+ HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html811"
+ HREF="node33.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html807"
+ HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html813"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html815"
+ HREF="node35.html">Evaluation of Forces</A>
+<B> Up:</B> <A NAME="tex2html812"
+ HREF="node33.html">Self-consistency</A>
+<B> Previous:</B> <A NAME="tex2html808"
+ HREF="node33.html">Self-consistency</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001031000000000000000">
+Fermi statistics and `level smearing'</A>
+</H2>
+<P>
+Convergence is often either slow or impossible when there is only a
+tiny band gap, since `charge sloshing' can occur.  In one iteration
+electrons may transfer from a filled level to a lower energy empty
+level, but in doing so switch the ordering of the levels, so that in
+the next iteration they switch back.  In such situations, or when the
+structural symmetry leads to degenerate levels that are only partially
+filled, the self-consistency fails.
+<P>
+In these cases it is either necessary to choose a different structure,
+or else `smear out' the occupation of the levels using Fermi
+statistics, simulating a finite temperature distribution.  In practise
+this can often be used during optimisation and then later switched off
+once the structure has relaxed past the point where the levels cross.
+<P>
+If we say that a given level, <IMG WIDTH="25" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$E_\lambda$"> contains <IMG WIDTH="21" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img169.gif"
+ ALT="$f_\lambda$">electrons, then the energy term <I>E</I> that is to be minimised must now
+be expanded into a free energy, <I>F</I> containing both an entropy term
+and a constraint to keep the total number of electrons fixed to <I>M</I>,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="536" HEIGHT="51"
+ SRC="img170.gif"
+ ALT="\begin{displaymath}
+F = E + k_bT \sum_\lambda \{ f_\lambda \ln f_\lambda + (1-f_...
+ ...ln (1 - f_\lambda) 
+\} - \mu \{ \sum_\lambda f_\lambda - M \}, \end{displaymath}"></P>
+<P>
+It is also necessary to generalise the density matrix to
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="198" HEIGHT="51"
+ SRC="img171.gif"
+ ALT="\begin{displaymath}
+b_{ij,s} = \sum_\lambda \delta(s,s_\lambda)f_\lambda c_i^\lambda c_j^\lambda.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(41)</TD></TR>
+</TABLE>
+<P>
+In this work, <I>k</I><SUB><I>b</I></SUB><I>T</I> was always chosen to be 0.04&nbsp;eV where used, and
+as long as the final level splitting was greater than that there is
+not normally any partial occupancy.  Where Fermi statistics have been
+used it is stated in the text.  Use of Fermi statistics does not
+always lead to the correct structures since, for example, the driving
+force for a Jahn-Teller distortion will be removed in this way.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html814"
+ HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html811"
+ HREF="node33.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html807"
+ HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html813"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html815"
+ HREF="node35.html">Evaluation of Forces</A>
+<B> Up:</B> <A NAME="tex2html812"
+ HREF="node33.html">Self-consistency</A>
+<B> Previous:</B> <A NAME="tex2html808"
+ HREF="node33.html">Self-consistency</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

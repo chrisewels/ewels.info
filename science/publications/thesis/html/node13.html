@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Thomas-Fermi Theory</TITLE>
+<META NAME="description" CONTENT="Thomas-Fermi Theory">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html566"
+ HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html563"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html557"
+ HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html565"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html567"
+ HREF="node14.html">Density Functional Theory</A>
+<B> Up:</B> <A NAME="tex2html564"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html558"
+ HREF="node12.html">Discussion</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION00930000000000000000">
+Thomas-Fermi Theory</A>
+</H1>
+<P>
+Thomas-Fermi theory marks a change in approach from Hartree and
+Hartree-Fock theory, as it was the first method to propose using the
+electronic charge density as its fundamental variable instead of the
+wavefunction.  It is thus the earliest form of density functional
+theory.
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="fig:t_fermi">&#160;</A><A NAME="594">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Figure 2.1:</STRONG>
+Schematic diagram showing the principle of the local density
+approximation and also Thomas Fermi theory, namely that for a given
+radial slab, <I>dr</I>, the local charge density can be considered to be
+<I>n</I>(<I>r</I>), the density of an equivalent uniform homogeneous electron gas.</CAPTION>
+<TR><TD><IMG WIDTH="447" HEIGHT="271"
+ SRC="img37.gif"
+ ALT="\begin{figure}
+\begin{center}
+\ 
+\psfig {file=theory/diags/tfermi.eps,width=10cm}
+\end{center}\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<P>
+The model can be understood with reference to
+Figure&nbsp;<A HREF="node13.html#fig:t_fermi">2.1</A>.  Although the charge density is that of a
+non-uniform electron gas, the number of electrons in a given element,
+<I>dr</I>, can be expressed as <I>n</I>(<I>r</I>)<I>dr</I>, where <I>n</I>(<I>r</I>) is the charge density
+for a <I>uniform</I> electron gas at that point.  It is then possible
+to express the energy as a function of <I>n</I>(<I>r</I>),
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="570" HEIGHT="50"
+ SRC="img38.gif"
+ ALT="\begin{displaymath}
+E_{TF}[n(r)] = \int v(r)n(r) dr + \int \frac{3}{10} (3
+\pi^2...
+ ...r + \frac{1}{2} \int
+\frac{n(r)n(r')}{\vert r - r'\vert}dr dr'.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(5)</TD></TR>
+</TABLE>
+<P>
+Again the variational principle is applied and the energy, <I>E</I><SUB><I>TF</I></SUB> is
+minimised subject to the condition
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="120" HEIGHT="47"
+ SRC="img39.gif"
+ ALT="\begin{displaymath}
+\int n(r) dr = N.\end{displaymath}"></P>
+<P>
+A Lagrange parameter of <IMG WIDTH="14" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\mu$"> incorporates this and leads to the
+Thomas-Fermi self-consistent equations,
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+Note that <IMG WIDTH="14" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\mu$"> is equivalent to the chemical potential,
+<IMG WIDTH="26" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.gif"
+ ALT="$\frac{\partial E}{\partial N}$">.  This approach is extremely simple,
+and is qualitatively correct for atoms.  However it does not give a
+binding energy for molecules, and the proof is not rigorous.  To
+overcome these problems it is necessary to move on to the work of
+Hohenberg, Kohn and Sham.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html566"
+ HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html563"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html557"
+ HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html565"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html567"
+ HREF="node14.html">Density Functional Theory</A>
+<B> Up:</B> <A NAME="tex2html564"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html558"
+ HREF="node12.html">Discussion</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>H termination</TITLE>
+<META NAME="description" CONTENT="H termination">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node44.html">
+<LINK REL="previous" HREF="node42.html">
+<LINK REL="up" HREF="node39.html">
+<LINK REL="next" HREF="node44.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html918"
+ HREF="node44.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html915"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html909"
+ HREF="node42.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html917"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html919"
+ HREF="node44.html">Gaussian orbitals</A>
+<B> Up:</B> <A NAME="tex2html916"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html910"
+ HREF="node42.html">Clusters</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001074000000000000000">
+H termination</A>
+</H2>
+<P>
+If a realspace calculation is performed without using either periodic
+boundary conditions[<A
+ HREF="node149.html#ccm">48</A>] or an embedding technique then the only
+other alternative is to use clusters.  A realspace cluster of atoms
+has a surface array of dangling bonds that need to be saturated in
+some way in order to remove them from the gap and correctly simulate
+bulk material.  This is achieved by terminating the dangling bonds
+with H atoms, concentrating surface charge in correctly orientated
+chemical bonds.
+<P>
+Justification for the use of a H terminated cluster approach comes
+from the apparent scalability in chemical bonding from molecular
+species into semiconductor bulk.  For example, disiloxane,
+(SiH<SUB>3</SUB>)<SUB>2</SUB>O has a Si-O-Si vibrational stretch mode of
+1107&nbsp;cm<SUP>-1</SUP>, only 2.5% less than that of O<SUB><I>i</I></SUB> in
+Si[<A
+ HREF="node149.html#slater_65">49</A>].  It has a Si-O bond length of
+1.634&nbsp;&#197;[<A
+ HREF="node149.html#alminningen_63">50</A>], less than 1.5% longer than the
+bondlengths we calculate here for O<SUB><I>i</I></SUB> in Si (see
+Chapter&nbsp;<A HREF="node69.html#dimers">6</A>).
+<P>
+If the surface H atoms are allowed to move, the number of iterations
+required to reach a minimum energy structure is vastly increased.
+Surface H sits in a shallow potential and as the defect core relaxes
+there is a `relaxation ripple' which runs out to the edge of the
+cluster. Often over half of the conjugate gradient iterations are
+spent moving the surface hydrogens with little overall change in the
+cluster energy or defect core structure.  If the surface H atoms are
+not allowed to move then it is questionable to what extent the
+resultant cluster is in a fully relaxed ground state structure.
+Ideally there should be no motion of the cluster surface indicating
+minimal interaction with the defect at the cluster core, but in
+practise such clusters are prohibitively large.  Fixing surface H
+atoms can lead to incorrect structures where there is a large volume
+change, e.g. substitutional carbon and VO<SUB><I>n</I></SUB> centres.
+<P>
+A compromise between these two solutions that has been used for much
+of this work is to confine the hydrogen atoms in an additional
+quadratic `spring' potential.  This is a crude first approximation to
+the additional rigidity that would be provided if the cluster was
+embedded in bulk.  Using a standard Si-Si bond spring constant gave a
+potential that was too restricting, so where used in these
+calculations, the spring strength is 5.0&nbsp;eV/&#197;.  Various other
+simple methods have been tried with less success.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html918"
+ HREF="node44.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html915"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html909"
+ HREF="node42.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html917"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html919"
+ HREF="node44.html">Gaussian orbitals</A>
+<B> Up:</B> <A NAME="tex2html916"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html910"
+ HREF="node42.html">Clusters</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Use of the Musgrave-Pople potential in this work</TITLE>
+<META NAME="description" CONTENT="Use of the Musgrave-Pople potential in this work">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node24.html">
+<LINK REL="up" HREF="node21.html">
+<LINK REL="next" HREF="node26.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html694"
+ HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html691"
+ HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html687"
+ HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html693"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html695"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Up:</B> <A NAME="tex2html692"
+ HREF="node21.html">Other theoretical approaches</A>
+<B> Previous:</B> <A NAME="tex2html688"
+ HREF="node24.html">Interatomic Potentials</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION00983000000000000000">
+Use of the Musgrave-Pople potential in this work</A>
+</H2>
+ <A NAME="m_pople">&#160;</A>
+Local vibrational modes can be considered to be independant of any
+lattice coupling if they are sufficiently far above the Raman
+frequency, as is the case with H- stretch modes.  However for
+lower frequency vibrational modes we can expect the mode to couple
+with the surrounding lattice, particularly once below the Raman
+frequency.  It is therefore essential to take into account the
+vibrational properties of the surrounding lattice when calculating
+such modes for defects.  Calculating the double derivatives of energy
+for each atom in the cluster has a prohibitive computational cost, and
+so it is therefore necessary to make some assumptions.
+<P>
+The way we tackle this problem is using the Musgrave-Pople interatomic
+potential to model the vibrational properties of those bulk atoms for
+which we do not calculate the energetic double derivatives directly.
+This can be used in conjunction with the AIMPRO double derivative data
+for the core defect atoms.
+<P>
+In order to parameterise the potential it is necessary to calculate
+the double derivatives for a small group of core atoms in a cluster of
+pure bulk material, and the parameters are then fitted to these
+derivatives.  The Musgrave-Pople potential parameters are calculated
+from a least-squares fit to the <EM>ab initio</EM>  energy double
+derivatives, calculated for the core of a fully relaxed bulk cluster.
+For example, the InP potential parameters given in
+Section&nbsp;<A HREF="node52.html#inp:m_pople">4.3</A> were determined using an 86 atom C<SUB>3<I>v</I></SUB>
+cluster <IMG WIDTH="89" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.gif"
+ ALT="$\rm In_{22}P_{22}H_{42}$">.  This was relaxed using AIMPRO, and
+then the energy double derivatives were calculated for the inner eight
+atoms, four of each chemical species.  This leads to 156 double
+derivative terms which produces a very accurate fit.
+<P>
+Examples of the application of the MP potential to defect problems is
+given in Chapter&nbsp;<A HREF="node47.html#inp">4</A>, the parameters used for Si are given in
+Reference&nbsp;[<A
+ HREF="node149.html#jones_87">35</A>].
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html694"
+ HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html691"
+ HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html687"
+ HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html693"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html695"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Up:</B> <A NAME="tex2html692"
+ HREF="node21.html">Other theoretical approaches</A>
+<B> Previous:</B> <A NAME="tex2html688"
+ HREF="node24.html">Interatomic Potentials</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

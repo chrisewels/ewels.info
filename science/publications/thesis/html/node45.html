@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Bond centred Gaussian fitting functions</TITLE>
+<META NAME="description" CONTENT="Bond centred Gaussian fitting functions">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node44.html">
+<LINK REL="up" HREF="node39.html">
+<LINK REL="next" HREF="node46.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html938"
+ HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html935"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html931"
+ HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html937"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html939"
+ HREF="node46.html">Application of AIMPRO to</A>
+<B> Up:</B> <A NAME="tex2html936"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html932"
+ HREF="node44.html">Gaussian orbitals</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001076000000000000000">
+Bond centred Gaussian fitting functions</A>
+</H2>
+<P>
+The use of bond centred fitting functions has a dual purpose.  Firstly
+it allows better modelling of the charge distribution in a bond
+centre, which is normally where the valence charge is localised in a
+cluster.  Secondly it removes the need to include <I>d</I>- orbital fitting
+functions on the bulk Si atoms.  This is because the bond centred
+Gaussians act on their nearby atomic sites with <I>s</I>, <I>p</I>, <I>d</I>,
+etc. character, the strength of this effect tailing off with distance
+between the Gaussian and the atomic site and increasing quantum
+number.  In order to maximise <I>d</I>-like character it is possible to
+arrange these fitting functions symmetrically around an atomic site so
+that their <I>p</I>-character exactly cancels; the minimum number of
+functions required for this is an icosohedral arrangement.  We tried
+this for some of the oxygen diffusion calculations, where bonds are
+breaking and reforming and so it is not always obvious where bond
+centred functions should be located (see Chapter&nbsp;<A HREF="node69.html#dimers">6</A>),
+however in practise they did not increase the accuracy of the
+calculation and significantly slowed calculation time.
+<P>
+However bond centred Gaussian functions bring associated
+disadvantages.  Such additional fitting functions will locally improve
+the wavefunction and charge density modelling, thus lowering the
+cluster energy.  This makes it harder to compare different structures,
+where the energy may change simply because the bond centred functions
+are no longer in such optimal locations.  This has proved to be a
+particular problem in the case of oxygen in silicon where the cluster
+energy is critically dependant on the number and location of bond
+centred fitting functions.  They often have little effect on final
+structure but the improved local charge description can improve the
+local vibrational modes.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html938"
+ HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html935"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html931"
+ HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html937"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html939"
+ HREF="node46.html">Application of AIMPRO to</A>
+<B> Up:</B> <A NAME="tex2html936"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html932"
+ HREF="node44.html">Gaussian orbitals</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

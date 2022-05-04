@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Density Functional Theory</TITLE>
+<META NAME="description" CONTENT="Density Functional Theory">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node15.html">
+<LINK REL="previous" HREF="node13.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node15.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html577"
+ HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html574"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html568"
+ HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html576"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html578"
+ HREF="node15.html">The local density approximation</A>
+<B> Up:</B> <A NAME="tex2html575"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html569"
+ HREF="node13.html">Thomas-Fermi Theory</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION00940000000000000000">
+Density Functional Theory</A>
+</H1>
+ <A NAME="kstheory">&#160;</A>
+Density Functional Theory (DFT) is a way of simplifying the many body
+problem by working with the electronic charge density as fundamental
+variable rather than the wavefunction.  It is a ground state theory
+that incorporates both exchange and correlation effects, and is more
+computationally efficient than Hartree-Fock methods.  However it
+brings with it various problems that will be outlined below.  These
+include having eigenvalues that do not necessarily correspond with the
+physical eigenvalues of the system (with the exception of the highest
+occupied state), as well as poor excited state modelling and hence
+band gap prediction.
+<P>
+DFT was originally developed by Hohenberg and Kohn [<A
+ HREF="node149.html#hohenberg_64">16</A>]
+and later developed by Kohn and Sham [<A
+ HREF="node149.html#kohn_65">17</A>].  The crux of this
+work is the proof that it is valid to use the charge density as the
+fundamental system variable, <I>i.e.</I>, that for a given
+non-degenerate non-polarised ground state wavefunction, there is a
+unique electron density.  Thus <IMG WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\Psi$"> is a unique functional of the
+charge density, <I>n</I>, and hence the energy <I>E</I> is uniquely defined by
+<I>n</I>.
+<P>
+We first define for a given wavefunction, <IMG WIDTH="26" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.gif"
+ ALT="$\Psi_n$">, a Hamiltonian, <I>H</I><SUB><I>n</I></SUB>
+given by
+<P>
+<P ALIGN="CENTER">
+<I>H</I><SUB><I>n</I></SUB> = <I>T</I> + <I>U</I> + <I>V</I><SUB><I>n</I></SUB>.
+</P>
+<P>
+The proposal is that the ground state electron density is in unique
+correspondence with the external potential, <I>V</I><SUB><I>n</I></SUB> (<I>T</I> and <I>U</I> are the
+common kinetic and interaction energy operators respectively).  If
+this was not the case there would be two or more such potentials, say,
+<I>V<SUB>1</SUB></I> and <I>V<SUB>2</SUB></I> having the same <I>n</I>.  By the Rayleigh-Ritz variational
+principle for the ground state energy, this would imply that
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="373" HEIGHT="97"
+ SRC="img43.gif"
+ ALT="\begin{displaymath}
+\begin{array}
+{rcl}
+E_1 = \langle \Psi_1 \vert H_1 \vert \Ps...
+ ...\\ &=& E_2 + \int (V_1 - V_2)n({\bf r})d{\bf r}. \\ \end{array}\end{displaymath}"></P>
+<P>
+However, the expression is equally valid with the terms reversed,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="241" HEIGHT="47"
+ SRC="img44.gif"
+ ALT="\begin{displaymath}
+E_2 < E_1 + \int (V_2 - V_1) n({\bf r}) d{\bf r}. \end{displaymath}"></P>
+<P>
+Adding these two inequalities gives
+<P>
+<P ALIGN="CENTER">
+<I>E<SUB>1</SUB></I> + <I>E<SUB>2</SUB></I> &lt; <I>E<SUB>1</SUB></I> + <I>E<SUB>2</SUB></I>,
+</P>
+<P>
+which is clearly a contradiction unless the energies are
+degenerate.
+<P>
+This remarkable proof shows that since the charge density can
+unambiguously specify the external potential, then contained within
+the charge density is the total information about the stationary
+system; eigenvalues, wavefunctions, Hamiltonians, etc.  Thus what was
+a 4<I>M</I> variable problem (where <I>M</I> is the number of electrons, each
+one having three Cartesian variables and electron spin) is now reduced
+to the four variables needed to define the charge density at a point.
+<P>
+It is now theoretically possible to write an <I>energy functional</I>
+in terms of the charge density,
+<P><P ALIGN="CENTER"><A NAME="eq:ks_charge">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP>
+<I>E</I>[<I>n</I>] = <I>E</I><SUB><I>i</I>-<I>i</I></SUB> + <I>E</I><SUB><I>e</I>-<I>i</I></SUB> + <I>F</I>[<I>n</I>(<I>r</I>)],
+<P></TD>
+<TD ALIGN="CENTER">(6)</TD></TR>
+</TABLE></P>
+<P>
+where <I>F</I>[<I>n</I>(<I>r</I>)] is a universal functional of density; <I>i.e.</I>,
+applying the variational principle, when <I>n</I>(<I>r</I>) corresponds exactly to
+that induced by the external potential, the total energy functional
+will be at a minimum, the ground state energy.  In principle, at this
+stage this formalism is still exact.
+<P><I>F</I>[<I>n</I>(<I>r</I>)] can be broken down into its components,
+<P><A NAME="hartree">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="hartree">&#160;</A><IMG WIDTH="345" HEIGHT="50"
+ SRC="img45.gif"
+ ALT="\begin{displaymath}
+F[n(r)] = \frac{1}{2} \int \frac{n({\bf r}_1) n({\bf
+r}_2)}{...
+ ...f r}_1 - {\bf r}_2 \vert} d{\bf r}_1 d{\bf r}_2 + {\rm Kinetic}\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(7)</TD></TR>
+</TABLE>
+<P>
+where the first term is the <I>Hartree energy</I>.  The simplest
+approximation to the kinetic term comes from Thomas Fermi theory
+[<A
+ HREF="node149.html#TFermi">18</A>],
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="185" HEIGHT="47"
+ SRC="img46.gif"
+ ALT="\begin{displaymath}
+{\rm Kinetic} = \gamma \int n({\bf r})^\frac{5}{3} d{\bf r}\end{displaymath}"></P>
+<P>
+However, for an exact form we can expand the kinetic energy to give
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="238" HEIGHT="31"
+ SRC="img47.gif"
+ ALT="\begin{displaymath}
+{\rm Kinetic} = T[n(r)] + E_{xc}[n(r)]\end{displaymath}"></P>
+<P><I>T</I> is the kinetic energy of a set of <I>non-interacting</I> particles
+with a given charge density.  However there is also a term, <I>E</I><SUB><I>xc</I></SUB>,
+the <I>exchange-correlation energy</I>, that includes all the kinetic
+terms due to interactions within the gas.  This includes exchange
+energies discussed previously, as well as correlation energy.  The
+electrons will tend to dynamically repel other electrons from their
+region of space through Coulombic repulsion, creating a `correlation
+hole', and this is incorporated in the <I>E</I><SUB><I>xc</I></SUB>.
+<P>
+Both the kinetic energy, <I>T</I>, and the exchange correlation energy,
+<I>E</I><SUB><I>xc</I></SUB> are harder to express in terms of the charge density; to
+determine <I>T</I> we have to invoke Kohn-Sham theory, but to express
+<I>E</I><SUB><I>xc</I></SUB>, we commonly use the <I>local density approximation</I>.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html577"
+ HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html574"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html568"
+ HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html576"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html578"
+ HREF="node15.html">The local density approximation</A>
+<B> Up:</B> <A NAME="tex2html575"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html569"
+ HREF="node13.html">Thomas-Fermi Theory</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

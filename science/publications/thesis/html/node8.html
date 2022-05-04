@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Introduction</TITLE>
+<META NAME="description" CONTENT="Introduction">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="thesis.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html496"
+ HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html493"
+ HREF="thesis.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html487"
+ HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html495"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html497"
+ HREF="node9.html">Theoretical Background</A>
+<B> Up:</B> <A NAME="tex2html494"
+ HREF="thesis.html">Chris Ewels' PhD Thesis</A>
+<B> Previous:</B> <A NAME="tex2html488"
+ HREF="node7.html">Definitions and Notation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION00800000000000000000">
+Introduction</A>
+</H1>
+ <A NAME="introduction">&#160;</A>
+<BLOCKQUOTE>
+<SMALL>``From the moment I picked up your book until I laid it
+down, I was convulsed with laughter.  Some day I intend reading it.''</SMALL>
+<BR>
+<DIV ALIGN="RIGHT">Groucho Marx
+</DIV></BLOCKQUOTE>
+<P>
+The Silicon industry is a 10<SUP>12</SUP> dollar industry worldwide, with Si
+technology lying at  the core of  the majority of  computer systems in
+use   today.  Si is  the  focus  of   huge amounts  of research,  both
+industrially and academically.  Despite this, there is still much that
+is not  understood about the  behaviour  of impurities  in  Si, and  a
+thorough understanding of the  structure and properties of  impurities
+is becoming increasingly important as  devices become smaller and chip
+speeds are expected to increase.
+<P>
+Commercial Si is normally grown using either float zone methods or the
+Czochralski<A NAME="tex2html3"
+ HREF="footnode.html#226"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A> growth technique
+[<A
+ HREF="node149.html#czochralski_18">1</A>].  Czochralski growth forms the vast majority due
+to the resultant  wafers resistance to   thermal stress, the speed  of
+production  and  low cost.   A  schematic diagram  of a Czochralski-Si
+grower  is shown in   Figure&nbsp;<A HREF="node8.html#fig:czochralski">1.1</A>.  The molten  Si is
+contained in a quartz crucible which is  rotated.  A single crystal Si
+seed  is placed  on  the  surface  and  gradually  drawn upwards   and
+simultaneously rotated;  this  draws the  molten   Si after it   which
+solidifies into a continuous crystal extending from the seed.
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="fig:czochralski">&#160;</A><A NAME="233">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Figure 1.1:</STRONG>
+Schematic diagram showing Czochralski Si growth. (1) SiO<SUB>2</SUB>
+crucible, (2) Carbon susceptor, (3) Graphite Heater, (4) Single
+crystal Si.  Note that the crystal and crucible are rotated in
+opposite directions.  More than 99% of dissolving oxygen is lost as SiO.</CAPTION>
+<TR><TD><IMG WIDTH="359" HEIGHT="419"
+ SRC="img4.gif"
+ ALT="\begin{figure}
+\begin{center}
+\ 
+\psfig {file=misc/czochralski.eps,width=8cm,angle=270}
+\end{center}\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<P>
+Due to the high reactivity of molten Si there are  only a few possible
+choices for crucible, and SiO<SUB>2</SUB> is the normal choice.  However  the
+SiO<SUB>2</SUB> gradually dissolves  into the melt, releasing large quantities
+of oxygen into the Si.  Over 99% of this is lost  as SiO gas from the
+molten surface,  but the rest dissolves  into  the single  crystal Si.
+Thus Cz-Si has an  extremely  high oxygen concentration (typically  of
+the order of 10<SUP>18</SUP> atoms/cm<SUP>3</SUP>, or 1&nbsp;ppm), and oxygen is always
+the highest concentration  impurity in Cz-Si<A NAME="tex2html4"
+ HREF="footnode.html#292"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>.   The   solid
+solubility of O   in Si is  <IMG WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\sim$">10<SUP>18</SUP> atoms/cm<SUP>3</SUP> at melting
+point [<A
+ HREF="node149.html#carlberg_86">3</A>]  but drops by  several orders of magnitude at
+room temperature [<A
+ HREF="node149.html#mikkelsen_86">4</A>], so there  is a driving force for
+precipitation.  For extended  anneals above <IMG WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\sim$">450<IMG WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="$^\circ$">C,  small
+quartz   precipitates  form   in  the  Si,   accompanied   by  silicon
+self-interstitials  (Si<SUB><I>i</I></SUB>) and dislocation  loops  due to the volume
+difference of Si  and SiO<SUB>2</SUB> (quartz  has roughly half the Si density
+of pure Si).  This glut of dislocations  causes a large degradation in
+mechanical strength of the silicon (the yield  point drops by a factor
+of almost  5 [<A
+ HREF="node149.html#shimura_94">5</A>]).  Similarly,  oxygen causes warpage of
+the Si wafers during processing.
+<P>
+However, oxygen behaves differently   when Cz-Si is annealed at  lower
+temperatures.   Annealing at around   450<IMG WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="$^\circ$">C for  several  hours
+leads to a  change in the electrical resistivity  of the Si, and it is
+now known  that this is due to   the formation of <I>thermal double
+donors</I>, oxygen based  defects with double  donor levels close to  the
+conduction    band.     These   can   form    with concentrations   of
+<IMG WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\sim$">10<SUP>16</SUP>cm<SUP>-3</SUP>,  significantly  degrading the performance of
+the Si.  Higher  temperature   annealing removes these  (`donor  kill'
+processing),    however there is  interest  in  lowering the annealing
+temperatures  required during   processing.  High temperature  anneals
+allow greater defect  migration and  increased interfacial  diffusion,
+both of  which become crucial in extremely  small devices.  As well as
+thermal donors there are various other families of shallow donors that
+form,  including the <I>shallow  thermal donors</I>, which form over an
+extremely wide  temperature range  (some of these    are stable up  to
+900<IMG WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="$^\circ$">C),   as  well  as  the `new    donors' which  form  in the
+500-600&nbsp;<IMG WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="$^\circ$">C temperature  range  after the  thermal donors anneal
+out.
+<P>
+The obvious way to avoid these defects would be to minimise the amount
+of oxygen in the  material.  There are various  ways to achieve  this.
+One particularly successful method is  to  place large magnetic  coils
+around        the    molten        Si        bath      (`MCZ',      or
+Magnetic-field-applied-Czochralski).  The resultant fields control the
+convection fluid flow,  allowing the operator  to minimise the  mixing
+between  the liquid in the centre  of the bath with  that at the edge.
+This effectively creates  a liquid Si  crucible around the central  Si
+bath, which  can trap much of the  oxygen and slow  its migration into
+the crystal[<A
+ HREF="node149.html#tkacheva_NATO">6</A>].  This process drops the final thermal
+donor concentrations by over an order of magnitude, but cannot provide
+a final solution to the  problem, since oxygen   is needed within  the
+crystal.    As well as forming   unwanted electrically active defects,
+oxygen    performs a number   of very    useful roles.    It   can pin
+dislocations,  which greatly strengthens  the crystal.  Float-zone Si,
+which contains over two orders of magnitude less oxygen than Cz-Si, is
+too soft for most  commercial  applications and crumbles  very easily.
+Oxygen also acts  as a gettering agent for  trace metal impurities  in
+the crystal (`intrinsic gettering').  Oxygen precipitates in the wafer
+core suppress stacking faults [<A
+ HREF="node149.html#rozgonyi_76">7</A>], and oxygen makes the
+Si more  resistant to thermal stress during   processing.  This is the
+primary reason why Cz-Si is used for  integrated circuit design, where
+there are many thermal processing steps.
+<P>
+Thus  to some  extent  we are  stuck  with  the problem of  the oxygen
+related donor  defects in Si.  Given this  state of affairs, there are
+two available courses.  Firstly to develop alternative treatments that
+minimise the  donor  defect concentration without  dropping the oxygen
+concentration (through  alternative heat treatments, addition of other
+impurities, and   possibly  even more     exotic  treatments such   as
+irradiation).    Secondly    it is known      that  the formation  and
+distribution  of these defects is  crucially  dependent on the initial
+condition of  the Si<A NAME="tex2html5"
+ HREF="footnode.html#250"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>.
+Therefore with improved pre-treatments  and processing we may  be able
+to tweak these   to our favour,   and  in practise any  solution  will
+probably be a combination of both of these.
+<P>
+In  order   to pursue this   approach,  it is    obvious that detailed
+knowledge  is required of the behaviour  of impurities in Si.  Notably
+the defect structures and formation  processes, as well as the primary
+impurity  complexes  and their diffusion  mechanisms,  need to be well
+understood.  Si is the  most   studied semiconductor material  in  the
+world.  Despite  this, more than forty  years of research into thermal
+donors<A NAME="tex2html6"
+ HREF="footnode.html#293"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A> still leaves  many fundamental
+questions  unanswered, including their structure,  and their method of
+formation.  Some of  the more  important questions   that need to   be
+addressed are as follows:
+<P><UL>
+<LI>What are the structures and formation processes for thermal
+      donors and shallow thermal donors?
+<LI>What is the role, if any, of silicon self-interstitials, both as
+      a part of defect structures such as thermal donors, and as a
+      catalyst for defect formation through enhanced migration or
+      pre-cursor formation?
+<LI>What is the role, if any, for oxygen dimers?  To what extent do
+      pairs of oxygen atoms control defect formation at lower
+      temperatures?
+</UL>
+<P>
+The last two are addressed in Chapters&nbsp;<A HREF="node69.html#dimers">6</A> and <A HREF="node116.html#thermal">9</A>.
+The  structure and mechanisms  for   the  shallow thermal donors   are
+addressed  in Chapter&nbsp;<A HREF="node98.html#stds">8</A>.  We present a  model for the thermal
+donor core in Chapter&nbsp;<A HREF="node116.html#thermal">9</A>.  Although this does not provide a
+complete answer  to the  thermal donor problem,  I have  included some
+discussion  of this and  pointers  towards an eventual solution, drawn
+from these results and the available experimental data.
+<P>
+As well  as  oxygen,  there are many   other light  element impurities
+present in Si, either through accident or design.  These will interact
+with oxygen in various  ways, forming many different defect complexes.
+Nitrogen  is not very soluble  in  Si, but  can  be incorporated in  a
+variety of ways, either through  annealing in an N<SUB>2</SUB> atmosphere, ion
+implantation,  or  through  addition of  Si<SUB>3</SUB>N<SUB>4</SUB> to  the Si melt.
+Nitrogen helps to suppress  `swirl defects' in the  Si and stops wafer
+bowing during processing.  It is  also known to suppress thermal donor
+formation.  Nitrogen is electrically inactive  in Si, and is known  to
+suppress   vacancy and interstitial  defects   and increase gate oxide
+integrity [<A
+ HREF="node149.html#vonammon_96">9</A>].  Si<SUB>3</SUB>N<SUB>4</SUB> is also used as a diffusion
+barrier.  These effects are, in part at  least, due to the interaction
+between nitrogen and oxygen.
+<P>
+Hydrogen is an extremely complex impurity in semiconductors.  It is
+now believed to be present in most Si samples<A NAME="tex2html7"
+ HREF="footnode.html#294"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>.  It is normally used in
+semiconductor  materials    as   a  passivating   element,  saturating
+electrically  active dangling   bonds  associated with    other defect
+centres.  However,   its  behaviour is  more   complex  than that.  In
+Chapter&nbsp;<A HREF="node47.html#inp">4</A> we show that in III-V materials a fully hydrogenated
+vacancy  behaves as   a  single shallow  donor,   and in  InP  this is
+responsible for charge compensation of  iron dopants.  In addition, in
+conjunction   with  other  elements  such   as carbon  we   suggest in
+Chapter&nbsp;<A HREF="node98.html#stds">8</A> that hydrogen may  also be responsible for some  of
+the  shallow  thermal donors  observed  in silicon.   A  full study of
+oxygen-hydrogen interactions in silicon  is beyond the scope  of this
+thesis.
+<P>
+Carbon is always   present in concentrations  of  at  least <IMG WIDTH="68" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$5 \times
+10^{15}$">&nbsp;cm<SUP>-3</SUP>, and can form a variety of complexes with oxygen in
+both  its substitutional and interstitial  forms.  C-O complexes will
+be  covered fully in  the PhD  of Paul Leary,   but some discussion of
+their formation and behaviour is included here where relevant.
+<P>
+Finally,  we  examine the interaction    between oxygen and vacancies.
+Vacancies and self-interstitials    can be introduced  into   Si  in a
+variety  of ways.   Irradiation produces many   intrinsic defects, and
+although most immediately recombine, it  is still  the easiest way  to
+produce  large  quantities of   vacancies (V)  and  self-interstitials
+(Si<SUB><I>i</I></SUB>).  Proton  irradiation hydrogenates the vacancies and prevents
+recombination, leading to an  excess of Si<SUB><I>i</I></SUB>.  SiO<SUB>2</SUB> precipitation
+also creates Si<SUB><I>i</I></SUB>, and  these aggregate into rod-like defects (RLDs)
+that lie  along <IMG WIDTH="10" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="$\langle$">311<IMG WIDTH="10" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\rangle$"> planes.    Annealing Si in N<SUB>2</SUB>
+gas leads to Si<SUB>3</SUB>N<SUB>4</SUB> precipitation on the  surface, which sends a
+`wind'  of vacancies into the  bulk.   Vacancies are known to  complex
+with oxygen and suppress   thermal donor formation,  and the   role of
+Si<SUB><I>i</I></SUB> in the formation of thermal  donors is a hotly contested issue.
+Complexes involving Si<SUB><I>i</I></SUB> and O<SUB><I>i</I></SUB> are  not believed to be stable at
+normal annealing temperatures and break down at low temperatures
+[<A
+ HREF="node149.html#abdullin_95">12</A>].  However vacancy-oxygen defects are common, and
+precipitate instead of thermal donors.  The vacancy-oxygen centre, or
+`A centre' (OV<SUP>-</SUP>), is the most common impurity in electron
+irradiated Cz-Si at room temperature.  We therefore examine various
+vacancy-oxygen defects, and show how vacancies act as precipitation
+centres for oxygen.
+<P>
+Our calculations are performed using AIMPRO, a density functional code
+working under the local density approximation (LDA).  The method is
+<I>ab initio</I>, <I>i.e.</I> the only experimental input required is
+the atomic number of the elements involved.  The calculations use
+large molecular clusters to simulate bulk crystal.  These clusters
+contain from 35 to 98 bulk atoms, and have their surface dangling
+bonds terminated with hydrogen atoms (a typical 134 atom cluster is
+shown in Figure&nbsp;<A HREF="node51.html#fig:inp_clus">4.1</A>a)<A NAME="tex2html8"
+ HREF="footnode.html#272"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>.  The defect
+structure is inserted into the centre of these clusters and some or
+all of the atoms allowed to relax to their ground state.  Thus we are
+able to accurately describe the structure and symmetry of point
+defects.  The calculated Kohn-Sham eigenvalues also provide
+semi-quantitative information about the localised electronic states of
+the defects.  Determination of the energy second derivatives for the
+core defect atoms also allows us to calculate the local vibrational
+modes of defects with different atomic isotopes, which can be directly
+compared to experiment.  By relaxing various alternative structures it
+is possible to determine defect binding energies, and by applying
+constraints to the relaxation to hold the cluster at a saddle point,
+barriers to migration can be determined.
+<P>
+In Chapter&nbsp;<A HREF="node9.html#theory">2</A>     the theoretical background   to  AIMPRO is
+discussed.  This  includes  Hartree  Fock,  Thomas Fermi  Theory   and
+Density Functional Theory, as well as some of the approximations used.
+Also  included is a discussion  of  other theoretical methods commonly
+used to examine oxygen defects in Si, such as CNDO.
+<P>
+Chapter&nbsp;<A HREF="node26.html#aimpro">3</A> describes the formalism used within AIMPRO.  This
+includes discussion of the advantages  and disadvantages of the method
+used,  including the role    of  clusters, hydrogen termination    and
+localised Gaussian basis sets.
+<P>
+Chapter&nbsp;<A HREF="node47.html#inp">4</A> is concerned with   hydrogenated defects in InP  and
+GaAs.  It is first shown that  hydrogenated vacancies can form a range
+of electrically active defects, from VH<SUB>4</SUB>, which is a single shallow
+donor, to VH, which acts as a double  acceptor.  VH<SUB>4</SUB> is shown to be
+responsible for  the charge  compensation of  iron  in InP.   The role
+played by hydrogen in passivating group II acceptor impurities such as
+Be and Mg is also examined.  The  work is extended to passivated Group
+II  acceptors  in GaAs to examine   trends with material  type, and is
+closely tied  to experimental research performed   by Bernard Pajot in
+Paris.
+<P>
+The other results chapters  are concerned with oxygen- related defects
+in   silicon.    Chapter&nbsp;<A HREF="node57.html#vacancy">5</A>   examines   the    range    of
+vacancy-oxygen defects, V<SUB><I>n</I></SUB>O<SUB><I>m</I></SUB>,  <I>n</I>=1,2, <I>m</I>=1,3.  For the first
+time, coupled with   experimental  work from &#197;rhus,  Denmark,   we
+unambiguously  show   that VO<SUB>2</SUB> is  defect  responsible  for   the
+889&nbsp;cm<SUP>-1</SUP> local vibrational   mode (LVM).   A  discussion of  the
+annealing behaviour of V<SUB><I>n</I></SUB>O<SUB><I>m</I></SUB> defects is  included, as well as the
+role of oxygen dimers.
+<P>
+Chapter&nbsp;<A HREF="node69.html#dimers">6</A> examines the interstitial oxygen dimer, O<SUB>2<I>i</I></SUB>.
+This defect is believed to be responsible for the low formation energy
+of the thermal donors from 350-400<IMG WIDTH="10" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="$^\circ$">C, and it has been suggested
+that it  has a lower  migration barrier  than O<SUB><I>i</I></SUB>.  In collaboration
+with experimental work  done at Link&#246;ping by Lennart&nbsp;Lindstr&#246;m and
+Tomas  Hallberg,  we show  the  oxygen dimer   is responsible for  the
+1012&nbsp;cm<SUP>-1</SUP> LVM  observed  in Cz-Si<A NAME="tex2html9"
+ HREF="footnode.html#282"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>.   Our  calculations show  that the dimer   is at least
+metastable in a puckered assymetric form, and does indeed have a lower
+migration   barrier.  The migration  mechanism is  discussed.  We also
+extend the argument to larger oxygen complexes such as the trimer, and
+discuss  the role   of  the dimer  in  the  formation  of other defect
+complexes in Si.
+<P>
+Nitrogen-Oxygen defects are examined  in Chapter&nbsp;<A HREF="node88.html#nitrogen">7</A>.   We
+show that the primary  N-O defect in  silicon  is the NNO defect,  or
+N<SUB>2<I>i</I></SUB>O<SUB><I>i</I></SUB>.  This is  electrically inactive  and consists of  O<SUB><I>i</I></SUB>
+neighbouring an interstitial  nitrogen pair.   This  work was done  in
+collaboration with Frank Berg    Rasmussen and Brian Bech Nielsen   at
+&#197;rhus, Denmark.    We  also examine   the  N<SUB><I>i</I></SUB>O<SUB><I>i</I></SUB> defect   and
+correlate it with a set of previously unassigned LVMs.
+<P>
+Chapter&nbsp;<A HREF="node98.html#stds">8</A> deals with the <I>shallow  thermal donors</I> and is
+to  some  extent  the  core   of   the  thesis.   We show   that  both
+N<SUB><I>i</I></SUB>O<SUB>2<I>i</I></SUB> and (CH)<SUB><I>i</I></SUB>O<SUB>4<I>i</I></SUB> can  form shallow thermal  donors,
+and probably lie   at the core of   two of the   shallow thermal donor
+families in Si (responsible for some of the  NL10 defects).  A general
+mechanism (the `wonderbra mechanism') is described for turning defects
+with  deep donor  levels  into shallow  donor   level defects, through
+electrostatic compression by O<SUB><I>i</I></SUB>.  This  is shown to operate for the
+shallow   thermal donors  described here.     The   relevance of  this
+mechanism for thermal donors,   and possibilities for   application to
+other materials is also discussed.  This work arose from collaboration
+with Jo Miro and Peter  De&#225;k, theoretical researchers from Budapest.
+As  an area of  active ongoing research, we  are currently involved in
+discussion  with experimental  researchers working on  this problem in
+Japan, London, Amsterdam and St&#252;ttgart.
+<P>
+Thermal   donors (TDs) are   examined  in  Chapter&nbsp;<A HREF="node116.html#thermal">9</A>.   We
+propose  a core   structure for the    thermal donor based around  two
+tri-valent  oxygen atoms, and  account   for the various  experimental
+data.  We also discuss how the family  of thermal donors can form, and
+possible structures for higher order TDs.  A model is proposed for the
+NL10(Al) shallow thermal donor centre.
+<P>
+In   Chapter&nbsp;<A HREF="node148.html#conclusions">10</A>,   final  conclusions   are  drawn  and
+suggestions made  for further work.  Some  general observations on the
+behaviour of oxygen-related species in Si  are made, and the relevance
+of this work to the problem of thermal donors is discussed.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html496"
+ HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html493"
+ HREF="thesis.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html487"
+ HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html495"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html497"
+ HREF="node9.html">Theoretical Background</A>
+<B> Up:</B> <A NAME="tex2html494"
+ HREF="thesis.html">Chris Ewels' PhD Thesis</A>
+<B> Previous:</B> <A NAME="tex2html488"
+ HREF="node7.html">Definitions and Notation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

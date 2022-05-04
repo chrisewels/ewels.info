@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Real space</TITLE>
+<META NAME="description" CONTENT="Real space">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node42.html">
+<LINK REL="previous" HREF="node40.html">
+<LINK REL="up" HREF="node39.html">
+<LINK REL="next" HREF="node42.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html896"
+ HREF="node42.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html893"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html887"
+ HREF="node40.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html895"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html897"
+ HREF="node42.html">Clusters</A>
+<B> Up:</B> <A NAME="tex2html894"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html888"
+ HREF="node40.html">Density functional theory /</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H2><A NAME="SECTION001072000000000000000">
+Real space</A>
+</H2>
+<P>
+Calculating everything in realspace means that complex conjugate
+integrals can be greatly simplified (removing all imaginary terms),
+and it is much easier to directly interpret wavefunction data, etc. in
+terms of bonding and anti-bonding orbitals (given the caveat that they
+are Kohn-Sham wavefunctions, Section&nbsp;<A HREF="node14.html#kstheory">2.4</A>).  It removes the
+need to fill the whole calculational real space with fitting
+functions, thus large vacuum regions (e.g. seperating molecular
+species from bulk surfaces) do not increase the size of a calculation;
+unlike k-space plane wave calculations.  In addition it makes it easy
+to increase the local basis size around key atoms such as defect cores
+or O atoms where a large basis set is required to accurately model the
+charge.
+<P>
+In order to accurately model oxygen in silicon a large basis set is
+required.  For real space methods such as this it is easy to locally
+increase the basis size.  However for plane wave calculations the
+basis is determined for the whole supercell by the cut-off energy of
+the plane waves.  Using bhs pseudopotentials [<A
+ HREF="node149.html#bhs">23</A>] this is
+typically of the order of 15 Ry for bulk<A NAME="tex2html19"
+ HREF="footnode.html#2221"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>,
+and 5-12 Ry for surface calculations where the size of the supercell
+is necessarily larger in order to include a vacuum region
+[<A
+ HREF="node149.html#jenkins_gaas">44</A>].  However when including light elements such as
+carbon, nitrogen or oxygen this figure increases to something over 50
+Ry, for example, recent calculations on bulk GaN used a cut-off of 150
+Ry [<A
+ HREF="node149.html#jenkins_gan">45</A>].  In order to increase the basis locally it is
+necessary to increase the energy cut-off for the whole calculation,
+leading to a rapid increase in calculation size.  The only way to
+overcome the computational restriction of this is by changing the
+pseudo-potential, and using <I>ultra-soft</I> pseudopotentials.  These
+are more slowly varying nearer the core and so are easier to fit.
+However they have a higher core energy and so are no longer
+norm-conserving, which leads to errors in self-consistency.  In
+addition, ultra-soft pseudopotentials are less transferable and less
+able to cope with unusual structures.  In the GaN calculation
+described above the use of ultra-soft pseudopotentials drops the
+required cut-off energy to 65 Ry.  In general, structure converges
+quicker with cut-off than band structure [<A
+ HREF="node149.html#jenkins_gaas">44</A>].
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html896"
+ HREF="node42.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html893"
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html887"
+ HREF="node40.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html895"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html897"
+ HREF="node42.html">Clusters</A>
+<B> Up:</B> <A NAME="tex2html894"
+ HREF="node39.html">Discussion of the methods</A>
+<B> Previous:</B> <A NAME="tex2html888"
+ HREF="node40.html">Density functional theory /</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

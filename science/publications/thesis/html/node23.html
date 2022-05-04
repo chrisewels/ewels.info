@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>CNDO</TITLE>
+<META NAME="description" CONTENT="CNDO">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="previous" HREF="node22.html">
+<LINK REL="up" HREF="node22.html">
+<LINK REL="next" HREF="node24.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html674"
+ HREF="node24.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html671"
+ HREF="node22.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html667"
+ HREF="node22.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html673"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html675"
+ HREF="node24.html">Interatomic Potentials</A>
+<B> Up:</B> <A NAME="tex2html672"
+ HREF="node22.html">Semi-Empirical Hartree Fock</A>
+<B> Previous:</B> <A NAME="tex2html668"
+ HREF="node22.html">Semi-Empirical Hartree Fock</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H3><A NAME="SECTION00981100000000000000">
+CNDO</A>
+</H3>
+<P>
+Under CNDO, only the valence electrons are considered explicitly.
+Interactions between electrons on the same atom are handled simply.
+Since the atomic orbital basis is built from orthonormal atomic
+functions, then the interaction between different orbitals <IMG WIDTH="14" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\mu$"> and
+<IMG WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img110.gif"
+ ALT="$\nu$">, <IMG WIDTH="121" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.gif"
+ ALT="$U_{\mu\nu} = 0, \mu \neq \nu$">, due to their symmetry.  The
+core Hamiltonian elements, <IMG WIDTH="32" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.gif"
+ ALT="$U_{\mu\mu}$">, are fitted to experiment.  In
+CNDO/1 these were fitted to atomic ionisation energies, but in CNDO/2
+this was modified by fitting to the average of the ionisation
+potential and electron affinity, making the system more applicable to
+both electron gain and loss.
+<P>
+In order to overcome the basis dependency of the ZDOA, the remaining
+two-centre integrals only depend on their host atoms and not on the
+orbital type.  This is achieved by using an average electrostatic
+repulsion on any atom A caused by atom B, <IMG WIDTH="34" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.gif"
+ ALT="$\gamma_{AB}$"> (the `electron
+repulsion integral'), so that
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="124" HEIGHT="31"
+ SRC="img114.gif"
+ ALT="\begin{displaymath}
+\langle \mu\mu\vert\lambda\lambda\rangle = \gamma_{AB}.\end{displaymath}"></P>
+<P>
+In CNDO/1, <IMG WIDTH="34" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.gif"
+ ALT="$\gamma_{AB}$"> is approximated by <I>s</I>-orbital integrals on
+the atoms,
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="327" HEIGHT="49"
+ SRC="img115.gif"
+ ALT="\begin{displaymath}
+\gamma_{AB} = \int \int s_A^2(r_1)\frac{1}{\vert r_1 -
+r_2\vert}s_B^2(r_2)dr_1dr_2.\end{displaymath}"></P>
+<P>
+Similarly if the core potential (consisting of the nucleus and core
+electrons) on an atom <I>B</I> is <IMG WIDTH="31" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img116.gif"
+ ALT="${\bf V}_B$"> then to maintain rotational
+invariance, the interaction between an electron on atom <I>A</I> and this
+core on atom <I>B</I> must be a constant, <I>V</I><SUB><I>AB</I></SUB> (the `potential
+integrals').
+<P>
+Similarly to <IMG WIDTH="34" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.gif"
+ ALT="$\gamma_{AB}$">, in CNDO/1 <I>V</I><SUB><I>AB</I></SUB> is calculated using an
+<I>s</I>-orbital on atom <I>A</I>:
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="201" HEIGHT="51"
+ SRC="img117.gif"
+ ALT="\begin{displaymath}
+V_{AB} = Z_B \int \frac{s^2_A(r)}{\vert r - R_B\vert}dr.\end{displaymath}"></P>
+<P>
+In CNDO/2, an improved parameterisation, this was replaced with a
+simple approximation, <IMG WIDTH="116" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img118.gif"
+ ALT="$V_{AB} = Z_B\gamma_{AB}$">.<P>
+The lack of monatomic differential overlap removes all terms of the
+form
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="186" HEIGHT="31"
+ SRC="img119.gif"
+ ALT="\begin{displaymath}
+\langle\mu\vert{\bf V}_B\vert\nu\rangle = 0, ~~~\mu \neq \nu.\end{displaymath}"></P>
+<P>
+Next the interaction between an electron and the field of two atoms,
+<I>A</I> and <I>B</I> is simplified (the `resonance integral',
+<IMG WIDTH="29" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.gif"
+ ALT="$\beta_{\mu\nu}$">)<A NAME="tex2html15"
+ HREF="footnode.html#997"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="foot_motif.gif"></SUP></A>, by setting it proportional to the overlap integral,
+<IMG WIDTH="31" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.gif"
+ ALT="$S_{\mu
+\nu}$">,<P>
+<P ALIGN="CENTER"><IMG WIDTH="172" HEIGHT="32"
+ SRC="img121.gif"
+ ALT="\begin{displaymath}
+H_{\mu\nu} = \beta_{\mu\nu} = \beta_{AB}^0S_{\mu\nu},\end{displaymath}"></P>
+<P>
+where <IMG WIDTH="35" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\beta_{AB}^0$"> are known as the bonding parameters and
+are dependent on the atom types <I>A</I> and <I>B</I>.  Under CNDO/1 these are
+approximated to <IMG WIDTH="152" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.gif"
+ ALT="$\beta_{AB}^0 = \frac{1}{2}(\beta_A^0 + \beta_B^0)$">,and <IMG WIDTH="24" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.gif"
+ ALT="$\beta_A^0$"> is fitted to <EM>ab initio</EM>  calculations for each
+species.
+<P>
+The precise parameterisation technique used to determine <IMG WIDTH="31" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.gif"
+ ALT="$S_{\mu
+\nu}$">,<IMG WIDTH="32" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.gif"
+ ALT="$U_{\mu\nu}$">, <I>V</I><SUB><I>AB</I></SUB>, <IMG WIDTH="34" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.gif"
+ ALT="$\gamma_{AB}$"> and <IMG WIDTH="35" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\beta_{AB}^0$"> varies.
+Although I have described the method used for CNDO/1 and CNDO/2 (the
+earliest parameterisations), there have been many refinements to these
+since.  CNDO is extremely fast, and this has meant that when computing
+resources were limited, CNDO calculations have been able to perform
+pioneering calculations on system sizes inaccessible to their <EM>ab
+initio</EM>  cousins.  Much of the accuracy lost during the above
+simplifications is compensated for by the use of parameterisation to
+experimental and <EM>ab initio</EM>  results.  Although CNDO is not as
+accurate as <EM>ab initio</EM>  methods such as AIMPRO it remains a useful
+investigative tool in semiconductor calculations, and a valuable
+intermediate between empirical potentials and full <EM>ab initio</EM> 
+calculations.
+<P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html674"
+ HREF="node24.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html671"
+ HREF="node22.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html667"
+ HREF="node22.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html673"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html675"
+ HREF="node24.html">Interatomic Potentials</A>
+<B> Up:</B> <A NAME="tex2html672"
+ HREF="node22.html">Semi-Empirical Hartree Fock</A>
+<B> Previous:</B> <A NAME="tex2html668"
+ HREF="node22.html">Semi-Empirical Hartree Fock</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

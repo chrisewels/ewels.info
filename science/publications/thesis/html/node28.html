@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Approximation to the charge density</TITLE>
+<META NAME="description" CONTENT="Approximation to the charge density">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node33.html">
+<LINK REL="previous" HREF="node27.html">
+<LINK REL="up" HREF="node26.html">
+<LINK REL="next" HREF="node29.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html747"
+ HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html744"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html738"
+ HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html746"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html748"
+ HREF="node29.html">Spin averaged and improvements</A>
+<B> Up:</B> <A NAME="tex2html745"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html739"
+ HREF="node27.html">Expanding the Wavefunction</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION001020000000000000000">
+Approximation to the charge density</A>
+</H1>
+<P>
+The approximate charge density is expanded in a set of basis functions
+[<A
+ HREF="node149.html#dunlap_79">38</A>,<A
+ HREF="node149.html#jones_86">39</A>],
+<P><A NAME="approxn">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="approxn">&#160;</A><IMG WIDTH="151" HEIGHT="51"
+ SRC="img139.gif"
+ ALT="\begin{displaymath}
+\tilde{n}({\bf r}) = \sum_k{c_kg_k({\bf r})}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(19)</TD></TR>
+</TABLE>
+<P>
+We can now write an approximation to the Hartree energy in
+Equation&nbsp;<A HREF="node14.html#hartree">2.4.15</A>.  This is always lower than <I>E</I><SUB><I>H</I></SUB>, but tends to
+<I>E</I><SUB><I>H</I></SUB> as <IMG WIDTH="37" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.gif"
+ ALT="$\tilde{n}({\bf r})$"> tends to <IMG WIDTH="37" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.gif"
+ ALT="$n({\bf r})$"> and so provides a
+way of estimating the quality of the basis function fit,
+<P><A NAME="approxhartree">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="approxhartree">&#160;</A><IMG WIDTH="419" HEIGHT="50"
+ SRC="img142.gif"
+ ALT="\begin{displaymath}
+\tilde{E}_H = \int \frac{n({\bf r}_1)\tilde{n}({\bf r}_2)}{\...
+ ...bf r}_2)}{\vert{\bf r}_1 - {\bf r}_2\vert}d{\bf r}_1d{\bf r}_2.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(20)</TD></TR>
+</TABLE>
+<P>
+Then we can select <I>c</I><SUB><I>k</I></SUB> in Eq.&nbsp;<A HREF="node28.html#approxn">3.2.7</A> to minimise the error
+<P><A NAME="hartree_error">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="hartree_error">&#160;</A><IMG WIDTH="452" HEIGHT="50"
+ SRC="img143.gif"
+ ALT="\begin{displaymath}
+E_H - \tilde{E}_H = \frac{1}{2}\int{\frac{\{n({\bf r}_1) - \...
+ ...r}_2)\}}{\vert{\bf r}_1 - {\bf
+r}_2\vert}d{\bf r}_1d{\bf r}_2}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(21)</TD></TR>
+</TABLE>
+<P>
+If this is now differentiated with respect to <I>c</I><SUB><I>k</I></SUB> in order to
+determine the minimum we get an important expression,
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+Evaluation of these `<I>t</I> matrices' is often the slowest step in these
+cluster calculations, so obviously a careful choice of fitting
+function, <I>g</I><SUB><I>k</I></SUB>, is required.  Simple Gaussian functions have the
+advantage of being analytically soluble, but if there are roughly as
+many <I>g</I><SUB><I>k</I></SUB> as basis functions <IMG WIDTH="19" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img144.gif"
+ ALT="$\phi_i$"> (commonly the case), this means
+the <I>t</I> matrices are still <I>O</I>(<I>N<SUP>3</SUP></I>) integrals.  Nonetheless, this is
+the way all the O in Si work was performed.  However it is possible to
+split the <I>g</I><SUB><I>k</I></SUB> into two types of function,
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+The first of these gives a Gaussian potential,
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="255" HEIGHT="50"
+ SRC="img145.gif"
+ ALT="\begin{displaymath}
+\int{\frac{g_k({\bf r}_1)}{\vert{\bf r} - {\bf r}_1\vert}d{\bf r}_1} =
+\frac{3b_k}{2\pi}e^{-b_k({\bf r}-{\bf R}_k)^2},\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(22)</TD></TR>
+</TABLE>
+<P>
+making <I>t</I><SUB><I>ijk</I></SUB> a simple product of three Gaussians which
+is quick to calculate.  However the form of these expressions means
+that their integral vanishes, and hence they do not contribute to the
+total charge density.  Therefore the second set of expressions for
+<I>g</I><SUB><I>k</I></SUB> are introduced (simple Gaussians) to ensure the integrated
+charge density gives the correct number of electrons.
+<P><A NAME="theory_chden">&#160;</A>
+This formalism was adopted for the III-V work in Chapter&nbsp;<A HREF="node47.html#inp">4</A>,
+however when testing different fitting functions for small Si-O based
+molecules such as disiloxane, (SiH<SUB>3</SUB>)<SUB>2</SUB>O, we found that a much
+better fit was obtained using simple Gaussian functions.  Therefore
+these have been used for all the Si work despite the loss in computing
+speed.
+<P>
+The exchange-correlation is similarly approximated as
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="192" HEIGHT="47"
+ SRC="img146.gif"
+ ALT="\begin{displaymath}
+\tilde{E}_{xc} = \int \varepsilon_{xc}(\tilde{n}_\uparrow,
+\tilde{n}_\downarrow)\tilde{n} d{\bf r}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(23)</TD></TR>
+</TABLE>
+<P>
+However the expression used to minimise the error in <IMG WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img147.gif"
+ ALT="$\tilde{n}$"> for
+<I>E</I><SUB><I>H</I></SUB> (Equation&nbsp;<A HREF="node28.html#hartree_error">3.2.9</A>) was integrated over all <IMG WIDTH="11" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img148.gif"
+ ALT="${\bf r}$">and does not necessarily minimise the error at any specific value of
+<IMG WIDTH="11" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img148.gif"
+ ALT="${\bf r}$">.  Therefore it is necessary to choose a new approximation
+for <IMG WIDTH="44" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.gif"
+ ALT="$\tilde{n}_s({\bf r})$"> and a good choice is a sum of Gaussians,
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="172" HEIGHT="51"
+ SRC="img150.gif"
+ ALT="\begin{displaymath}
+\tilde{n}_s({\bf r}) = \sum_k d_{k,s}h_k({\bf r}),\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(24)</TD></TR>
+</TABLE>
+<P>
+with <I>d</I><SUB><I>k</I>,<I>s</I></SUB> obtained by minimising
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="180" HEIGHT="47"
+ SRC="img151.gif"
+ ALT="\begin{displaymath}
+\int \left\{ n_s({\bf r}) - \tilde{n}_s({\bf r})\right\}^2 d{\bf r}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(25)</TD></TR>
+</TABLE>
+<P>
+If this is differentiated with respect to <I>d</I><SUB><I>k</I>,<I>s</I></SUB> we obtain
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+The integrals are the same for both <I>s</I>, and if <I>g</I><SUB><I>k</I></SUB> is set to the
+first form in Equation&nbsp;<A HREF="#eq:gk">3.2.13</A> then <I>u</I><SUB><I>ijk</I></SUB> are just
+proportional to <I>t</I><SUB><I>ijk</I></SUB> which makes calculation extremely quick.
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html749"
+ HREF="node29.html#SECTION001021000000000000000">
+Spin averaged <IMG WIDTH="31" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.gif"
+ ALT="$\tilde{E}_{xc}$"> and improvements to the
+approximations</A>
+<LI><A NAME="tex2html750"
+ HREF="node30.html#SECTION001022000000000000000">
+Spin polarised exchange correlation</A>
+<LI><A NAME="tex2html751"
+ HREF="node31.html#SECTION001023000000000000000">
+Summary so far</A>
+<LI><A NAME="tex2html752"
+ HREF="node32.html#SECTION001024000000000000000">
+Matrix Formalism</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html747"
+ HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html744"
+ HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html738"
+ HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html746"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html748"
+ HREF="node29.html">Spin averaged and improvements</A>
+<B> Up:</B> <A NAME="tex2html745"
+ HREF="node26.html">AIMPRO methodology</A>
+<B> Previous:</B> <A NAME="tex2html739"
+ HREF="node27.html">Expanding the Wavefunction</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

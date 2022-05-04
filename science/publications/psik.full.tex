@@ -1,0 +1,6377 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                   %
+%                                             24th November, 1995   %
+%                                                                   %
+%                                                                   %
+%    Dear Networkers,                                               %
+%                                                                   %
+%                                                                   %
+%                                                                   %
+%    This is the LaTex file:    newsletter_12.tex                   %
+%                               -----------------                   %
+%    It contains the LaTeX version of the December issue            %
+%    of the Network's Newsletter. This is the sixth and last        %
+%    Newsletter of this calendar year. Altogether we have           %
+%    published 12 Newsletters.                                      %
+%                                                                   %
+%                                                                   %
+%    At the end of this LaTeX file, after \end{document}, we        %
+%    have attached two additional files:                            %
+%                                                                   %
+%    form.tex: containing the Network Conference suggestion form    %
+%    and                                                            %
+%    psik.sty: file formatting the form.tex file                    %
+%                                                                   %
+%                                                                   %
+%    You should save all these files separately and process         %
+%    form.tex independently from newsletter_12.tex, to create       %
+%    the conference suggestion form postscript file, which          %
+%    then can be printed, filled and returned by surface mail,      %
+%    if you so wish, to the conference organisers. If you prefer    %
+%    to send the form by electromic mail you just need to extract   %
+%    the form.tex file out of this document, fill in the spaces     %
+%    in between the curly brackets and send the form.tex back to    %
+%    psik@radix2.mpi-stuttgart.mpg.de.                              %
+%                                                                   %
+%                                                                   %
+%    The command:                                                   %
+%                       latex newsletter_12.tex                     %
+%                                                                   %
+%    will not need any additional files!                            %
+%                                                                   %
+%                                                                   %
+%    The command:                                                   %
+%                       latex form.tex                              %
+%                                                                   %
+%    will call upon psik.sty file!                                  %
+%                                                                   %
+%                                                                   %
+%    The size of the printed Newsletter is 77 A4 pages.             %
+%                                          ------------             %
+%    The size of the printed suggestion form is 2 A4 pages.         %
+%                                               -----------         %
+%                                                                   %
+%    Let us know of any problems with processing these LaTeX files. %
+%    If you would prefer the postscript file of the Newsletter      %
+%    please get back to us.                                         %
+%                                                                   %
+%    This Newsletter is as usually available by anonymous ftp       %
+%    and also its postscript version can be downloaded within WWW   %
+%    (see this and previous newsletters for details).               %
+%                                                                   %
+%                                                                   %
+%                                                                   %
+%                                                                   %
+%    Please note, that next newsletter, the February issue, will    %
+%    be e-mailed to you at the end of January 1996. Please submit   %
+%    all your contributions for it by 29th January. Thanks.         %
+%                                                                   %
+%                                                                   %
+%                                                                   %
+%                                      The Editor                   %
+%                                                                   %
+%                                                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentstyle[12pt]{article}
+\parindent 0pt
+\topmargin -2cm
+\hoffset -1.5cm
+\textheight 25cm
+\textwidth 16 cm
+\renewcommand{\baselinestretch}{1.2}
+\def\ni{\noindent}
+\begin{document}
+\parskip 1ex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      This is the front page .......................                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2cm}
+\begin{center}
+{\Huge HCM Newsletter}
+\end{center}
+\vspace{3cm}
+\rule{16.0cm}{1mm}
+\vspace{1cm}
+\begin{center}
+{\huge \bf $\Psi_{k}$ Network}
+\end{center}
+\begin{center}
+{\Large \bf AB INITIO (FROM ELECTRONIC STRUCTURE) 
+CALCULATION OF COMPLEX PROCESSES IN MATERIALS}
+\end{center}
+\vspace{1cm}
+\rule{16.0cm}{1mm}
+{Number 12 \hspace{110mm} December 1995\\
+\rule{16.0cm}{0.5mm}}
+\vspace{8cm} 
+%\vspace{10cm} 
+\rule{16.0cm}{0.0mm}
+\rule{16.0cm}{0.5mm}
+\underline{Editor:} Z. (Dzidka) Szotek\\
+{\underline{Proposal:} ERB4050PL930589 \hspace{45mm} \underline{Coordinator:} Walter Temmerman }
+{\underline{Contract:} ERBCHRXCT930369 \hspace{41mm} \underline{E-mail:} psik-coord@daresbury.ac.uk }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%           Here the Editorial starts .................                     %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+\begin{center}
+\Large {\bf Editorial \par}
+\end{center}
+
+\ni The {\bf Editorial} is followed by the section {\bf News from the Network}. In this section
+readers can find information by Volker Heine (the chairman of the Network Management Board) on 
+{\it Collaborative and 
+Training Projects} established at the recent meeting of the {\it Network Management Board}. 
+Moreover, there we also write about the need of receiving all possible information from those of 
+you who in any way benefited from the Network in your research.\\
+
+\ni In the section {\bf News from the Working Groups} readers will find reports on recent 
+collaborative visits and workshops. These are followed by job announcements. \\ 
+
+\ni The {\bf Abstracts Section} is followed by the section {\bf Presenting Other HCM Projects} 
+where we have an article by {\it Chris Ewels} (Exeter) on his research done in CINECA (Bologna) 
+using the High Performance Computing Facility within the HCM Programme {\it ICARUS Scheme}. 
+In this article readers can also find information on how to apply and make use of this and other
+similar facilities supported by the HCM Programme.\\
+
+\ni In the {\bf Highlight of the Month} section we have an article by 
+{\it Peter Zahn, I. Mertig, Manuel Richter and Helmut Eschrig} on {\it "Ab-initio
+Calculation of Giant Magnetoresistance in Magnetic Multilayers"}.\\
+
+\ni Finally, partly due to their complicated nature, the {\bf Announcement of the Bond Order Potentials Workshop}, 
+the {\bf Announcement of the OXYGEN 1996 Workshop}, and the {\bf 2nd Circular of the Network Conference} 
+are placed at the very end of the {\it Newsletter}. The {\bf 2nd Circular} refers to a conference suggestion
+form {\it form.tex} which calls upon a formatting file {\it psik.sty}. The LaTeX file of the suggestion form,
+{\it form.tex}, as well as the {\it psik.sty} file, are attached at the end of the LaTeX file
+of this {\it Newsletter}, just after the "\verb|\end{document}|". In order to create a printed version of the 
+suggestion form one needs to save all these files separately, and process \verb|form.tex| independently from 
+\verb|newsletter_12.tex| file, containing the main body of the {\it Newsletter}. Please note that those of you who 
+normally receive only the postscript file of the {\it Newsletter} will additionally receive the conference suggestion 
+form as a separate postscript file: \verb|form.ps|.\\
+
+\vspace{0.5cm}
+\ni The {\it Network} has a home page on World Wide Web (WWW). Its {\it Uniform Resource
+Locator} (URL) is:\\
+{\bf http://www.dl.ac.uk/TCSC/HCM/PSIK/main.html}\\
+
+\ni This also contains pointers to several other nodes: {\it O.K. Andersen (Stuttgart)} which 
+includes
+information on the {\bf Network Conference}, {\it M. Gillan (Keele)}, {\it B.L. Gyorffy (Bristol)}, 
+{\it J. N{\o}rskov (Lyngby)} 
+with information on CAMP, {\it M. Scheffler (FHI Berlin)}, and {\it A. Walker (UEA Norwich)}. 
+If you maintain a home page on your activities we will be happy to include a pointer from
+the {\it Network's} home page to your home page.\\
+
+\noindent
+{\bf {Please submit all material for the next newsletters to the email address below.}}
+
+%\bigskip
+%\newpage
+\ni The following email addresses are repeated for your convenience,
+and are the easiest way to contact us.\\
+
+\noindent
+{\small \bf \begin{tabular} [t] {ll}
+ & function \\
+psik-coord@daresbury.ac.uk & messages to the coordinator \& newsletter \\
+psik-management@daresbury.ac.uk & messages to the NMB \\
+psik-network@daresbury.ac.uk & messages to the whole Network \\
+\end{tabular} }\\
+
+\bigskip
+\ni Dzidka Szotek \& Walter Temmerman\\
+\ni e-mail: psik-coord@daresbury.ac.uk\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%    Here the News from the Network Section starts ...........              %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+\begin{center}
+\LARGE {\bf News from the Network \par}
+\end{center}
+
+\vspace{0.5cm}
+\noindent
+{\Large{\bf Money}, {\Large{\it Money}}, {\Large{Money, ..., {\it MONEY}}}\\
+
+\normalsize
+\ni That has caught your attention: good!\\
+
+\ni The Network has money and would like to see more collaborations. The main
+requirement is that first class science results, with publications. The main
+boundary conditions are that we can only pay subsistance (now up to 60 ECU
+per day) plus travel, not salary or equipment. Also, both collaborators must
+be from an organisation that is a node of the Network.
+
+\ni The Network is offering 10 grants for Collaboration and Training Projects
+of 2000 ECU each. Together with the availability of email that should be enough 
+to get a collaboration going. Once it is up and running, further applications can
+be made in the normal way.
+
+\ni There are many different types of collaboration. Perhaps an ideal one would
+involve a younger scientist learning a new code to establish a new line of
+research at his/her home university: but we are flexible.
+
+\ni Two words of advice to those wishing to start a collaboration. Firstly, what
+benefit does the other partner get from the collaboration? Perhaps you can help
+further his/her research intrests with modest input in time and effort on his/her
+side. Secondly, remember codes are shared in the Network through genuine
+collaborations with the originator sharing control of the project and the way his/her
+code is used, plus having his/her name on the research papers.
+
+\ni The procedure is to approach the person or group you want to collaborate with, 
+formulate the project and submit it as a Collaborative and Training Project with
+a budget to the appropriate Working Group Spokesperson (details of the names and
+addresses can be found in the Network's Newsletter No. 1) or to myself as Network's 
+Chairman, or to Ole K. Andersen (oka@radix2.mpi-stuttgart.mpg.de) as Vice-Chairman, 
+or to Walter M. Temmerman (w.m.temmerman@dl.ac.uk) as the Network's Coordinator. \\
+
+\begin{flushright}
+Volker Heine\\
+fax: +44-1223-337356\\
+e-mail: nwvh2@phy.cam.ac.uk\\
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Monitoring the impact of the Network activity on research             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\vspace{2cm}
+\begin{center}
+\Large{\bf What impact has the Network had on your research? \par}
+\end{center}
+
+\noindent
+Since the Network is coming up for renewal next year, we would like to appeal 
+to those of you who in any way benefited from the Network in your research to
+write to us about it. It appears that all the workshops, "hands-on a computer 
+code" and others, organised by the Network during the last year and a half, 
+emerge as the Network's key deliverable and will impact on the renewal of the
+Network and future of science in different universities and countries. \\
+
+\noindent
+{\bf Therefore, if you have participated in any of the workshops organised by the Network
+we would appreciate if you could contact us and provide  an information what 
+impact has the workshop or an acquired code had on your research. Have you used the code or
+the knowledge that you have gained at the workshop for your research? Have you 
+published any papers whose results benefited from the code or workshop in general, 
+and most importantly, have you acknowledged the code and the Network, as the organiser 
+of the workshop, in any of your papers? We would also be interested in establishing
+the multiplication effect: we started it.} \\
+
+This information is of paramount importance for monitoring the impact that our HCM 
+Network has had on research of people in general, and in particular, of those who 
+in any way have benefited from the Network. Moreover, this information we need to 
+submit to Brussels in the form of an annual report on Network's activity, but is also
+going to be used to support our application for the renewal of the Network.  
+We are not able to contact each of you individually, in many
+cases we do not have your present e-mail addresses etc. So, please do get back to us
+if you have anything to tell us on the above matters. Even if you do not use the 
+code that you have acquired or knowledge that you have gained at any of the workshops; 
+perhaps because you have found out why it cannot be of use to you, we would also 
+like to hear it.\\
+
+\noindent
+We do also desperately need \underline{all} information on publications that acknowledge 
+the {\it Network} explicitly, and which resulted from collaborations or other activities 
+within the Network.\\
+
+{\bf If any of you published or submitted for publication such papers
+where the {\it Network} had been acknowledged, we would like to hear from you.
+Could you please just send us detailed references of such papers, namely the
+authors, journal (volume, page, year) and the title of the paper. We would not
+like to miss any of such publications.} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Here the News from the Working Groups Section starts ........          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\vspace{2cm}
+\begin{center}
+\LARGE {\bf News from the Working Groups \par}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%   Report on  the visit of C.M.J. Wijers (Twente) to Aarhus                %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.5cm}
+\normalsize
+\begin{center}
+\Large{\bf Report on the collaborative visit of C.M.J. Wijers (Twente)
+to N. Christensen (Aarhus)}\\
+\large{\bf 2 November, 1995}\\
+\end{center}
+\vspace{0.5cm}
+
+\noindent
+The issues of the visit were twofold: 1) to discuss a common project to be 
+performed by a graduate student, Mr. Ivo Wenneker, from Twente University 
+2) to give a lecture about the present status of the Twente discrete cellular 
+project. The abstract of this lecture follows here below.\\
+
+\bigskip
+\noindent
+{\large{\bf Discrete Cellular Methods: Maxwell's comeback?}}\\
+
+\noindent
+C.M.J. WIJERS,\\
+{\it Faculty of Applied Science, Twente University,}\\
+{\it P.O. Box 217, 7500 AE Enschede, the Netherlands}\\
+
+\noindent
+Large inhomogeneous systems like large molecules or surfaces, display optical 
+responses deviating from the results of standard theoretical treatments. Those 
+deviations can be amplified by using difference, anisotropic difference, 
+SHG or optical scattering experiments. Electrodynamics offers two alternatives 
+for the description of such phenomena: continuum or discrete, and both 
+approaches have a sizeable record in physics. For solid state optics only the 
+continuum description has been used to link the electrodynamics to the 
+underlying quantum mechanics of the system. In this lecture arguments will be 
+collected that it makes sense to look for the quantum mechanical roots of 
+discrete models. If such link can be achieved, one gains immediately the 
+ability of discrete models to handle directly a lot of different geometries. 
+This pays off directly for large inhomogeneous systems. It turns out however 
+that the link to quantum mechanics for discrete models is not a simple analogy 
+of the continuum case. A necessary consequence of electrodynamic discreteness, 
+is the introduction of cells in quantum mechanics. This means that we have 
+to study open quantum mechanical systems. Another consequence is also that 
+besides electrodynamical nonlocal interactions also quantum mechanical 
+nonlocality needs to be taken into account. The talk will give (and trigger?) 
+further discussion how to make discrete cellular methods work.\\
+
+\bigskip
+\noindent
+As to the first item: Both groups are working on a full potential version of 
+their electronic structure packages. The techniques used in the two groups, 
+the LMTO-types and the CLOPW-types, have distinct advantages for different 
+applications. In calculating NMR-spectra for heavy metals, a CLOPW-type of 
+calculation might be supportive for the LMTO-type of calculation. This 
+comparative study between the two methods, will be the research topic for 
+the graduate student in his 4 month stay at Aarhus.\\
+
+\begin{flushright}
+(C.M.J. Wijers)
+\end{flushright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%   Report on  the visit of Pietro Ballone (MPI-Stuttgart) to Cambridge     %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.5cm}
+\normalsize
+\begin{center}
+\Large{\bf Report on the collaborative visit of Pietro Ballone ((MPI-FKF, Stuttgart)
+to Cambridge}\\
+\large{\bf 21-25 October, 1995}\\
+\end{center}
+
+\noindent
+Discussions were held with the group of Mike Payne and Volker Heine in the
+Cavendish Laboratory on Monday 23 October on technical aspects of total energy 
+calculations with pseudopotentials and plane waves, and their applications.  
+Tuesday 24 October was taken up with a Minerals Physics
+Workshop in Cambridge, at which a report was given on the
+calculation of phase transitions under pressure of magnesium
+silicate. Arrival on Saterday to get air fare reduction.
+Only part of the cost is claimed from the Network, namely
+70 pounds for accomodation in Cambridge. Charge: Cambridge node,
+pseudopotential working group.\\
+
+
+\begin{flushright}
+(V. Heine)
+\end{flushright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%   Report on  the Central European Workshop n Czech Republic               %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+
+\begin{center}
+
+\LARGE{\it Report on}\\
+
+\LARGE{\bf Fourth Central European Workshop}\\
+\LARGE{\bf on Electronic and Magnetic Properties}\\
+\LARGE{\bf of Alloys, Surfaces and Interfaces}\\
+{\it 2--5 October, 1995}\\
+\end{center}
+
+\vskip3mm
+This workshop was organized by the Institute of Physics of Materials, Academy of Sciences
+of the Czech Republic, Brno, and the Institute of Physics, Academy of
+Sciences of the Czech Republic, Prague, and was financially supported by the Brno Trade 
+Fairs and Exhibitions Co.~Ltd., Czechoslovak Trade Bank and Czech Saving Bank. It was a follow 
+up of the preceding meetings: in Vienna (P. Weinberger, 1992), in Budapest (J. Koll\'ar, 1993), 
+and in the Swiss mountain village Stels (R. Monnier, 1994).  \\
+
+The 1995 workshop took place in the Holiday Center of the Brno Trade Fairs and Exhibitions in
+Zub\v{r}\'{\i}, Czech Republic, in the heart of the Czech-Moravian Highlands. It was attended
+by 34 scientists from 10 different countries, all of whom were practicioners of Green's function 
+techniques and full-potential methods for electronic structure calculations in alloys, surfaces 
+and interfaces. There were many interesting talks and plenty of opportunities for participants
+to discuss their recent work. The scientific program follows below.\\
+
+The next, fifth, workshop is planned for the autumn of next year in Vienna.\\
+
+\begin{tabular}{lr}
+                     \hbox to 48mm{}  & (Mojm\'{\i}r \v Sob, Ilja Turek,
+                           Josef Kudrnovsk\'y, V\'aclav Drchal) \\
+
+\end{tabular}
+
+%\begin{center}
+{\Large{\bf Scientific Program}}
+%\end{center}
+
+\bigskip
+
+{\Large{\bf Magnetic coupling and anisotropy}}
+
+\vskip1mm
+
+{\bf P. H. Dederichs} \\
+              Interlayer coupling and quantum well states in Co/Cu
+             layers
+
+ {\bf L. Szunyogh}, P. Weinberger and B. \'Ujfalussy \\
+               Fully relativistic spin-polarized study of Fe
+                multilayers in Au(001)
+
+{\bf B. \'Ujfalussy}, L. Szunyogh and P. Weinberger \\
+                Studies of magnetic anisotropy in Fe-Cu over- and
+                 interlayers
+
+%\vskip4mm
+%\newpage
+
+{\Large{\bf Magnetic coupling and GMR}}
+
+\vskip1mm
+
+ {\bf J. Mathon}\\
+                     Quantum well theory of the exchange coupling in
+                      magnetic
+                     multilayers
+
+ {\bf J. Kudrnovsk\'y}, V. Drchal, I. Turek,
+                      M. \v Sob and P. Weinberger \\
+                     Interlayer magnetic coupling: effect of disorder
+                      in spacer
+
+ {\bf I. Mertig}, P. Zahn, M. Richter and H.
+Eschrig\\
+                     Ab-initio calculations of giant magnetoresistence
+
+%\newpage
+
+\vskip4mm
+{\Large{\bf Alloys }}
+
+\vskip1mm
+
+ A. V. Ruban and {\bf H. L. Skriver}\\
+                Calculated site substitution in $\gamma'$-Ni$_3$Al
+
+ {\bf V. Drchal}, J. Kudrnovsk\'y, I. Turek and
+                 A. Pasturel \\
+                Ab-initio theory of surface segregation in random
+                 alloys
+
+  T. Schulthess and {\bf R. Monnier} \\
+                Influence of charge correlations on the surface energy,
+                work
+                 function and surface composition of random binary
+                 alloys
+
+{\bf P. Weinberger}\\
+                Electrical conductivity in semi-infinite systems
+
+{\bf A. B. Shick}, V. Drchal and J. Kudrnovsk\'y \\
+                Relativistic spin-polarized TB-LMTO method: application
+                 to
+                 magnetic
+                properties
+                 of random alloys and their
+                 surfaces
+
+ {\bf H. Ebert} and G.-Y. Guo \\
+                Theoretical investigation of the magnetic X-ray
+                dichroism in
+                 diluted
+                 and concentrated transition
+                metal alloys
+
+ {\bf J. Banhart} and H. Ebert \\
+                Ab-initio theory of spontaneous galvanomagnetic
+                 effects in
+                 random
+                 alloys
+
+\vskip4mm
+
+{\Large{\bf Full-potential methods }}
+
+\vskip1mm
+
+ L. Vitos, {\bf J. Koll\'ar}
+ and H. L. Skriver \\
+                Full charge density scheme:
+                 application for shear deformations
+
+ O. Genser, A. Biedermann, {\bf J. Redinger} and P.
+Varga \\
+                Surface electronic structure of p-d bonded systems:
+                Some recent results
+
+{\bf C. Blaas}\\
+                High resolution Compton scattering in Fermi surface
+                 studies
+
+R. Stadler, W. Wolf, G. Kresse, J. Furthm\"uller,
+                 {\bf R. Podloucky}\\
+                  and J. Hafner \\
+                 Electronic structure, elastic constants and phonon
+                  dispersion
+                   of CoSi$_2$
+
+{\bf F. M\'aca} and M. Scheffler \\
+                Electronic structure and STM image of a p(2x2)
+               composite double
+                layer ordered surface alloy of Na on Al(111)
+
+%\newpage
+L. Steinbeck, M. Richter, U. Nitzsche and {\bf H.
+Eschrig}\\
+                Ab-initio calculation of electronic structure, crystal
+               field, and
+                intrinsic magnetic properties of Sm$_2$Fe$_{17}$,
+               Sm$_2$Fe$_{17}$N$_3$,
+                Sm$_2$Fe$_{17}$C$_3$ and Sm$_2$Co$_{17}$
+
+%\newpage
+
+\vskip4mm
+{\Large{\bf New methods }}
+
+\vskip1mm
+
+P. Miller and {\bf B. Gyorffy}\\
+                On the mechanism of the de Haas--van Alphen
+               oscillations in \\
+                the superconducting state
+
+ {\bf I. Turek}, J. Kudrnovsk\'y,
+                      M. \v Sob and V. Drchal  \\
+                Surface magnetism of random binary
+                    transition-metal alloys
+
+                {\bf L. Udvardi}, L Szunyogh and R. Kir\'aly \\
+                Magnetic anisotropy on overlayers
+
+
+{\bf B. Velick\'y}, H. Eschrig, K. Koepernik,
+                       A. Ernst and R. Hayn\\
+                     Towards ab-initio CPA for alloys using mixed basis
+                    set
+
+                C. Barreteau and {\bf F. Ducastelle} \\
+                Quantitative transmission electron microscopy in
+                 disordered alloys
+
+J. Vack\'a\v r, {\bf A. \v Sim\accent23unek} and R.
+Podloucky\\
+                     Ab-initio pseudopotentials of interacting atoms
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%      Job Announcements .................                                  %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      Ph. D. in Sheffield
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+\vspace{0.5cm}
+\begin{center}
+\LARGE{\it  Announcement }\\[1.0cm]
+\LARGE{\bf Ph. D. Position}\\[0.3cm]
+{\Large {\it University of Sheffield (UK)}}\\
+\end{center}
+ 
+\ni A Ph. D. studentship is available as soon as possible to work with Professor
+Gillian Gehring (University of Sheffield) and Dr. Walter Temmerman (Daresbury
+Laboratory) on the total energy and Fermi surface studies of the heavy fermion compounds.
+ 
+\ni A prospective student will be expected to make a detailed study of $UBe_{13}$. This
+is expected to help the interpretation of the planned de Haas van Alphen experiments
+in Professor Mike Springford's group (University of Bristol). The theoretical study
+will involve both development or generalisation of computer codes and necessary calculations.
+ 
+\ni To apply, please send your CV and letter of application to the addresses below either
+by normal or electronic (only postscript or LaTeX files are acceptable) mail.\\
+\ni Further information can be obtained from:\\
+ 
+Dr. W.M. Temmerman,\\
+Daresbury Laboratory,\\
+Daresbury, Warrington, WA4 4AD\\
+Cheshire, UK\\
+tel.: +44-(0)1925-603227 \\
+fax:  +44-(0)1925-603634 \\
+e-mail: w.m.temmerman@daresbury.ac.uk \\
+ 
+or\\
+ 
+Professor G. Gehring \\
+Physics Department, \\
+University of Sheffield \\
+Sheffield,S3 7RH, UK \\
+tel.: +44-(0)114-282 4299 \\
+fax:  +44-(0)114-272 8079 \\
+e-mail: g.ghering@sheffield.ac.uk  \\
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      Postdoc in National Renewable Energy Laboratory, Golden, Colorado    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+\vskip 2em
+\begin{center}
+{\Large{\it  Announcement}}\\[0.5cm]
+\Large{\bf Postdoctoral Research Positions in Electronic Structure Theory
+of Solids \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+Solid State Theory Group\\
+Basic Sciences Division\\
+National Renewable Energy Laboratory\\
+Golden, Colorado 80401, USA\\
+\end{tabular}\par}
+\end{center}
+
+%\begin{center}
+%{\Large{\it  Announcement}}\\[0.5cm]
+%{\LARGE{\bf Postdoctoral Research Positions in Electronic Structure Theory 
+%of Solids}}\\[1.0cm]
+%Solid State Theory Group\\
+%Basic Sciences Division\\
+%National Renewable Energy Laboratory\\
+%Golden, Colorado 80401, USA\\
+%\end{center}
+
+\bigskip
+%\vspace{1.0cm}
+\noindent
+The Solid State Theory Group at the National Renewable Energy Laboratory 
+invites applications for two postdoctoral research positions, one beginning January, 
+1996, and one beginning September, 1996. The positions are for two years, 
+renewable upon mutual agreement to a third year. The Solid State Theory Group
+currently consists of eight Ph.D.'s in condensed matter theory and interacts 
+with a broad range of experimentalists in semiconductor physics at NREL. 
+Areas of particular interest include first-principles electronic structure theory of
+semiconductor nanostructures and superlattices and the theory of 
+phase-stability of metallic alloys. Candidates should send a curriculum vitae,
+list of publications (including preprints of unpublished papers, 
+if possible) and list of three references to:\\
+
+%\vspace{0.5cm}
+\noindent
+Dr. Alex Zunger \\
+Solid State Theory Group \\
+National Renewable Energy Laboratory \\
+1617 Cole Boulevard \\
+Golden, Colorado, 80401 \\
+
+\vspace{0.5cm}
+\noindent
+NREL is an equal opportunity/affirmative action employer. Clarifications or
+further details can be obtained via e-mail to {\bf alex\_zunger@nrel.gov}. \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Abstracts                                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Noncollinear Magnetic Order and Electronic Properties of
+$\rm U_2Pd_2Sn$ and $\rm U_3P_4$ \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+L.M. Sandratskii and J. K\"ubler\\
+{\it Institut f\"ur Festk\"orperphysik, Technische Hochschule,} \\
+{\it D-64289 Darmstadt, Germany} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We report results of calculations that explain in the
+itinerant electron picture the noncollinear
+magnetic structure observed in the two very different compounds
+$ \rm U_2Pd_2Sn$ and $ \rm U_3P_4$.
+We use the local approximation to spin-density functional theory
+and the ASW method incorporating spin-orbit coupling (SOC),
+noncollinear moment arrangements and an effective orbital field
+responsible for Hund's second rule.
+We show how the relativistic effect of SOC
+and the particular symmetry properties of the compounds
+cooperate and lead to noncollinear magnetic structures, in the
+case of $ \rm U_2Pd_2Sn$ to an antiferromagnetic and in the
+case of  $ \rm U_3P_4$ to a ferromagnetic structure the
+latter possessing  a weak antiferromagnetic component.
+\end{abstract}
+
+\noindent
+(submitted to Physica B)\\
+Revtex version can be obtained from: dg5m@mad1.fkp.physik.th-darmstadt.de \\
+(L. Sandratskii)\\
+
+\noindent
+This work has benefited from collaborations within the EU Human
+Capital and Mobility Network on
+{\it "Ab initio (from electronic structure) calculation of complex
+processes in materials"} (contract: \\ ERBCHRXCT930369).\\
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\LARGE 
+{\bf Ab initio pseudopotential study of Fe, Co, and Ni 
+employing the spin-polarized LAPW approach  %<--TITLE-----
+\par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} \\
+Jun-Hyung Cho and Matthias Scheffler  %<--AUTHORS---
+\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft,}\\ 
+{\it Faradayweg 4-6, D-14195 Berlin-Dahlem, Germany}\\  %<--ADDRESSES-
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+The ground-state properties of Fe, Co, and Ni are studied with the 
+linear-augmented-plane-wave (LAPW) method and norm-conserving pseudopotentials.
+The calculated lattice constant, bulk modulus, and magnetic moment
+with both the local-spin-density approximation (LSDA) and the generalized
+gradient approximation (GGA) are in good agreement with those of 
+all-electron calculations, respectively.
+The GGA results show a substantial improvement over the LSDA results,
+i.e., better agreement with experiment.
+The accurate treatment of the nonlinear core-valence exchange and correlation
+interaction is found to be essential for the determination of the magnetic 
+properties of $3d$ transition metals. 
+The present study demonstrates the successful application of the
+LAPW pseudopotential approach to the calculation 
+of ground-state properties of magnetic $3d$ transition metals.
+  %<--ABSTRACT--
+\end{abstract} 
+(Submitted to 
+Phys. Rev. B%<--JOURNAL---
+) \\ 
+REVTEX %<--CHOOSE-VERSION--
+version can be obtained from: 
+\verb|cho@theo21.RZ-Berlin.MPG.DE| \\
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\LARGE{\bf
+Six-Dimensional Quantum Dynamics of Adsorption and Desorption 
+       of H$_2$ at Pd(100):\\ Steering and Steric Effects  %<--TITLE-----
+\par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} \\
+Axel Gross, Steffen Wilke, and Matthias Scheffler  %<--AUTHORS---
+\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft}\\
+{\it Faradayweg 4-6, D-14195 Berlin-Dahlem, Germany}\\ %<--ADDRESSES-
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract}
+We report the first six-dimensional quantum dynamical calculations of
+dissociative adsorption and associative desorption. Using a potential 
+energy surface obtained by density functional theory calculations, we show that
+the increase of the sticking probability with decreasing kinetic energy 
+at low kinetic energies in the system H$_2$/Pd(100), 
+which is usually attributed to the existence of
+a molecular adsorption state, is due to dynamical steering. 
+In addition, we examine the influence of rotational motion and 
+orientation of the hydrogen molecule on adsorption and desorption.
+  %<--ABSTRACT--
+\end{abstract} 
+(Submitted to 
+Phys. Rev. Lett.%<--JOURNAL---
+) \\ 
+REVTEX %<--CHOOSE-VERSION--
+version can be obtained from: 
+\verb|axel@theo22.RZ-Berlin.MPG.DE| \\ %<--EMAIL-ADDRESS--
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\LARGE{\bf
+Enhanced electron-phonon coupling at the Mo and W (110) surfaces
+induced by adsorbed hydrogen  %<--TITLE-----
+\par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} \\
+Bernd Kohler, Paolo Ruggerone, and Matthias Scheffler  %<--AUTHORS---
+\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft}\\
+{\it Faradayweg 4-6, D-14195 Berlin-Dahlem, Germany}\\
+\ \\  %<--ADDRESSES-
+Erio Tosatti  %<--AUTHORS---
+\\
+{\it Instituto Nazionale di Fisica della Materia (INFM)}\\
+{\it International School for Advanced Studies (SISSA)}\\ 
+{\it and International Centre for Theoretical Physics (ICTP)}\\
+{\it Miramare, I-34014 Trieste, Italy}\\  %<--ADDRESSES-
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+The possible occurrence of either a charge-density-wave or a Kohn anomaly
+is governed by the 
+presence of Fermi-surface nesting and the subtle
+interaction of electrons and phonons. 
+Recent experimental and theoretical investigations 
+suggest such an effect for the 
+hydrogen covered Mo and W (110) surfaces. Using density-functional theory
+we examine the electronic structure and the electron-phonon coupling of these
+systems. 
+Besides  good agreement with the experimental phonon frequencies our
+study provides a characterization and quantitative analysis
+of an unusual scenario determining the electronic, vibrational, and structural
+properties of these surfaces.
+  %<--ABSTRACT--
+\end{abstract} 
+(Submitted to 
+Phys. Rev. Lett.%<--JOURNAL---
+) \\ 
+REVTEX %<--CHOOSE-VERSION--
+version can be obtained from: 
+\verb|kohler@theo26.RZ-Berlin.MPG.DE| \\ %<--EMAIL-ADDRESS--
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\LARGE{\bf
+Force calculation and atomic-structure optimization for
+the full-potential linearized augmented plane-wave code 
+{\tt WIEN}  %<--TITLE-----
+\par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} \\
+ Bernd Kohler, Steffen Wilke, and Matthias Scheffler\\  %<--AUTHORS---
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft}\\
+{\it Faradayweg 4-6, D-14195 Berlin-Dahlem, Germany}\\
+\ \\
+Robert Kouba and Claudia Ambrosch-Draxl\\
+{\it Institut f\"ur theoretische Physik, Universit\"at Graz}\\
+{\it Universit\"atsplatz 5, A-8010 Graz, Austria} \\  %<--ADDRESSES-
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+Following the approach of Yu, Singh, and Krakauer 
+[Phys.\,Rev.\,B\,{\bf43} (1991) 6411] 
+we extended the linearized augmented plane wave code 
+\verb|WIEN| of Blaha, Schwarz, and coworkers by the 
+evaluation of forces. 
+In this paper we describe the approach, demonstrate 
+the high accuracy of the force calculation,  and use them for 
+an efficient geometry optimization of poly-atomic systems.
+  %<--ABSTRACT--
+\end{abstract} 
+(Submitted to 
+Comp. Phys. Commun.%<--JOURNAL---
+) \\ 
+Postscript %<--CHOOSE-VERSION--
+version can be obtained from: 
+\verb|kohler@theo26.RZ-Berlin.MPG.DE| \\ %<--EMAIL-ADDRESS--
+
+\noindent
+This work has benefited from collaborations within the EU Human
+Capital and Mobility Network on
+{\it "Ab initio (from electronic structure) calculation of complex
+processes in materials"} (contract: \\ ERBCHRXCT930369).\\
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\LARGE{\bf 
+Theoretical study of O adlayers on Ru\,(0001)  %<--TITLE-----
+\par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} \\
+Catherine Stampfl and Matthias Scheffler  %<--AUTHORS---
+\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft} \\
+{\it Faradayweg 4-6, D-14195 Berlin-Dahlem, Germany} \\  %<--ADDRESSES-
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+Recent experiments performed at high pressures indicate that ruthenium
+can support unusually high concentrations of oxygen at the surface.
+To investigate the structure and stability of high coverage oxygen 
+structures, we performed
+density functional theory calculations, within the generalized
+gradient approximation, for
+O adlayers on Ru\,(0001) from low coverage up to a full monolayer.
+We achieve quantitative agreement with previous low energy 
+electron diffraction intensity analyses for the
+$(2 \times 2)$ and $(2 \times 1)$ phases
+and predict that an O adlayer with a $(1 \times 1)$ periodicity 
+and coverage $\Theta$=1
+can form on Ru\,(0001), where the O adatoms occupy hcp-hollow sites.
+  %<--ABSTRACT--
+\end{abstract} 
+(Submitted to 
+Phys. Rev. B%<--JOURNAL---
+) \\ 
+REVTEX %<--CHOOSE-VERSION--
+version can be obtained from: 
+\verb|cts@theo21.RZ-Berlin.MPG.DE| \\ %<--EMAIL-ADDRESS--
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\LARGE{\bf
+Potential Energy Surface for H$_2$ Dissociation over Pd(100)  %<--TITLE-----
+\par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} \\
+Steffen Wilke$^a$ and Matthias Scheffler  %<--AUTHORS---
+\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft}\\
+{\it Faradayweg 4-6, D-14195 Berlin-Dahlem, Germany}\\
+{\it $^a$ Exxon Res. \& Eng. Comp., Annandale, NJ 08801, USA}\\  %<--ADDRESSES-
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+The potential energy surface (PES) of dissociative adsorption of H$_2$ on
+Pd(100) is investigated using density functional theory and the full-potential
+linear augmented plane wave (FP-LAPW) method.  Several dissociation pathways
+are identified which have a vanishing energy barrier. A pronounced dependence
+of the potential energy on ``cartwheel'' rotations of the molecular axis is
+found. The calculated PES shows no indication of the presence of a precursor
+state in front of the surface. Both results indicate that steering effects
+determine the observed decrease of the sticking coefficient at low energies of
+the H$_2$ molecules. We show that the topology of the PES is related
+to the dependence of the covalent H($s$)-Pd($d$) interactions on the
+orientation of the H$_2$ molecule.
+  %<--ABSTRACT--
+\end{abstract} 
+(Submitted to 
+Phys. Rev. B%<--JOURNAL---
+) \\ 
+REVTEX %<--CHOOSE-VERSION--
+version can be obtained from: 
+\verb|swilke@vnatolisgi.erenj.com| \\ %<--EMAIL-ADDRESS--
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\LARGE{\bf 
+Scattering of rare-gas atoms at a metal surface:
+evidence of anticorrugation of the helium-atom
+potential-energy surface and the surface electron density  %<--TITLE-----
+\par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} \\
+Max Petersen, Paolo Ruggerone, Bernd Kohler,\\
+ and Matthias Scheffler  %<--AUTHORS---
+\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft} \\
+{\it Faradayweg 4-6, D-14195 Berlin-Dahlem, Germany}\\  %<--ADDRESSES-
+\ \\
+Steffen Wilke\\
+{\it Exxon Res. \& Eng. Comp., Annandale, NJ 08801, USA} \\
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+Recent measurements of the scattering of He and Ne atoms at Rh\,(110)
+suggest that these two rare-gas atoms measure a {\em qualitatively} different
+surface corrugation: While Ne atom scattering seemingly reflects
+the electron-density undulation of the substrate surface, the scattering
+potential of He atoms appears to be anticorrugated. An understanding of this
+perplexing result is lacking. In  this paper we present density functional
+theory calculations of the interaction potentials of He and Ne with  Rh\,(110).
+We find that, and explain why, the nature of the interaction of the two
+probe particles is qualitatively different, which implies that
+the topographies of their scattering potentials are indeed anticorrugated.
+  %<--ABSTRACT--
+\end{abstract} 
+(Submitted to 
+Phys. Rev. Lett.%<--JOURNAL---
+) \\ 
+REVTEX %<--CHOOSE-VERSION--
+version can be obtained from: 
+\verb|paolo@theo24.RZ-Berlin.MPG.DE| \\ %<--EMAIL-ADDRESS--
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\LARGE{\bf
+Unusually Large Thermal Expansion of Ag(111)  %<--TITLE-----
+\par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} \\
+Shobhana Narasimhan and Matthias Scheffler  %<--AUTHORS---
+\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft} \\ 
+{\it Faradayweg 4-6, D-14\,195 Berlin-Dahlem, Germany} \\ %<--ADDRESSES-
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+We investigate the thermal behavior of the (111) surface of silver, 
+using  phonon frequencies
+obtained from {\it ab initio} total energy calculations, and anharmonic 
+effects treated
+within a quasiharmonic approximation.
+Our results reproduce the experimental
+observation of a large and anomalous increase in the surface thermal 
+expansion at high
+temperatures~[P.~Statiris {\em et al.}, 
+Phys.~Rev.~Lett. {\bf 72}, 3574 (1994)]. Surprisingly, we find
+that this increase can be attributed to a rapid softening
+of the {\it in-plane}
+phonon frequencies, rather than due to the anharmonicity of the 
+out-of-plane surface phonon modes. This
+provides evidence for a new mechanism for the enhancement of surface 
+anharmonicity. A comparison with Al(111)
+shows that the two surfaces behave quite differently, with no 
+evidence for such anomalous behavior on Al(111).
+  %<--ABSTRACT--
+\end{abstract} 
+(Submitted to 
+Phys. Rev. Lett.%<--JOURNAL---
+) \\ 
+REVTEX %<--CHOOSE-VERSION--
+version can be obtained from: 
+\verb|shobhana@theo26.RZ-Berlin.MPG.DE| \\ %<--EMAIL-ADDRESS--
+
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf  Electronic Structure of 
+PrBa$_{2}$Cu$_{3}$O$_{7}$:\\
+A local-spin-density approximation\\
+with on-site Coulomb interaction calculation \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+M. Biagini, C. Calandra and Stefano Ossicini\\
+{\it Istituto Nazionale Fisica della 
+Materia and}\\
+{\it Dip. di Fisica, Universit\`a di Modena,}\\
+{\it via Campi 213/A, I-41100 Modena, Italy} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+Electronic structure calculations based on the local-spin-density
+approximation fail to reproduce the antiferromagnetic ground state
+of PrBa$_{2}$Cu$_{3}$O$_{7}$ (PBCO).
+We have performed LMTO-ASA
+calculations, based on the local-spin-density 
+approximation with on-site Coulomb correlation applied to Cu(1) 
+and Cu(2) $3d$ states. 
+We have found that inclusion of the on-site Coulomb interaction
+modifies qualitatively the electronic structure of PBCO with respect to the 
+LSDA results, and gives Cu spin moments 
+in good agreement with the experimental values.
+The Cu(2) upper Hubbard band lies about 1 eV above the
+Fermi energy, indicating a Cu$^{II}$ oxidation state. 
+On the other hand,
+the Cu(1) upper Hubbard band  is located  across the Fermi level, 
+which implies
+an intermediate oxidation state for the Cu(1) ion,
+between Cu$^{I}$ and Cu$^{II}$.
+The metallic character of the 
+CuO chains is preserved, 
+in agreement with optical reflectivity
+[K. Takenaka {\em et al.}
+Phys. Rev. B {\bf 46}, 5833 (1992)]
+and positron annihilation experiments
+[L. Hoffmann {\em et al.} Phys. Rev. Lett. {\bf 71}, 4047 (1993)].
+These results support the view of an
+extrinsic origin of the insulating character of PrBa$_{2}$Cu$_{3}$O$_{7}$.
+\end{abstract}
+
+\noindent
+(Submitted to Phys. Rev. B)\\
+Manuscripts available from: biagini@imoax1.unimo.it \\
+
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf High Resolution Compton Scattering in Fermi Surface Studies:
+       Application to FeAl \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+C.~Blaas and J.~Redinger \\
+{\it Institut f\"ur Technische Elektrochemie,}\\
+{\it Technische Universit\"at Wien,}\\
+{\it Getreidemarkt 9/158, A-1060 Wien, Austria}\\
+S.~Manninen, V.~Honkim\"aki, and K.~H\"am\"al\"ainen \\
+{\it Department of Physics, University of Helsinki,}\\
+{\it P.O. Box 9, FIN-00014 Finland} \\
+P.~Suortti \\
+{\it European Synchrotron Radiation Facility,}\\
+{\it B.P. 220, F-38043 Grenoble, France} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We present a novel theoretical approach to identify Fermi surface
+contributions in high resolution Compton scattering data. For FeAl
+Compton profiles we show that the Fermi-surface-related features
+(occupation of states) can be separated from those originating from
+the spatial extent of the wave functions. The first high resolution
+Compton scattering experiment done at the European Synchrotron
+Radiation Facility confirms these findings. This technique
+opens up new possibilities especially in Fermiology studies of high
+temperature superconductors.
+\end{abstract}
+
+\noindent
+(Phys. Rev. Lett. {\bf 75}, 1984 (1995))\\
+Reprints available from: cb\verb|@|eecws6.tuwien.ac.at \\\\
+
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Fully relativistic spin--polarized description of interface exchange
+coupling: Fe multilayers in Au(100) \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+L. Szunyogh$^{a,b}$, B. \'Ujfalussy$^a$, P. Weinberger$^a$ and C. Sommers$^c$ \\
+{\it $^a$Institut f\"ur Technische Elektrochemie,}\\
+{\it Technische Universit\"at Wien,}\\
+{\it Getreidemarkt 9/158, A-1060, Wien, Austria }\\
+{\it $^b$Institute for Physics, Technical University Budapest,}\\
+{\it Budafoki, \'ut 8,H-1111, Budapest, Hungary }\\
+{\it $^c$Laboratoire de Physique des Solides, }\\
+{\it Bat. 510, Campus d'Orsay, 91 405 Orsay, France}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+The spin-polarized fully relativistic Screened Korringa-Kohn-Rostocker
+method is applied to calculate magnetic anisotropy energies for Fe
+multilayers in Au(100), separated by up to 16 spacer layers of Au. With
+respect to the antiparallel as well as to a perpendicular relative
+orientation of the magnetization in the Fe slabs these anisotropy energies
+as calculated (a) in terms of total energies, (b) within the force theorem
+approximation and (c) within the frozen potential approximation are
+discussed using the concept of layer-resolved quantities. In particular the
+comparison between the total energy and the force theorem approach is
+presented in some detail because of possible implications for an ab-initio
+description of transport properties in multilayer systems.
+\end{abstract}
+
+\noindent
+(submitted to Phys. Rev. B)\\
+Manuscripts available from: pw@eecws1.tuwien.ac.at \\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\LARGE{\bf Acid-base catalysis in zeolites from first principles \par} 
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+Rajiv Shah$^*$, J. D. Gale$\dagger$ and M. C. Payne$^*$ \\
+{\it $^*$ Cavendish Laboratory (TCM), Cambridge University, U.K} \\
+{\it $\dagger$ Chemistry Department, Imperial College, London, U.K}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+ Zeolite materials are microporous aluminosilicates with various uses,
+including acting as important catalysts in many processes. One such
+process is the methanol to gasoline reaction, used widely in industry.
+This reaction is known to be associated with Br\o nsted acid sites in the
+zeolite, formed when Si is substituted by Al in the framework, with an
+associated H$^{+}$ being bound nearby to maintain charge neutrality. 
+However it is not clear exactly what role the proton plays in this
+reaction. 
+
+Because of the large unit cell (generally 50-300 atoms, depending on the
+particular zeolite) of such structures, most ab initio calculations of
+these materials have focussed on studying small clusters representing just
+a portion of the framework.  However, by choosing the chabazite zeolite
+structure, which has only 36 atoms in the primitive unit cell, we have
+been able to perform a full periodic ab initio calculation. This has used
+density functional theory with a generalised gradient approximation for
+the exchange-correlation energy, a plane-wave basis set, and
+norm-conserving optimised pseudopotentials. Using these methods we have
+examined the geometry and electronic structure of a zeolite acid site, and
+considered one way in which a methanol molecule may bind to such a site.
+\end{abstract} 
+
+\noindent
+(Intl. J. Quant. Chem., in press) \\ 
+Preprint available on request from Rajiv Shah: rs133@cam.ac.uk \\
+
+\newpage
+\null 
+\vskip 2em 
+\begin{center} 
+\LARGE{\bf The mechanism of tritium diffusion in lithium oxide \par} 
+\vskip 1.5em 
+{\large \lineskip .5em
+\begin{tabular}[t]{c} 
+R. Shah, A. De Vita, V. Heine and M. C. Payne \\
+{\it Cavendish Laboratory (TCM), University of Cambridge, U.K.}\\
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+
+Lithium oxide is a possible candidate for a breeder blanket material in
+fusion reactors. Tritium is generated in the material, which can be
+extracted and fed into the fusion reactor to help sustain the fusion
+reaction. Experimental studies have shown the extraction rate is
+controlled by diffusion of tritium in the bulk, but the exact mechanism is
+not clear. 
+
+Here we present ab initio density functional calculations of the various
+diffusion pathways which have been suggested, including the diffusion of
+tritium as an interstitial and various vacancy assisted mechanisms. The
+activation energy has been calculated for each pathway, and by comparison
+with experimental results we have deduced which mechanism is most likely.
+This is shown to be a simple two-stage swapping of a lithium and tritium
+ion. 
+\end{abstract} 
+
+\noindent
+(submitted to Phys. Rev. B) \\ 
+Preprint available on request from Rajiv Shah: rs133@cam.ac.uk \\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\LARGE{\bf Time-dependent density functional theory beyond linear response:\ an
+exchange-correlation potential with memory \par}
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c}
+M. B\"unner$^a$, John. F. Dobson$^b$, and E.K.U. Gross$^{c,b}$\\
+{\it $^a$Physikalisches Institut der Universit\"at Bayreuth,}\\
+{\it D-95440 Bayreuth, Germany}\\
+{\it $^b$School of Science, Griffith University,}\\
+{\it Nathan, Queensland 4111, Australia}\\
+{\it $^c$Institut f\"ur Theoretische Physik der Universit\"at W\"urzburg,} \\
+{\it Am Hubland, D-97974 W\"urzburg, Germany}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We propose a memory form of exchange-correlation (xc) potential $v_{xc}({\bf %
+r},t)$ for time-dependent interacting many-particle systems. Unlike previous
+memory-xc potentials, our $v_{xc}$ is not limited to the linear response
+regime. The proposed form of $v_{xc}$ has the maximum degree of spatial
+locality allowable in view of constraints imposed by Galilean invariance and
+by the Harmonic Potential Theorem. For the case of the inhomogeneous
+electron gas, we give an explicit prescription for $v_{xc}$ based solely on
+an existing parametrization of the linear xc response kernel $f_{xc}^{\hom
+}(n,\omega )$ of the uniform gas.
+\end{abstract}
+
+\noindent
+(submitted to Physical Review Letters)\\
+Latex version can be obtained from: gross@physik.uni-wuerzburg.de\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\LARGE{\bf Conventional Quantum Chemical Correlation Energy 
+versus Density-Functional Correlation Energy \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+E.K.U. Gross, M. Petersilka and T. Grabo\\
+{\it Institut f\"ur Theoretische Physik, Universit\"at W\"urzburg}\\
+{\it Am Hubland, D-97074 W\"urzburg, Germany}\\
+\end{tabular}\par}
+\end{center}
+\vspace*{1cm}
+\begin{abstract}
+We analyze the difference between the correlation energy as defined
+within the conventional quantum chemistry framework and its namesake in
+density-functional theory. Both quantities are rigorously defined concepts;
+one finds that $E_c^{QC} \geq E_c^{DFT}$. We give numerical and analytical
+arguments suggesting that the numerical difference between the two rigorous
+quantities is small. Finally, approximate density functional correlation
+energies resulting from some popular correlation energy functionals are
+compared with the conventional quantum chemistry values.
+\end{abstract}
+
+\noindent
+(To appear in: \\
+``Density Functional Methods in Chemistry'', ACS series, 1996)\\
+Latex version can be obtained from: ptrslka@physik.uni-wuerzburg.de \\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\LARGE{\bf Scaling and virial theorems in current-density-functional theory \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+    S. Erhard and E. K. U. Gross \\
+{\it Institut f\"ur Theoretische Physik, Universit\"at W\"urzburg,}\\
+{\it Am Hubland, D-97074 W\"urzburg, Germany} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+%\renewcommand{\r}{{\bf r}}
+\newcommand{\n}{{\bf \nabla}}
+\renewcommand{\j}{{\bf j}}
+Starting from a constrained-search formulation of 
+current-density-func\-tio\-nal 
+theory, we obtain rigorous scaling and virial relations for the kinetic,
+exchange and correlation energy functionals of electronic systems in strong
+magnetic fields. With the scaled density
+$n_\lambda({\bf r}) \equiv \lambda^3n(\lambda{\bf r})$  and the scaled {\em paramagnetic}
+current density $\j_\lambda({\bf r}) \equiv \lambda^4\j(\lambda{\bf r})$
+the exchange energy functional $E_{\rm x}[n,\j]$ and the non-interacting 
+kinetic energy functional 
+$T_s[n,\j]$ satisfy $E_{\rm x}[n_\lambda ,\j_\lambda ] 
+= \lambda  E_{\rm x}[n,\j]  $ and $T_s[n_\lambda ,\j_\lambda ] 
+= \lambda ^2 T_s[n,\j]$.
+The correlation energy functional satisfies the inequalities
+$E_{\rm c}[n_\lambda ,\j_\lambda ] \, {<\atop>} \, \lambda  E_{\rm c}[n,\j]$
+for $\lambda \, {<\atop>} \, 1$. 
+More\-over, any homogeneously scaling functional 
+$Q[n_\lambda,\j_\lambda]= \lambda^k Q[n,\j]$ obeys the rela\-tion:\\
+$kQ + \int\!{\rm d}^3r\,n({\bf r}) ({\bf r}\n) [\delta Q/\delta n({\bf r})] +
+\int\!{\rm d}^3r\,{\j}{({\bf r})} ({\bf r}{\n-1}) [{\delta} Q/{\delta} {\j}{({\bf r})}]  = 0$.\\
+This relation, combined with the appropriate virial theorem in the presence
+of an external magnetic field, yields the following central theorems:\\
+$E_{\rm x} + \int\!{\rm d}^3r\,n({\bf r}) ({\bf r}\n) [\delta E_{\rm x}/\delta n({\bf r})] +
+\int\!{\rm d}^3r\,\j({\bf r}) ({\bf r}\n-1) [\delta E_{\rm x}/\delta \j({\bf r})] = 0$ \\
+and \\
+$E_{\rm c} + \int\!{\rm d}^3r\,n({\bf r}) ({\bf r}\n) [\delta E_{\rm c}/\delta n({\bf r})] +
+\int\!{\rm d}^3r\,\j({\bf r}) ({\bf r}\n-1) [\delta E_{\rm c}/\delta \j({\bf r})] = 
+-T_{\rm xc}$, \\
+where $T_{\rm xc}[n,\j]$ is the difference of the interacting and the 
+non-inter\-act\-ing kinetic energy functionals.
+\end{abstract}
+
+\noindent
+(accepted by Physical Review A Rapid Communication)\\
+Latex version can be obtained from: erhard@physik.uni-wuerzburg.de\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\LARGE{\bf Density-Functional Theory for Triplet Superconductors \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+K. Capelle and E.K.U. Gross \\
+{\it Institut f\"ur Theoretische Physik, Universit\"at W\"urzburg} \\
+{\it Am Hubland, D-97074 W\"urzburg, Germany} \\
+\end{tabular}\par}
+\end{center}
+\vspace*{1cm}
+\begin{abstract}
+The density-functional theory of superconductivity is extended to triplet superconductors and 
+superfluid helium 3. We prove a Hohenberg-Kohn-type theorem for these systems and derive 
+effective single-particle equations.  The latter include exchange and correlations in a formally 
+exact way and allow the treatment of both electronic and phonon-induced superconductivity.
+The relation of this approach to the Bogolu\-bov-de Gennes mean-field theory and to phenomenological 
+theories based on Ginzburg-Landau functionals is discussed.
+\end{abstract}
+
+\noindent
+(submitted to International Journal of Quantum Chemistry)\\
+Latex version can be obtained from: capelle@physik.uni-wuerzburg.de \\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf A First Principles Investigation of Vacancy Oxygen defects in Si \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+C. P. Ewels, R. Jones \\
+{\it Department of Physics, University of Exeter,} \\
+{\it Exeter, EX4 4QL, UK} \\
+S. \"Oberg\\
+{\it Department of Mathematics, University of Lule\aa,} \\
+{\it Lule\aa, S95187, Sweden}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+{\it Ab initio} techniques are used to study vacancy oxygen complexes
+in Si.  Substitutional oxygen is found to be an off-site defect in
+agreement with experiment.  It possesses one high frequency O-related
+LVM at 788 cm$^{-1}$. The VO$_2$ defect has $D_{2d}$ symmetry and only
+one O-related high frequency IR active mode at 807 cm$^{-1}$.  The
+VO$_3$ defect has three high frequency IR active modes.  The V$_2$O
+defect has one such LVM. These results provide strong support for the
+assignment of the 889 cm$^{-1}$ (300 K) local vibrational mode to
+VO$_2$.
+\end{abstract}
+
+\noindent
+{\bf Keywords:} {\it ab initio} theory, silicon, oxygen, vacancy,
+defect.\\
+
+\noindent
+(Paper presented this year at the ICDS '95 International Defects Conference 
+in Sendai, Japan)\\
+\ni Paper is available by e-mail from: \verb+ jones@excc.ex.ac.uk + \\
+\ni or alternatively from the World Wide Web at: \\
+\ni \verb+ http://newton.ex.ac.uk/jones/papers/sendai.html +\\
+
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf A First Principles Study Of Ni Defects In Synthetic Diamond \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+J. Goss, R. Jones\\
+{\it Department of Physics, University of Exeter,} \\
+{\it Exeter, EX4 4QL, UK} \\
+A. Resende\\
+{\it Departamento de Fisica, Universidade de Aveiro,} \\
+{\it  3800 Aveiro, Portugal}\\
+S. \"Oberg\\
+{\it Department of Mathematics, University of Lule\aa,} \\
+{\it  Lule\aa, S95187, Sweden}\\
+P. R. Briddon\\
+{\it Department of Physics, University of Newcastle,} \\
+{\it Newcastle, NE1 7RU, UK}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We present the results of {\it ab initio} local density functional
+cluster calculations, using the AIMPRO program, performed on
+substitutional and interstitial Ni defects, and complexes of Ni with N
+and B.
+
+Interstitial Ni$^+$ (S=1/2) remains on the $T_d$ site in contrast with
+results of previous calculations [2,3].  Ni$^{++}$ (S=1) should be
+present in boron rich diamonds but as it has not been observed, we
+speculate that only substitutional Ni defects are found in diamond.
+
+Substitutional Ni$^-$ is found to be more stable, by around 1 eV, in
+an S=3/2 configuration than that with S=1/2, in agreement with
+experiment.  The defect gives rise to a number of gap levels and could
+give rise to an optical transition around 1.4 and 2.6 eV.
+
+Substitutional Ni$^+$ (S=1/2) is found to have $T_d$ symmetry at
+finite temperatures.  A Jahn-Teller effect is expected for this
+defect, which could be trigonal, but is likely to be only observable
+at cryogenic temperatures.  This defect is proposed for the NIRIM-1
+EPR centre [5] that is found to have $T_d$ symmetry at 25 K, but
+$C_3v$ at 4 K, and observed in samples with low N concentration.
+
+The trigonal Ni$_s^+$B$_s^-$ (S=1/2) complex is found to be stable.
+It gives rise to a number of states deep in the band-gap and an
+optical $e-a_1$ transition around 1.1 eV.  No hyperfine splitting due
+to B is expected.  We propose this defect as responsible for the
+NIRIM-2 and the 1.4 eV optical centres.
+
+The trigonal Ni$_s^-$N$_s^+$ (S=1/2) complex is stable and gives rise
+to an optical transition around 1.4 eV and may explain the 1.693 eV
+optical line seen in annealed N rich diamonds containing Ni [4].
+\end{abstract}
+
+\noindent
+1) Gippius, A A,Collins, A T, and Kazarian, S A, Mater.  Sci. Forum
+{\bf 143-147}, 41 (1994).
+
+2) Paslovsky, L, and Lowther, J E, J. Phys.: Cond. Matter 4, 775
+(1992).
+
+3) Yang Jinlong, Zhang Manhong, and Wang Kelin, Phys. Rev. B {\bf 49},
+15525 (1994).
+
+4) Lawson, S C, and Kanda, H, J.\ App. Phys. {\bf 73}, 3967 (1993).
+
+5) Isoya, J, Kanda, H, and Uchida, Y, Phys. Rev. B {\bf 42}, 9843 (1990). \\
+
+\noindent
+{\bf Keywords:} {\it ab initio} theory, diamond, TM, nickel \\
+
+\noindent
+(Paper presented this year at the ICDS '95 International Defects Conference 
+in Sendai, Japan)\\
+\ni Paper is available by e-mail from: \verb+ jones@excc.ex.ac.uk + \\
+\ni or alternatively from the World Wide Web at: \\
+\ni \verb+ http://newton.ex.ac.uk/jones/papers/sendai.html +\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Interstitial H and the dissociation of C-H defects in GaAs \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+S. J. Breuer, R. Jones \\
+{\it Department of Physics, University of Exeter,} \\
+{\it Exeter, EX4 4QL, UK} \\
+S. \"Oberg \\
+{\it Department of Mathematics, University of Lule\aa,} \\
+{\it Lule\aa, S95187, Sweden} \\
+P. R. Briddon \\
+{\it Department of Physics, University of Newcastle,} \\
+{\it Newcastle, NE1 7RU, UK}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+Local--density--functional calculations using a real--space cluster
+approach are used to model interstitial hydrogen in GaAs and the
+dissociation of the C--H and C--H$^-$ complexes.  The equilibrium site
+is found to be on a Ga--As bond axis for H$^0$ and H$^+$ and at a Ga
+anti--bonding site for H$^-$.  It is also shown that a H$_2$ molecule
+is stable in interstitial space and has a lower energy than the two
+possible H$_2^*$ defects and than widely separated single interstitial
+hydrogen atoms.  The study of hydrogen in pure GaAs also yields the
+result that interstitial hydrogen is a negative--U defect.  It is
+found that the energy barrier to the dissociation of the C--H complex
+is 1.8 eV, but that this is reduced to 0.9 eV for C--H$^-$.
+Comparison is made with recent experimental results and implications
+for current containing devices are discussed.
+\end{abstract}
+
+\noindent
+{\bf Keywords:} C-H, dissocation, interstitial hydrogen, GaAs, {\it ab
+initio} \\
+
+\noindent
+(Paper presented this year at the ICDS '95 International Defects Conference 
+in Sendai, Japan)\\
+\ni Paper is available by e-mail from: \verb+ jones@excc.ex.ac.uk + \\
+\ni or alternatively from the World Wide Web at: \\
+\ni \verb+ http://newton.ex.ac.uk/jones/papers/sendai.html +\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Peculiarities of interstitial carbon and di-carbon defects in Si \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+R. Jones, P. Leary \\
+{\it Department of Physics, University of Exeter,} \\
+{\it Exeter, EX4 4QL, UK} \\
+S. \"Oberg \\
+{\it Department of Mathematics, University of Lule\aa,} \\
+{\it Lule\aa, S95187, Sweden} \\
+V. Torres \\
+{\it Departamento de Fisica, Universidade de Aveiro,} \\
+{\it 3800 Aveiro, Portugal} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+The C$_i$ and C$_s$-C$_i$ defects in Si exhibit several unexplained
+properties. In the neutral charge state, the C$_i$ defect possesses
+two almost degenerate vibrational modes suggesting a trigonal defect
+in disagreement with the $C_{2v}$ symmetry deduced from several
+experiments.  The B-form of the second defect is believed to consist
+of a Si interstitial, Si$_i$, located near a BC site between two C$_s$
+atoms, in apparent conflict with the results of PL experiments which
+show that the C-related vibrational modes are decoupled.  The
+structure and vibrational modes of both defects are analysed using LDF
+cluster theory.  The degeneracy of the modes of C$_i$ is attributed to
+an almost $D_{3h}$ structure, with a 3-fold axis along [01\=1]. The
+modes of the di-carbon interstitial lead to a resolution of the long
+standing problem concerning the almost zero-shifts due to mixed
+isotopes in the 580 and 543 cm$^{-1}$ local modes observed in PL
+studies.
+\end{abstract}
+
+\noindent
+{\bf Keywords:} {\it ab initio} theory, carbon interstitials, silicon,
+vibrational modes\\
+
+\noindent
+(Paper presented this year at the ICDS '95 International Defects Conference 
+in Sendai, Japan)\\
+\ni Paper is available by e-mail from: \verb+ jones@excc.ex.ac.uk + \\
+\ni or alternatively from the World Wide Web at: \\
+\ni \verb+ http://newton.ex.ac.uk/jones/papers/sendai.html +\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Theory of the NiH$_2$ Complex in Si and the CuH$_2$ Complex in GaAs \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+R. Jones, J. Goss \\
+{\it Department of Physics, University of Exeter,} \\
+{\it Exeter, EX4 4QL, UK} \\
+S. \"Oberg \\
+{\it Department of Mathematics, University of Lule\aa,} \\
+{\it Lule\aa, S95187, Sweden} \\
+P. R. Briddon \\
+{\it Department of Physics, University of Newcastle,} \\
+{\it Newcastle, NE1 7RU, UK}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+Spin-polarised local density functional cluster calculations are
+carried out on substitutional Ni in Si and Cu in GaAs along with
+TM-H$_2$ complexes. The Jahn-Teller distortion for Ni in Si leads to a
+slight displacement along $\langle$100$\rangle$ in agreement with EPR
+experiments.  Several models of NiH$_2$ are investigated and it is
+shown that one, with H located at anti-bonding sites to two of the Si
+neighbours of Ni, has the lowest energy and possesses H related local
+vibrational modes close to those reported for Pt-H$_2$.  A similar
+structure is found for CuH$_2$ in GaAs.  The electronic properties of
+the complexes are described in terms of the vacancy model of TM
+impurities.
+\end{abstract}
+
+\noindent
+(Paper presented this year at the ICDS '95 International Defects Conference 
+in Sendai, Japan)\\
+\ni Paper is available by e-mail from: \verb+ jones@excc.ex.ac.uk + \\
+\ni or alternatively from the World Wide Web at: \\
+\ni \verb+ http://newton.ex.ac.uk/jones/papers/sendai.html +\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Theory of Si delta-doped GaAs \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+R. Jones \\
+{\it Department of Physics, University of Exeter,} \\
+{\it Exeter, EX4 4QL, UK} \\
+S. \"Oberg \\
+{\it Department of Mathematics, University of Lule\aa,} \\
+{\it Lule\aa, S95187, Sweden} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+The insulating property of approx.  0.5 ML Si delta-doped GaAs is
+attributed to extended defects of self-compensated Si$_{Ga}$-Si$_{As}$
+pairs.  The longitudinal and transverse optical modes of a chain and
+bilayer made from these pairs are calculated using first principles
+methods.  The chain possesses a Raman active longitudinal mode at 470
+cm$^{-1}$ which drops to 465 cm$^{-1}$, when the chain is depleted of
+Si, and increases to about 500 cm$^{-1}$ for Si rafts, ie (110) chains
+cross-linked by adjacent (1\=10) chains. These results are in good
+agreement with recent Raman scattering studies which show a band
+increasing from 470 to 490 cm$^{-1}$ when [Si] is increased from 0.5
+ML to 2 ML.  The theory also predicts three transverse branches, as
+well as a longitudinal resonant band, none of which have been reported
+so far.
+\end{abstract}
+
+\noindent
+{\bf Keywords:} Si-delta doping, Si-Si chains, Raman scattering, {\it
+ab initio} theory \\
+
+\noindent
+(Paper presented this year at the ICDS '95 International Defects Conference 
+in Sendai, Japan)\\
+\ni Paper is available by e-mail from: \verb+ jones@excc.ex.ac.uk + \\
+\ni or alternatively from the World Wide Web at: \\
+\ni \verb+ http://newton.ex.ac.uk/jones/papers/sendai.html +\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Vacancy- and acceptor- H complexes in InP \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+C. Ewels, R. Jones \\
+{\it Department of Physics, University of Exeter,} \\
+{\it Exeter, EX4 4QL, UK} \\
+S. \"Oberg \\
+{\it Department of Mathematics, University of Lule\aa,} \\
+{\it Lule\aa, S95187, Sweden} \\
+B. Pajot \\
+{\it Groupe de Physique des Solides, Universite Paris VII,}\\
+{\it 2 place Jussieu, 75251 PARIS, Cedex 05, France} \\
+P. R. Briddon \\
+{\it Department of Physics, University of Newcastle,} \\
+{\it Newcastle, NE1 7RU, UK}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+It has been suggested that iron in InP is compensated by a donor,
+related to the 2316 cm$^{-1}$ local vibrational mode and previously
+assigned to VH$_4$. Using {\it ab initio} local density functional
+cluster calculations, we find that the fully hydrogenated indium
+vacancy, VH$_4$, acts as a single shallow donor, and has a triplet
+vibrational mode at around this value, consistent with this
+assignment. We also analyse the other hydrogenated vacancies VH$_n,
+n=1,3$ and determine their structure, vibrational modes, and charge
+states. Substitutional Group II impurities also act as acceptors in
+InP, but can be passivated by hydrogen. We investigate the passivation
+of beryllium by hydrogen and find that the hydrogen sits in a bond
+centred site and is bonded to its phosphorus neighbour. Its calculated
+vibrational modes are in good agreement with experiment.
+\end{abstract}
+
+\noindent
+{\bf Keywords:} {\it ab initio} theory, InP, donor, vacancy, hydrogen,
+defect, beryllium
+
+\noindent
+(Paper presented this year at the ICDS '95 International Defects Conference 
+in Sendai, Japan)\\
+\ni Paper is available by e-mail from: \verb+ jones@excc.ex.ac.uk + \\
+\ni or alternatively from the World Wide Web at: \\
+\ni \verb+ http://newton.ex.ac.uk/jones/papers/sendai.html +\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf {\it Ab initio} full charge-density study of the atomic volume of \\
+\mbox{{\boldmath $\alpha$}}-phase Fr, Ra, Ac, Th, Pa, U, Np, and Pu \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+L. Vitos$^*$, J. Koll\'ar$^*$, and H. L. Skriver$^+$ \\
+{\it $^*$Research Institute for Solid State Physics,}\\
+{\it H-1525 Budapest, P.O.Box 49, Hungary}\\
+{\it $^+$Center for Atomic-scale Materials Physics and Physics Department,} \\
+{\it Technical University of Denmark, DK-2800 Lyngby, Denmark} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We have used a full charge density technique based on the linear muffin-tin
+orbitals method in first-principles calculations of the atomic volumes of
+the light actinides including Fr, Ra, and Ac in their low temperature
+crystallographic phases. The small deviations between the theoretical and
+experimental values along the series support the picture of itinerant $5f$
+electronic states in Th to Pu. The increased deviation between theory and
+experiment found in Np and Pu may be an indication of correlation effects
+not included in present day local density approximations.
+\end{abstract}
+
+\noindent
+(submitted to Phys. Rev. B)\\
+Manuscripts available from: jk@power.szfki.kfki.hu \\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+%--------------------------------------------------------
+\Large{\bf
+Interlayer magnetic coupling: the torque method \par}
+\vskip1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+V. Drchal$^{\; a,b}$, J. Kudrnovsk\'y$^{\; a,b}$,
+I. Turek$^{\; c}$, and P. Weinberger$^{\; b}$ \\
+
+$^a$ {\it Institute of Physics, Academy of Sciences} \\
+{\it of the Czech Republic, CZ-180 40 Praha 8, Czech Republic}\\
+%\\
+$^b$ {\it Institute for Technical Electrochemistry,} \\
+{\it Technical University, A-1060 Vienna, Austria } \\
+$^c$ {\it Institute of Physics of Materials,
+Academy of Sciences}\\
+{\it of the Czech Republic, CZ-616 62 Brno, Czech Republic }
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We present ab-initio calculations of the interlayer exchange coupling
+between two, in general non-collinearly aligned  magnetic slabs
+embedded in a non-magnetic spacer.
+Based on a surface Green's function formalism, two equivalent but
+formally and physically different approaches are examined and
+discussed.
+For the Co/Cu/Co(001) system we demonstrate the usefulness of the
+concept of infinitesimal rotations in order to calculate the
+coupling for a finite relative angle ${\theta}$, in particular for
+${\theta=\pi}$, between the corresponding spin directions in the
+magnetic slabs.
+The temperature and layer dependence of the interlayer exchange
+coupling is examined and the possibility for non-collinear
+coupling is investigated.
+\end{abstract}
+
+\noindent
+(submitted to Phys. Rev. B) \\
+Preprint can be obtained from V. Drchal (vd@eecws7.tuwien.ac.at)\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+%--------------------------------------------------------
+\Large{\bf
+Interlayer magnetic coupling: effect of disorder in spacer \par}
+\vskip1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+ J. Kudrnovsk\'y$^{\; a,c}$, V. Drchal$^{\; a,c}$,
+I. Turek$^{\; b}$, M. \v Sob$^{\; b}$ and P. Weinberger$^{\; c}$ \\
+
+$^a$ {\it Institute of Physics,
+Academy of Sciences} \\{\it of the Czech Republic,
+CZ-180 40 Praha 8, Czech Republic} \\
+$^b$ {\it Institute of Physics of Materials,
+Academy of Sciences}\\{\it of the Czech Republic,
+CZ-616 62 Brno, Czech Republic } \\
+$^c$ {\it Institute for Technical Electrochemistry,}  \\
+{\it Technical University, A-1060 Vienna, Austria }\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+ The influence of spacer randomness  on the
+periods and the amplitudes of the oscillations of exchange coupling in
+magnetic multilayers is studied from first principles. The effect of
+disorder is treated within the coherent potential approximation. As a
+case
+study, results obtained for trilayers Co/Cu$_{1-x}$M$_x$/Co(001),
+where
+M=Ni, Pd, and Zn, are presented and discussed.
+\end{abstract}
+ 
+\noindent
+(submitted to JMMM) \\
+Preprint can be obtained from J. Kudrnovsk\'y (jk@eecws7.tuwien.ac.at)\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf 3d semicore-states in ZnSe, GaAs and Ge \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+F. Aryasetiawan and O. Gunnarsson \\
+{\it Max-Planck-Institut f\"ur Festk\"orperforschung,}\\
+{\it D-70569 Stuttgart, FRG}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We present the self-energy corrections for the semi-core states in ZnSe, GaAs
+and Ge within the GW approximation. Good agreement with experiment is
+found.  To study the error trend in the local density eigenvalues which
+increases from ZnSe to Ge, we have also performed Slater transition
+state calculations.  This increasing error can be understood in terms
+of the change of the occupation numbers of the orbitals and the Coulomb
+energies.  We derived a simple formula to describe this increasing error.
+\end{abstract}
+
+\noindent
+(submitted to Phys. Rev. B)\\
+Manuscripts available from: gunnar@radix3.mpi-stuttgart.mpg.de \\
+
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf On the idea of a new quantum number in the cluster problem \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+Erik Koch \\
+{\it Max-Planck-Institut f\"ur Festk\"orperforschung,}\\
+{\it D-70569 Stuttgart, FRG}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+It has recently been suggested that an exactly solvable problem characterized
+by a new quantum number may underlie the electronic shell structure
+observed in the mass spectra of medium-sized sodium clusters. We
+investigate whether the conjectured quantum number $3n+l$ bears a
+similarity to the quantum numbers $n+l$ and $2n+l$, which characterize 
+the hydrogen problem and the isotropic harmonic oscillator in three 
+dimensions.
+\end{abstract}
+
+\noindent
+(submitted to Phys. Rev. B)\\
+Manuscripts available from: koch@radix5.mpi-stuttgart.mpg.de \\
+
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Supershells in metal clusters:\\
+       Self-consistent calculations and their semiclassical interpretation \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+Erik Koch \\
+{\it Max-Planck-Institut f\"ur Festk\"orperforschung,}\\
+{\it D-70569 Stuttgart, FRG}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+To understand the electronic shell- and supershell-structure in large
+metal clusters we have performed self-consistent calculations in the
+homogeneous, spherical jellium model for a variety of different
+materials.  A scaling analysis of the results reveals a surprisingly
+simple dependence of the supershells on the jellium density.
+It is shown how this can be understood in the framework of a
+periodic-orbit-expansion by analytically extending the well-known
+semiclassical treatment of a spherical cavity to more realistic
+potentials.  
+\end{abstract}
+
+\noindent
+(submitted to Phys. Rev. Lett.)\\
+Manuscripts available from: koch@radix5.mpi-stuttgart.mpg.de \\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Band Theory for Electronic and Magnetic Properties of
+$\alpha$-$ \bf Fe_2O_3$ \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+L. M. Sandratskii, M. Uhl and J. K\"ubler\\
+{\it Institut f\"ur Festk\"orperphysik, Technische Hochschule} \\ 
+{\it D-64289 Darmstadt, Germany} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We report results of calculations that explain in the
+itinerant-electron picture magnetic and electronic
+properties of hematite,  $\alpha$-$ \rm Fe_2O_3$. For this
+we use the local approximation to spin-density functional theory
+and the ASW method incorporating spin-orbit coupling and
+noncollinear moment arrangements.
+The insulating character of the compound
+is obtained correctly and features in the density of
+states connected with Fe - O hybridization correlate well with
+experimental features seen in direct and inverse photoemission
+intensities. The total energy correctly predicts the experimentally
+observed magnetic order of the ground state, and, using total energies
+of different magnetic configurations, we can give a rough estimate
+of the N\'eel temperature. We also obtain a state showing weak
+ferromagnetism . The rate of change is calculated for the decrease
+of the insulating gap when an external magnetic field is applied.
+\end{abstract}
+
+\noindent
+(submitted to J. Physics Cond. Matter)\\
+Revtex version can be obtained from: dg5m@mad1.fkp.physik.th-darmstadt.de (L. Sandratskii)\\
+ 
+\noindent
+This work has benefited from collaborations within the EU Human
+Capital and Mobility Network on
+{\it "Ab initio (from electronic structure) calculation of complex
+processes in materials"} (contract: \\ ERBCHRXCT930369).\\
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf The Fermi Surface of  $\bf UPd_2Al_3$ \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+K. Kn\"opfle, A. Mavromaras, L. M.  Sandratskii and J.  K\"ubler\\
+{\it Institut f\"ur Festk\"orperphysik, Technische Hochschule} \\
+{\it D-64289 Darmstadt, Germany} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+The de Haas-van Alphen spectrum of $ \rm UPd_2Al_3$
+is calculated and compared with the experimental spectrum
+for continuously varying directions of the magnetic field.
+The local approximation to spin-density functional
+theory is used for the self-consistent calculations treating
+the U 5f electrons as itinerant and including spin-orbit coupling.
+The amount of f-angular-momentum is obtained and visualized graphically
+for each sheet of the Fermi surface. The band-decomposed spin
+susceptibility, $\chi_0$, is calculated for the states at
+the Fermi surface and the anisotropy of $\chi_0$ is discussed.
+\end{abstract}
+
+\noindent
+(submitted to J. Physics Cond. Matter)\\
+Revtex version can be obtained from:
+ dg5m@mad1.fkp.physik.th-darmstadt.de (L. Sandratskii)\\
+
+\noindent
+This work has benefited from collaborations within the EU Human
+Capital and Mobility Network on
+{\it "Ab initio (from electronic structure) calculation of complex
+processes in materials"} (contract: \\ ERBCHRXCT930369).\\
+
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Spin and orbital polarized relativistic multiple scattering theory \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+H. Ebert and Marco Battocletti \\
+{\it Institute for Physical Chemistry, University of Munich,} \\
+{\it Theresienstr. 37, D-80333 M\"{u}nchen, Germany}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+A scheme is presented that allows to incorporate the orbital polarization (OP)
+mechanism into the Dirac equation for spin-polarized systems.
+This allows in
+a straightforward way to extend any band structure method accordingly
+-- including
+those based on multiple scattering theory.
+The corresponding spin and orbital polarized relativistic version
+of the Korringa-Kohn-Rostoker-Coherent Potential Approximation
+(KKR-CPA) method has been implemented and applied to disordered
+bcc-\mbox{Fe$_{x}$Co$_{1-x}$} alloys.
+Results for the spin and orbital magnetic moments as well as the
+spin-orbit coupling induced hyperfine fields are presented and discussed.
+\end{abstract}
+
+\noindent
+(submitted to Phys. Rev. B)\\
+A postscript version of the manuscripts available upon request from: \\
+H.\ Ebert (he@gaia.phys.chemie.uni-muenchen.de) \\
+
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Crucial role of the Lattice Distortion in
+the Magnetism of LaMnO$_3$ \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+Igor Solovyev$^1$, Noriaki Hamada$^1$ and Kiyoyuki Terakura$^2$ \\
+{\it $^1$ Joint Research Center for Atom Technology,}\\
+{\it Angstrom Technology Partnership,}\\
+{\it 1-1-4 Higashi, Tsukuba, Ibaraki 305, Japan}\\
+{\it $^2$ Joint Research Center for Atom Technology,}\\
+{\it National Institute for Advanced Interdisciplinary Research,}\\
+{\it 1-1-4 Higashi, Tsukuba, Ibaraki 305, Japan}\\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+The stability of the A-type antiferromagnetic order
+and canted magnetic structure
+of LaMnO$_3$ perovskite
+is explained in the itinerant-electron picture based on the
+local-spin-density approximation.
+The lattice distortion plays a crucial role and determines
+behavior of both single-ion anisotropy, anisotropic ${\it and}$
+isotropic exchange interactions in this compound.
+\end{abstract}
+
+\noindent
+(submitted to Phys. Rev. B)\\
+Manuscripts available from: igor@jrcat.or.jp \\
+
+
+\newpage
+\null
+%\vskip 2em
+\begin{center}
+\Large{\bf A first-principles study of the magnetic hyperfine field in Fe and Co
+multilayers \par}
+\vskip 0.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+G. Y. Guo$^{a}$ and H. Ebert$^{b}$, \\
+{\it $^{a}$Daresbury Laboratory, Daresbury, Warrington WA4 4AD, UK} \\
+{\it $^{b}$Institute for Physical Chemistry, University of Muenchen,} \\
+{\it Theresienstrasse 37, D-80333 Muenchen, FRG} \\
+\end{tabular}\par}
+\end{center}
+\begin{abstract}
+We present {\it ab initio} calculations of
+the magnetic hyperfine field and magnetic moments in several Fe and Co
+multilayers [$Fe(Co)_{2}/Cu_{6} fcc-(001), FeCu(Ag)_{5}/fcc-(001),
+bcc-Fe/fcc-Ag_{5} (001), bcc-Fe_{n}/fcc-Au_{5} (001) (n = 1, 3, 7),
+Co_{k}/Pd_{l} fcc-(111) (k (l) = 1 (5), 2 (4), 3 (3)) and
+Co_{2}/Pt_{m} fcc-(111) (m = 1, 4, 7)$] as well as in bcc
+Fe and fcc (hcp, bcc) Co. 
+The first-principles spin-polarized, relativistic linear muffin-tin orbital
+(SPRLMTO) method is used. Therefore, both the orbital and magnetic
+dipole contributions as well as the conventional Fermi contact term are
+calculated. Calculations have been performed for both in-plane and
+perpendicular magnetizations. The calculated hyperfine field and its
+variation with crystalline structure and magnetization direction in both
+Fe and Co are in reasonable agreement (within 10 \%) with experiments.
+The hyperfine field of Fe (Co) in the interface monolayers in the
+magnetic multilayers is found to be substantially reduced compared with
+that in the corresponding bulk metal, in strong contrast to the highly
+enhanced magnetic moments in the same monolayers. It is argued that the
+magnetic dipole and orbital contributions to the hyperfine field are
+approximately proportional to the so-called magnetic dipole moment and
+the orbital moment, respectively. These linear relations are then
+demonstrated to hold rather well by using the calculated non-s electron
+hyperfine fields, orbital and magnetic dipole moments. Unlike in the
+bulk metals and alloys, the magnetic dipole moment in the multilayers is
+predicted to be comparable to the orbital moment and as a result, the
+magnetic dipole contribution to the hyperfine field is large. The
+anisotropy in the hyperfine field is found to be very pronounced and to
+be strongly connected with the large anisotropy in the orbital moment
+and magnetic dipole moment. The induced magnetic moments and hyperfine
+fields in the nonmagnetic spacer layers are also calculated. The results
+for the multilayers are compared with available experiments and previous
+nonrelativistic calculations.
+\end{abstract}
+
+\noindent
+(Phys. Rev. B (in press)); Preprints available from: g.y.guo@dl.ac.uk \\
+\noindent
+This work has benefited from collaborations within the EU Human Capital and
+Mobility Network on "{\it Ab initio (from electronic structure) calculation of
+complex processes in materials}" (contract: ERBCHRXCT930369).
+
+\newpage
+\null
+\vskip 2em
+\begin{center}
+\Large{\bf Non-collinear magnetism in Al-Mn topologically disordered
+systems \par}
+\vskip 1.5em
+{\large \lineskip .5em \begin{tabular}[t]{c}
+A. V. Smirnov \\
+        {\it Institut f\"ur Festk\"orperphysik, Technische Hochschule, }\\
+        {\it D-64289 Darmstadt, Germany }\\
+A. M. Bratkovsky \\
+        {\it
+        Oxford University, Department of Materials, }\\
+        {\it Oxford OX1 3PH, England }\\
+\end{tabular}\par}
+\end{center}
+
+\begin{abstract}
+We have performed the first ab-initio calculations of a possible complex
+non-collinear magnetic structure in aluminium-rich Al-Mn liquids
+within the real-space tight-binding LMTO method.
+In our previous work we have predicted  the existence of large magnetic 
+moments in Al-Mn liquids [A.M. Bratkovsky, A.V. Smirnov, D. N. Manh,
+and A. Pasturel, Phys. Rev. B {\bf 52}, 3056 (1995)] which has been very recently
+confirmed experimentally. Our present calculations show that
+there is a strong tendency for the moments on Mn to have a
+non-collinear (random) order retaining their large value of about
+3~$\mu_B$. The d-electrons on Mn demonstrate a pronounced
+non-rigid band behaviour which cannot be reproduced within 
+a simple Stoner picture.
+The origin of the magnetism in these systems is a
+topological disorder which drives the moments formation and 
+frustrates their directions in the liquid phase.
+\end{abstract}
+
+\noindent
+(submitted to Europhys. Lett.) \\
+The manuscripts are available from: alex.bratkovsky@materials.oxford.ac.uk \\
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\Large{\bf 
+Adlayer core-level shifts of admetal monolayers on
+transition metal substrates and their relation to the
+surface chemical reactivity \par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c}
+Dieter Hennig\\
+{\it Humboldt-Universit\"at zu Berlin, Institut f\"ur Physik}\\
+{\it Unter der Linden 6, D-10$\,$099 Berlin, Germany} \\
+Maria Veronica Ganduglia-Pirovano and Matthias Scheffler\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft} \\
+{\it Faradayweg 4-6, D-14195 Berlin-Dahlem, Germany} \\
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+Using density-functional-theory we study the electronic and structural
+properties of a monolayer of Cu on the fcc (100) and (111) surfaces of the
+late $4d$ transition metals, as well as a monolayer of Pd on Mo bcc(110).
+We calculate the ground states of these systems,
+as well as the difference of the ionization energies of an adlayer
+core electron and a core electron of the clean surface of the adlayer
+metal.
+The theoretical results are compared to available
+experimental data and discussed in a simple physical picture; it is shown why
+and how adlayer core-level binding energy shifts
+can be used to deduce information on the
+adlayer's chemical reactivity. 
+\end{abstract} 
+
+\noindent
+(Submitted to Phys. Rev. B) \\ 
+REVTEX version can be obtained from: \verb|vero@theo23.RZ-Berlin.MPG.DE| \\
+
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\Large{\bf 
+Role of Self-Interaction Effects in the
+Geometry Optimization of Small Metal Clusters \par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c}
+J. M. Pacheco\\
+{\it Departamento de Fisica da Universidade} \\
+{\it 3000 Coimbra, Portugal} \\ 
+W. Ekardt and W.-D. Sch\"one\\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft} \\
+{\it Faradayweg 4-6, 14195 Berlin, Germany} \\
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+By combining the Self-Interaction Correction (SIC) with
+pseudopotential perturbation theory,
+the role of self-interaction errors inherent to the Local Density
+Approximation (LDA) to Density Functional Theory is
+estimated in the determination of ground state and low energy
+isomeric structures of small metallic clusters.
+Its application to
+neutral sodium clusters with 8 and 20 atoms shows
+that the SIC provides
+sizeable effects in $Na_8$, leading to a different ordering of the low lying
+isomeric states compared with {\it ab-initio} LDA predictions, whereas
+for $Na_{20}$, the SIC effects are less pronounced, such that
+a quantitative agreement is achieved between the present
+method and {\it ab-initio} LDA calculations.
+\end{abstract} 
+
+\noindent
+(Submitted to Europhys. Lett.) \\ 
+Copy can be obtained from: \verb|ekardt@fhi-berlin.mpg.de| \\
+\newpage
+\null
+\vskip 2em 
+\begin{center} 
+\Large{\bf
+The Effective Particle-Hole Interaction and the
+       Optical Response of Simple Metal Clusters \par} 
+\vskip 1.5em 
+{\large \lineskip .5em \begin{tabular}[t]{c} 
+W. Ekardt \\
+{\it Fritz-Haber-Institut der Max-Planck-Gesellschaft}\\
+{\it Faradayweg 4--6, 14\,195 Berlin, Germany}\\
+J. M. Pacheco\\
+{\it Departamento de Fisica da Universidade}\\
+{\it 3000 Coimbra, Portugal} \\
+\end{tabular}\par} 
+\end{center} 
+\begin{abstract} 
+Following
+Sham and Rice [L. J. Sham, T. M. Rice, Phys. Rev. {\bf 144} (1966) 708]
+the correlated motion of particle-hole pairs is studied, starting from
+the general two-particle Greens function. In this way we derive a matrix
+equation for eigenvalues and wave functions, respectively, of the general
+type of collective excitation of a N-particle system. The interplay between
+excitons and plasmons is fully described by this new set of equations.  As a
+by-product  we obtain - at least {\it a-posteriori} - a justification
+for the use of the TDLDA for simple-metal clusters.
+\end{abstract} 
+
+\noindent
+(Submitted to 
+Phys. Rev. B) \\ 
+Copy can be obtained from: \verb|ekardt@fhi-berlin.mpg.de| \\
+
+\newpage
+\null
+
+\begin{center}
+{\Large \bf Preprints from Center for Atomic-scale Materials Physics (CAMP)}
+\end{center}
+\begin{itemize}
+   
+\item
+I. Stensgaard, E. L{\ae}gsgaard, and F. Besenbacher: \\
+{\em The reaction of carbon dioxide with an oxygen-precovered Ag(110) surface} 
+
+\item
+P.T. Sprunger, Y. Okawa, F. Besenbacher, I. Stensgaard, and K. Tanaka: \\
+{\em STM investigation of the coadsorption and reaction of oxygen and hydrogen on Ni(110)} 
+
+\item
+A.R.H. Clarke, J.B. Pethica, J.A. Nieminen, F. Besenbacher, E. L{\ae}gsgaard, and I. Stensgaard:\\
+{\em Quantitative STM at atomic resolution: influence of forces and tip configuration} 
+
+\item
+P.W. Murray, I Stensgaard, E. L{\ae}gsgaard, and F. Besenbacher: \\
+{\em Mechanisms of initial alloy formation for Pd on Cu(100) studied by STM} 
+
+\item
+P.M. Holmblad, J.H. Larsen, I. Chorkendorff, L.P. Nielsen, F. Besenbacher, I. Stensgaard, E. L{\ae}gsgaard, P. Kratzer, B. Hammer, and J.K. N{\o}rskov: \\
+{\em Designing surface alloys with specific chemical properties} 
+
+\item
+B. Hammer, Y. Morikawa, and J.K. N{\o}rskov: \\
+{\em CO chemisorption over metal surfaces and overlayers} 
+
+\item
+H. Brune, K. Bromann, K. Kern, J. Jacobsen, P. Stoltze, K.W. Jacobsen, and J.K. N{\o}rskov:\\
+{\em Atomistic porcesses in diffusion limited metal aggregation} 
+
+\item
+J. Jacobsen, K.W. Jacobsen, and J.K. N{\o}rskov:\\
+{\em Island shapes in homoepitaxial growth of Pt(111)} 
+ 
+\item
+P. Kratzer, B. Hammer, and J.K. N{\o}rskov:\\
+{\em Geometric and electronic factors determining the difference in reactivity of H$_2$ on Cu(110) and Cu(111)} 
+
+\end{itemize}
+
+
+\bigskip
+\noindent
+{\large More information can be obtained from helle@fysik.dtu.dk}
+
+\bigskip
+\noindent
+Helle Wellejus\\
+CAMP and Physics Department, Building 307, Technical University of Denmark\\
+DK - 2800 Lyngby, Denmark
+
+%\newpage
+%\null
+%\vskip 2em
+%\begin{center}
+%\Large{\bf  \par}
+%\vskip 1.5em
+%{\large \lineskip .5em \begin{tabular}[t]{c}
+%{\it }\\
+%{\it }\\
+%\end{tabular}\par}
+%\end{center}
+%\begin{abstract}
+%\end{abstract}
+
+%\noindent
+%(submitted to)\\
+%Manuscripts available from: \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%   Presenting other HCM Projects .........                                 %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+
+\begin{center}
+\LARGE \bf
+Presenting Other Human Capital and Mobility Projects\\
+
+\bigskip
+\large
+Report on research performed at Cineca, Bologne, Italy\\
+supported by the EU Human Capital and Mobility Programme\\
+{\it ICARUS Scheme}
+\end{center}
+
+\bigskip
+
+{\Large \bf Modelling of oxygen defects in silicon}\\
+{\large \it by Chris Ewels\\
+\normalsize \it 
+Department of Physics, University of Exeter, Devon. EX1 2HR. UK. \\
+E-mail: ewels@excc.ex.ac.uk}
+\bigskip
+
+The European Union `Human Capital and Mobility Programme' encompasses
+a range of schemes that share the common restriction that applicants
+should spend time working in a country other than their own.  One such
+scheme is {\it ICARUS} [1], organised by CINECA, the Italian
+Universities' Central High Performance Computing (HPC) Facility [2].
+
+{\it ICARUS} ($I$ntensive $C$omputing for $A$dvanced $I$nterdisciplinary
+$R$esearch of E$U$ropean $S$cientists) started in January 1994 and
+will finish in December 1996.  It is designed to provide visitors with
+the training and resources necessary for research that requires
+supercomputing facilities.  There are also many indirect benefits from
+such a scheme; the constant flux of researchers provides a fascinating
+insight into the way that other groups work, and allows comparison of
+many different software packages and applications.  Finally the chance
+to stay in one of Italy's most central and cosmopolitan cities should
+not be missed.
+
+CINECA is located in Casalecchio sul Reno [3], an industrial suburb of
+Bologne [4] in central Italy.  It was originally set up in the early
+seventies by a small group of Italian universities, in recognition of
+the fact that high performance computing was too expensive to tackle
+individually.  There are now 13 Universities in the consortium and
+CINECA acts as a central service for computing support, training and
+resources for the Italian Universities.
+
+The resources at CINECA include a Cray C92/2128, Cray T3D (64 nodes;
+to be replaced with a larger T3E in 1996), IBM S/390-9672, VAX
+6000-510, as well as many SGI and RS6000 machines.  There is also a
+scientific visualisation laboratory and excellent network facilities
+to allow continued access from home sites after returning.  All of the
+facilities are available to {\it ICARUS} visitors, along with
+training, support and documentation where required.
+
+Details of the {\it ICARUS} scheme can be found on the CINECA World
+Wide Web site, including the necessary application forms and details
+of how to apply [1].  There are two other similar schemes at other
+supercomputing centres; the TRACS scheme at the Edinburgh parallel
+computing centre [5] and a scheme at CESCA/CEPBA in Barcelona [6]. All
+of these are designed to cover a broad spread of academic disciplines;
+in addition there are a number of single discipline centres including
+the European Molecular Biology Lab (EMBL) in Heidelberg, GEOMAR
+(Forschungszentrum f\"ur Marine Geowissenschaften), and the European
+Climate Computer Network including the Hadley Centre in Bracknell
+and the DKRZ in Hamburg [7].
+
+I can thoroughly recommend the {\it ICARUS} scheme, as it was
+successful both in providing me with the resources I needed for my
+calculations, and broadening my knowledge of effective ways of
+utilising HPC resources. My previous HPC experience was primarily on
+the Cray at Edinburgh, and it was interesting to see the differences
+in approach between these two centres.  The Cray T3D at CINECA has
+less nodes than Edinburgh and has a smaller workload, and due to its
+size and immanent replacement is used primarily for developmental
+work.  My work on the Edinburgh Cray has been performed remotely, so
+there has been little opportunity for interaction with other users.
+At CINECA, however, discussion of various parallelisation strategies
+and different problem solving techniques proved extremely useful. I
+spent six weeks at Cineca during July and August, in order to use
+their Cray T3D to tackle the complex problem of oxygen diffusion in
+silicon.
+
+Diffusion is an extremely important process in solids, affecting both
+their atomic structure and stability.  However it is difficult to
+handle theoretically for several reasons.  Firstly there are many
+possible channels for diffusion, including simple atomic exchange,
+interstitial or vacancy controlled diffusion, and diffusion catalysed
+by other impurities.  Secondly, diffusion involves non-equilibrium
+structures, and requires the accurate determination of {\it saddle
+point structures} (structures possessing the highest energy along a
+particular diffusion path).  This means that a lot of large
+calculations must be performed to examine even a relatively simple
+diffusion path, and workstations are prohibitively slow for such work.
+
+The calculations were performed using the {\it Aimpro} code, a local
+density functional scheme applied to atomic clusters [8].  {\it
+Aimpro} has been developed at Exeter and Newcastle for over ten years
+[9], with successful application to a wide variety of molecular and
+semiconductor problems.  Recent development of the code includes
+parallelisation and incorporation of the block algorithm SCALAPACK
+routines [10]. These routines take full advantage of massively parallel
+architectures.  The code can run with comparable efficiency across a
+variety of platforms including parallel machines (such as the Cray T3D
+and IBM SP2), workstation clusters, and single workstations (eg SGI,
+IBM, and HP machines).
+
+Oxygen in silicon has been an active area of research for over forty
+years.  The main problem is to identify the structure and properties
+of oxygen aggregates, and determine the mechanism of interstitial
+creation.  Oxygen is the most common impurity in commercial
+Czochralski grown silicon, and forms many electrically active defects.
+The most important of these are {\it Thermal Donors}, that form during
+low temperature annealing from 300-500~$^\circ$C [11].  In spite of
+intensive work, there has been no consensus about their structure.
+
+Crucial to an understanding of how these defects form is a thorough
+investigation of how the defect atoms diffuse through the silicon
+lattice.  Many of the oxygen related defects start to form at
+temperatures below 450~$^\circ$C, however at these temperatures
+isolated interstitial oxygen does not diffuse.  It has recently been
+suggested that oxygen may be able to diffuse much faster when
+travelling in pairs [12], which could diffuse at lower
+temperatures. If this was the case it would account for much of the
+unusual formation kinetics of oxygen defects.
+
+Fast diffusing oxygen pairs would also have implications for low
+temperature formation of oxygen-vacancy complexes (such as VO$_2$) and
+would certainly affect our understanding of the oxygen diffusion
+mechanisms responsible for defect formation.  Therefore I modelled the
+diffusion of a single oxygen interstitial and an interstitial oxygen
+pair.
+
+Preliminary calculations using small clusters on the Cray gave a
+calculated energy barrier for single interstitial oxygen of 3.42 eV,
+and 2.14 eV for an oxygen interstitial pair.  This supports the idea
+that an oxygen pair can diffuse at lower temperatures than a single
+oxygen interstitial.  However the calculated single interstitial
+barrier is much higher than the experimental value of 2.54 eV, since
+the diffusion path requires a long range relaxation of lattice silicon
+atoms, which is not possible in the small cluster being used.  Using
+the Cray T3D I was able to test this by examining different sizes of
+cluster (see Table 1).  As the cluster size increases, the barrier
+drops gradually towards the experimental value.  Work performed on 132
+atom clusters since this project was completed is giving a calculated
+diffusion barrier for single interstitial oxygen of around 2.5 eV.
+Similar cluster size calculations are underway for the oxygen pair.
+
+\bigskip 
+
+\begin{center}
+{\bf Table 1 :} Effect of Cluster size on diffusion barrier \\ 
+for interstitial oxygen diffusion in silicon\\
+\begin{tabular}{ccc} \hline
+Cluster & Number of Atoms & Energy Barrier (eV) \\ \hline
+Si$_{11}$H$_{24}$O & 36 & 3.424 \\
+Si$_{14}$H$_{30}$O & 45 & 3.158 \\
+Si$_{35}$H$_{36}$O & 72 & 2.969 \\ \hline
+\end{tabular}
+\end{center}
+
+\bigskip
+{\large \it References:}
+\smallskip
+
+1.  http://www.cineca.it/icarus/              \\
+2.  http://www.cineca.it/                     \\
+3.  http://www.nettuno.it/casalecchio/        \\
+4.  http://www.nettuno.it/bologna/            \\
+5.  http://www.epcc.ed.ac.uk/epcc/link/tracs/ \\
+6.  http://www.cesca.es/		      \\
+7.  http://www.dkrz.de/dkrz/eccn-eng.html     \\
+8.  http://newton.ex.ac.uk/jones/             \\
+9.  P. R Briddon and R. Jones, Phys Rev Lett, {\bf 64}, 2535, (1990). \\
+10. http://www.netlib.org/scalapack/scalapack\_home.html \\
+11. W. Kaiser, H. L. Frisch, H. Reiss, Phys Rev {\bf 112}, 1546, (1958). \\
+12. C. A. Londos, M. J. Binns, A. R. Brown, S. A. McQuaid,
+     R. C. Newman, Appl. Phys. Lett., {\bf 62} (13), 1525 (1993). \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                     %
+%     Here the text of the Highlight of the month is included         %
+%                                                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+\begin{center}
+\Large {\bf HIGHLIGHT OF THE MONTH}
+\end{center}
+\vspace{1cm}
+\rule{16.5cm}{1mm}
+\vspace{1cm}
+%\begin{center}
+%\Large {\bf title}\\
+%
+%\Large{ (subtitle)}\\
+%
+%\large{\it author}\\
+%\large{\it address}\\
+%\end{center}
+%\vspace{1cm}
+%\rule{16.5cm}{1mm}
+%\vskip 0.5cm
+
+
+%\documentstyle[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Allgemeine Definitionen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Seiten-Layout
+%------------------
+\pagestyle{plain}
+\renewcommand{\baselinestretch}{1.1}
+\hoffset-1in
+\oddsidemargin25,7mm
+\voffset-1in
+\topmargin25mm
+\textwidth156mm
+\headheight0pt \headsep0pt \topskip1\baselineskip
+\textheight240mm
+\footskip15mm
+%\parindent0pt
+%
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\bottomfraction}{1.0}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{6}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\edef\PSIKRestoreAt{\catcode`@=\number\catcode`@\relax}%
+\catcode`\@=11\relax
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bezier.sty %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEZIER DOCUMENT-STYLE OPTION - released 17 December 1985
+%    for LaTeX version 2.09
+% Copyright (C) 1985 by Leslie Lamport
+\newcounter{@sc}
+\newcounter{@scp}
+\newcounter{@t}
+\newlength{\@x}
+\newlength{\@xa}
+\newlength{\@xb}
+\newlength{\@y}
+\newlength{\@ya}
+\newlength{\@yb}
+\newsavebox{\@pt}
+
+\def\bezier#1(#2,#3)(#4,#5)(#6,#7){\c@@sc#1\relax
+  \c@@scp\c@@sc \advance\c@@scp\@ne
+  \@xb #4\unitlength \advance\@xb -#2\unitlength \multiply\@xb \tw@
+  \@xa #6\unitlength \advance\@xa -#2\unitlength
+      \advance\@xa -\@xb \divide\@xa\c@@sc
+  \@yb #5\unitlength \advance\@yb -#3\unitlength \multiply\@yb \tw@
+  \@ya #7\unitlength \advance\@ya -#3\unitlength
+      \advance\@ya -\@yb \divide\@ya\c@@sc
+  \setbox\@pt\hbox{\vrule height\@halfwidth  depth\@halfwidth
+   width\@wholewidth}\c@@t\z@
+   \put(#2,#3){\@whilenum{\c@@t<\c@@scp}\do
+      {\@x\c@@t\@xa \advance\@x\@xb \divide\@x\c@@sc \multiply\@x\c@@t
+       \@y\c@@t\@ya \advance\@y\@yb \divide\@y\c@@sc \multiply\@y\c@@t
+       \raise \@y \hbox to \z@{\hskip \@x\unhcopy\@pt\hss}%
+       \advance\c@@t\@ne}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\PSIKRestoreAt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{document}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GNUPLOT: LaTeX picture with Postscript %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\special{!
+%!PS-Adobe-2.0
+%%Creator: gnuplot
+%%DocumentFonts: Helvetica
+%%BoundingBox: 50 50 770 520
+%%Pages: (atend)
+%%EndComments
+/gnudict 40 dict def
+gnudict begin
+/Color false def
+/Solid false def
+/gnulinewidth 5.000 def
+/vshift -33 def
+/dl {10 mul} def
+/hpt 31.5 def
+/vpt 31.5 def
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow { currentpoint stroke M
+  0 vshift R show } def
+/Rshow { currentpoint stroke M
+  dup stringwidth pop neg vshift R show } def
+/Cshow { currentpoint stroke M
+  dup stringwidth pop -2 div vshift R show } def
+/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
+ {pop pop pop Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke gnulinewidth 2 mul setlinewidth } def
+/AL { stroke gnulinewidth 2 div setlinewidth } def
+/PL { stroke gnulinewidth setlinewidth } def
+/LTb { BL [] 0 0 0 DL } def
+/LTa { AL [1 dl 2 dl] 0 setdash 0 0 0 setrgbcolor } def
+/LT0 { PL [] 0 1 0 DL } def
+/LT1 { PL [4 dl 2 dl] 0 0 1 DL } def
+/LT2 { PL [2 dl 3 dl] 1 0 0 DL } def
+/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
+/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
+/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
+/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
+/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
+/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
+/P { stroke [] 0 setdash
+  currentlinewidth 2 div sub M
+  0 currentlinewidth V stroke } def
+/D { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  P } def
+/DD { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill
+  P } def
+/A { stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+  } def
+/B { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  P } def
+/BB { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill
+  P } def
+/C { stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke } def
+/T { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  P  } def
+/TT { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill
+  P  } def
+/S { 2 copy A C} def
+end
+%%EndProlog
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Ab-initio calculation of Giant Magnetoresistance in magnetic 
+multilayers}
+\vspace{2\baselineskip}
+%
+\hspace*{1.69cm}\begin{minipage}[t]{5.125in}
+Peter Zahn,$^1$ Ingrid Mertig,$^1$ Manuel Richter,$^2$ and Helmut Eschrig$^2$
+\end{minipage}\\[\baselineskip]
+%
+\hspace*{1in}\begin{minipage}[t]{5in}
+Technische Universit\"at Dresden\\
+$^1$Institut f\"ur Theoretische Physik\\
+$^2$MPG-Arbeitsgruppe "Elektronensysteme"\\
+D-01062 Dresden, Germany
+\end{minipage}
+\vspace{2\baselineskip}
+%
+%%%
+%
+\section*{Introduction}
+Since the discovery of giant magnetoresistance (GMR) in magnetic
+multilayer systems (like $Fe/Cr$ or $Co/Cu$) \cite{baibich88,binash89}
+several experimental
+and theoretical studies have been carried out to elucidate the microscopic
+origin of the phenomenon.
+Here, {\it ab initio} calculations of the electronic structure and of the
+electron scattering are of great interest.
+\par
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Abb. 1                                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{figure}[hbt]\begin{center}
+{\Large\unitlength=1mm
+\linethickness{0.4pt}}
+\begin{picture}(133.00,70.00)(0,0)
+\put(0.00,10.00){\vector(1,0){125.00}}
+\put(60.00,10.00){\vector(0,1){55.00}}
+\put(63.00,62.00){\makebox(0,0)[lc]{$\frac{\rho(H)-\rho(H_S)}{\rho(H_S)}$}}
+\bezier{144}(60.00,50.00)(72.00,50.00)(85.00,30.00)
+\bezier{144}(60.00,50.00)(48.00,50.00)(35.00,30.00)
+\bezier{164}(35.00,30.00)(22.00,10.00)(5.00,10.00)
+\bezier{164}(115.00,10.00)(98.00,10.00)(85.00,30.00)
+\put(129.00,10.00){\makebox(0,0)[lc]{H}}
+\put(115.00,8.00){\makebox(0,0)[ct]{$H_S$}}
+\put(115.00,10.00){\circle*{1.00}}
+\end{picture}
+\caption{Giant magnetoresistance. The resistivity is maximum when the
+magnetic moments of successive ferromagnetic layers are antiparallel.
+It drops off as the applied field aligns the magnetic moments $H_S$,
+denoted by the right and left diagrams for positive and negative fields,
+respectively.\label{fig12}}
+\end{center}
+\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+The GMR effect occurs when successive ferromagnetic layers exhibit 
+anti-parallel magnetization. The application of an external
+magnetic field brings the magnetization of the ferromagnetic layers into
+alignment and causes a decrease of resistivity (Fig. \ref{fig12})
+for both current-in-plane (CIP) and current-perpendicular-to-plane (CPP) 
+geometries (see Fig. \ref{fig13}).
+\par
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Abb. 2                                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{figure}[hbt]\begin{center}
+{\large\unitlength=1.00mm\linethickness{0.4pt}
+\begin{picture}(90.00,55.00)(0,10)
+\put(0.00,15.00){\framebox(20.00,20.00)[cc]{}}
+\put(7.50,15.00){\framebox(5.00,20.00)[cc]{}}
+\put(20.00,15.00){\line(1,1){10.00}}
+\put(30.00,25.00){\line(0,1){20.00}}
+\put(30.00,45.00){\line(-1,-1){10.00}}
+\put(30.00,45.00){\line(-1,0){7.50}}
+\put(22.50,45.00){\line(-1,-1){10.00}}
+\put(22.50,45.00){\line(-1,0){5.00}}
+\put(17.50,45.00){\line(-1,-1){10.00}}
+\put(17.50,45.00){\line(-1,0){7.50}}
+\put(10.00,45.00){\line(-1,-1){10.00}}
+\put(50.00,15.00){\framebox(20.00,20.00)[cc]{}}
+\put(57.50,15.00){\framebox(5.00,20.00)[cc]{}}
+\put(70.00,15.00){\line(1,1){10.00}}
+\put(80.00,25.00){\line(0,1){20.00}}
+\put(80.00,45.00){\line(-1,-1){10.00}}
+\put(80.00,45.00){\line(-1,0){7.50}}
+\put(72.50,45.00){\line(-1,-1){10.00}}
+\put(72.50,45.00){\line(-1,0){5.00}}
+\put(67.50,45.00){\line(-1,-1){10.00}}
+\put(67.50,45.00){\line(-1,0){7.50}}
+\put(60.00,45.00){\line(-1,-1){10.00}}
+\put(4.00,20.00){\vector(0,1){10.00}}
+\put(15.00,30.00){\vector(0,-1){10.00}}
+\put(17.00,20.00){\vector(0,1){10.00}}
+\put(54.00,20.00){\vector(0,1){10.00}}
+\put(65.00,30.00){\vector(0,-1){10.00}}
+\put(67.00,20.00){\vector(0,1){10.00}}
+\put(12.00,37.00){\vector(0,1){10.00}}
+\put(15.00,40.00){\vector(0,1){10.00}}
+\put(18.00,43.00){\vector(0,1){10.00}}
+\put(11.00,51.00){\makebox(0,0)[cc]{$\vec{j}$}}
+\put(65.00,40.00){\vector(0,1){10.00}}
+\put(15.00,55.00){\makebox(0,0)[cc]{$\vec{H}$}}
+\put(19.00,59.00){\makebox(0,0)[cc]{$\vec{E}$}}
+\put(65.00,55.00){\makebox(0,0)[cc]{$\vec{H}$}}
+\put(75.00,27.00){\vector(1,0){10.00}}
+\put(75.00,35.00){\vector(1,0){10.00}}
+\put(90.00,35.00){\makebox(0,0)[cc]{$\vec{E}$}}
+\put(90.00,27.00){\makebox(0,0)[cc]{$\vec{j}$}}
+%\put(60.00,5.00){\makebox(0,0)[cc]{{\LARGE\bf CPP}}}
+%\put(10.00,5.00){\makebox(0,0)[cc]{{\LARGE\bf CIP}}}
+\end{picture}}
+\caption{Geometrical arrangements of current density $\bf j$, electrical
+field $\bf E$ and magnetic field $\bf H$ in CIP and CPP measurement of GMR.%
+\label{fig13}}
+\end{center}
+\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+Most theories \cite{camley89,levy90,inoue91,hood92,valet93,levy94}
+try to explain the GMR by spin-dependent scattering at interfaces or
+bulk defects but neglect the electronic structure of the multilayer
+system.
+Attempts to include the electronic structure have been made
+by several authors \cite{oguchi93,butler93,schep95,zahn95}.
+All calculations predict a strong influence of the electronic structure
+of the multilayer on the GMR.\par\noindent
+The GMR in magnetic multilayers is defined as
+\begin{equation}\label{eq63}
+{\rm GMR}=\frac{\sigma^{P}}{\sigma^{AP}} - 1 ,
+\end{equation}
+where $\sigma^{P}$ and $\sigma^{AP}$ are the conductivities
+of the multilayer for parallel and anti-parallel alignment
+of successive ferromagnetic layer magnetization, respectively.
+Experimentally, one can be sure that parallel alignment is achieved,
+in view of the marked transition from strong to weak magnetic field
+dependence of the conductivity at the saturation field (see Fig. \ref{fig12}).
+%
+%
+\section*{Electronic structure of the multilayer}
+Our considerations focus on
+(100) oriented $Fe_mCr_n$ layer sequences ($m$ monolayers of $Fe$ followed
+by $n$ monolayers of $Cr$), where the $Fe$ layers are intrinsically
+ferromagnetic and the $Cr$ layers are intrinsically antiferromagnetic.
+{\it Ab initio} electronic structure calculations have been performed
+using spin-density functional theory for initially parallel and antiparallel
+spin configurations of subsequent $Fe$ layers \cite{zahn95}.\par
+Starting from the bandstructure $E_k^\sigma$ of the situation,
+that we have just addressed, potential
+scattering causes transitions from a state $k$ into a state $k'$
+of the multilayer system.
+The scattering can be caused by impurity atoms in the ferromagnetic or in the
+nonmagnetic spacer layer. The scattering is described by spin-dependent
+relaxation times $\tau^\sigma$ which are different for majority and
+minority electrons depending on the type of scatterer.
+The spin anisotropy ratio
+$\beta=\tau^\uparrow/\tau^\downarrow$ is a direct measure. $\beta<1$
+means strong scattering of the majority electrons and for $\beta>1$ the
+minority electrons are strongly scattered.
+%
+%
+\section*{Transport theory}
+Transport is described within the quasiclassical theory solving the
+Boltzmann equation in relaxation time approximation.
+Consequently, the conductivity tensor becomes
+\begin{equation}\label{eq64}
+{\hat \sigma}^{\sigma}= e^2
+\tau^\sigma \sum _{k} \delta (E _{k}^\sigma -
+E_F)\: {\bf v}^{\sigma}_k \: {\bf v}^{\sigma}_k .
+\end{equation}
+The integration is performed over
+the Fermi surface of the parallel configuration of the layered system.
+Summation of the two currents yields the total
+conductivity
+\begin{equation}\label{eq65}
+{\hat \sigma}^{P} = {\hat \sigma} ^{\uparrow} + {\hat \sigma} ^{\downarrow}.
+\end{equation}
+In the anti-parallel configuration the electronic states are spin
+degenerate, and the conductivity becomes
+\begin{equation}\label{eq66}
+{\hat \sigma}^{AP} = 2 \: e^2
+\tau^{AP} \sum _{k} \delta (E _{k}^{AP} -
+E_F)\: {\bf v}^{AP}_k \: {\bf v}^{AP}_k.
+\end{equation}
+Assuming that the layered system is grown in the $z$ direction,
+CIP corresponds
+to the $xx$ or $yy$ component of the conductivity tensor and CPP to the
+$zz$ component in Eqs. \ref{eq64} and \ref{eq66}.
+$\tau^{AP}$, the relaxation time in the anti-parallel configuration,
+can be obtained by summation of the scattering operators.
+For equal concentration of defects in adjacent ferromagnetic layers,
+the relaxation time is then given by
+\begin{equation}\label{eq67}
+\frac{1}{\tau^{AP}}=\frac{1}{2}\;(\;\frac{1}{\tau^\uparrow}\;+\;\frac{1}
+{\tau^\downarrow}\;).
+\end{equation}
+%
+%
+\section*{Results}
+The simplest situation occurs, when all the scattering centers are localized
+in the antiferromagnetic $Cr$ layers (for example $Fe$ impurities).
+\par
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Abb. 3                                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{figure}\begin{center}
+\setlength{\unitlength}{0.1bp}
+\begin{picture}(3600,2014)(0,-100)
+\special{"
+%%Page: 1 1
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+0 setgray
+/Helvetica findfont 100 scalefont setfont
+newpath
+-500.000000 -500.000000 translate
+LTa
+600 251 M
+2817 0 V
+600 251 M
+0 1712 V
+LTb
+LTa
+600 251 M
+2817 0 V
+LTb
+600 251 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 422 M
+2817 0 V
+LTb
+600 422 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 593 M
+2817 0 V
+LTb
+600 593 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 765 M
+2817 0 V
+LTb
+600 765 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 936 M
+2817 0 V
+LTb
+600 936 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1107 M
+2817 0 V
+LTb
+600 1107 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1278 M
+2817 0 V
+LTb
+600 1278 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1449 M
+2817 0 V
+LTb
+600 1449 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1621 M
+2817 0 V
+LTb
+600 1621 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1792 M
+2817 0 V
+LTb
+600 1792 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1963 M
+2817 0 V
+LTb
+600 1963 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 251 M
+0 1712 V
+LTb
+600 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+801 251 M
+0 1712 V
+LTb
+801 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1002 251 M
+0 1712 V
+LTb
+1002 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1204 251 M
+0 1712 V
+LTb
+1204 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1405 251 M
+0 1712 V
+LTb
+1405 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1606 251 M
+0 1712 V
+LTb
+1606 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1807 251 M
+0 1712 V
+LTb
+1807 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2009 251 M
+0 1712 V
+LTb
+2009 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2210 251 M
+0 1712 V
+LTb
+2210 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2411 251 M
+0 1712 V
+LTb
+2411 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2612 251 M
+0 1712 V
+LTb
+2612 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2813 251 M
+0 1712 V
+LTb
+2813 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3015 251 M
+0 1712 V
+LTb
+3015 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3216 251 M
+0 1712 V
+LTb
+3216 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3417 251 M
+0 1712 V
+LTb
+3417 251 M
+0 63 V
+0 1649 R
+0 -63 V
+600 251 M
+2817 0 V
+0 1712 V
+-2817 0 V
+600 251 L
+LT0
+801 1148 M
+201 368 V
+202 -430 V
+201 262 V
+201 514 V
+201 -368 V
+202 341 V
+201 -541 V
+201 181 V
+201 -298 V
+201 182 V
+202 -298 V
+201 233 V
+801 1148 BB
+1002 1516 BB
+1204 1086 BB
+1405 1348 BB
+1606 1862 BB
+1807 1494 BB
+2009 1835 BB
+2210 1294 BB
+2411 1475 BB
+2612 1177 BB
+2813 1359 BB
+3015 1061 BB
+3216 1294 BB
+LT0
+801 453 M
+201 82 V
+1204 410 L
+201 14 V
+201 89 V
+201 -81 V
+202 40 V
+2210 369 L
+201 22 V
+201 -63 V
+201 53 V
+202 -70 V
+201 55 V
+801 453 TT
+1002 535 TT
+1204 410 TT
+1405 424 TT
+1606 513 TT
+1807 432 TT
+2009 472 TT
+2210 369 TT
+2411 391 TT
+2612 328 TT
+2813 381 TT
+3015 311 TT
+3216 366 TT
+LT0
+801 453 M
+201 82 V
+1204 410 L
+201 14 V
+201 89 V
+201 -81 V
+202 40 V
+2210 369 L
+201 22 V
+201 -63 V
+201 53 V
+202 -70 V
+201 55 V
+801 624 M
+201 86 V
+1204 583 L
+201 24 V
+201 106 V
+201 -89 V
+202 60 V
+2210 561 L
+201 32 V
+201 -70 V
+201 53 V
+202 -75 V
+201 58 V
+801 624 S
+1002 710 S
+1204 583 S
+1405 607 S
+1606 713 S
+1807 624 S
+2009 684 S
+2210 561 S
+2411 593 S
+2612 523 S
+2813 576 S
+3015 501 S
+3216 559 S
+LT0
+801 624 M
+201 86 V
+1204 583 L
+201 24 V
+201 106 V
+201 -89 V
+202 60 V
+2210 561 L
+201 32 V
+201 -70 V
+201 53 V
+202 -75 V
+201 58 V
+LT1
+801 1116 M
+20 23 V
+20 23 V
+21 21 V
+20 21 V
+20 20 V
+20 20 V
+20 18 V
+20 19 V
+20 17 V
+20 17 V
+21 16 V
+20 16 V
+20 15 V
+20 14 V
+20 14 V
+20 13 V
+20 13 V
+20 12 V
+21 11 V
+20 11 V
+20 11 V
+20 9 V
+20 10 V
+20 8 V
+20 9 V
+20 7 V
+20 8 V
+21 6 V
+20 7 V
+20 6 V
+20 5 V
+20 5 V
+20 4 V
+20 4 V
+20 4 V
+21 3 V
+20 3 V
+20 2 V
+20 2 V
+20 2 V
+20 1 V
+20 0 V
+20 1 V
+21 0 V
+20 0 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -2 V
+20 -1 V
+20 -3 V
+21 -2 V
+20 -3 V
+20 -3 V
+20 -3 V
+20 -3 V
+20 -4 V
+20 -4 V
+20 -4 V
+21 -5 V
+20 -4 V
+20 -5 V
+20 -5 V
+20 -5 V
+20 -6 V
+20 -5 V
+20 -6 V
+20 -6 V
+21 -6 V
+20 -6 V
+20 -6 V
+20 -7 V
+20 -6 V
+20 -7 V
+20 -6 V
+20 -7 V
+21 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+21 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+20 -7 V
+21 -7 V
+20 -7 V
+20 -7 V
+20 -6 V
+20 -7 V
+20 -6 V
+20 -7 V
+20 -6 V
+20 -6 V
+21 -6 V
+20 -5 V
+20 -6 V
+20 -6 V
+20 -5 V
+20 -5 V
+20 -5 V
+20 -5 V
+21 -4 V
+20 -4 V
+20 -4 V
+20 -4 V
+20 -4 V
+20 -3 V
+20 -3 V
+20 -3 V
+21 -3 V
+20 -2 V
+20 -2 V
+801 461 M
+20 2 V
+20 1 V
+21 2 V
+20 1 V
+20 2 V
+20 1 V
+20 1 V
+20 1 V
+20 1 V
+20 1 V
+21 1 V
+20 0 V
+20 1 V
+20 0 V
+20 0 V
+20 1 V
+20 0 V
+20 0 V
+21 0 V
+20 0 V
+20 -1 V
+20 0 V
+20 0 V
+20 -1 V
+20 0 V
+20 -1 V
+20 -1 V
+21 -1 V
+20 0 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -2 V
+20 -1 V
+20 -1 V
+21 -1 V
+20 -2 V
+20 -1 V
+20 -1 V
+20 -2 V
+20 -1 V
+20 -2 V
+20 -2 V
+21 -1 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -1 V
+20 -2 V
+20 -2 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -2 V
+20 -3 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+21 -1 V
+20 -2 V
+20 -2 V
+20 -1 V
+20 -2 V
+20 -1 V
+20 -2 V
+20 -1 V
+21 -2 V
+20 -1 V
+20 -1 V
+20 -2 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+21 -1 V
+20 0 V
+20 -1 V
+20 -1 V
+20 0 V
+20 -1 V
+20 0 V
+20 0 V
+21 -1 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+20 1 V
+20 0 V
+20 0 V
+21 1 V
+20 1 V
+20 0 V
+801 628 M
+20 3 V
+20 2 V
+21 2 V
+20 3 V
+20 2 V
+20 2 V
+20 2 V
+20 2 V
+20 1 V
+20 2 V
+21 1 V
+20 2 V
+20 1 V
+20 1 V
+20 1 V
+20 1 V
+20 1 V
+20 0 V
+21 1 V
+20 0 V
+20 1 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+21 0 V
+20 0 V
+20 -1 V
+20 0 V
+20 -1 V
+20 -1 V
+20 0 V
+20 -1 V
+21 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+21 -2 V
+20 -1 V
+20 -1 V
+20 -2 V
+20 -1 V
+20 -2 V
+20 -2 V
+20 -1 V
+21 -2 V
+20 -2 V
+20 -1 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -1 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -2 V
+20 -1 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -2 V
+20 -1 V
+20 -2 V
+20 -2 V
+20 -1 V
+20 -2 V
+21 -2 V
+20 -1 V
+20 -2 V
+20 -1 V
+20 -1 V
+20 -2 V
+20 -1 V
+20 -1 V
+20 -1 V
+21 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 -1 V
+20 0 V
+21 -1 V
+20 0 V
+20 -1 V
+20 0 V
+20 0 V
+20 -1 V
+20 0 V
+20 0 V
+21 0 V
+20 0 V
+20 1 V
+stroke
+grestore
+end
+showpage
+}
+\put(2008,-49){\makebox(0,0){{\large Cr Thickness (ML)}}}
+\put(200,1107){%
+\special{ps: gsave currentpoint currentpoint translate
+270 rotate neg exch neg exch translate}%
+\makebox(0,0)[b]{\shortstack{{\large Giant Magnetoresistance}}}%
+\special{ps: currentpoint grestore moveto}%
+}
+\put(3417,151){\makebox(0,0){14}}
+\put(3015,151){\makebox(0,0){12}}
+\put(2612,151){\makebox(0,0){10}}
+\put(2210,151){\makebox(0,0){8}}
+\put(1807,151){\makebox(0,0){6}}
+\put(1405,151){\makebox(0,0){4}}
+\put(1002,151){\makebox(0,0){2}}
+\put(600,151){\makebox(0,0){0}}
+\put(540,1963){\makebox(0,0)[r]{10.0}}
+\put(540,1621){\makebox(0,0)[r]{8.0}}
+\put(540,1278){\makebox(0,0)[r]{6.0}}
+\put(540,936){\makebox(0,0)[r]{4.0}}
+\put(540,593){\makebox(0,0)[r]{2.0}}
+\put(540,251){\makebox(0,0)[r]{0.0}}
+\end{picture}
+\caption{Calculated CIP-GMR for $Fe_3Cr_n$ versus $Cr$ layer thickness 
+$n=1,13$. The results assuming $Cr$ defects in the $Fe$ layers are indicated 
+by squares ($\beta=0.11$). Stars mark the results for spin-independent 
+relaxation times $\beta=1$ and triangles for $\beta=\beta_{min}$.\label{fig14}}
+\end{center}
+\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Abb. 4                                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{figure}\begin{center}
+\setlength{\unitlength}{0.1bp}
+\begin{picture}(3600,2014)(0,-100)
+\special{"
+%%Page: 1 1
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+0 setgray
+/Helvetica findfont 100 scalefont setfont
+newpath
+-500.000000 -500.000000 translate
+LTa
+600 251 M
+2817 0 V
+600 251 M
+0 1712 V
+LTb
+LTa
+600 251 M
+2817 0 V
+LTb
+600 251 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 496 M
+2817 0 V
+LTb
+600 496 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 740 M
+2817 0 V
+LTb
+600 740 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 985 M
+2817 0 V
+LTb
+600 985 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1229 M
+2817 0 V
+LTb
+600 1229 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1474 M
+2817 0 V
+LTb
+600 1474 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1718 M
+2817 0 V
+LTb
+600 1718 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1963 M
+2817 0 V
+LTb
+600 1963 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 251 M
+0 1712 V
+LTb
+600 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+801 251 M
+0 1712 V
+LTb
+801 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1002 251 M
+0 1712 V
+LTb
+1002 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1204 251 M
+0 1712 V
+LTb
+1204 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1405 251 M
+0 1712 V
+LTb
+1405 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1606 251 M
+0 1712 V
+LTb
+1606 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1807 251 M
+0 1712 V
+LTb
+1807 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2009 251 M
+0 1712 V
+LTb
+2009 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2210 251 M
+0 1712 V
+LTb
+2210 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2411 251 M
+0 1712 V
+LTb
+2411 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2612 251 M
+0 1712 V
+LTb
+2612 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2813 251 M
+0 1712 V
+LTb
+2813 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3015 251 M
+0 1712 V
+LTb
+3015 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3216 251 M
+0 1712 V
+LTb
+3216 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3417 251 M
+0 1712 V
+LTb
+3417 251 M
+0 63 V
+0 1649 R
+0 -63 V
+600 251 M
+2817 0 V
+0 1712 V
+-2817 0 V
+600 251 L
+LT0
+801 1332 M
+201 514 V
+202 -719 V
+201 464 V
+201 98 V
+201 -504 V
+202 411 V
+201 34 V
+201 -176 V
+201 10 V
+201 -406 V
+202 215 V
+201 294 V
+801 1332 BB
+1002 1846 BB
+1204 1127 BB
+1405 1591 BB
+1606 1689 BB
+1807 1185 BB
+2009 1596 BB
+2210 1630 BB
+2411 1454 BB
+2612 1464 BB
+2813 1058 BB
+3015 1273 BB
+3216 1567 BB
+LT0
+801 536 M
+201 86 V
+1204 418 L
+201 84 V
+201 -42 V
+201 -65 V
+202 52 V
+201 11 V
+201 -56 V
+201 7 V
+201 -52 V
+202 25 V
+201 69 V
+801 536 TT
+1002 622 TT
+1204 418 TT
+1405 502 TT
+1606 460 TT
+1807 395 TT
+2009 447 TT
+2210 458 TT
+2411 402 TT
+2612 409 TT
+2813 357 TT
+3015 382 TT
+3216 451 TT
+LT0
+801 590 M
+201 102 V
+1204 485 L
+201 102 V
+201 -11 V
+201 -99 V
+202 80 V
+201 10 V
+201 -49 V
+201 4 V
+201 -81 V
+202 42 V
+201 72 V
+801 590 S
+1002 692 S
+1204 485 S
+1405 587 S
+1606 576 S
+1807 477 S
+2009 557 S
+2210 567 S
+2411 518 S
+2612 522 S
+2813 441 S
+3015 483 S
+3216 555 S
+stroke
+grestore
+end
+showpage
+}
+\put(2008,-49){\makebox(0,0){{\large Cr Thickness (ML)}}}
+\put(100,1107){%
+\special{ps: gsave currentpoint currentpoint translate
+270 rotate neg exch neg exch translate}%
+\makebox(0,0)[b]{\shortstack{{\large Giant Magnetoresistance}}}%
+\special{ps: currentpoint grestore moveto}%
+}
+\put(3417,151){\makebox(0,0){14}}
+\put(3015,151){\makebox(0,0){12}}
+\put(2612,151){\makebox(0,0){10}}
+\put(2210,151){\makebox(0,0){8}}
+\put(1807,151){\makebox(0,0){6}}
+\put(1405,151){\makebox(0,0){4}}
+\put(1002,151){\makebox(0,0){2}}
+\put(600,151){\makebox(0,0){0}}
+\put(540,1963){\makebox(0,0)[r]{{\large $35.0$}}}
+\put(540,1718){\makebox(0,0)[r]{{\large $30.0$}}}
+\put(540,1474){\makebox(0,0)[r]{{\large $25.0$}}}
+\put(540,1229){\makebox(0,0)[r]{{\large $20.0$}}}
+\put(540,985){\makebox(0,0)[r]{{\large $15.0$}}}
+\put(540,740){\makebox(0,0)[r]{{\large $10.0$}}}
+\put(540,496){\makebox(0,0)[r]{{\large $5.0$}}}
+\put(540,251){\makebox(0,0)[r]{{\large $0.0$}}}
+\end{picture}
+\caption{Calculated CPP-GMR for $Fe_3Cr_n$ versus $Cr$ layer thickness 
+$n=1,13$. The results assuming $Cr$ defects in the $Fe$ layers are indicated 
+by squares ($\beta=0.11$). Stars mark the results for spin-independent 
+relaxation times $\beta=1$ and triangles for $\beta=\beta_{min}$.\label{fig15}}
+\end{center}\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+In this case the lifetimes $\tau^\sigma$ for both spin directions must be
+equal since the spin up wavefunction amplitudes of one half
+of the $Cr$
+atoms is equal to the spin down wavefunction amplitudes of the other half.
+This corresponds to $\beta=1$.
+Eq. \ref{eq67} now implies $\tau^{AP}=\tau^
+{\uparrow}=\tau^\downarrow$.
+Hence the lifetime completely
+disappears from the GMR expression
+\begin{equation}\label{eq68}
+{\rm GMR}=\frac
+{\sum_{\sigma}\sum_{k}\delta (E _{k}^\sigma -E_F)
+\: {v^{\sigma} _{k}}_\mu \: {v^{\sigma} _{k}}_\mu}
+{\;2\;\;\sum_{k} \delta (E_k^{AP}-E_F) {v_{k}}_\mu^{AP} \: {v_{k}}_\mu^{AP}} -1 .
+\end{equation}
+Here, the GMR is fully determined by the Fermi surface and Fermi
+velocities as functions of the magnetization configuration.
+Hence it is a pure bandstructure effect.
+The obtained GMR values are about $200 \%$
+in CIP and $700 \%$ in CPP (stars in Fig. \ref{fig14} and \ref{fig15}),
+which is in agreement with the experimentally obtained maximum CIP-GMR
+($220 \%$) for ultrathin $Fe$ layers \cite{schad94}.\par
+Simplifying Eq. \ref{eq68} for further discussion of the origin of GMR
+leads to
+\begin{equation}\label{eq69}
+GMR=\frac{\sum_{\sigma}N^\sigma(E_F) {v_\mu^{\sigma}}^2}
+         {N_{AP}(E_F)\;\; {{{v}_\mu^{AP}}^2}} -1
+\end{equation}
+with the density of states of the superlattice for parallel alignment
+\begin{equation}\label{eq70}
+N_P(E_F)=\sum_{\sigma}\;N^\sigma(E_F)=\sum_{\sigma}\sum_{k}
+\delta (E_{k}^\sigma - E_F)
+\end{equation}
+and for anti-parallel alignment
+\begin{equation}\label{eq71}
+N_{AP}(E_F)=2\;\sum _{k} \delta (E_{k} -E_F).
+\end{equation}
+${v_\mu^\sigma}$ and ${v_\mu^{AP}}$ are Fermi surface averages
+of the Cartesian components of the velocity for parallel
+\begin{equation}\label{eq72}
+{v_\mu^\sigma}\;=\;\sqrt{\frac
+{\sum _{k} \delta (E _{k}^\sigma - E_F)\:{v^\sigma_{k_\mu}}^2}
+{\sum _{k} \delta (E _{k}^\sigma - E_F)}}
+\end{equation}
+and anti-parallel alignment
+\begin{equation}\label{eq73}
+{v_\mu^{AP}}\;=\;\sqrt{\frac
+{\sum _{k} \delta (E _{k}^{AP}- E_F)\:{v^{AP}_{k_\mu}}^2}
+{\sum _{k} \delta (E _{k}^{AP}- E_F)}}.
+\end{equation}\par
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Abb. 5                                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{figure}\begin{center}
+\setlength{\unitlength}{0.1bp}
+\begin{picture}(3600,2014)(0,-100)
+\special{"
+%%Page: 1 1
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+0 setgray
+/Helvetica findfont 100 scalefont setfont
+newpath
+-500.000000 -500.000000 translate
+LTa
+600 251 M
+2817 0 V
+600 251 M
+0 1712 V
+LTb
+LTa
+600 251 M
+2817 0 V
+LTb
+600 251 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 394 M
+2817 0 V
+LTb
+600 394 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 536 M
+2817 0 V
+LTb
+600 536 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 679 M
+2817 0 V
+LTb
+600 679 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 822 M
+2817 0 V
+LTb
+600 822 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 964 M
+2817 0 V
+LTb
+600 964 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1107 M
+2817 0 V
+LTb
+600 1107 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1250 M
+2817 0 V
+LTb
+600 1250 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1392 M
+2817 0 V
+LTb
+600 1392 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1535 M
+2817 0 V
+LTb
+600 1535 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1678 M
+2817 0 V
+LTb
+600 1678 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1820 M
+2817 0 V
+LTb
+600 1820 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1963 M
+2817 0 V
+LTb
+600 1963 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 251 M
+0 1712 V
+LTb
+600 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+801 251 M
+0 1712 V
+LTb
+801 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1002 251 M
+0 1712 V
+LTb
+1002 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1204 251 M
+0 1712 V
+LTb
+1204 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1405 251 M
+0 1712 V
+LTb
+1405 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1606 251 M
+0 1712 V
+LTb
+1606 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1807 251 M
+0 1712 V
+LTb
+1807 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2009 251 M
+0 1712 V
+LTb
+2009 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2210 251 M
+0 1712 V
+LTb
+2210 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2411 251 M
+0 1712 V
+LTb
+2411 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2612 251 M
+0 1712 V
+LTb
+2612 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2813 251 M
+0 1712 V
+LTb
+2813 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3015 251 M
+0 1712 V
+LTb
+3015 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3216 251 M
+0 1712 V
+LTb
+3216 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3417 251 M
+0 1712 V
+LTb
+3417 251 M
+0 63 V
+0 1649 R
+0 -63 V
+600 251 M
+2817 0 V
+0 1712 V
+-2817 0 V
+600 251 L
+LT0
+801 1578 M
+201 117 V
+202 -420 V
+201 60 V
+201 -225 V
+201 465 V
+202 -217 V
+201 89 V
+201 -115 V
+201 57 V
+201 -19 V
+202 -52 V
+201 -208 V
+801 1578 BB
+1002 1695 BB
+1204 1275 BB
+1405 1335 BB
+1606 1110 BB
+1807 1575 BB
+2009 1358 BB
+2210 1447 BB
+2411 1332 BB
+2612 1389 BB
+2813 1370 BB
+3015 1318 BB
+3216 1110 BB
+LT0
+801 1833 M
+201 -258 V
+202 -215 V
+201 282 V
+201 -352 V
+201 248 V
+202 -384 V
+201 360 V
+201 -327 V
+201 153 V
+201 -179 V
+202 47 V
+201 -33 V
+801 1833 C
+1002 1575 C
+1204 1360 C
+1405 1642 C
+1606 1290 C
+1807 1538 C
+2009 1154 C
+2210 1514 C
+2411 1187 C
+2612 1340 C
+2813 1161 C
+3015 1208 C
+3216 1175 C
+LT0
+801 1300 M
+201 -192 V
+1204 826 L
+201 359 V
+1606 812 L
+201 262 V
+2009 695 L
+201 363 V
+2411 745 L
+201 98 V
+2813 743 L
+202 20 V
+201 -6 V
+801 1300 DD
+1002 1108 DD
+1204 826 DD
+1405 1185 DD
+1606 812 DD
+1807 1074 DD
+2009 695 DD
+2210 1058 DD
+2411 745 DD
+2612 843 DD
+2813 743 DD
+3015 763 DD
+3216 757 DD
+LT0
+801 785 M
+201 -67 V
+202 67 V
+201 -77 V
+201 21 V
+201 -14 V
+202 -5 V
+201 -4 V
+201 -13 V
+201 54 V
+201 -78 V
+202 27 V
+201 -27 V
+801 785 TT
+1002 718 TT
+1204 785 TT
+1405 708 TT
+1606 729 TT
+1807 715 TT
+2009 710 TT
+2210 706 TT
+2411 693 TT
+2612 747 TT
+2813 669 TT
+3015 696 TT
+3216 669 TT
+stroke
+grestore
+end
+showpage
+}
+\put(2008,-49){\makebox(0,0){{\large Cr Thickness (ML)}}}
+\put(100,1107){%
+\special{ps: gsave currentpoint currentpoint translate
+270 rotate neg exch neg exch translate}%
+\makebox(0,0)[b]{\shortstack{{\large DOS at Fermi level}}}%
+\special{ps: currentpoint grestore moveto}%
+}
+\put(3417,151){\makebox(0,0){14}}
+\put(3015,151){\makebox(0,0){12}}
+\put(2612,151){\makebox(0,0){10}}
+\put(2210,151){\makebox(0,0){8}}
+\put(1807,151){\makebox(0,0){6}}
+\put(1405,151){\makebox(0,0){4}}
+\put(1002,151){\makebox(0,0){2}}
+\put(600,151){\makebox(0,0){0}}
+\put(540,1963){\makebox(0,0)[r]{120.0}}
+\put(540,1678){\makebox(0,0)[r]{100.0}}
+\put(540,1392){\makebox(0,0)[r]{80.0}}
+\put(540,1107){\makebox(0,0)[r]{60.0}}
+\put(540,822){\makebox(0,0)[r]{40.0}}
+\put(540,536){\makebox(0,0)[r]{20.0}}
+\put(540,251){\makebox(0,0)[r]{0.0}}
+\end{picture}
+\caption{$N_{P}(E_F)$ (squares) and $N_{AP}(E_F)$ (times)
+of $Fe_3Cr_n$ superlattices versus $Cr$ layer thickness in arbitrary units.
+The spin-projected densities of states of $N_P(E_F)$ are marked as follows: 
+$N^\uparrow(E_F)$ (diamonds) and $N^\downarrow(E_F)$ (triangles) 
+\protect\cite{mertig95}.\label{fig16}}
+\end{center}\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\par
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Abb. 6                                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{figure}\begin{center}
+\setlength{\unitlength}{0.1bp}
+\begin{picture}(3600,2014)(0,-100)
+\special{"
+%%Page: 1 1
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+0 setgray
+/Helvetica findfont 100 scalefont setfont
+newpath
+-500.000000 -500.000000 translate
+LTa
+600 251 M
+2817 0 V
+600 251 M
+0 1712 V
+LTb
+LTa
+600 251 M
+2817 0 V
+LTb
+600 251 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 394 M
+2817 0 V
+LTb
+600 394 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 536 M
+2817 0 V
+LTb
+600 536 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 679 M
+2817 0 V
+LTb
+600 679 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 822 M
+2817 0 V
+LTb
+600 822 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 964 M
+2817 0 V
+LTb
+600 964 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1107 M
+2817 0 V
+LTb
+600 1107 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1250 M
+2817 0 V
+LTb
+600 1250 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1392 M
+2817 0 V
+LTb
+600 1392 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1535 M
+2817 0 V
+LTb
+600 1535 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1678 M
+2817 0 V
+LTb
+600 1678 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1820 M
+2817 0 V
+LTb
+600 1820 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1963 M
+2817 0 V
+LTb
+600 1963 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 251 M
+0 1712 V
+LTb
+600 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+801 251 M
+0 1712 V
+LTb
+801 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1002 251 M
+0 1712 V
+LTb
+1002 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1204 251 M
+0 1712 V
+LTb
+1204 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1405 251 M
+0 1712 V
+LTb
+1405 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1606 251 M
+0 1712 V
+LTb
+1606 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1807 251 M
+0 1712 V
+LTb
+1807 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2009 251 M
+0 1712 V
+LTb
+2009 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2210 251 M
+0 1712 V
+LTb
+2210 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2411 251 M
+0 1712 V
+LTb
+2411 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2612 251 M
+0 1712 V
+LTb
+2612 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2813 251 M
+0 1712 V
+LTb
+2813 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3015 251 M
+0 1712 V
+LTb
+3015 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3216 251 M
+0 1712 V
+LTb
+3216 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3417 251 M
+0 1712 V
+LTb
+3417 251 M
+0 63 V
+0 1649 R
+0 -63 V
+600 251 M
+2817 0 V
+0 1712 V
+-2817 0 V
+600 251 L
+LT0
+801 964 M
+201 -71 V
+202 143 V
+201 -29 V
+201 29 V
+1807 879 L
+202 43 V
+201 42 V
+201 43 V
+201 0 V
+201 0 V
+202 14 V
+201 115 V
+801 964 B
+1002 893 B
+1204 1036 B
+1405 1007 B
+1606 1036 B
+1807 879 B
+2009 922 B
+2210 964 B
+2411 1007 B
+2612 1007 B
+2813 1007 B
+3015 1021 B
+3216 1136 B
+LT0
+801 1078 M
+201 43 V
+202 100 V
+201 -171 V
+201 0 V
+1807 864 L
+202 172 V
+2210 836 L
+201 143 V
+2612 864 L
+201 157 V
+3015 907 L
+201 100 V
+801 1078 D
+1002 1121 D
+1204 1221 D
+1405 1050 D
+1606 1050 D
+1807 864 D
+2009 1036 D
+2210 836 D
+2411 979 D
+2612 864 D
+2813 1021 D
+3015 907 D
+3216 1007 D
+LT0
+801 1464 M
+201 185 V
+202 -257 V
+201 229 V
+201 114 V
+201 -143 V
+202 143 V
+201 -129 V
+201 143 V
+201 -214 V
+201 200 V
+202 -229 V
+201 229 V
+801 1464 T
+1002 1649 T
+1204 1392 T
+1405 1621 T
+1606 1735 T
+1807 1592 T
+2009 1735 T
+2210 1606 T
+2411 1749 T
+2612 1535 T
+2813 1735 T
+3015 1506 T
+3216 1735 T
+LT0
+801 608 M
+201 -43 V
+202 100 V
+201 -15 V
+201 29 V
+201 0 V
+202 -29 V
+201 -14 V
+201 57 V
+201 -14 V
+201 71 V
+202 -71 V
+201 29 V
+801 608 BB
+1002 565 BB
+1204 665 BB
+1405 650 BB
+1606 679 BB
+1807 679 BB
+2009 650 BB
+2210 636 BB
+2411 693 BB
+2612 679 BB
+2813 750 BB
+3015 679 BB
+3216 708 BB
+LT0
+801 907 M
+201 0 V
+202 -85 V
+201 -72 V
+201 -71 V
+201 29 V
+202 42 V
+2210 636 L
+201 0 V
+201 0 V
+201 114 V
+3015 636 L
+201 114 V
+801 907 DD
+1002 907 DD
+1204 822 DD
+1405 750 DD
+1606 679 DD
+1807 708 DD
+2009 750 DD
+2210 636 DD
+2411 636 DD
+2612 636 DD
+2813 750 DD
+3015 636 DD
+3216 750 DD
+LT0
+801 1435 M
+201 214 V
+202 -314 V
+201 371 V
+201 -43 V
+201 43 V
+202 14 V
+201 0 V
+201 72 V
+201 -86 V
+201 72 V
+202 -172 V
+201 172 V
+801 1435 TT
+1002 1649 TT
+1204 1335 TT
+1405 1706 TT
+1606 1663 TT
+1807 1706 TT
+2009 1720 TT
+2210 1720 TT
+2411 1792 TT
+2612 1706 TT
+2813 1778 TT
+3015 1606 TT
+3216 1778 TT
+stroke
+grestore
+end
+showpage
+}
+\put(2008,-49){\makebox(0,0){{\large Cr Thickness (ML)}}}
+\put(100,1107){%
+\special{ps: gsave currentpoint currentpoint translate
+270 rotate neg exch neg exch translate}%
+\makebox(0,0)[b]{\shortstack{{\large Fermi Velocity}}}%
+\special{ps: currentpoint grestore moveto}%
+}
+\put(3417,151){\makebox(0,0){14}}
+\put(3015,151){\makebox(0,0){12}}
+\put(2612,151){\makebox(0,0){10}}
+\put(2210,151){\makebox(0,0){8}}
+\put(1807,151){\makebox(0,0){6}}
+\put(1405,151){\makebox(0,0){4}}
+\put(1002,151){\makebox(0,0){2}}
+\put(600,151){\makebox(0,0){0}}
+\put(540,1963){\makebox(0,0)[r]{0.12}}
+\put(540,1678){\makebox(0,0)[r]{0.10}}
+\put(540,1392){\makebox(0,0)[r]{0.08}}
+\put(540,1107){\makebox(0,0)[r]{0.06}}
+\put(540,822){\makebox(0,0)[r]{0.04}}
+\put(540,536){\makebox(0,0)[r]{0.02}}
+\put(540,251){\makebox(0,0)[r]{0.00}}
+\end{picture}
+\caption{Fermi surface averages of the velocity components. Open symbols 
+indicate $v_x$ and full symbols $v_z$. Diamonds mark the velocity of 
+majority electrons, triangles the velocity of minority electrons and
+squares the velocity in the anti-parallel aligned configuration 
+\protect\cite{mertig95}.\label{fig17}}
+\end{center}\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+The densities of states in the parallel and anti-parallel configuration
+(Fig. \ref{fig16}) are of
+the same order and they oscillate in phase with the $Cr$ layer thickness, that is,
+they do not account for the $200 \%$ CIP-GMR and $700 \%$ in CPP-GMR
+(Fig. \ref{fig14} and \ref{fig15}). Obviously, GMR is originated by
+the differences in the Fermi velocities in the parallel and anti-parallel
+configurations (Fig. \ref{fig17}).\par
+%
+The spin dependence of the relaxation time ($\beta\neq1$) due to scattering
+centers in
+the ferromagnetic layers ($Cr$ impurities in $Fe$ layers, for example)
+leads to modifications. GMR is now to be calculated via
+Eq. \ref{eq63}, \ref{eq64} and \ref{eq66}.
+Under the assumption that the extension of the impurity is small
+compared to the layer thickness,
+the scattering properties are described by the spin-dependent
+relaxation times calculated for the
+$Cr$ impurities in $Fe$ \cite{mertig93,mertig93a}.
+For this case $\beta=0.11$, that is, the majority electrons are
+scattered strongly at a $Cr$ defect and the minority electrons
+are just weakly scattered as they pass the defect.\par
+The results assuming $Cr$ defects located in the $Fe$
+layers lead to a GMR of about $600 \%$ in CIP (squares in Fig. \ref{fig14}) and
+$2500 \%$ in CPP (squares in Fig. \ref{fig15}) which is larger than the experimental
+results \cite{gijs92,gijs93,pratt91,gijs95}.
+The anisotropy $\beta$ obtained in \cite{mertig93,mertig93a} for
+a variety of defects scatter from $0.1$ to $10$.
+Therefore, GMR is discussed as a function of $\beta$ in relaxation time
+approximation.
+If only one type of scatterer is included, GMR becomes a minimum for
+\begin{equation}\label{eq74}
+\beta_{min}\;=\;\frac{\tau^\uparrow}{\tau^\downarrow}=
+\sqrt\frac{\sum_k\delta (E^\downarrow_{k}- E_F)\:{v^\downarrow_k}^2_\mu}
+          {\sum_k\delta (E^\uparrow_{k}- E_F)\:{v^\uparrow_k}^2_\mu}.
+\end{equation}
+That is, GMR can be enhanced or
+reduced by spin-de\-pen\-dent impurity scattering.
+The results for $\beta=\beta_{min}$ are shown in Fig. \ref{fig14} and
+\ref{fig15} (triangles).\par
+Finally, we discuss the combination
+of alternating $Fe$ layers with $Cr$ defects ($\beta=0.11$) and with
+$Cu$ defects ($\beta=3.68$).
+For the sake of simplicity, equal concentration is assumed.
+The relaxation times are in parallel configuration
+\begin{equation}
+\frac{1}{\tau^{\sigma}}=\frac{1}{2}\;(\;\frac{1}{\tau^\sigma_{Cr}}\;+\;\frac{1}
+{\tau^\sigma_{Cu}}\;),
+\end{equation}
+and in anti-parallel configuration
+\begin{equation}
+\frac{D^+_\uparrow+D^-_\uparrow}{\tau^{\uparrow}}=(\;\frac{D^+_\uparrow}
+{\tau^{+}_{Cr}}\;+\;\frac{D^-_\uparrow}
+{\tau^-_{Cu}}\;),
+\end{equation}
+and
+\begin{equation}
+\frac{D^+_\downarrow+D^-_\downarrow}{\tau^{\downarrow}}=(\;\frac{D^-_\downarrow}
+{\tau^-_{Cr}}\;+\;\frac{D^+_\downarrow}
+{\tau^+_{Cu}}\;),
+\end{equation}
+respectively where the superscripts $+,-$ correspond to majority and minority
+electrons.
+$D^+_\sigma$ and $D^-_\sigma$ is the local spin-dependent density of states in
+a ferromagnetic layer where spin-$\sigma$ electrons are majority or minority
+electrons, respectively. In the considered configuration the factors
+have been set to unity.
+The conductivity in the anti-parallel state including
+both defects is given by
+\begin{equation}
+{\hat \sigma}^{AP} =  e^2
+(\tau^{\uparrow}+\tau^{\downarrow}) \sum _{k} \delta (E_{k}^{AP} -
+E_F)\: {\bf v}^{AP}_k\: {\bf v}^{AP}_k.
+\end{equation}
+\par
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Abb. 7                                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{figure}\begin{center}
+\setlength{\unitlength}{0.1bp}
+\begin{picture}(3600,2014)(0,-100)
+\special{"
+%%Page: 1 1
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+0 setgray
+/Helvetica findfont 100 scalefont setfont
+newpath
+-500.000000 -500.000000 translate
+LTa
+600 562 M
+2817 0 V
+600 251 M
+0 1712 V
+LTb
+LTa
+600 251 M
+2817 0 V
+LTb
+600 251 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 407 M
+2817 0 V
+LTb
+600 407 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 562 M
+2817 0 V
+LTb
+600 562 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 718 M
+2817 0 V
+LTb
+600 718 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 874 M
+2817 0 V
+LTb
+600 874 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1029 M
+2817 0 V
+LTb
+600 1029 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1185 M
+2817 0 V
+LTb
+600 1185 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1340 M
+2817 0 V
+LTb
+600 1340 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1496 M
+2817 0 V
+LTb
+600 1496 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1652 M
+2817 0 V
+LTb
+600 1652 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1807 M
+2817 0 V
+LTb
+600 1807 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 1963 M
+2817 0 V
+LTb
+600 1963 M
+63 0 V
+2754 0 R
+-63 0 V
+LTa
+600 251 M
+0 1712 V
+LTb
+600 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+801 251 M
+0 1712 V
+LTb
+801 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1002 251 M
+0 1712 V
+LTb
+1002 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1204 251 M
+0 1712 V
+LTb
+1204 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1405 251 M
+0 1712 V
+LTb
+1405 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1606 251 M
+0 1712 V
+LTb
+1606 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+1807 251 M
+0 1712 V
+LTb
+1807 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2009 251 M
+0 1712 V
+LTb
+2009 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2210 251 M
+0 1712 V
+LTb
+2210 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2411 251 M
+0 1712 V
+LTb
+2411 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2612 251 M
+0 1712 V
+LTb
+2612 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+2813 251 M
+0 1712 V
+LTb
+2813 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3015 251 M
+0 1712 V
+LTb
+3015 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3216 251 M
+0 1712 V
+LTb
+3216 251 M
+0 63 V
+0 1649 R
+0 -63 V
+LTa
+3417 251 M
+0 1712 V
+LTb
+3417 251 M
+0 63 V
+0 1649 R
+0 -63 V
+600 251 M
+2817 0 V
+0 1712 V
+-2817 0 V
+600 251 L
+LT0
+801 1445 M
+201 368 V
+202 -731 V
+201 424 V
+201 -87 V
+201 -360 V
+202 290 V
+201 36 V
+201 -175 V
+201 17 V
+2813 934 L
+202 150 V
+201 257 V
+801 1445 B
+1002 1813 B
+1204 1082 B
+1405 1506 B
+1606 1419 B
+1807 1059 B
+2009 1349 B
+2210 1385 B
+2411 1210 B
+2612 1227 B
+2813 934 B
+3015 1084 B
+3216 1341 B
+LT0
+801 630 M
+201 71 V
+1204 587 L
+201 67 V
+201 60 V
+201 -84 V
+202 71 V
+2210 568 L
+201 36 V
+201 -74 V
+201 51 V
+202 -77 V
+201 61 V
+801 630 BB
+1002 701 BB
+1204 587 BB
+1405 654 BB
+1606 714 BB
+1807 630 BB
+2009 701 BB
+2210 568 BB
+2411 604 BB
+2612 530 BB
+2813 581 BB
+3015 504 BB
+3216 565 BB
+stroke
+grestore
+end
+showpage
+}
+\put(2008,-49){\makebox(0,0){{\large Cr Thickness (ML)}}}
+\put(200,1107){%
+\special{ps: gsave currentpoint currentpoint translate
+270 rotate neg exch neg exch translate}%
+\makebox(0,0)[b]{\shortstack{{\large Giant Magnetoresistance}}}%
+\special{ps: currentpoint grestore moveto}%
+}
+\put(3417,151){\makebox(0,0){14}}
+\put(3015,151){\makebox(0,0){12}}
+\put(2612,151){\makebox(0,0){10}}
+\put(2210,151){\makebox(0,0){8}}
+\put(1807,151){\makebox(0,0){6}}
+\put(1405,151){\makebox(0,0){4}}
+\put(1002,151){\makebox(0,0){2}}
+\put(600,151){\makebox(0,0){0}}
+\put(540,1807){\makebox(0,0)[r]{4.0}}
+\put(540,1496){\makebox(0,0)[r]{3.0}}
+\put(540,1185){\makebox(0,0)[r]{2.0}}
+\put(540,874){\makebox(0,0)[r]{1.0}}
+\put(540,562){\makebox(0,0)[r]{0.0}}
+\put(540,251){\makebox(0,0)[r]{-1.0}}
+\end{picture}
+\caption{Calculated GMR for $Fe_3Cr_n$ with $Cr$ and $Cu$ defects in adjacent 
+$Fe$ layers in CIP (closed squares) and CPP (open squares). For $n\geq 10$ 
+the inverse GMR is obtained.\label{fig21}}
+\end{center}\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+The results are shown in Fig. \ref{fig21}. The main message from this calculation
+is that the GMR can be reduced drastically or even change sign,
+if scatterers with different spin anisotropy are combined. (If they would be
+located in the same layer they would merely act as an effective scattering
+potential.) One should note that in Fig. \ref{fig21} the inverse
+effect occurs in CIP but not in CPP.
+Experimentally, the inverse effect was obtained for $Fe/Cr/Fe/Cu/Fe/Cu$
+multilayers \cite{george94}, as well as in $Fe_{1-x}V_x/Au/Co$
+multilayers \cite{renard95}, both in CIP geometry.\par
+%
+Generally, it should be noted that CPP-GMR for comparable scattering is always
+larger than CIP by a factor of about $4$ in agreement with experimental results
+\cite{gijs95}. This factor stems from the difference of the Fermi
+velocity components in plane and perpendicular to the plane, and it
+finds its natural explanation in the fact that the carriers
+with large momentum components in direction of the current are more
+influenced by the superstructure in CPP.\par
+Moreover, GMR (Fig. \ref{fig14}, \ref{fig15}, \ref{fig21}) shows characteristic variations
+with layer thicknesses.
+On Fig. \ref{fig21} these variations are reminiscent of experimentally found
+oscillations \cite{okuno94}.
+%
+\section*{Summary}
+In conclusion,
+we have shown that GMR, under the assumption of a coherent multilayer
+system and a spin-independent impurity scattering, is determined
+by the changes of the electronic structure as a function of the magnetization
+direction.
+Spin-dependent impurity scattering can enhance or reduce the effect.
+The combination of impurities with different spin anisotropy can
+in particular cause the inverse GMR.
+%
+\subsection*{Acknowledgement}
+The authors would like to thank P. H. Dederichs and R. Zeller 
+for valuable discussions. 
+%
+\begin{thebibliography}{m}\small
+
+\bibitem{baibich88}
+M.~N. Baibich, J.~M. Broto, A. Fert, F. {Nguyen van Dau}, F. Petroff, P.
+  Etienne, G. Creuzet, A. Friederich, and J. Chazelas, Phys. Rev. Lett. {\bf
+  61},  2472  (1988).
+
+\bibitem{binash89}
+G. Binash, P. Gr{\"u}nberg, F. Saurenbach, and W. Zinn, Phy. Rev. B {\bf 39},
+  4828  (1989).
+
+\bibitem{butler93}
+W.~H. Butler, J.~M. MacLaren, and X.-G. Zhang, Mat. Res. Soc. Proc. {\bf 313},
+  59  (1993).
+
+\bibitem{camley89}
+R.~E. Camley and J. Barna\'{s}, Phys. Rev. Lett. {\bf 63},  664  (1989).
+
+\bibitem{george94}
+J.~M. George, L.~G. Pereira, A. Barthelemy, F. Petroff, L. Steren, J.~L.
+  Duvail, and A. Fert, Phys. Rev. Lett. {\bf 72},  408  (1994).
+
+\bibitem{gijs93}
+M.~A.~M. Gijs, S.~K. Lenczowski, and J.~B. Giesbers, Phys. Rev. Lett. {\bf 70},
+   3343  (1993).
+
+\bibitem{gijs95}
+M.~A.~M. Gijs, S.~K.~J. Lenczowski, J.~B. Giesbers, R.~J.~M. {van de Veerdonk},
+  M.~T. Johnson, R.~M. Jungblut, A. Reinders, and R.~M.~J. {van Gansewinkel}
+  (unpublished).
+
+\bibitem{gijs92}
+M.~A.~M. Gijs and M. Okada, Phy. Rev. B {\bf 46},  2908  (1992).
+
+\bibitem{hood92}
+R.~Q. Hood and L.~M. Falicov, Phy. Rev. B {\bf 46},  8287  (1992).
+
+\bibitem{inoue91}
+J. Inoue, A. Oguri, and S. Maekawa, J. Phys. Soc. Jpn. {\bf 60},  376  (1991).
+
+\bibitem{levy94}
+P.~M. Levy, Sol. Stat. Phys. {\bf 47},  367  (1994).
+
+\bibitem{levy90}
+P.~M. Levy, S. Zhang, and A. Fert, Phys. Rev. Lett. {\bf 65},  1643  (1990).
+
+\bibitem{mertig95}
+I. Mertig, P. Zahn, M. Richter, H. Eschrig, R. Zeller, and P.~H. Dederichs, J.
+  Mag. Mag. Mat.  (accepted)  (1995).
+
+\bibitem{mertig93}
+I. Mertig, R. Zeller, and P.~H. Dederichs, Phy. Rev. B {\bf 47},  16178
+  (1993).
+
+\bibitem{mertig93a}
+I. Mertig, R. Zeller, and P.~H. Dederichs,  in {\em Metallic Alloys:
+  Experimental and Theoretical Perspectives},  (Kluwer Academic Publishers,
+  Dodrecht, Boston, London, 1994), p.\ 423.
+
+\bibitem{oguchi93}
+T. Oguchi, J. Mag. Mag. Mat. {\bf 126},  519  (1993).
+
+\bibitem{okuno94}
+S.~N. Okuno and K. Inomata, Phys. Rev. Lett. {\bf 72},  1553  (1994).
+
+\bibitem{pratt91}
+W.~P. {Pratt Jr.}, S.~F. Lee, J.~M. Slaughter, R. Loloee, P.~A. Schroeder, and
+  J. Bass, Phys. Rev. Lett. {\bf 66},  3060  (1991).
+
+\bibitem{renard95}
+J.-P. Renard, P. Bruno, R. Megy, B. Bartenlian, P. Beauvillain, C. Chappert, C.
+  Dupas, E. Kolb, M. Mulloy, P. Veillet, and E. Veu,   preprint  (1995).
+
+\bibitem{schad94}
+R. Schad, C.~D. Potter, P. Beli$\ddot{\mbox{e}}$n, G. Verbanck, V.~V.
+  Moshchalkov, and Y. Bruynseraede, Appl. Phys. Lett. {\bf 64},  3500  (1994).
+
+\bibitem{schep95}
+K.~M. Schep, P.~J. Kelly, and G.~E.~W. Bauer, Phys. Rev. Lett. {\bf 74},  586
+  (1995).
+
+\bibitem{valet93}
+T. Valet and A. Fert, Phy. Rev. B {\bf 48},  7099  (1993).
+
+\bibitem{zahn95}
+P. Zahn, I. Mertig, M. Richter, and H. Eschrig, Phys. Rev. Lett. {\bf 75},
+  2996  (1995).
+
+\end{thebibliography}
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%      Bond Order Potentials Workshop   ............                        %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+\begin{center}
+{\Large{\it Announcement}}\\[10mm]
+
+{\Large{\bf UNIVERSITY OF OXFORD--DEPARTMENT OF MATERIALS}} \\
+{\Large{\bf MATERIALS MODELLING LABORATORY}}\\
+
+\bigskip
+{\Large{\bf BOND--ORDER POTENTIALS WORKSHOP}} \\
+{\large{\it 18 AND 19 MARCH 1996}}\\
+\end{center}
+
+\vspace{1cm}
+\noindent
+The realistic atomistic simulation of materials requires the
+development and application of O(N) methods that avoid the
+crippling $N^{3}$ constraint of matrix diagonalisation for
+finding the electronic structure and hence the energy of
+a system.\\
+
+\noindent
+This two-day workshop presents the background theory and concepts
+behind the novel Bond Order Potentials (BOPs) which allow the
+Tight Binding (TB) energy to be expressed exactly as a rapidly
+convergent many-atom expansion. The BOP approach has the 
+advantage over other O(N) density matrix methods in that it is
+equally applicable to both metals and semiconductors, and it is
+naturally parallelisable.\\
+
+\noindent
+The nature of the BOP computer codes will be described and a
+hands-on afternoon session will give workshop attendees experience
+in simulationg a wide range of materials from hydrocarbon molecules
+through to bulk semicondusctors and intermetallics. \\
+
+\noindent
+A.M. Bratkovsky \\
+Department of Materials \\
+University of Oxford \\
+Parks Road \\
+OXFORD OX1 3PH, U.K. \\
+tel: 01865-283325 \\
+fax: 01865-273764 \\
+email: alex.bratkovsky@materials.ox.ac.uk \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%      OXYGEN '96 Workshop Announcement ............                        %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+\begin{center}
+{\Large{\bf 			OXYGEN '96}}
+
+{\large{\bf
+
+                Early Stages of Oxygen Precipitation in Silicon\\
+                        NATO Advanced Research Workshop\\
+                             26th - 29th March 1996}}
+
+{\large{\it                University of Exeter, U.K.
+
+                         Co-sponsored by the University}}
+\end{center}
+
+{\centering{
+------------------------------------------------------------------------------}}
+
+{\large{\bf Objectives:}}
+
+\begin{quotation} \noindent
+     Topics to be covered include: Progress and problems involved with the
+     early stage of oxygen precipitation in silicon; oxygen diffusion and
+     clustering; oxygen-light element interactions especially H, C and N;
+     oxygen-TM defects; oxygen-vacancy and interstitial complexes; thermal and
+     new donors; theoretical modelling of oxygen defects and processes. A major
+     aim is to bring theoretical modelling groups together with experimental
+     ones to promote cross-fertilisation of ideas.
+\end{quotation}
+
+{\centering{
+------------------------------------------------------------------------------}}
+
+{\large{\bf Speakers Include:}}
+
+\begin{quotation} \noindent
+     C. A. J. Ammerlaan, P. De\'ak, S. Estreicher, C. Ewels,  U. Gosele,
+     J. L. Lindstr\"om, V. P. Markevich, R. C. Newman, B. Pajot, J. M. Spaeth,
+     M. Stavola, M. Suezawa, K. Sumino, G. D. Watkins, E. R. Weber, J. Weber
+\end{quotation}
+
+{\centering{
+------------------------------------------------------------------------------}}
+
+{\large{\bf Accomodation and Fees:}}
+
+\begin{quotation} \noindent
+     Full board is available from the evening of Monday March 25, 1996, through
+     to Friday lunchtime on March 29th for 266 pounds sterling, including
+     reception, conference dinner and an excursion. Some contribution to the
+     travel and accommodation costs may be made subject to the regulations of
+     NATO.
+\end{quotation}
+
+{\centering{
+------------------------------------------------------------------------------}}
+
+\newpage
+{\large{\bf Proceedings:}}
+
+\begin{quotation} \noindent
+     Will be published in the NATO ASI series.
+\end{quotation}
+
+{\centering{
+------------------------------------------------------------------------------}}
+
+{\large{\bf Registration:}}
+
+\begin{quotation} \noindent
+     World Wide Web site: \verb+http://newton.ex.ac.uk/NATO/+
+     It is possible to register directly using the World Wide Web, or else 
+     complete the form enclosed below and return to \verb+ewels@excc.ex.ac.uk+
+     or \verb+jones@excc.ex.ac.uk+
+\end{quotation}
+
+{\centering{
+------------------------------------------------------------------------------}}
+
+{\large{\bf Travel:}}
+
+\begin{quotation} \noindent
+     The University is located in Exeter, the beautiful county town of Devon in
+     the South West of England. It can be reached by train from London
+     (Paddington or Waterloo - 2:30 hrs). Delegates from London airport
+     (Heathrow) should take the airport bus to Reading and then the train to
+     Exeter (2 hrs). Alternatively coaches run from London (Victoria) or
+     Heathrow directly to Exeter (3 hrs). The University is a few minutes
+     taxi-ride from either the train or coach station.
+\end{quotation}
+
+{\centering{
+------------------------------------------------------------------------------}}
+
+{\large{\bf Organising Committee:}}
+
+\begin{quotation} \noindent
+     Dr. R. Jones - Department of Physics, University of Exeter, U.K.
+     Prof. P. De\'ak - Department of Atomic Physics, Technical University,
+     Budapest, Hungary.
+     Prof. S. Estreicher - Max Planck Institute, Stuttgart, Germany.
+     C. Ewels - Department of Physics, University of Exeter, U.K.
+\end{quotation}
+
+{\centering{
+------------------------------------------------------------------------------}}
+
+\begin{center}
+{\large{\bf OXYGEN '96 Registration Form follows.}}
+\end{center}
+
+\newpage
+\begin{verbatim}
+                     OXYGEN '96 Registration Form
+
+General Details:
+     Title:  [ ]Prof [ ]Dr [ ]Mr [ ]Mrs [ ]Ms  Other ___________
+     Gender: [ ]Male [ ]Female
+
+     Your surname: _____________________________________________  
+     Initials:     _______
+     Institution:  _____________________________________________
+                   _____________________________________________
+     Your e-mail address: ______________________________________
+     Telephone Number:    ______________________________________
+     Fax Number:          ______________________________________
+
+     Your postal address: ______________________________________
+     ___________________________________________________________
+     ___________________________________________________________
+     ___________________________________________________________
+
+     Do have any special requirements? (Diet, disability, etc.)
+     ___________________________________________________________
+
+     Areas of interest:
+    ___________________________________________________________
+     ___________________________________________________________
+     ___________________________________________________________
+
+     Plese quote the cost of economy travel between  London
+     (Heathrow or Victoria) and  your home base:
+     ___________________________________________________________
+
+Presentation:
+     I would like to submit a poster [ ] Yes [ ] No
+     Title: ____________________________________________________
+     ___________________________________________________________
+     First Author (if different from above):
+     ___________________________________________________________
+     Affiliation:
+     ___________________________________________________________
+     ___________________________________________________________
+     Co-Author(s):
+     ___________________________________________________________
+     ___________________________________________________________
+     Affiliation(s):
+     ___________________________________________________________
+     ___________________________________________________________
+     ___________________________________________________________
+     ___________________________________________________________
+
+Abstract: This can also be sent directly by e-mail, preferably in
+          LaTeX/ReVTeX format, to ewels@excc.ex.ac.uk
+\end{verbatim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%      Network Conference 2nd Circular  ............                        %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\null
+
+% circular2.tex
+%\documentstyle[a4]{article} 
+%\documentstyle[epsf,a4]{article} 
+%\topmargin -1.0cm
+%\oddsidemargin 0.5cm
+%\textwidth 15.4cm
+%\textheight 24cm
+%\headsep1.2cm
+%\headheight14.2pt
+%\renewcommand{\baselinestretch}{1.0}
+%\renewcommand{\textfraction}{0}
+%\renewcommand{\bottomfraction}{1}
+%\renewcommand{\topfraction}{1}
+%\pagenumbering{arabic}
+%\parindent 0pt
+%\begin{document}
+%\vspace*{-45mm}
+%\parbox[t]{4.5cm}{\epsfxsize=4.5cm \epsffile{logo3.epsi}}
+\parbox[t]{15cm}{{\Huge\bf $\Psi_k$ Network Conference}\\[3mm]
+{\bf  organized by the European Union HCM network}\\[3mm]
+{\Large\bf"Ab initio (from electronic structure) calculation\\
+of complex processes in materials"\\[6mm] {\large\bf Schw\"abisch Gm\"und,  September 18-21, 1996}}}\\[5mm]
+\par
+%\vspace{20mm}
+{\huge\em Second Circular and call for suggestions}\\[5mm]
+{\Large\bf Scientific Program}\\[5mm]
+{\bf Methods}\\
+\begin{itemize}
+\item {\bf Quantum Monte Carlo Calculations }
+\item {\bf New developments in Muffin-tin and Pseudopotential techniques }
+\item {\bf Density Functional Molecular Dynamics simulation:\\ methods and applications}
+\item {\bf Beyond the Local Density Approximation}
+\item {\bf Quasiparticles}
+\item {\bf Solving the Bogolubov-de Gennes Equations }
+\item {\bf Approximate Methods for large systems}
+\item {\bf Parallel Algorithms (Parallelisation)}\\[3mm]
+\end{itemize}
+{\bf Applications to all aspects of Condensed Matter and Materials Science including:}\\
+\begin{itemize}
+\item Electron spectroscopies
+\item Novel superconductors
+\item Magnetic multilayers
+\item Oxide/metal interfaces
+\item Reactions at surfaces
+\item Semiconductor heterostructures and quantum wires
+\item Carbon structures
+\item Molecular materials
+\end{itemize}
+%\newpage
+The conference is open to anyone interested. The expected attendance is 300.
+All abstracts will be accepted, either as a contributed talk or as a
+poster, subject to the limitation that each participant presents at most
+one talk or poster.\\[3mm]   
+{\large\bf Suggestion Form for invited speakers and symposia}\\[5mm]
+Members of the network and external keypersons are asked to suggest a plenary speaker as well
+as a topic, two speakers, and a chairperson for a symposium. We plan to have 8 plenary sessions
+and 8-12 symposia running three in parallel.
+\par
+Accompaning this 2$^{nd }$ circular is a suggestion form either in print or as
+electronic mail (\LaTeX ~file form.tex plus \LaTeX ~style psik.sty).
+Only forms arriving by {\large\bf January 15th 1996} will be considered. We therefore recommend
+the return of the completed form.tex file via electronic mail to psik@radix2.mpi-stuttgart.mpg.de.\\[5mm]
+{\large\bf Timetable}\\[5mm]
+\begin{tabular}{l l l }
+Jan 15&	1996&	Deadline for suggestions.\\
+Apr&	1996&	Third circular including details about symposia and invited speakers.\\
+May&	1996&	Deadline for the submission of abstracts and registration.\\
+Jun &	1996&	Final programme.\\
+Sep&	1996&	Conference.\\[3mm]
+\end{tabular}
+\par
+{\large\bf Location: Schw\"abisch Gm\"und (Germany)}\\[5mm]
+Schw\"abisch Gm\"und is located in south-west Germany 50 kilometers east
+of Stuttgart, the capital of the state of Baden-W\"urttemberg. It is easily
+accessible by public transport from Stuttgart and from Stuttgart
+international airport.
+\par
+The conference will be held at the Stadtgarten conference center which is
+within walking distance from most of the hotels. Schw\"abisch Gm\"und is a lovely
+old town with a population of 60,000 and with a history dating back to the
+Roman Empire in the 2nd century. In the 12th century it became the first of
+several imperial towns founded by the Hohenstaufen dynasty to protect their
+empire. Many original old buildings show the transition of the former Free
+Imperial City from Gothic through Renaissance to Baroque and the coexistence
+of 19th century palatial grandeur with contemporary architecture.\\[3mm]
+{\large\bf Local Organisation}\\[5mm]
+O.K. Andersen, A. Burkhardt, O. Jepsen,\\ C. Irslinger, G. Schmidt,
+Z. Szotek, W.M. Temmerman\\[3mm]
+\par
+{\large\bf Network Management Board and Program Committee}\\[5mm]
+V. Heine	(NMB Chair, Cambridge)\\
+O.K. Andersen	(Conference Chair, Stuttgart)\\[3mm]
+\begin{tabular}{l l l l }
+O. Bisi		& (Trento) &	P. Dederichs &	(J\"ulich)\\
+P.J. Durham	& (Daresbury) &	M. Finnis &	(Belfast)\\
+J. Ortega	& (Madrid) &	M. Gillan &	(Keele)\\
+B.L. Gyorffy	& (Bristol) &	J. Hafner &	(Vienna)\\
+J.E. Inglesfield& (Nijmegen) &	C. Koenig &	(Rennes)\\
+J. Martins	& (Lissabon) &	R. Nieminen &	(Helsinki)\\
+J. Norskov	& (Lyngby) &	C. Patterson &	(Dublin)\\
+M. Scheffler	& (Berlin) &	N. Stefanou &	(Athens)\\
+A. Svane	& (Aarhus) &	Z. Szotek &	(Daresbury)\\
+W.M. Temmerman	& (Daresbury) &	V. Van Doren &	(Antwerpen)\\[3mm]
+\end{tabular}
+
+%\newpage
+\noindent
+{\large\bf Overseas Advisory Committee}\\[5mm]
+\begin{tabular}{l l}
+Peter J. Feibelman  &    (Albuquerque)\\
+Arthur J. Freeman   &    (Evanston)\\
+Sonia Frota-Pessoa  &    (Sao Paolo)\\
+Takeo Fujiwara      &    (Tokyo)\\
+Jisoon Ihm          &    (Seoul)\\
+Steven G. Louie     &    (Berkeley)\\
+Richard Martin      &    (Urbana)\\
+Abhijit Mookerjee   &    (Calcutta)\\
+Kiyoyuki Terakura   &    (Tsukuba)\\
+David Vanderbilt    &    (Rutgers)\\[3mm]
+\end{tabular}
+\par
+{\large\bf Further Information}\\[3mm]
+Up to date information may be obtained from the World-Wide-Web Conference server at\\ 
+{\it\bf http://radix2.mpi-stuttgart.mpg.de/hcm.html} .\\[3mm]
+Correspondence should be addressed to:\\[2mm]
+O. K. Andersen\\[2mm]
+Max-Planck-Institut f\"ur  Festk\"orperforschung\\
+Postfach 80 06 65\\
+D-70506 Stuttgart\\[2mm]
+FAX:    (++49)-711-6891632\\
+E-mail: {\it\bf psik@radix2.mpi-stuttgart.mpg.de}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                    %
+%    Please save the two files below as form.tex and psik.sty        %
+%                                                                    %
+%    The first file is: form.tex                                     %
+%    The second file is: psik.sty                                    %
+%                                                                    %
+%    The first file contains the Network Conference suggestion form. %
+%    You should process this file separately by issuing command:     %
+%                                                                    %
+%                 latex form.tex                                     %
+%                                                                    %
+%    if you wish to print the suggestion form, fill it in and send   %
+%    it back to the organisers via surface mail.                     %
+%                                                                    %
+%     This will call upon a formatting file psik.sty which is        %
+%     attached just below form.tex file.                             %
+%                                                                    %
+%                                                                    %
+%    If you prefer to send the form by electromic mail you just      %
+%    need to extract the form.tex file below out of this document,   %
+%    fill in the spaces in between the curly brackets and send the   %
+%    form.tex back to psik@radix2.mpi-stuttgart.mpg.de.              %
+%                                                                    %
+%                                                                    %
+%                                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                    %
+%%%%%%%%%%%%%%% Suggestion form for the Psi-k Conference %%%%%%%%%%%%%
+%                                                                    %
+%                            form.tex                                %
+%                                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input psik.sty
+\begintext
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%
+% ALL text goes INSIDE curly brackets ({}).
+%
+%
+\no_of_speakers{3} %put number (1-3) of talks being nominated
+%
+\inputfirstspeakerinfo
+%
+% Title of the proposed symposium
+%
+\symposiumtitle{}
+%
+% See list of categories numbers on TeXed version of form.
+\category{}
+%
+% provide the speaker for the plenary talk below
+%
+\speakername{}
+\speakeremail{}
+\speakeraddress{}
+% Two references required: articles in journals (refone, etc.) or books.
+% sequence of journal references: {author}{journal}{volume}{page no.}{year}
+\refone{}{}{}{}{}
+\reftwo{}{}{}{}{}
+\refthree{}{}{}{}{}
+% sequence of book references: {author, title (publisher, year) page nos.}
+\bookref{}
+\bookreftwo{}
+\talktitle{}
+% Inside of next curly brackets, include description, and
+% supporting remarks (including what is new)
+\text{}
+%
+%recommender sequence:{name}{E-mail}{institution/address}{phone}
+%
+\recommender{}{}{}{}
+%
+\printfirstspeaker
+%
+% chairman : {name}{address}{E-mail}{phone} in brackets,
+%
+\chairman{}{}{}{} 
+%
+% provide information about the speakers for the symposium below
+%
+\inputsecondspeakerinfo
+\speakername{}
+\speakeremail{}
+\speakeraddress{}
+% reference sequence:{author}{journal}{volume}{page no.}{year}
+\refone{}{}{}{}{}
+\reftwo{}{}{}{}{}
+\refthree{}{}{}{}{}
+% book sequence:{author, title, publisher, year} 
+\bookref{}
+\bookreftwo{}
+\talktitle{}
+\text{}
+%
+\printsecondspeaker
+
+\inputthirdspeakerinfo
+\speakername{}
+\speakeremail{}
+\speakeraddress{}
+% sequence:{author}{journal}{volume}{page no.}{year}
+\refone{}{}{}{}{}
+\reftwo{}{}{}{}{}
+\refthree{}{}{}{}{}
+% sequence of book references: {author, title (publisher, year) page nos.} 
+\bookref{}
+\bookreftwo{}
+\talktitle{}
+\text{}
+%
+\printthirdspeaker
+\printchair
+\endtext
+\bye
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                         %
+%  This is psik.sty file ..............                                   %
+%                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                         %
+% psik.sty ...... formatting the Psi-k-Network Conference suggestion form %
+%                 derived from the APS macro.sty                          %
+%                                                                         %
+%                 (version for electronic distribution)                   %
+%  Nov 1995  Armin Burkhardt MPI/FKF burkhard@radix2.mpi-stuttgart.mpg.de %
+%                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ifundefined#1{\expandafter\ifx\csname#1\endcsname\relax}
+\def\iflatex#1{\ifundefined{LaTeX}\else#1\fi}
+\def\iftex#1{\ifundefined{LaTeX}#1\else\fi}
+\iflatex{\def\begintext{\def\endtext{\end{document}}
+\documentstyle[psik]{article}\begin{document}}}
+\iftex{\def\endtext{}\def\begintext{}}
+\ifundefined{endtext}\endinput\fi
+%----------------------ljmacro.sty----------------------------
+\font\tenrm=cmr10  \font\teni=cmmi10
+\font\tensy=cmsy10 \font\tenex=cmex10
+\font\tenbf=cmbx10 \font\tensl=cmsl10 
+\font\tentt=cmtt10 \font\tenit=cmti10
+
+\font\sevenrm=cmr7 \font\seveni=cmmi7
+\font\sevensy=cmsy7 \font\sevenbf=cmbx7
+
+\font\fiverm=cmr5 \font\fivei=cmmi5
+\font\fivesy=cmsy5 \font\fivebf=cmbx5
+
+\def\tenpoint{\normalbaselineskip=12pt plus 0.1pt minus 0.1pt%
+\abovedisplayskip 12pt plus 3pt minus 9pt%
+\belowdisplayskip 12pt plus 3pt minus 9pt%
+\abovedisplayshortskip 0pt plus 3pt%
+\belowdisplayshortskip 7pt plus 3pt minus 4pt%
+\smallskipamount=3pt plus1pt minus1pt%
+\medskipamount=6pt plus2pt minus2pt%
+\bigskipamount=12pt plus4pt minus4pt%
+\def\rm{\fam0\tenrm}\def\it{\fam\itfam\tenit}%
+\def\sl{\fam\slfam\tensl}\def\bf{\fam\bffam\tenbf}%
+\def\smc{\tensmc}\def\mit{\fam 1}%
+\def\cal{\fam 2}%
+\textfont0=\tenrm\scriptfont0=\sevenrm\scriptscriptfont0=\fiverm%
+\textfont1=\teni\scriptfont1=\seveni\scriptscriptfont1=\fivei%
+\textfont2=\tensy\scriptfont2=\sevensy\scriptscriptfont2=\fivesy%
+\textfont3=\tenex\scriptfont3=\tenex\scriptscriptfont3=\tenex%
+\textfont\itfam=\tenit%
+\textfont\slfam=\tensl%
+\textfont\bffam=\tenbf\scriptfont\bffam=\sevenbf%
+\scriptscriptfont\bffam=\fivebf%
+\normalbaselines\rm}
+
+%  Define a whole menagerie of pseudo-11pt fonts
+
+\font\elevenrm=cmr10 scaled 1095    \font\eleveni=cmmi10 scaled 1095
+\font\elevensy=cmsy10 scaled 1095   \font\elevenex=cmex10 scaled 1095
+\font\elevenbf=cmbx10 scaled 1095   \font\elevensl=cmsl10 scaled 1095
+\font\eleventt=cmtt10 scaled 1095   \font\elevenit=cmti10 scaled 1095
+
+\font\ninerm=cmr5 scaled 1728    \font\ninei=cmmi5 scaled 1728
+\font\ninesy=cmsy5 scaled 1728   \font\ninebf=cmbx5 scaled 1728
+
+\font\sixrm=cmr5 scaled 1200    \font\sixi=cmmi5 scaled 1200
+\font\sixsy=cmsy5 scaled 1200   \font\sixbf=cmbx5 scaled 1200
+
+\def\elevenpoint{\normalbaselineskip=12.2pt plus 0.1pt minus 0.1pt%
+\abovedisplayskip 12.2pt plus 3pt minus 9pt%
+\belowdisplayskip 12.2pt plus 3pt minus 9pt%
+\abovedisplayshortskip 0pt plus 3pt%
+\belowdisplayshortskip 7.1pt plus 3pt minus 4pt%
+\smallskipamount=3.3pt plus1.2pt minus1.2pt%
+\medskipamount=6.6pt plus2.2pt minus2.2pt%
+\bigskipamount=13.2pt plus4.4pt minus4.4pt%
+\def\rm{\fam0\elevenrm}\def\it{\fam\itfam\elevenit}%
+\def\sl{\fam\slfam\elevensl}\def\bf{\fam\bffam\elevenbf}%
+\def\mit{\fam 1}\def\cal{\fam 2}%
+\def\tt{\eleventt}%
+\textfont0=\elevenrm\scriptfont0=\ninerm\scriptscriptfont0=\sixrm%
+\textfont1=\eleveni\scriptfont1=\ninei\scriptscriptfont1=\sixi%
+\textfont2=\elevensy\scriptfont2=\ninesy\scriptscriptfont2=\sixsy%
+\textfont3=\elevenex\scriptfont3=\elevenex%
+\scriptscriptfont3=\elevenex%
+\textfont\itfam=\elevenit%
+\textfont\slfam=\elevensl%
+\textfont\bffam=\elevenbf\scriptfont\bffam=\ninebf%
+\scriptscriptfont\bffam=\sixbf%
+\normalbaselines\rm}%
+
+\iftex{\tracingpages=1}
+\font\helarge = cmr10 scaled 2488
+\font\hebig = cmr10 scaled 1728
+
+\font\heten = cmr10 scaled 1095
+\font\hbten = cmbx10 scaled 1095
+\font\hobten = cmr10 scaled 1095
+\font\hbobten = cmbx10 scaled 1095
+
+\font\henine = cmr7 scaled 1200
+\font\hbnine = cmbx7 scaled 1200
+\font\hobnine = cmr7 scaled 1200
+\font\hbobnine = cmbx7 scaled 1200
+
+\font\heeight = cmr7 scaled 1200
+\font\hbeight = cmbx7 scaled 1095
+\font\hobeight = cmr7 scaled 1200
+\font\hbobeight = cmbx7 scaled 1095
+
+\def\tenpt{\normalbaselineskip=11.2pt plus 0.1pt minus 0.1pt%
+\def\rm{\fam0\heten}\def\it{\fam\itfam\hobten}%
+\def\bf{\fam\bffam\hbten}\def\bit{\fam\slfam\hbobten}%
+\normalbaselines\rm}%
+
+\def\ninept{\normalbaselineskip=10.2pt plus 0.1pt minus 0.1pt%
+\def\rm{\fam0\henine}\def\it{\fam\itfam\hobnine}%
+\def\bf{\fam\bffam\hbnine}\def\bit{\fam\slfam\hbobnine}%
+\normalbaselines\rm}%
+
+\def\eightpt{\normalbaselineskip=9.2pt plus 0.1pt minus 0.1pt%
+\def\rm{\fam0\heeight}\def\it{\fam\itfam\hobeight}%
+\def\bf{\fam\bffam\hbeight}\def\bit{\fam\slfam\hbobeight}%
+\normalbaselines\rm}%
+
+
+\iftex{
+\vsize=9.75truein	\voffset-.0truein
+\hsize=7.5truein		\hoffset-.5truein
+}
+
+\iflatex{
+\topmargin -.331truein
+\textheight=9.819truein
+%\advance\textheight by \topskip
+\textwidth=7.5truein
+\oddsidemargin=-0.5truein
+\evensidemargin=\oddsidemargin
+}
+
+\parindent=0pt
+\parskip=0pt
+\baselineskip=0pt
+\lineskip=0pt
+\normallineskip=0pt
+\topskip=4pt
+\iflatex{
+\headsep=6pt
+}
+
+\def\l{\vbox{\hsize=7.5in\baselineskip=0pt
+\nointerlineskip
+\hbox to 7.5in{\hrulefill}
+\vskip3truept
+\hbox to 7.5in{\hrulefill}
+\nointerlineskip
+}}
+
+\def\indent#1{\vtop
+        {\parindent=0pt\hangindent=15pt\hangafter=1\hsize=6.0truein
+        \baselineskip 10pt
+        \lineskip=0pt
+        \lineskiplimit=2pt{#1\hfil}
+        }}
+
+\def\addbox#1{\vtop{\parindent=0pt\hsize=6.0truein\baselineskip=10pt
+{#1}}}
+
+\def\single{\eightpt\vtop{\hsize = 7.5in
+          Suggest a single {\bit PLENARY SPEAKER} plus 2 speakers for one
+	  {\bit SYMPOSIUM\/}.
+           \hfil\break ALL INFORMATION REQUESTED MUST BE PROVIDED.
+          }}
+%\baselineskip 12pt
+\iftex{\nopagenumbers}
+\iflatex{\pagestyle{empty}}
+\overfullrule=0pt
+\iftex{\headline={\ifnum\pageno>1
+\vtop{\hsize=7.4truein\eightpt%
+{\bf SUGGESTION FOR SYMPOSIUM}\hfil\break
+\hfil\break
+\vbox{\symp}\hfil}
+\else\hfil\fi}
+}
+\iflatex{\headheight16pt\def\@oddhead{\ifnum\thepage>1%
+\vbox{\hsize=7.4truein\eightpt%
+{\bf SUGGESTION FOR SYMPOSIUM}\hfil\break
+\hfil\break
+\vbox{\symp}\hfil}
+\else\hfil\fi}
+\def\@evenhead{\@oddhead}
+}
+%%
+
+
+\newbox\thespeaker
+\newbox\thephone
+\newbox\theemail
+\newbox\theaddress
+\newbox\thetext
+\newbox\therefone
+\newbox\thereftwo
+\newbox\therefthree
+\newbox\thereffour
+\newbox\thebook
+\newbox\thebooktwo
+\newbox\firstchairman
+\newbox\thecategory
+\newbox\thesymposiumtitle
+\newbox\therecommender
+\newbox\thetalktitle
+
+\def\symp{\eightpt\vtop{\hsize=7.5in \noindent\hangindent=0pt\hangafter=1
+   {Title of the Symposium:}
+   \qquad\unhcopy\thesymposiumtitle\hfill}\vskip 5pt}
+\def\no_of_speakers#1{\def\next{#1}\let\speakerno=\next}
+\def\symposiumtitle#1{\setbox\thesymposiumtitle=
+\hbox{\elevenpoint\vtop{\hsize=5.1truein\bf #1}}}
+\def\category#1{\setbox\thecategory=\hbox{\elevenpoint #1}}
+%
+\def\speakername#1{\setbox\thespeaker=\hbox{\elevenpoint #1}}
+\def\speakeremail#1{\setbox\theemail=\hbox{\tenpoint #1}}
+\def\speakeraddress#1{\setbox\theaddress=\addbox{\tenpoint #1}}
+\def\text#1{\setbox\thetext=\hbox to \hsize{\vtop{% to 1.75truein
+\elevenpoint\noindent\unhcopy\thetalktitle\ #1 }}}
+%	{\begingroup\parindent=0pt
+%	{\unhcopy\thetalktitle} \reg #1 \hfil\endgroup}}}}
+
+\def\checkbox#1{\vbox{\hsize=6.7truept\offinterlineskip%
+\hrule\noindent\vrule height 5.6truept\hfill{\hfill#1\hfill}\hfill\vrule\par%
+\hrule}} 
+
+
+\def\pohead{\vbox
+{\centerline{\helarge Invited Speaker/Symposium Suggestion Form}
+\smallskip
+\centerline{\hebig {\Large $\Psi_k$} Network Conference September18-21 1996 }
+\vskip3pt
+\l
+\vskip4pt
+\ninept
+\halign{\hbox to 2in{\bf ##\hfil}&\hbox to 3.50in{\bf ##\hfil}%
+&\hbox to 2.00in{\hfil \bf ##}\cr
+Return completed form to: &O. K. Andersen
+&DUE: 15 January 1996\cr
+&Max-Planck-Institut f\"ur Festk\"orperforschung& NO FAX PLEASE\cr
+&Postfach 80 06 65 \cr
+&D-70506 Stuttgart\cr
+&Germany\cr
+&E-mail: psik@radix2.mpi-stuttgart.mpg.de\cr}
+\vskip12pt
+\tenpt
+}}
+
+\def\refone#1#2#3#4#5{\def\next{#1}\ifx\next\empty
+	\setbox\therefone=\hbox to 0pt{\relax}
+	\else \setbox\therefone=\hbox{\vtop{\noindent\elevenpoint
+	\hangindent=36pt \hangafter=1 #1, {\sl #2} {\bf #3}, #4 (#5).\hfil
+	}\hfil}\fi}
+\def\reftwo#1#2#3#4#5{\def\next{#1}\ifx\next\empty
+	\setbox\thereftwo=\hbox to 0pt{\relax}
+	\else \setbox\thereftwo=\hbox{\vtop{\noindent\elevenpoint
+	\hangindent=36pt \hangafter=1 #1, {\sl #2} {\bf #3}, #4 (#5).\hfil
+	}\hfil}\fi}
+\def\refthree#1#2#3#4#5{\def\next{#1}\ifx\next\empty
+	\setbox\therefthree=\hbox to 0pt{\relax}
+	\else \setbox\therefthree=\hbox{\vtop{\noindent\elevenpoint
+	\hangindent=36pt \hangafter=1 #1, {\sl #2} {\bf #3}, #4 (#5).\hfil
+	}\hfil}\fi}
+\def\reffour#1#2#3#4#5{\def\next{#1}\ifx\next\empty
+	\setbox\thereffour=\hbox to 0pt{\relax}
+	\else \setbox\thereffour=\hbox{\vtop{\noindent\elevenpoint
+	\hangindent=36pt \hangafter=1 #1, {\sl #2} {\bf #3}, #4 (#5).\hfil
+	}\hfil}\fi}
+ 
+\def\bookref#1{\if #1 \empty \setbox\thebook=\hbox to 0pt{\relax}
+\else\setbox\thebook=\hbox{\vtop{\hangindent=36pt\hangafter=1
+\elevenpoint #1\hfil}\hfil}\fi}
+\def\bookreftwo#1{\if #1 \empty \setbox\thebooktwo=\hbox to 0pt{\relax}
+\else\setbox\thebooktwo=\hbox{\vtop{\hangindent=36pt\hangafter=1
+\elevenpoint #1\hfil}\hfil}\fi}
+ 
+\iflatex{\let\pageno=\thepage}
+\def\ref{\leftline{\eightpt Recent References%
+\ifnum\pageno=1\ (give at least two)\fi:}
+\vskip2pt
+\unhcopy\therefone
+\unhcopy\thereftwo
+\unhcopy\therefthree
+\unhcopy\thereffour
+\unhcopy\thebook
+\unhcopy\thebooktwo
+}
+ 
+ 
+\def\talktitle#1{\def\next{#1}\ifx\next\empty
+	\setbox\thetalktitle=\hbox to 0pt{} \else
+	\setbox\thetalktitle=\hbox{\elevenpoint\bf #1} \fi}
+
+\def\talk#1{\vtop{\parindent=0pt\hangindent=0pt\hangafter=1\hsize=7.0truein
+	\baselineskip 12pt
+	\lineskip=0pt
+	\lineskiplimit=2pt{\elevenpoint #1\hfil}\smallskip}}
+ 
+\def\chairman#1#2#3#4{\setbox\firstchairman=
+\vbox{\tenpt\baselineskip=11pt
+\noindent Suggested Symposium Chairperson:\ \ {{\elevenpoint #1}}
+\quad\hfill\hbox to 3.05truein{E-mail:\ \ {\tenpoint #3}\hfill}\par
+\noindent Address:\ \ {\tenpoint #2}\hfill
+\hbox to 2.0truein{Phone:\ \ {\tenpoint #4}\hfill}}
+}
+
+
+\def\recommender#1#2#3#4{\setbox\therecommender=
+\vbox{\eightpt\hsize=7.2truein\parskip=2pt
+\noindent Recommender's Name:\ \ {\elevenpoint #1}\hfill
+\hbox to 3.0truein{E-mail:\ \ {\tenpoint #2}\hfill}\par
+\noindent Institution, Address:\ \ \vtop{\hsize=4.0truein{\tenpoint #3}}\hfill
+\hbox to 1.9truein{Phone:\ \ {\tenpoint #4}\hfill}}}
+
+\def\frame#1{\vtop{\offinterlineskip\parskip=0pt\hsize=7.5in \hrule
+\vrule height 2pt \hfill \vrule height 2pt\par
+\vrule\hskip1ex #1 \hfill\hskip1ex\vrule\par
+\vrule height 2pt \hfill \vrule height 2pt\par \hrule}}
+
+\def\recom{\frame{\copy\therecommender\hfill}}
+
+\def\ptalk{\eightpt\vtop{\hsize=7.5in \noindent\hangindent=0pt\hangafter=1
+   {Title of the Plenary Talk:}
+   \qquad\unhcopy\thetalktitle\hfill}\vskip 5pt}
+
+\def\cat{\eightpt
+   \leftline{Category {\it (see below)}:
+   \qquad\copy\thecategory\hfil}
+	\vskip 2pt}
+
+\def\firstspeaker{\eightpt\frame{\vtop{\hsize=7.3in
+\leftline{\hbox to 3.5truein{Speaker:\ \ \copy\thespeaker\hfil}\hfil
+\hbox to 3.7truein{E-mail:\ \ \copy\theemail\hfil}}
+\vskip 3pt
+\leftline{Mailing Address:\ \ \copy\theaddress}}}
+\vskip 4pt
+\leftline{Title, Description, and Supporting Remarks (including what is
+new):}
+\vskip3pt
+\unhcopy\thetext\hfil
+}
+\def\inputfirstspeakerinfo{}
+\def\inputsecondspeakerinfo{}
+\def\inputthirdspeakerinfo{}
+%
+\def\printfirstspeaker{
+\iftex{
+	\vbox{  \vskip-.35truein
+        \vskip0pt
+	\pohead
+        \vskip6pt
+	\single
+ 	\vskip6pt
+	\ptalk
+	\cat
+	\firstspeaker}
+	}
+\iflatex{
+\vbox{  \vskip-.40truein
+	\pohead
+        \vskip6pt
+	\single
+ 	\vskip6pt
+	\ptalk
+	\cat
+	\firstspeaker}
+	}
+\ifx\speakerno\empty\no_of_speakers{5}\fi
+	\vskip 4pt
+\filbreak
+\vbox{\ref}
+\vfil
+\filbreak
+\vskip3pt
+\vbox{\categories}
+\filbreak
+ 	\medskip
+\vbox{\recom}
+{\vskip1pt\rightline{\iflatex{\tenpoint \LaTeX}\iftex{\tenpoint \TeX}}}
+\ifnum\pageno=1 \eject\fi
+}
+
+\def\printspeaker#1{
+\ifnum\speakerno<#1 \else
+\eightpt\frame{\vtop{\hsize=7.3in
+\leftline{\hbox to 3.5truein{Speaker :\ \ \copy\thespeaker\hfil}\hfil
+\hbox to 3.7truein{E-mail:\ \ \copy\theemail\hfil}}
+\vskip 3pt
+\leftline{Mailing Address:\ \ \copy\theaddress}}}
+\vskip 4pt
+\leftline{Title, Description, and Supporting Remarks (including what is new:)}
+\vskip3pt
+\unhcopy\thetext
+\vskip 4pt
+\vbox{\ref}
+\filbreak
+\fi
+}
+\def\printchair{
+\vbox{\copy\firstchairman\par}
+\filbreak
+}
+
+\def\printsecondspeaker{\printspeaker{2}}
+\def\printthirdspeaker{\printspeaker{3}}
+\def\categories{\baselineskip=0pt
+\l
+\vskip6truept
+\centerline{\eightpt\bf CATEGORIES (INSERT ABOVE)}
+\vskip5truept
+\hbox{\vtop{\hsize=3.35in\baselineskip=7.58pt\parskip=0pt\eightpt
+\noindent\phantom{1}1.\ Quantum Monte Carlo Calculations\par
+\noindent\phantom{1}2.\ New developments in Muffin-tin and\par
+\qquad Pseudopotential techniques\par
+\noindent\phantom{1}3.\ Density Functional Molecular Dynamics\par
+\qquad simulation: methods and applications\par
+\noindent\phantom{1}4.\ Beyond the Local Density Approximation\par
+\noindent\phantom{1}5.\ Quasiparticles\par
+\noindent\phantom{1}6.\ Solving the Bogolubov-de Gennes Equations\par
+\noindent\phantom{1}7.\ Approximate Methods for large Systems\par
+\noindent\phantom{1}8.\ Parallel Algorithms}
+\vtop{\hsize=6.55in\baselineskip=7.58pt\parskip=0pt\eightpt
+9.\ Applications to Electron spectroscopies\par
+10.\ Applications to Novel superconductors\par
+11.\ Applications to Magnetic multilayers\par
+12.\ Applications to Oxide/metal interfaces\par
+13.\ Applications to Reactions at surfaces\par
+14.\ Applications to Semiconductor heterostructures\par
+15.\ Applications to Carbon Structures\par
+16.\ Applications to Molecular Materials\par
+17.\ Other applications}
+}\par}
+
+

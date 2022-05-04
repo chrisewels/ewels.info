@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Kohn-Sham Theory</TITLE>
+<META NAME="description" CONTENT="Kohn-Sham Theory">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node19.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node18.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html609"
+ HREF="node18.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html606"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html600"
+ HREF="node16.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html608"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html610"
+ HREF="node18.html">Discussion</A>
+<B> Up:</B> <A NAME="tex2html607"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html601"
+ HREF="node16.html">Parameterising the correlation energy</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION00960000000000000000">
+Kohn-Sham Theory</A>
+</H1>
+<P>
+Obtaining an expression for the kinetic energy of the electrons in
+terms of the charge density is a harder problem.  The first
+approximation, the local density type of Thomas Fermi approach
+described above is not sufficiently accurate [<A
+ HREF="node149.html#TFermi">18</A>].  It is
+therefore necessary to break up the charge density into a set of
+orthonormal orbital functions, as first proposed by Kohn and Sham
+[<A
+ HREF="node149.html#kohn_65">17</A>]. These are single particle wavefunctions in a
+non-interacting system (since interaction terms have been included
+through <I>E</I><SUB><I>xc</I></SUB>).  For simplicity here we only consider the spin
+averaged theory,
+<P><A NAME="eq:n_expand">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="eq:n_expand">&#160;</A><IMG WIDTH="240" HEIGHT="66"
+ SRC="img62.gif"
+ ALT="\begin{displaymath}
+n({\bf r}) = \sum_{\lambda=1,s}^N \delta
+(s_\lambda,s)\vert\psi_\lambda({\bf r},s)\vert^2.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(9)</TD></TR>
+</TABLE>
+<P>
+This means we can now write an expression for <I>T</I>, the kinetic energy, as
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="210" HEIGHT="58"
+ SRC="img63.gif"
+ ALT="\begin{displaymath}
+T = -\frac{1}{2} \sum_{\lambda,s} \int \psi^*_\lambda \nabla^2
+\psi_\lambda d{\bf r}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(10)</TD></TR>
+</TABLE>
+<P>
+Once the total number of electrons and spin of the system are fixed,
+these orbitals can be determined using two constraints. Firstly we
+minimise the energy with respect to the charge density.  Secondly
+different orbitals are kept orthogonal, and normalised through the
+introduction of a set of Lagrange multipliers, <IMG WIDTH="25" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$E_\lambda$">.  Therefore
+we minimise
+<P>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><IMG WIDTH="323" HEIGHT="63"
+ SRC="img64.gif"
+ ALT="\begin{displaymath}
+E[n] - \sum_\lambda E_\lambda \left\{ \sum_s \int
+\left\vert\psi_\lambda(r)\right\vert^2d{\bf r} - 1 \right\}.\end{displaymath}"></TD>
+<TD ALIGN="CENTER">(11)</TD></TR>
+</TABLE>
+<P>
+Differentiating this with respect to <IMG WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="$\psi_\lambda^*(r)$"> gives
+<P><A NAME="eq:topone">&#160;</A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD></TD><TD ALIGN="CENTER" NOWRAP><A NAME="eq:topone">&#160;</A><IMG WIDTH="514" HEIGHT="51"
+ SRC="img66.gif"
+ ALT="\begin{displaymath}
+-\frac{1}{2}\nabla^2\psi_\lambda({\bf r}) + \left(v({\bf r})...
+ ...\right) \psi_\lambda({\bf r}) = E_\lambda\psi_\lambda({\bf r}) \end{displaymath}"></TD>
+<TD ALIGN="CENTER">(12)</TD></TR>
+</TABLE>
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="176" HEIGHT="55"
+ SRC="img67.gif"
+ ALT="\begin{displaymath}
+v({\bf r}) = - \sum_a \frac{Z_a}{\vert{\bf r} - {\bf R}_a\vert}\end{displaymath}"></P>
+
+<P ALIGN="CENTER"><IMG WIDTH="133" HEIGHT="50"
+ SRC="img68.gif"
+ ALT="\begin{displaymath}
+v_{xc}({\bf r}) = \frac{\delta E_{xc}[n]}{\delta n({\bf r})}\end{displaymath}"></P>
+<P>
+It can be seen that Equation&nbsp;<A HREF="node17.html#eq:topone">2.6.23</A> is a single particle
+Schr&#246;dinger equation, as we originally proposed in this section.  If
+we therefore rewrite Equation&nbsp;<A HREF="node17.html#eq:topone">2.6.23</A> in terms of an effective
+potential, <IMG WIDTH="58" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img69.gif"
+ ALT="$v_{eff}({\bf r})$">, we obtain
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<P><TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+</TABLE></DIV>
+<P>
+These three equations together constitute the <I>Kohn-Sham
+equations</I>, and the self-consistent solution of these leads to the
+ground state charge density of the system.  Note that this does not
+necessarily correspond to the ground state of the total system since
+the ionic component has been removed; the energy with respect to ionic
+position has to be minimised in addition to this.  In practise the
+forces on the ions are iteratively minimised, and for each iteration
+the Kohn-Sham equations are solved to find the charge density ground
+state for that ionic configuration.
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html611"
+ HREF="node18.html#SECTION00961000000000000000">
+Discussion</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html609"
+ HREF="node18.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html606"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html600"
+ HREF="node16.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html608"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html610"
+ HREF="node18.html">Discussion</A>
+<B> Up:</B> <A NAME="tex2html607"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html601"
+ HREF="node16.html">Parameterising the correlation energy</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

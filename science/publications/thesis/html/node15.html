@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--Converted with LaTeX2HTML 97.1 (release) (July 13th, 1997)
+ by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippman, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The local density approximation</TITLE>
+<META NAME="description" CONTENT="The local density approximation">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso_8859_1">
+<LINK REL="STYLESHEET" HREF="thesis.css">
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html588"
+ HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html585"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html579"
+ HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html587"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html589"
+ HREF="node16.html">Parameterising the correlation energy</A>
+<B> Up:</B> <A NAME="tex2html586"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html580"
+ HREF="node14.html">Density Functional Theory</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1><A NAME="SECTION00950000000000000000">
+The local density approximation</A>
+</H1>
+<P>
+The local density approximation (LDA) states that, for regions of a
+material where the charge density is slowly varying, the exchange
+correlation energy at that point can be considered the same as that
+for a locally uniform electron gas of the same charge density (see
+Figure&nbsp;<A HREF="node13.html#fig:t_fermi">2.1</A>).  In this case we can write <I>E</I><SUB><I>xc</I></SUB> as
+<P>
+<P ALIGN="CENTER"><IMG WIDTH="180" HEIGHT="47"
+ SRC="img48.gif"
+ ALT="\begin{displaymath}
+E_{xc} = \int n({\bf r}) \varepsilon_{xc}(n) d{\bf r}.\end{displaymath}"></P>
+<P>
+The spin polarised variation (local spin density approximation, or
+LSDA) replaces the spin averaged energy density in the above equation
+with the energy density for a polarised homogeneous electron gas.
+<P>
+Although this approximation is extremely simple, it is surprisingly
+accurate, and forms the core of most modern DFT codes.  It even works
+reasonably well in systems where the charge density is rapidly
+varying.  However it tends to underpredict atomic ground state
+energies and ionisation energies, while overpredicting binding
+energies.  It is also known to overly favour high spin state
+structures.  For these reasons there have been attempts to move beyond
+the LDA, notably through the addition of <I>gradient corrections</I> to
+incorporate longer range gradient effects [<A
+ HREF="node149.html#kutzler_92">19</A>].  However in
+practise, although these improvements seem to give better total
+energies the resultant structure is often worse, and at a greatly
+increased computational cost.  In general, the LDA is worse for small
+molecules and improves with system size.
+<P>
+The only remaining problem is to find an approximate solution for the
+homogeneous electron gas exchange-correlation term, <IMG WIDTH="51" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.gif"
+ ALT="$\varepsilon_{xc}(n)$">.There are several parameterised prescriptions for this, the one used
+in AIMPRO is based on the work by Ceperley and Alder [<A
+ HREF="node149.html#ceperley_80">20</A>].
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html590"
+ HREF="node16.html#SECTION00951000000000000000">
+Parameterising the correlation energy</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html588"
+ HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html585"
+ HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html579"
+ HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html587"
+ HREF="node3.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html589"
+ HREF="node16.html">Parameterising the correlation energy</A>
+<B> Up:</B> <A NAME="tex2html586"
+ HREF="node9.html">Theoretical Background</A>
+<B> Previous:</B> <A NAME="tex2html580"
+ HREF="node14.html">Density Functional Theory</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Chris Ewels</I>
+<BR><I>11/13/1997</I>
+</ADDRESS>
+</BODY>
+</HTML>
