@@ -6,7 +6,7 @@
 <!-- #EndEditable -->
 <META NAME="Author" CONTENT="Chris Ewels">
 <META NAME="Classification" CONTENT="Academic: Index">
-<link rel="stylesheet" href="../site.css" type="text/css">
+<link rel="stylesheet" href="site.css" type="text/css">
 
 <script language="JavaScript">
 <!--
@@ -77,25 +77,25 @@ function MM_goToURL() { //v3.0
   <td align="center">
   <h1>
 	<!-- #BeginEditable "titletext" -->
-	Title text here 
+	Title text here
 	<!-- #EndEditable "titletext" -->
 	</h1>
  </td><td align="right">
  <select name="mymenu" onChange="MM_jumpMenu('parent',this,1)">
-			  <option>Choisis une thème...</option>
+			  <option>Choisis une thï¿½me...</option>
 				<option></option>
 			  <option value="../Diamant/index.html">Le couleur dans le diamant</option>
-              <option value="../Carotenoid/index.html">Carotenoids : Quand un "plastique" colore la vie</option>			  
-              <option value="../1%20-%20Saphir/index.html">Un saphir qui nous en fait voir de toutes les couleurs</option>			  
-              <option value="../2%20-%20luminophores/index.html">La télévision couleur, c'est lumineux ! </option>			  			  
-              <option value="../3%20-%20Piezo-chrome%20et%20thermo-chrome/index.html">Des pigments caméléons</option>			  			  				<option></option>	  			  
+              <option value="../Carotenoid/index.html">Carotenoids : Quand un "plastique" colore la vie</option>
+              <option value="../1%20-%20Saphir/index.html">Un saphir qui nous en fait voir de toutes les couleurs</option>
+              <option value="../2%20-%20luminophores/index.html">La tï¿½lï¿½vision couleur, c'est lumineux ! </option>
+              <option value="../3%20-%20Piezo-chrome%20et%20thermo-chrome/index.html">Des pigments camï¿½lï¿½ons</option>			  			  				<option></option>
 				<option></option>
 				<option></option>
-			  <option value="../C60/index.html">Le fullerène : C60 </option>
+			  <option value="../C60/index.html">Le fullerï¿½ne : C60 </option>
               <option value="../CNT/index.html">Les nanotubes de Carbone</option>
 <!--              <option value="../4/index.html">Comment plier un nanotube de carbone</option>-->
-			  <option value="../DNA/index.html">La molécule d'ADN</option>
-              <option value="../Cellulose/index.html">La cellulose, une plastique naturelle</option>			  
+			  <option value="../DNA/index.html">La molï¿½cule d'ADN</option>
+              <option value="../Cellulose/index.html">La cellulose, une plastique naturelle</option>
               <option value="../Batterie/index.html">Les batteries au lithium</option>
               <option value="../MicroOnde/index.html">La danse des atomes au rythme des microondes</option>
             </select>
@@ -114,7 +114,7 @@ Echelle nanometrique, ils sont tres forte, et utile pour le nouveau nanotechnolo
 Ils sont une million fois plus petite d'un chevaux, et consiste de 60 atomes de carbone.<p>
 L'image AFM ici montre les molecules C60 (points blanche) sur une surface de mica.</p>
 	<!-- #EndEditable -->
-</font>	
+</font>
 </td>
 <td rowspan="2" width=60%>
 	<!-- #BeginEditable "jmol" -->
